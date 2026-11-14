@@ -4,6 +4,7 @@
   "main": "src/worker.ts",
   "compatibility_date": "2026-11-14",
   "workers_dev": true,
+  "triggers": { "crons": ["0 */6 * * *"] },
   "observability": { "enabled": true, "head_sampling_rate": 1 },
   "d1_databases": [
     {
