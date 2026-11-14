@@ -76,10 +76,12 @@ def prepare(source: Path, overwrite: bool = False) -> dict:
         extracted = Path(directory) / "extracted.txt"
         extractor = extracted_text(source, extracted)
         original_bytes, sha256 = gzip_file(extracted, target)
+    with source.open("rb") as input_file:
+        source_sha256 = hashlib.file_digest(input_file, "sha256").hexdigest()
     evidence = {
         "source_path": str(relative),
         "output_path": str(target.relative_to(ROOT)),
-        "source_sha256": hashlib.file_digest(source.open("rb"), "sha256").hexdigest(),
+        "source_sha256": source_sha256,
         "extracted_sha256": sha256,
         "source_bytes": source.stat().st_size,
         "extracted_bytes": original_bytes,
