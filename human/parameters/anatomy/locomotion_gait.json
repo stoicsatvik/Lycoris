@@ -1,0 +1,605 @@
+{
+  "schema_version": "1.0.0",
+  "group": "anatomy",
+  "domain": "locomotion_gait",
+  "description": "Gait, locomotion, stability and foot-ground interaction",
+  "field_count": 37,
+  "sources": [
+    "NASA_DIGITAL_ASTRONAUT",
+    "NASA_GRAVITY"
+  ],
+  "fields": [
+    {
+      "id": "human.locomotion_gait.walking_speed_m_s",
+      "name": "walking speed m s",
+      "unit": "m/s",
+      "kind": "observable",
+      "description": "Measured travel speed for defined gait and surface",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_DIGITAL_ASTRONAUT",
+        "NASA_GRAVITY"
+      ]
+    },
+    {
+      "id": "human.locomotion_gait.preferred_walking_speed_m_s",
+      "name": "preferred walking speed m s",
+      "unit": "m/s",
+      "kind": "observable",
+      "description": "Self-selected walking speed on standardized terrain",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_DIGITAL_ASTRONAUT",
+        "NASA_GRAVITY"
+      ]
+    },
+    {
+      "id": "human.locomotion_gait.max_sustainable_speed_m_s",
+      "name": "max sustainable speed m s",
+      "unit": "m/s",
+      "kind": "observable",
+      "description": "Sustainable pace over specified duration",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_DIGITAL_ASTRONAUT",
+        "NASA_GRAVITY"
+      ]
+    },
+    {
+      "id": "human.locomotion_gait.step_length_m",
+      "name": "step length m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Forward displacement per step",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_DIGITAL_ASTRONAUT",
+        "NASA_GRAVITY"
+      ]
+    },
+    {
+      "id": "human.locomotion_gait.stride_length_m",
+      "name": "stride length m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Displacement per complete gait cycle",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_DIGITAL_ASTRONAUT",
+        "NASA_GRAVITY"
+      ]
+    },
+    {
+      "id": "human.locomotion_gait.step_width_m",
+      "name": "step width m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Lateral stance base in gait",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_DIGITAL_ASTRONAUT",
+        "NASA_GRAVITY"
+      ]
+    },
+    {
+      "id": "human.locomotion_gait.step_frequency_hz",
+      "name": "step frequency hz",
+      "unit": "Hz",
+      "kind": "observable",
+      "description": "Steps per second",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_DIGITAL_ASTRONAUT",
+        "NASA_GRAVITY"
+      ]
+    },
+    {
+      "id": "human.locomotion_gait.stride_frequency_hz",
+      "name": "stride frequency hz",
+      "unit": "Hz",
+      "kind": "observable",
+      "description": "Gait cycles per second",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_DIGITAL_ASTRONAUT",
+        "NASA_GRAVITY"
+      ]
+    },
+    {
+      "id": "human.locomotion_gait.stance_phase_fraction",
+      "name": "stance phase fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Fraction of gait cycle in contact phase",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_DIGITAL_ASTRONAUT",
+        "NASA_GRAVITY"
+      ]
+    },
+    {
+      "id": "human.locomotion_gait.swing_phase_fraction",
+      "name": "swing phase fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Fraction in swing phase",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_DIGITAL_ASTRONAUT",
+        "NASA_GRAVITY"
+      ]
+    },
+    {
+      "id": "human.locomotion_gait.double_support_fraction",
+      "name": "double support fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Fraction with both feet supported",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_DIGITAL_ASTRONAUT",
+        "NASA_GRAVITY"
+      ]
+    },
+    {
+      "id": "human.locomotion_gait.flight_phase_fraction",
+      "name": "flight phase fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Fraction airborne for hopping/running",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_DIGITAL_ASTRONAUT",
+        "NASA_GRAVITY"
+      ]
+    },
+    {
+      "id": "human.locomotion_gait.foot_clearance_m",
+      "name": "foot clearance m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Minimum swing-phase ground clearance",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_DIGITAL_ASTRONAUT",
+        "NASA_GRAVITY"
+      ]
+    },
+    {
+      "id": "human.locomotion_gait.heel_strike_angle_rad",
+      "name": "heel strike angle rad",
+      "unit": "rad",
+      "kind": "observable",
+      "description": "Foot angle at initial contact",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_DIGITAL_ASTRONAUT",
+        "NASA_GRAVITY"
+      ]
+    },
+    {
+      "id": "human.locomotion_gait.toe_off_angle_rad",
+      "name": "toe off angle rad",
+      "unit": "rad",
+      "kind": "observable",
+      "description": "Foot angle at toe off",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_DIGITAL_ASTRONAUT",
+        "NASA_GRAVITY"
+      ]
+    },
+    {
+      "id": "human.locomotion_gait.vertical_ground_reaction_n",
+      "name": "vertical ground reaction n",
+      "unit": "N",
+      "kind": "observable",
+      "description": "Foot-ground normal reaction force",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_DIGITAL_ASTRONAUT",
+        "NASA_GRAVITY"
+      ]
+    },
+    {
+      "id": "human.locomotion_gait.horizontal_ground_reaction_n",
+      "name": "horizontal ground reaction n",
+      "unit": "N",
+      "kind": "observable",
+      "description": "Horizontal reaction component",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_DIGITAL_ASTRONAUT",
+        "NASA_GRAVITY"
+      ]
+    },
+    {
+      "id": "human.locomotion_gait.shear_force_n",
+      "name": "shear force n",
+      "unit": "N",
+      "kind": "observable",
+      "description": "Tangential interaction force",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_DIGITAL_ASTRONAUT",
+        "NASA_GRAVITY"
+      ]
+    },
+    {
+      "id": "human.locomotion_gait.foot_contact_time_s",
+      "name": "foot contact time s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Contact time per step",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_DIGITAL_ASTRONAUT",
+        "NASA_GRAVITY"
+      ]
+    },
+    {
+      "id": "human.locomotion_gait.leg_stiffness_n_m",
+      "name": "leg stiffness n m",
+      "unit": "N/m",
+      "kind": "derived",
+      "description": "Effective leg spring model stiffness",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_DIGITAL_ASTRONAUT",
+        "NASA_GRAVITY"
+      ]
+    },
+    {
+      "id": "human.locomotion_gait.center_of_pressure_x_m",
+      "name": "center of pressure x m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Pressure centroid longitudinal coordinate",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_DIGITAL_ASTRONAUT",
+        "NASA_GRAVITY"
+      ]
+    },
+    {
+      "id": "human.locomotion_gait.center_of_pressure_y_m",
+      "name": "center of pressure y m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Pressure centroid lateral coordinate",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_DIGITAL_ASTRONAUT",
+        "NASA_GRAVITY"
+      ]
+    },
+    {
+      "id": "human.locomotion_gait.center_of_mass_velocity_m_s",
+      "name": "center of mass velocity m s",
+      "unit": "m/s",
+      "kind": "derived",
+      "description": "Body COM translation speed",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_DIGITAL_ASTRONAUT",
+        "NASA_GRAVITY"
+      ]
+    },
+    {
+      "id": "human.locomotion_gait.center_of_mass_vertical_excursion_m",
+      "name": "center of mass vertical excursion m",
+      "unit": "m",
+      "kind": "derived",
+      "description": "COM vertical displacement cycle",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_DIGITAL_ASTRONAUT",
+        "NASA_GRAVITY"
+      ]
+    },
+    {
+      "id": "human.locomotion_gait.postural_sway_area_m2",
+      "name": "postural sway area m2",
+      "unit": "m^2",
+      "kind": "observable",
+      "description": "Area enclosed by postural sway measure",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_DIGITAL_ASTRONAUT",
+        "NASA_GRAVITY"
+      ]
+    },
+    {
+      "id": "human.locomotion_gait.postural_sway_velocity_m_s",
+      "name": "postural sway velocity m s",
+      "unit": "m/s",
+      "kind": "observable",
+      "description": "Mean COM/COP sway speed",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_DIGITAL_ASTRONAUT",
+        "NASA_GRAVITY"
+      ]
+    },
+    {
+      "id": "human.locomotion_gait.dynamic_balance_score",
+      "name": "dynamic balance score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Named dynamic balance test result",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_DIGITAL_ASTRONAUT",
+        "NASA_GRAVITY"
+      ]
+    },
+    {
+      "id": "human.locomotion_gait.fall_event_count",
+      "name": "fall event count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Observed/recorded falls by event definition",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_DIGITAL_ASTRONAUT",
+        "NASA_GRAVITY"
+      ]
+    },
+    {
+      "id": "human.locomotion_gait.near_fall_event_count",
+      "name": "near fall event count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Recorded near-falls by explicit event definition",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_DIGITAL_ASTRONAUT",
+        "NASA_GRAVITY"
+      ]
+    },
+    {
+      "id": "human.locomotion_gait.slip_recovery_time_s",
+      "name": "slip recovery time s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Time to recover from standardized slip",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_DIGITAL_ASTRONAUT",
+        "NASA_GRAVITY"
+      ]
+    },
+    {
+      "id": "human.locomotion_gait.trip_recovery_success_fraction",
+      "name": "trip recovery success fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Recovery success proportion across documented trials",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_DIGITAL_ASTRONAUT",
+        "NASA_GRAVITY"
+      ]
+    },
+    {
+      "id": "human.locomotion_gait.slope_ascending_speed_m_s",
+      "name": "slope ascending speed m s",
+      "unit": "m/s",
+      "kind": "observable",
+      "description": "Measured ascending pace with defined slope",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_DIGITAL_ASTRONAUT",
+        "NASA_GRAVITY"
+      ]
+    },
+    {
+      "id": "human.locomotion_gait.slope_descending_speed_m_s",
+      "name": "slope descending speed m s",
+      "unit": "m/s",
+      "kind": "observable",
+      "description": "Measured descending pace",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_DIGITAL_ASTRONAUT",
+        "NASA_GRAVITY"
+      ]
+    },
+    {
+      "id": "human.locomotion_gait.loaded_walk_cost_j_m",
+      "name": "loaded walk cost j m",
+      "unit": "J/m",
+      "kind": "derived",
+      "description": "Energy expended per distance in loaded locomotion",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_DIGITAL_ASTRONAUT",
+        "NASA_GRAVITY"
+      ]
+    },
+    {
+      "id": "human.locomotion_gait.terrain_adaptation_index",
+      "name": "terrain adaptation index",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Named metric for gait adjustments to surface",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_DIGITAL_ASTRONAUT",
+        "NASA_GRAVITY"
+      ]
+    },
+    {
+      "id": "human.locomotion_gait.path_deviation_rms_m",
+      "name": "path deviation rms m",
+      "unit": "m",
+      "kind": "derived",
+      "description": "RMS cross-track error from intended route",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_DIGITAL_ASTRONAUT",
+        "NASA_GRAVITY"
+      ]
+    },
+    {
+      "id": "human.locomotion_gait.stumble_event_count",
+      "name": "stumble event count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Recorded stumbles separately from actual falls",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_DIGITAL_ASTRONAUT",
+        "NASA_GRAVITY"
+      ]
+    }
+  ]
+}

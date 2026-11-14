@@ -1,0 +1,445 @@
+{
+  "schema_version": "1.0.0",
+  "group": "operations",
+  "domain": "medical_treatment_pharmacology",
+  "description": "Medicines, dosing, pharmacokinetics, care capabilities",
+  "field_count": 27,
+  "sources": [
+    "NASA_IMM_2026",
+    "NASA_FUNDAMENTALS"
+  ],
+  "fields": [
+    {
+      "id": "human.medical_treatment_pharmacology.medication_name",
+      "name": "medication name",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Specific active medicine ingredient identifier",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_treatment_pharmacology.medication_formulation",
+      "name": "medication formulation",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Dosage and release formulation",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_treatment_pharmacology.medication_dose_mass_mg",
+      "name": "medication dose mass mg",
+      "unit": "mg",
+      "kind": "scenario_input",
+      "description": "Clinician-authorized dose per administration",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_treatment_pharmacology.medication_route",
+      "name": "medication route",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Oral injectable inhaled topical or other administration",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_treatment_pharmacology.medication_interval_s",
+      "name": "medication interval s",
+      "unit": "s",
+      "kind": "scenario_input",
+      "description": "Specified prescribed dosing interval",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_treatment_pharmacology.medication_administered_count",
+      "name": "medication administered count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Verified doses administered",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_treatment_pharmacology.medication_remaining_count",
+      "name": "medication remaining count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Available prescribed units remaining",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_treatment_pharmacology.medication_expiry_utc",
+      "name": "medication expiry utc",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Verified medication expiry and storage context",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_treatment_pharmacology.medication_absorption_fraction",
+      "name": "medication absorption fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Drug-specific absorbed fraction under qualified pharmacology model",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_treatment_pharmacology.medication_distribution_volume_l",
+      "name": "medication distribution volume l",
+      "unit": "L",
+      "kind": "derived",
+      "description": "Drug-specific apparent volume distribution",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_treatment_pharmacology.medication_clearance_l_h",
+      "name": "medication clearance l h",
+      "unit": "L/h",
+      "kind": "derived",
+      "description": "Drug-specific clearance within validated population",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_treatment_pharmacology.medication_elimination_half_life_h",
+      "name": "medication elimination half life h",
+      "unit": "h",
+      "kind": "derived",
+      "description": "Half-life based on model and individual context",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_treatment_pharmacology.medication_peak_plasma_concentration_mg_l",
+      "name": "medication peak plasma concentration mg l",
+      "unit": "mg/L",
+      "kind": "derived",
+      "description": "Predicted peak drug level only with validated PK model",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_treatment_pharmacology.medication_trough_concentration_mg_l",
+      "name": "medication trough concentration mg l",
+      "unit": "mg/L",
+      "kind": "derived",
+      "description": "Predicted pre-dose drug level",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_treatment_pharmacology.medication_side_effect_event_count",
+      "name": "medication side effect event count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Clinically confirmed adverse effects",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_treatment_pharmacology.medication_allergy_status",
+      "name": "medication allergy status",
+      "unit": null,
+      "kind": "clinical_assessment",
+      "description": "Qualified verified allergy record",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_treatment_pharmacology.medication_interaction_flag",
+      "name": "medication interaction flag",
+      "unit": null,
+      "kind": "clinical_assessment",
+      "description": "Drug interaction flag supported by clinical sources",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_treatment_pharmacology.medication_treatment_success_fraction",
+      "name": "medication treatment success fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Outcome frequency in relevant evidence, not universal 100% efficacy",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_treatment_pharmacology.medication_adherence_fraction",
+      "name": "medication adherence fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Taken authorized doses divided by scheduled doses",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_treatment_pharmacology.medication_missed_dose_count",
+      "name": "medication missed dose count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Scheduled doses omitted",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_treatment_pharmacology.medical_device_operability_fraction",
+      "name": "medical device operability fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Usable diagnostic/treatment devices fraction",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_treatment_pharmacology.medical_kit_consumed_units_count",
+      "name": "medical kit consumed units count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Supplies consumed in healthcare event",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_treatment_pharmacology.medical_kit_stockout_event_count",
+      "name": "medical kit stockout event count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Clinically essential supplies unavailable",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_treatment_pharmacology.medical_treatment_time_s",
+      "name": "medical treatment time s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Time required for medical treatment event",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_treatment_pharmacology.medical_consultation_delay_s",
+      "name": "medical consultation delay s",
+      "unit": "s",
+      "kind": "scenario_input",
+      "description": "Communications delay to remote qualified clinician",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_treatment_pharmacology.medical_autonomous_training_status",
+      "name": "medical autonomous training status",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Crew qualifications for independent care",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_treatment_pharmacology.medical_care_model_status",
+      "name": "medical care model status",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Population and mission setting validated by source",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    }
+  ]
+}

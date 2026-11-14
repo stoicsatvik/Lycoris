@@ -1,0 +1,524 @@
+{
+  "schema_version": "1.0.0",
+  "group": "psychology",
+  "domain": "crew_team_dynamics",
+  "description": "Team cooperation, interpersonal strain, leadership and cohesion",
+  "field_count": 30,
+  "sources": [
+    "NASA_ISOLATION",
+    "ESA_MARS500",
+    "NASA_CHAPEA"
+  ],
+  "fields": [
+    {
+      "id": "human.crew_team_dynamics.team_cohesion_score",
+      "name": "team cohesion score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Validated crew cohesion assessment",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "ESA_MARS500",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.crew_team_dynamics.team_trust_score",
+      "name": "team trust score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Self-reported trust on named team inventory",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "ESA_MARS500",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.crew_team_dynamics.team_conflict_event_count",
+      "name": "team conflict event count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Documented conflicts by predefined event criteria",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "ESA_MARS500",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.crew_team_dynamics.team_conflict_resolution_time_s",
+      "name": "team conflict resolution time s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Time from identified conflict to mutually agreed resolution",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "ESA_MARS500",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.crew_team_dynamics.team_communication_quality_score",
+      "name": "team communication quality score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Structured communication assessment",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "ESA_MARS500",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.crew_team_dynamics.team_shared_mental_model_score",
+      "name": "team shared mental model score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Common task-model agreement via validated test",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "ESA_MARS500",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.crew_team_dynamics.team_situation_awareness_score",
+      "name": "team situation awareness score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Joint situational awareness assessment",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "ESA_MARS500",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.crew_team_dynamics.team_coordination_error_count",
+      "name": "team coordination error count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Operational handoff or timing coordination errors",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "ESA_MARS500",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.crew_team_dynamics.team_task_completion_fraction",
+      "name": "team task completion fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Completed cooperative tasks divided by scheduled tasks",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "ESA_MARS500",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.crew_team_dynamics.team_workload_imbalance_index",
+      "name": "team workload imbalance index",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Unequal task burden metric with documented scale",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "ESA_MARS500",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.crew_team_dynamics.team_social_contact_time_s",
+      "name": "team social contact time s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Time in voluntary crew interactions",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "ESA_MARS500",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.crew_team_dynamics.team_social_withdrawal_duration_s",
+      "name": "team social withdrawal duration s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Self-reported opted-out interaction time, not diagnosis",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "ESA_MARS500",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.crew_team_dynamics.team_interpersonal_support_event_count",
+      "name": "team interpersonal support event count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Observed/reported supportive crew interactions",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "ESA_MARS500",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.crew_team_dynamics.team_leader_directive_count",
+      "name": "team leader directive count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Count of directives in recorded task protocol",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "ESA_MARS500",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.crew_team_dynamics.team_leader_feedback_rating",
+      "name": "team leader feedback rating",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Crew leadership feedback survey",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "ESA_MARS500",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.crew_team_dynamics.team_decision_consensus_latency_s",
+      "name": "team decision consensus latency s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Time until group agrees on decision",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "ESA_MARS500",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.crew_team_dynamics.team_decision_dissent_count",
+      "name": "team decision dissent count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Distinct dissent instances in decisions",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "ESA_MARS500",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.crew_team_dynamics.team_conflict_intensity_rating",
+      "name": "team conflict intensity rating",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Self-reported severity of disagreement",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "ESA_MARS500",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.crew_team_dynamics.team_role_clarity_score",
+      "name": "team role clarity score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Understanding of responsibilities",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "ESA_MARS500",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.crew_team_dynamics.team_role_overlap_score",
+      "name": "team role overlap score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Named role ambiguity measure",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "ESA_MARS500",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.crew_team_dynamics.team_recovery_after_setback_h",
+      "name": "team recovery after setback h",
+      "unit": "h",
+      "kind": "derived",
+      "description": "Time to restore baseline team task performance",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "ESA_MARS500",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.crew_team_dynamics.team_cross_cultural_adaptation_score",
+      "name": "team cross cultural adaptation score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Culture-sensitive, validated team adaptation measure",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "ESA_MARS500",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.crew_team_dynamics.team_language_communication_error_count",
+      "name": "team language communication error count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Misunderstanding incidents with operational consequences",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "ESA_MARS500",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.crew_team_dynamics.team_closed_loop_comm_fraction",
+      "name": "team closed loop comm fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Fraction commands with acknowledged readback",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "ESA_MARS500",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.crew_team_dynamics.team_information_sharing_delay_s",
+      "name": "team information sharing delay s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Delay before relevant information shared within crew",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "ESA_MARS500",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.crew_team_dynamics.team_help_request_count",
+      "name": "team help request count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Requests for colleague assistance during tasks",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "ESA_MARS500",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.crew_team_dynamics.team_response_to_help_s",
+      "name": "team response to help s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Latency from assistance request to team response",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "ESA_MARS500",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.crew_team_dynamics.team_work_rest_equity_index",
+      "name": "team work rest equity index",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Time allocation inequality under chosen formula",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "ESA_MARS500",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.crew_team_dynamics.team_psychological_safety_score",
+      "name": "team psychological safety score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Validated perceived psychological safety inventory",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "ESA_MARS500",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.crew_team_dynamics.team_medical_confidentiality_incident_count",
+      "name": "team medical confidentiality incident count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Documented improper medical disclosure incidents",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "ESA_MARS500",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    }
+  ]
+}

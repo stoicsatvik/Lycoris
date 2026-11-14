@@ -1,0 +1,429 @@
+{
+  "schema_version": "1.0.0",
+  "group": "space_exposure",
+  "domain": "mars_environmental_experience",
+  "description": "Martian diurnal/seasonal experiences and location-driven hazards",
+  "field_count": 26,
+  "sources": [
+    "NASA_HRP_HAZARDS",
+    "NASA_GRAVITY"
+  ],
+  "fields": [
+    {
+      "id": "human.mars_environmental_experience.martian_local_solar_time_h",
+      "name": "martian local solar time h",
+      "unit": "h",
+      "kind": "scenario_input",
+      "description": "Scenario location-dependent local solar time",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HRP_HAZARDS",
+        "NASA_GRAVITY"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.mars_environmental_experience.martian_solar_longitude_deg",
+      "name": "martian solar longitude deg",
+      "unit": "deg",
+      "kind": "scenario_input",
+      "description": "Season angle from ephemeris",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HRP_HAZARDS",
+        "NASA_GRAVITY"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.mars_environmental_experience.martian_sol_duration_s",
+      "name": "martian sol duration s",
+      "unit": "s",
+      "kind": "scenario_input",
+      "description": "Length of planned local solar day",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HRP_HAZARDS",
+        "NASA_GRAVITY"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.mars_environmental_experience.martian_outside_temperature_k",
+      "name": "martian outside temperature k",
+      "unit": "K",
+      "kind": "scenario_input",
+      "description": "Environmental surface temperature time series model",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HRP_HAZARDS",
+        "NASA_GRAVITY"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.mars_environmental_experience.martian_surface_pressure_pa",
+      "name": "martian surface pressure pa",
+      "unit": "Pa",
+      "kind": "scenario_input",
+      "description": "Site-specific model or measured environmental pressure",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HRP_HAZARDS",
+        "NASA_GRAVITY"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.mars_environmental_experience.martian_local_gravity_m_s2",
+      "name": "martian local gravity m s2",
+      "unit": "m/s^2",
+      "kind": "scenario_input",
+      "description": "Local gravitational acceleration estimate",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HRP_HAZARDS",
+        "NASA_GRAVITY"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.mars_environmental_experience.martian_daylight_duration_s",
+      "name": "martian daylight duration s",
+      "unit": "s",
+      "kind": "derived",
+      "description": "Modeled daylight duration at location and season",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HRP_HAZARDS",
+        "NASA_GRAVITY"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.mars_environmental_experience.martian_outside_irradiance_w_m2",
+      "name": "martian outside irradiance w m2",
+      "unit": "W/m^2",
+      "kind": "scenario_input",
+      "description": "Modeled incoming solar radiation",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HRP_HAZARDS",
+        "NASA_GRAVITY"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.mars_environmental_experience.martian_outside_uv_w_m2",
+      "name": "martian outside uv w m2",
+      "unit": "W/m^2",
+      "kind": "scenario_input",
+      "description": "Modeled ultraviolet irradiance",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HRP_HAZARDS",
+        "NASA_GRAVITY"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.mars_environmental_experience.martian_atmospheric_dust_optical_depth",
+      "name": "martian atmospheric dust optical depth",
+      "unit": "1",
+      "kind": "scenario_input",
+      "description": "Site and sol dust opacity",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HRP_HAZARDS",
+        "NASA_GRAVITY"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.mars_environmental_experience.martian_ground_albedo_fraction",
+      "name": "martian ground albedo fraction",
+      "unit": "1",
+      "kind": "scenario_input",
+      "description": "Surface reflectance proxy by material",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HRP_HAZARDS",
+        "NASA_GRAVITY"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.mars_environmental_experience.martian_surface_regolith_temperature_k",
+      "name": "martian surface regolith temperature k",
+      "unit": "K",
+      "kind": "scenario_input",
+      "description": "Regolith temperature scenario",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HRP_HAZARDS",
+        "NASA_GRAVITY"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.mars_environmental_experience.martian_local_slope_deg",
+      "name": "martian local slope deg",
+      "unit": "deg",
+      "kind": "scenario_input",
+      "description": "Surface terrain slope experienced on selected traverse",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HRP_HAZARDS",
+        "NASA_GRAVITY"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.mars_environmental_experience.martian_local_roughness_m",
+      "name": "martian local roughness m",
+      "unit": "m",
+      "kind": "scenario_input",
+      "description": "Terrain roughness on agreed spatial support",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HRP_HAZARDS",
+        "NASA_GRAVITY"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.mars_environmental_experience.martian_visual_visibility_distance_m",
+      "name": "martian visual visibility distance m",
+      "unit": "m",
+      "kind": "derived",
+      "description": "Qualified dust/optical visibility estimate",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HRP_HAZARDS",
+        "NASA_GRAVITY"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.mars_environmental_experience.martian_exterior_route_duration_s",
+      "name": "martian exterior route duration s",
+      "unit": "s",
+      "kind": "derived",
+      "description": "Time scheduled for EVA outside",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HRP_HAZARDS",
+        "NASA_GRAVITY"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.mars_environmental_experience.martian_science_task_duration_s",
+      "name": "martian science task duration s",
+      "unit": "s",
+      "kind": "scenario_input",
+      "description": "Time performing science operations",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HRP_HAZARDS",
+        "NASA_GRAVITY"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.mars_environmental_experience.martian_crew_motion_peak_speed_m_s",
+      "name": "martian crew motion peak speed m s",
+      "unit": "m/s",
+      "kind": "derived",
+      "description": "Peak effective astronaut motion speed",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HRP_HAZARDS",
+        "NASA_GRAVITY"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.mars_environmental_experience.martian_roundtrip_distance_m",
+      "name": "martian roundtrip distance m",
+      "unit": "m",
+      "kind": "derived",
+      "description": "Completed outbound and return traverse distance",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HRP_HAZARDS",
+        "NASA_GRAVITY"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.mars_environmental_experience.martian_crew_day_night_shift_count",
+      "name": "martian crew day night shift count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Circadian schedule shifts during Mars residency",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HRP_HAZARDS",
+        "NASA_GRAVITY"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.mars_environmental_experience.martian_surface_exposure_season_count",
+      "name": "martian surface exposure season count",
+      "unit": "count",
+      "kind": "scenario_input",
+      "description": "Number of seasonal cycles in mission plan",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HRP_HAZARDS",
+        "NASA_GRAVITY"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.mars_environmental_experience.martian_surface_task_interruption_count",
+      "name": "martian surface task interruption count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Surface work interruptions",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HRP_HAZARDS",
+        "NASA_GRAVITY"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.mars_environmental_experience.martian_weather_prediction_confidence",
+      "name": "martian weather prediction confidence",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Model-level environmental confidence, not measured biological certainty",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HRP_HAZARDS",
+        "NASA_GRAVITY"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.mars_environmental_experience.martian_gravity_adaptation_evidence_level",
+      "name": "martian gravity adaptation evidence level",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Mars human observations unavailable",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HRP_HAZARDS",
+        "NASA_GRAVITY"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.mars_environmental_experience.martian_human_exposure_model_status",
+      "name": "martian human exposure model status",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Unverified extrapolation or source-anchored scenario label",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HRP_HAZARDS",
+        "NASA_GRAVITY"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.mars_environmental_experience.martian_environment_source_product_id",
+      "name": "martian environment source product id",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Exact PDS/USGS source for derived external field",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HRP_HAZARDS",
+        "NASA_GRAVITY"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    }
+  ]
+}

@@ -1,0 +1,524 @@
+{
+  "schema_version": "1.0.0",
+  "group": "psychology",
+  "domain": "social_isolation",
+  "description": "Social connectedness, family separation and privacy",
+  "field_count": 30,
+  "sources": [
+    "NASA_ISOLATION",
+    "ESA_MARS500",
+    "NASA_CHAPEA"
+  ],
+  "fields": [
+    {
+      "id": "human.social_isolation.perceived_isolation_score",
+      "name": "perceived isolation score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Isolation questionnaire result",
+      "measurement_context": "self_report",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "ESA_MARS500",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.social_isolation.perceived_loneliness_score",
+      "name": "perceived loneliness score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Validated loneliness questionnaire",
+      "measurement_context": "self_report",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "ESA_MARS500",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.social_isolation.social_connection_satisfaction_score",
+      "name": "social connection satisfaction score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Self-reported connection quality",
+      "measurement_context": "self_report",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "ESA_MARS500",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.social_isolation.family_contact_frequency_per_week",
+      "name": "family contact frequency per week",
+      "unit": "1/week",
+      "kind": "observable",
+      "description": "Messages/contact opportunities per week",
+      "measurement_context": "self_report",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "ESA_MARS500",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.social_isolation.family_contact_duration_s",
+      "name": "family contact duration s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Duration of consented family communication",
+      "measurement_context": "self_report",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "ESA_MARS500",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.social_isolation.family_support_quality_score",
+      "name": "family support quality score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Perceived support, self-reported",
+      "measurement_context": "self_report",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "ESA_MARS500",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.social_isolation.peer_support_quality_score",
+      "name": "peer support quality score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Crew support quality score",
+      "measurement_context": "self_report",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "ESA_MARS500",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.social_isolation.social_network_breadth_count",
+      "name": "social network breadth count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Number of actively contacted relationships under defined scope",
+      "measurement_context": "self_report",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "ESA_MARS500",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.social_isolation.social_contact_availability_fraction",
+      "name": "social contact availability fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Planned contact available under communications constraints",
+      "measurement_context": "self_report",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "ESA_MARS500",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.social_isolation.confidential_contact_available",
+      "name": "confidential contact available",
+      "unit": "",
+      "kind": "scenario_input",
+      "description": "Whether private communication channel is available",
+      "measurement_context": "self_report",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "ESA_MARS500",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.social_isolation.private_space_time_s",
+      "name": "private space time s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Time with available personal privacy",
+      "measurement_context": "self_report",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "ESA_MARS500",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.social_isolation.personal_space_area_m2",
+      "name": "personal space area m2",
+      "unit": "m^2",
+      "kind": "scenario_input",
+      "description": "Habitat personal area allocation; external context driver",
+      "measurement_context": "self_report",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "ESA_MARS500",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.social_isolation.perceived_privacy_score",
+      "name": "perceived privacy score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Adequacy of perceived personal privacy",
+      "measurement_context": "self_report",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "ESA_MARS500",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.social_isolation.interpersonal_boundary_conflict_count",
+      "name": "interpersonal boundary conflict count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Reported interpersonal boundary violations",
+      "measurement_context": "self_report",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "ESA_MARS500",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.social_isolation.family_separation_distress_score",
+      "name": "family separation distress score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Separation distress inventory",
+      "measurement_context": "self_report",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "ESA_MARS500",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.social_isolation.homesickness_episode_count",
+      "name": "homesickness episode count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Self-reported homesickness episodes",
+      "measurement_context": "self_report",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "ESA_MARS500",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.social_isolation.social_support_seeking_count",
+      "name": "social support seeking count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Self-reported attempts to seek support",
+      "measurement_context": "self_report",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "ESA_MARS500",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.social_isolation.social_support_received_count",
+      "name": "social support received count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Received support events with consent",
+      "measurement_context": "self_report",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "ESA_MARS500",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.social_isolation.loneliness_duration_hours",
+      "name": "loneliness duration hours",
+      "unit": "h",
+      "kind": "observable",
+      "description": "Time reporting loneliness over defined recall period",
+      "measurement_context": "self_report",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "ESA_MARS500",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.social_isolation.self_disclosure_comfort_score",
+      "name": "self disclosure comfort score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Self-reported disclosure comfort",
+      "measurement_context": "self_report",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "ESA_MARS500",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.social_isolation.interpersonal_trust_score",
+      "name": "interpersonal trust score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Named interpersonal trust survey",
+      "measurement_context": "self_report",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "ESA_MARS500",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.social_isolation.cultural_belonging_score",
+      "name": "cultural belonging score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Self-reported crew/cultural belonging",
+      "measurement_context": "self_report",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "ESA_MARS500",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.social_isolation.language_comfort_score",
+      "name": "language comfort score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Confidence in operational communication language",
+      "measurement_context": "self_report",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "ESA_MARS500",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.social_isolation.group_inclusion_rating",
+      "name": "group inclusion rating",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Perceived inclusion in team",
+      "measurement_context": "self_report",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "ESA_MARS500",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.social_isolation.social_energy_rating",
+      "name": "social energy rating",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Current subjective social energy",
+      "measurement_context": "self_report",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "ESA_MARS500",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.social_isolation.voluntary_social_withdrawal_time_s",
+      "name": "voluntary social withdrawal time s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Chosen time away from social interaction, not diagnostic",
+      "measurement_context": "self_report",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "ESA_MARS500",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.social_isolation.conflict_avoidance_score",
+      "name": "conflict avoidance score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Named avoidance coping/interpersonal survey",
+      "measurement_context": "self_report",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "ESA_MARS500",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.social_isolation.personal_autonomy_score",
+      "name": "personal autonomy score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Perceived autonomy and choice",
+      "measurement_context": "self_report",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "ESA_MARS500",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.social_isolation.social_stressor_event_count",
+      "name": "social stressor event count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Self-reported stressful interaction count",
+      "measurement_context": "self_report",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "ESA_MARS500",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.social_isolation.emotional_support_access_delay_s",
+      "name": "emotional support access delay s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Time from support request to available help",
+      "measurement_context": "self_report",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "ESA_MARS500",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    }
+  ]
+}

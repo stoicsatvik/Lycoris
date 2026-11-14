@@ -1,0 +1,429 @@
+{
+  "schema_version": "1.0.0",
+  "group": "operations",
+  "domain": "medical_events",
+  "description": "Medical episodes, triage and clinical functional impairment",
+  "field_count": 26,
+  "sources": [
+    "NASA_IMM_2026",
+    "NASA_HRP_RISKS"
+  ],
+  "fields": [
+    {
+      "id": "human.medical_events.event_code",
+      "name": "event code",
+      "unit": null,
+      "kind": "clinical_assessment",
+      "description": "Qualified medical condition or injury coding",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_events.event_occurrence_time_utc",
+      "name": "event occurrence time utc",
+      "unit": null,
+      "kind": "observable",
+      "description": "When medical event was recorded",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_events.event_duration_s",
+      "name": "event duration s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Duration of symptomatic episode",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_events.event_symptom_onset_s",
+      "name": "event symptom onset s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Elapsed time from potential exposure to symptoms",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_events.event_severity_grade",
+      "name": "event severity grade",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Condition-specific clinical severity scale",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_events.event_triage_priority",
+      "name": "event triage priority",
+      "unit": null,
+      "kind": "clinical_assessment",
+      "description": "Qualified medical triage classification",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_events.event_consciousness_gcs_score",
+      "name": "event consciousness gcs score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Glasgow Coma Scale if applicable",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_events.event_temperature_k",
+      "name": "event temperature k",
+      "unit": "K",
+      "kind": "observable",
+      "description": "Body temperature during clinical episode",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_events.event_heart_rate_bpm",
+      "name": "event heart rate bpm",
+      "unit": "1/min",
+      "kind": "observable",
+      "description": "Heart rate during episode",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_events.event_oxygen_saturation_fraction",
+      "name": "event oxygen saturation fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Measured blood oxygen saturation",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_events.event_blood_pressure_systolic_pa",
+      "name": "event blood pressure systolic pa",
+      "unit": "Pa",
+      "kind": "observable",
+      "description": "Measured systolic blood pressure",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_events.event_respiratory_rate_hz",
+      "name": "event respiratory rate hz",
+      "unit": "Hz",
+      "kind": "observable",
+      "description": "Breathing frequency",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_events.event_pain_score",
+      "name": "event pain score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Clinician contextualized pain rating",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_events.event_nausea_score",
+      "name": "event nausea score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Reported nausea severity",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_events.event_visual_disturbance_score",
+      "name": "event visual disturbance score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Visual symptom inventory",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_events.event_dizziness_score",
+      "name": "event dizziness score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Reported dizziness severity",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_events.event_mobility_limit_fraction",
+      "name": "event mobility limit fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Qualified mobility limitation relative to baseline",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_events.event_task_function_limit_fraction",
+      "name": "event task function limit fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Qualified reduction in functional capacity",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_events.event_mandatory_rest_s",
+      "name": "event mandatory rest s",
+      "unit": "s",
+      "kind": "scenario_input",
+      "description": "Clinician indicated rest, no automated diagnosis",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_events.event_emergency_evacuate_status",
+      "name": "event emergency evacuate status",
+      "unit": null,
+      "kind": "clinical_assessment",
+      "description": "Qualified medical evacuation/return determination",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_events.event_diagnostic_test_required_count",
+      "name": "event diagnostic test required count",
+      "unit": "count",
+      "kind": "derived",
+      "description": "Required tests under specified condition protocol",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_events.event_followup_required_days",
+      "name": "event followup required days",
+      "unit": "day",
+      "kind": "scenario_input",
+      "description": "Clinician-set monitoring interval",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_events.event_treatment_response_score",
+      "name": "event treatment response score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Clinical response scale under defined treatment",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_events.event_record_provenance",
+      "name": "event record provenance",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Evidence provenance and authorized access scope",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_events.event_clinician_review_status",
+      "name": "event clinician review status",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Whether qualified clinician has reviewed event",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_events.event_data_privacy_status",
+      "name": "event data privacy status",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Consent, restriction and retention controls",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    }
+  ]
+}

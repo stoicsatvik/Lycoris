@@ -1,0 +1,621 @@
+{
+  "schema_version": "1.0.0",
+  "group": "physiology",
+  "domain": "cardiac_function",
+  "description": "Heart rate, conduction, mechanics and cardiac output",
+  "field_count": 38,
+  "sources": [
+    "NASA_HRP_RISKS",
+    "NASA_FUNDAMENTALS"
+  ],
+  "fields": [
+    {
+      "id": "human.cardiac_function.heart_rate_bpm",
+      "name": "heart rate bpm",
+      "unit": "1/min",
+      "kind": "observable",
+      "description": "Ventricular heart rate from calibrated ECG or pulse",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.cardiac_function.heart_rate_resting_bpm",
+      "name": "heart rate resting bpm",
+      "unit": "1/min",
+      "kind": "observable",
+      "description": "Resting heart rate under defined posture and time",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.cardiac_function.heart_rate_sleep_bpm",
+      "name": "heart rate sleep bpm",
+      "unit": "1/min",
+      "kind": "observable",
+      "description": "Sleeping heart rate under verified sleep stage",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.cardiac_function.heart_rate_peak_work_bpm",
+      "name": "heart rate peak work bpm",
+      "unit": "1/min",
+      "kind": "observable",
+      "description": "Peak during specified workload",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.cardiac_function.heart_rate_variability_rmssd_ms",
+      "name": "heart rate variability rmssd ms",
+      "unit": "ms",
+      "kind": "derived",
+      "description": "Root mean squared successive RR difference",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.cardiac_function.heart_rate_variability_sdnn_ms",
+      "name": "heart rate variability sdnn ms",
+      "unit": "ms",
+      "kind": "derived",
+      "description": "Standard deviation of NN intervals",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.cardiac_function.heart_rate_variability_hf_power_ms2",
+      "name": "heart rate variability hf power ms2",
+      "unit": "ms^2",
+      "kind": "derived",
+      "description": "High frequency RR spectral power",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.cardiac_function.heart_rate_variability_lf_power_ms2",
+      "name": "heart rate variability lf power ms2",
+      "unit": "ms^2",
+      "kind": "derived",
+      "description": "Low frequency RR spectral power",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.cardiac_function.ecg_pr_interval_ms",
+      "name": "ecg pr interval ms",
+      "unit": "ms",
+      "kind": "observable",
+      "description": "PR conduction interval",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.cardiac_function.ecg_qrs_duration_ms",
+      "name": "ecg qrs duration ms",
+      "unit": "ms",
+      "kind": "observable",
+      "description": "QRS complex width",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.cardiac_function.ecg_qt_interval_ms",
+      "name": "ecg qt interval ms",
+      "unit": "ms",
+      "kind": "observable",
+      "description": "QT interval under measurement standard",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.cardiac_function.ecg_qtc_interval_ms",
+      "name": "ecg qtc interval ms",
+      "unit": "ms",
+      "kind": "derived",
+      "description": "Rate-corrected QT using stated formula",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.cardiac_function.ecg_p_axis_deg",
+      "name": "ecg p axis deg",
+      "unit": "deg",
+      "kind": "observable",
+      "description": "Frontal plane P axis",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.cardiac_function.ecg_qrs_axis_deg",
+      "name": "ecg qrs axis deg",
+      "unit": "deg",
+      "kind": "observable",
+      "description": "Electrical QRS axis",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.cardiac_function.ecg_t_axis_deg",
+      "name": "ecg t axis deg",
+      "unit": "deg",
+      "kind": "observable",
+      "description": "Frontal plane repolarization T axis",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.cardiac_function.atrial_arrhythmia_event_count",
+      "name": "atrial arrhythmia event count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Qualified atrial arrhythmia episodes",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.cardiac_function.ventricular_ectopy_count",
+      "name": "ventricular ectopy count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Documented ventricular ectopic beats",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.cardiac_function.cardiac_stroke_volume_ml",
+      "name": "cardiac stroke volume ml",
+      "unit": "mL",
+      "kind": "observable",
+      "description": "Stroke volume from imaging or validated hemodynamics",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.cardiac_function.cardiac_output_l_min",
+      "name": "cardiac output l min",
+      "unit": "L/min",
+      "kind": "observable",
+      "description": "Blood flow pumped per minute",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.cardiac_function.cardiac_index_l_min_m2",
+      "name": "cardiac index l min m2",
+      "unit": "L/(min m^2)",
+      "kind": "derived",
+      "description": "Cardiac output indexed to body surface area",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.cardiac_function.left_ventricle_ejection_fraction",
+      "name": "left ventricle ejection fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "LV ejection fraction by named imaging method",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.cardiac_function.right_ventricle_ejection_fraction",
+      "name": "right ventricle ejection fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "RV ejection fraction",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.cardiac_function.left_ventricle_end_diastolic_volume_ml",
+      "name": "left ventricle end diastolic volume ml",
+      "unit": "mL",
+      "kind": "observable",
+      "description": "LV end-diastolic volume",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.cardiac_function.left_ventricle_end_systolic_volume_ml",
+      "name": "left ventricle end systolic volume ml",
+      "unit": "mL",
+      "kind": "observable",
+      "description": "LV end-systolic volume",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.cardiac_function.right_ventricle_end_diastolic_volume_ml",
+      "name": "right ventricle end diastolic volume ml",
+      "unit": "mL",
+      "kind": "observable",
+      "description": "RV end-diastolic volume",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.cardiac_function.left_ventricle_mass_g",
+      "name": "left ventricle mass g",
+      "unit": "g",
+      "kind": "observable",
+      "description": "Left ventricle myocardial mass",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.cardiac_function.left_atrial_volume_ml",
+      "name": "left atrial volume ml",
+      "unit": "mL",
+      "kind": "observable",
+      "description": "Left atrial chamber volume",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.cardiac_function.ejection_time_ms",
+      "name": "ejection time ms",
+      "unit": "ms",
+      "kind": "observable",
+      "description": "Systolic ventricular ejection duration",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.cardiac_function.myocardial_longitudinal_strain_fraction",
+      "name": "myocardial longitudinal strain fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "LV longitudinal strain in echocardiographic convention",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.cardiac_function.cardiac_contractility_index",
+      "name": "cardiac contractility index",
+      "unit": "1",
+      "kind": "latent",
+      "description": "Specified model-defined contractility index",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.cardiac_function.cardiac_preload_pressure_pa",
+      "name": "cardiac preload pressure pa",
+      "unit": "Pa",
+      "kind": "latent",
+      "description": "Preload proxy not directly measurable without invasive measurement",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.cardiac_function.cardiac_afterload_pa",
+      "name": "cardiac afterload pa",
+      "unit": "Pa",
+      "kind": "derived",
+      "description": "Effective arterial load approximation in model",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.cardiac_function.cardiac_oxygen_consumption_mol_s",
+      "name": "cardiac oxygen consumption mol s",
+      "unit": "mol/s",
+      "kind": "latent",
+      "description": "Heart tissue oxygen demand under validated model",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.cardiac_function.myocardial_perfusion_ml_min_g",
+      "name": "myocardial perfusion ml min g",
+      "unit": "mL/(min g)",
+      "kind": "observable",
+      "description": "Myocardial tissue blood perfusion in imaging",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.cardiac_function.cardiac_troponin_ng_l",
+      "name": "cardiac troponin ng l",
+      "unit": "ng/L",
+      "kind": "observable",
+      "description": "Serum cardiac troponin, assay-specific",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.cardiac_function.natriuretic_peptide_pg_ml",
+      "name": "natriuretic peptide pg ml",
+      "unit": "pg/mL",
+      "kind": "observable",
+      "description": "BNP/NT-proBNP with assay clearly specified",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.cardiac_function.cardiac_rhythm_class",
+      "name": "cardiac rhythm class",
+      "unit": "",
+      "kind": "clinical_assessment",
+      "description": "ECG qualified rhythm diagnosis",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.cardiac_function.heart_rate_recovery_bpm",
+      "name": "heart rate recovery bpm",
+      "unit": "1/min",
+      "kind": "derived",
+      "description": "Recovery after set exercise interval",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    }
+  ]
+}

@@ -1,0 +1,429 @@
+{
+  "schema_version": "1.0.0",
+  "group": "space_exposure",
+  "domain": "sensory_physical_environment",
+  "description": "Light, noise, vibration, acceleration and thermal comfort",
+  "field_count": 26,
+  "sources": [
+    "NASA_HIDH",
+    "NASA_STD_3001_V2_2026"
+  ],
+  "fields": [
+    {
+      "id": "human.sensory_physical_environment.ambient_noise_dba",
+      "name": "ambient noise dba",
+      "unit": "dBA",
+      "kind": "scenario_input",
+      "description": "Equivalent ambient noise with averaging period",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_STD_3001_V2_2026"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.sensory_physical_environment.ambient_peak_impulse_noise_db",
+      "name": "ambient peak impulse noise db",
+      "unit": "dB",
+      "kind": "scenario_input",
+      "description": "Maximum short-duration impulsive noise",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_STD_3001_V2_2026"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.sensory_physical_environment.noise_exposure_duration_s",
+      "name": "noise exposure duration s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Time in known sound-pressure environment",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_STD_3001_V2_2026"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.sensory_physical_environment.noise_speech_interference_score",
+      "name": "noise speech interference score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Perceived speech clarity under noise",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_STD_3001_V2_2026"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.sensory_physical_environment.vibration_acceleration_rms_m_s2",
+      "name": "vibration acceleration rms m s2",
+      "unit": "m/s^2",
+      "kind": "scenario_input",
+      "description": "Whole-body RMS vibration",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_STD_3001_V2_2026"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.sensory_physical_environment.vibration_peak_frequency_hz",
+      "name": "vibration peak frequency hz",
+      "unit": "Hz",
+      "kind": "scenario_input",
+      "description": "Dominant acceleration frequency",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_STD_3001_V2_2026"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.sensory_physical_environment.vibration_exposure_duration_s",
+      "name": "vibration exposure duration s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Duration at specified spectrum and posture",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_STD_3001_V2_2026"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.sensory_physical_environment.launch_vibration_dose_index",
+      "name": "launch vibration dose index",
+      "unit": "index",
+      "kind": "derived",
+      "description": "Frequency-weighted vibration exposure with method",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_STD_3001_V2_2026"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.sensory_physical_environment.ambient_photopic_illuminance_lux",
+      "name": "ambient photopic illuminance lux",
+      "unit": "lux",
+      "kind": "scenario_input",
+      "description": "Illuminance at eye or task surface",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_STD_3001_V2_2026"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.sensory_physical_environment.ambient_correlated_color_temperature_k",
+      "name": "ambient correlated color temperature k",
+      "unit": "K",
+      "kind": "scenario_input",
+      "description": "Light spectral appearance",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_STD_3001_V2_2026"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.sensory_physical_environment.ambient_melanopic_equivalent_illuminance_lux",
+      "name": "ambient melanopic equivalent illuminance lux",
+      "unit": "lux",
+      "kind": "derived",
+      "description": "Melanopic daylight equivalent illuminance when spectrum is known",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_STD_3001_V2_2026"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.sensory_physical_environment.light_glare_index",
+      "name": "light glare index",
+      "unit": "index",
+      "kind": "derived",
+      "description": "Metric for disability/discomfort glare",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_STD_3001_V2_2026"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.sensory_physical_environment.dark_adaptation_time_s",
+      "name": "dark adaptation time s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Time to specified photopic sensitivity threshold",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_STD_3001_V2_2026"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.sensory_physical_environment.ambient_acoustic_reverberation_s",
+      "name": "ambient acoustic reverberation s",
+      "unit": "s",
+      "kind": "scenario_input",
+      "description": "Interior reverberation decay time",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_STD_3001_V2_2026"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.sensory_physical_environment.ambient_relative_humidity_fraction",
+      "name": "ambient relative humidity fraction",
+      "unit": "1",
+      "kind": "scenario_input",
+      "description": "Relative humidity around crew",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_STD_3001_V2_2026"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.sensory_physical_environment.ambient_temperature_k",
+      "name": "ambient temperature k",
+      "unit": "K",
+      "kind": "scenario_input",
+      "description": "Ambient temperature in inhabited space",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_STD_3001_V2_2026"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.sensory_physical_environment.ambient_air_speed_m_s",
+      "name": "ambient air speed m s",
+      "unit": "m/s",
+      "kind": "scenario_input",
+      "description": "Air speed around crew",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_STD_3001_V2_2026"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.sensory_physical_environment.ambient_radiant_temperature_k",
+      "name": "ambient radiant temperature k",
+      "unit": "K",
+      "kind": "derived",
+      "description": "Mean radiant temperature in surrounding geometry",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_STD_3001_V2_2026"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.sensory_physical_environment.ambient_thermal_comfort_score",
+      "name": "ambient thermal comfort score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Subjective thermal comfort report",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_STD_3001_V2_2026"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.sensory_physical_environment.airflow_sensory_discomfort_score",
+      "name": "airflow sensory discomfort score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Self-reported draft discomfort",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_STD_3001_V2_2026"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.sensory_physical_environment.display_flicker_frequency_hz",
+      "name": "display flicker frequency hz",
+      "unit": "Hz",
+      "kind": "scenario_input",
+      "description": "Electronic display flicker frequency",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_STD_3001_V2_2026"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.sensory_physical_environment.display_luminance_cd_m2",
+      "name": "display luminance cd m2",
+      "unit": "cd/m^2",
+      "kind": "scenario_input",
+      "description": "Luminance of HUD/display during task",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_STD_3001_V2_2026"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.sensory_physical_environment.display_legibility_error_fraction",
+      "name": "display legibility error fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Misread characters or signals in standardized task",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_STD_3001_V2_2026"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.sensory_physical_environment.extravehicular_visual_scene_contrast",
+      "name": "extravehicular visual scene contrast",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Contrasts between target and background under scenario",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_STD_3001_V2_2026"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.sensory_physical_environment.sensory_stimulus_unexpected_event_count",
+      "name": "sensory stimulus unexpected event count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Sudden distracting visual or auditory events",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_STD_3001_V2_2026"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.sensory_physical_environment.environmental_exposure_cumulative_hours",
+      "name": "environmental exposure cumulative hours",
+      "unit": "h",
+      "kind": "derived",
+      "description": "Total exposure within specified environmental category",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_STD_3001_V2_2026"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    }
+  ]
+}

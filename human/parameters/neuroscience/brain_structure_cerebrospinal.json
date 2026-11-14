@@ -1,0 +1,429 @@
+{
+  "schema_version": "1.0.0",
+  "group": "neuroscience",
+  "domain": "brain_structure_cerebrospinal",
+  "description": "Brain and cerebrospinal fluid anatomy, neurovascular and brain function",
+  "field_count": 26,
+  "sources": [
+    "NASA_SANS",
+    "NASA_FUNDAMENTALS"
+  ],
+  "fields": [
+    {
+      "id": "human.brain_structure_cerebrospinal.brain_total_gray_matter_volume_ml",
+      "name": "brain total gray matter volume ml",
+      "unit": "mL",
+      "kind": "observable",
+      "description": "MRI total cortical/subcortical gray matter volume",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_SANS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.brain_structure_cerebrospinal.brain_white_matter_volume_ml",
+      "name": "brain white matter volume ml",
+      "unit": "mL",
+      "kind": "observable",
+      "description": "MRI total white matter volume",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_SANS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.brain_structure_cerebrospinal.brain_ventricle_volume_ml",
+      "name": "brain ventricle volume ml",
+      "unit": "mL",
+      "kind": "observable",
+      "description": "Lateral and other ventricular volumes",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_SANS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.brain_structure_cerebrospinal.brain_cerebellar_volume_ml",
+      "name": "brain cerebellar volume ml",
+      "unit": "mL",
+      "kind": "observable",
+      "description": "Cerebellar structural volume",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_SANS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.brain_structure_cerebrospinal.brain_hippocampus_volume_ml",
+      "name": "brain hippocampus volume ml",
+      "unit": "mL",
+      "kind": "observable",
+      "description": "Hippocampal volume by side",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_SANS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.brain_structure_cerebrospinal.brain_prefrontal_volume_ml",
+      "name": "brain prefrontal volume ml",
+      "unit": "mL",
+      "kind": "observable",
+      "description": "Prefrontal region volume from atlas",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_SANS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.brain_structure_cerebrospinal.brain_cortical_thickness_m",
+      "name": "brain cortical thickness m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Cortical thickness, area indexed",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_SANS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.brain_structure_cerebrospinal.brain_white_matter_fa",
+      "name": "brain white matter fa",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Diffusion tensor fractional anisotropy",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_SANS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.brain_structure_cerebrospinal.brain_mean_diffusivity_m2_s",
+      "name": "brain mean diffusivity m2 s",
+      "unit": "m^2/s",
+      "kind": "observable",
+      "description": "Diffusion MRI mean diffusivity",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_SANS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.brain_structure_cerebrospinal.brain_resting_bold_fluctuation_fraction",
+      "name": "brain resting bold fluctuation fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "BOLD fluctuation amplitude under named preprocessing",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_SANS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.brain_structure_cerebrospinal.brain_connectivity_strength_index",
+      "name": "brain connectivity strength index",
+      "unit": "index",
+      "kind": "derived",
+      "description": "Named graph/matrix connectome metric",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_SANS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.brain_structure_cerebrospinal.brain_eeg_alpha_power_uv2",
+      "name": "brain eeg alpha power uv2",
+      "unit": "uV^2",
+      "kind": "observable",
+      "description": "EEG alpha power in defined band and window",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_SANS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.brain_structure_cerebrospinal.brain_eeg_beta_power_uv2",
+      "name": "brain eeg beta power uv2",
+      "unit": "uV^2",
+      "kind": "observable",
+      "description": "EEG beta spectral power",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_SANS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.brain_structure_cerebrospinal.brain_eeg_theta_power_uv2",
+      "name": "brain eeg theta power uv2",
+      "unit": "uV^2",
+      "kind": "observable",
+      "description": "EEG theta spectral power",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_SANS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.brain_structure_cerebrospinal.brain_eeg_delta_power_uv2",
+      "name": "brain eeg delta power uv2",
+      "unit": "uV^2",
+      "kind": "observable",
+      "description": "EEG delta spectral power",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_SANS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.brain_structure_cerebrospinal.brain_evoked_p300_latency_ms",
+      "name": "brain evoked p300 latency ms",
+      "unit": "ms",
+      "kind": "observable",
+      "description": "Event related EEG potential latency",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_SANS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.brain_structure_cerebrospinal.brain_evoked_p300_amplitude_uv",
+      "name": "brain evoked p300 amplitude uv",
+      "unit": "uV",
+      "kind": "observable",
+      "description": "Event related EEG potential amplitude",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_SANS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.brain_structure_cerebrospinal.brain_cerebral_perfusion_ml_100g_min",
+      "name": "brain cerebral perfusion ml 100g min",
+      "unit": "mL/(100g min)",
+      "kind": "observable",
+      "description": "MRI or tracer regional brain blood flow",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_SANS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.brain_structure_cerebrospinal.brain_csf_volume_ml",
+      "name": "brain csf volume ml",
+      "unit": "mL",
+      "kind": "observable",
+      "description": "Imaged cerebrospinal fluid volume",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_SANS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.brain_structure_cerebrospinal.brain_csf_flow_ml_min",
+      "name": "brain csf flow ml min",
+      "unit": "mL/min",
+      "kind": "observable",
+      "description": "CSF flow from suitable MR measurements",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_SANS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.brain_structure_cerebrospinal.brain_intracranial_pressure_pa",
+      "name": "brain intracranial pressure pa",
+      "unit": "Pa",
+      "kind": "observable",
+      "description": "Intracranial pressure invasive or validated technique only",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_SANS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.brain_structure_cerebrospinal.brain_headward_shift_m",
+      "name": "brain headward shift m",
+      "unit": "m",
+      "kind": "derived",
+      "description": "Longitudinal displacement of anatomical feature",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_SANS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.brain_structure_cerebrospinal.brain_ventricular_change_fraction",
+      "name": "brain ventricular change fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Change of ventricular volume relative to baseline",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_SANS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.brain_structure_cerebrospinal.brain_lesion_count",
+      "name": "brain lesion count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Clinical neuroimaging lesion count",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_SANS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.brain_structure_cerebrospinal.brain_neurodegenerative_biomarker_level",
+      "name": "brain neurodegenerative biomarker level",
+      "unit": null,
+      "kind": "observable",
+      "description": "Biomarker assay needs specific field/unit before use",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_SANS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.brain_structure_cerebrospinal.brain_neurocognitive_model_status",
+      "name": "brain neurocognitive model status",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Validated environment and limitations of any CNS prediction",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_SANS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    }
+  ]
+}

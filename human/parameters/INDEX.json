@@ -1,0 +1,334 @@
+{
+  "schema_version": "1.0.0",
+  "subsystem": "LYCORIS_HUMAN_SYSTEMS",
+  "status": "candidate_definitions_unbound",
+  "declared_parameter_count": 1691,
+  "domain_count": 56,
+  "group_count": 6,
+  "groups": [
+    {
+      "group": "anatomy",
+      "count": 350,
+      "domains": [
+        {
+          "name": "anthropometry",
+          "count": 38,
+          "path": "anatomy/anthropometry.json"
+        },
+        {
+          "name": "body_composition",
+          "count": 30,
+          "path": "anatomy/body_composition.json"
+        },
+        {
+          "name": "joint_connective",
+          "count": 28,
+          "path": "anatomy/joint_connective.json"
+        },
+        {
+          "name": "locomotion_gait",
+          "count": 37,
+          "path": "anatomy/locomotion_gait.json"
+        },
+        {
+          "name": "muscular_system",
+          "count": 35,
+          "path": "anatomy/muscular_system.json"
+        },
+        {
+          "name": "oral_dental",
+          "count": 30,
+          "path": "anatomy/oral_dental.json"
+        },
+        {
+          "name": "pain_injury",
+          "count": 30,
+          "path": "anatomy/pain_injury.json"
+        },
+        {
+          "name": "physical_fitness",
+          "count": 34,
+          "path": "anatomy/physical_fitness.json"
+        },
+        {
+          "name": "skeletal_bone",
+          "count": 30,
+          "path": "anatomy/skeletal_bone.json"
+        },
+        {
+          "name": "skin_barrier",
+          "count": 29,
+          "path": "anatomy/skin_barrier.json"
+        },
+        {
+          "name": "strength_dexterity",
+          "count": 29,
+          "path": "anatomy/strength_dexterity.json"
+        }
+      ]
+    },
+    {
+      "group": "neuroscience",
+      "count": 188,
+      "domains": [
+        {
+          "name": "brain_structure_cerebrospinal",
+          "count": 26,
+          "path": "neuroscience/brain_structure_cerebrospinal.json"
+        },
+        {
+          "name": "cognitive_function",
+          "count": 36,
+          "path": "neuroscience/cognitive_function.json"
+        },
+        {
+          "name": "motor_neurology",
+          "count": 30,
+          "path": "neuroscience/motor_neurology.json"
+        },
+        {
+          "name": "sensory_perception",
+          "count": 29,
+          "path": "neuroscience/sensory_perception.json"
+        },
+        {
+          "name": "vestibular_balance",
+          "count": 30,
+          "path": "neuroscience/vestibular_balance.json"
+        },
+        {
+          "name": "vision_ocular",
+          "count": 37,
+          "path": "neuroscience/vision_ocular.json"
+        }
+      ]
+    },
+    {
+      "group": "operations",
+      "count": 155,
+      "domains": [
+        {
+          "name": "functional_disability",
+          "count": 25,
+          "path": "operations/functional_disability.json"
+        },
+        {
+          "name": "medical_events",
+          "count": 26,
+          "path": "operations/medical_events.json"
+        },
+        {
+          "name": "medical_treatment_pharmacology",
+          "count": 27,
+          "path": "operations/medical_treatment_pharmacology.json"
+        },
+        {
+          "name": "rehabilitation_recovery",
+          "count": 25,
+          "path": "operations/rehabilitation_recovery.json"
+        },
+        {
+          "name": "task_performance",
+          "count": 26,
+          "path": "operations/task_performance.json"
+        },
+        {
+          "name": "workload_fatigue",
+          "count": 26,
+          "path": "operations/workload_fatigue.json"
+        }
+      ]
+    },
+    {
+      "group": "physiology",
+      "count": 577,
+      "domains": [
+        {
+          "name": "cardiac_function",
+          "count": 38,
+          "path": "physiology/cardiac_function.json"
+        },
+        {
+          "name": "coagulation_hemostasis",
+          "count": 26,
+          "path": "physiology/coagulation_hemostasis.json"
+        },
+        {
+          "name": "digestive_gastrointestinal",
+          "count": 30,
+          "path": "physiology/digestive_gastrointestinal.json"
+        },
+        {
+          "name": "endocrine_regulation",
+          "count": 35,
+          "path": "physiology/endocrine_regulation.json"
+        },
+        {
+          "name": "energy_substrates",
+          "count": 35,
+          "path": "physiology/energy_substrates.json"
+        },
+        {
+          "name": "fluid_electrolyte",
+          "count": 34,
+          "path": "physiology/fluid_electrolyte.json"
+        },
+        {
+          "name": "gas_exchange",
+          "count": 33,
+          "path": "physiology/gas_exchange.json"
+        },
+        {
+          "name": "gut_oral_microbiome",
+          "count": 30,
+          "path": "physiology/gut_oral_microbiome.json"
+        },
+        {
+          "name": "hematology_erythropoiesis",
+          "count": 34,
+          "path": "physiology/hematology_erythropoiesis.json"
+        },
+        {
+          "name": "immune_cellular",
+          "count": 30,
+          "path": "physiology/immune_cellular.json"
+        },
+        {
+          "name": "inflammatory_signaling",
+          "count": 30,
+          "path": "physiology/inflammatory_signaling.json"
+        },
+        {
+          "name": "liver_pancreas",
+          "count": 30,
+          "path": "physiology/liver_pancreas.json"
+        },
+        {
+          "name": "nutrition_micronutrients",
+          "count": 36,
+          "path": "physiology/nutrition_micronutrients.json"
+        },
+        {
+          "name": "renal_urinary",
+          "count": 33,
+          "path": "physiology/renal_urinary.json"
+        },
+        {
+          "name": "reproductive_health",
+          "count": 25,
+          "path": "physiology/reproductive_health.json"
+        },
+        {
+          "name": "respiratory_mechanics",
+          "count": 34,
+          "path": "physiology/respiratory_mechanics.json"
+        },
+        {
+          "name": "thermoregulation",
+          "count": 29,
+          "path": "physiology/thermoregulation.json"
+        },
+        {
+          "name": "vascular_autonomic",
+          "count": 35,
+          "path": "physiology/vascular_autonomic.json"
+        }
+      ]
+    },
+    {
+      "group": "psychology",
+      "count": 187,
+      "domains": [
+        {
+          "name": "affect_emotional_health",
+          "count": 31,
+          "path": "psychology/affect_emotional_health.json"
+        },
+        {
+          "name": "crew_team_dynamics",
+          "count": 30,
+          "path": "psychology/crew_team_dynamics.json"
+        },
+        {
+          "name": "decision_communication",
+          "count": 30,
+          "path": "psychology/decision_communication.json"
+        },
+        {
+          "name": "motivation_behavior",
+          "count": 30,
+          "path": "psychology/motivation_behavior.json"
+        },
+        {
+          "name": "sleep_circadian",
+          "count": 36,
+          "path": "psychology/sleep_circadian.json"
+        },
+        {
+          "name": "social_isolation",
+          "count": 30,
+          "path": "psychology/social_isolation.json"
+        }
+      ]
+    },
+    {
+      "group": "space_exposure",
+      "count": 234,
+      "domains": [
+        {
+          "name": "dust_toxicology",
+          "count": 26,
+          "path": "space_exposure/dust_toxicology.json"
+        },
+        {
+          "name": "gravity_transition",
+          "count": 27,
+          "path": "space_exposure/gravity_transition.json"
+        },
+        {
+          "name": "isolation_habitat",
+          "count": 26,
+          "path": "space_exposure/isolation_habitat.json"
+        },
+        {
+          "name": "long_duration_adaptation",
+          "count": 26,
+          "path": "space_exposure/long_duration_adaptation.json"
+        },
+        {
+          "name": "mars_environmental_experience",
+          "count": 26,
+          "path": "space_exposure/mars_environmental_experience.json"
+        },
+        {
+          "name": "medical_uncertainty",
+          "count": 25,
+          "path": "space_exposure/medical_uncertainty.json"
+        },
+        {
+          "name": "radiation_biology",
+          "count": 26,
+          "path": "space_exposure/radiation_biology.json"
+        },
+        {
+          "name": "respiratory_habitat",
+          "count": 26,
+          "path": "space_exposure/respiratory_habitat.json"
+        },
+        {
+          "name": "sensory_physical_environment",
+          "count": 26,
+          "path": "space_exposure/sensory_physical_environment.json"
+        }
+      ]
+    }
+  ],
+  "reference_scope": "Human evidence from Earth, ISS, Apollo lunar operations, CHAPEA and Mars500 analogs. No direct human Mars surface measurements.",
+  "dataset_observation_count": 0,
+  "calibrated_mars_human_model_count": 0,
+  "measurement_boundary": "Clinical, laboratory and imaging measures cannot be assumed available from EVA suit telemetry.",
+  "suit_interface": "../models/SUIT_HANDOFF_CONTRACT.md",
+  "priority": "PRIORITY.md",
+  "schema": "../REGISTRY_SCHEMA.md",
+  "research_caveat": "Catalog scale does not imply individually validated models or justified causal coefficients."
+}

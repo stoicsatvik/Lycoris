@@ -1,0 +1,605 @@
+{
+  "schema_version": "1.0.0",
+  "group": "neuroscience",
+  "domain": "vision_ocular",
+  "description": "Visual acuity, retina, optic nerve, SANS and ocular physiology",
+  "field_count": 37,
+  "sources": [
+    "NASA_SANS",
+    "NASA_HRP_RISKS"
+  ],
+  "fields": [
+    {
+      "id": "human.vision_ocular.visual_acuity_logmar",
+      "name": "visual acuity logmar",
+      "unit": "logMAR",
+      "kind": "observable",
+      "description": "Monocular or binocular acuity under standardized optotype distance",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_SANS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.vision_ocular.visual_acuity_near_logmar",
+      "name": "visual acuity near logmar",
+      "unit": "logMAR",
+      "kind": "observable",
+      "description": "Near visual acuity with standardized chart",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_SANS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.vision_ocular.refractive_sphere_diopter",
+      "name": "refractive sphere diopter",
+      "unit": "D",
+      "kind": "observable",
+      "description": "Spherical refractive error, eye indexed",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_SANS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.vision_ocular.refractive_cylinder_diopter",
+      "name": "refractive cylinder diopter",
+      "unit": "D",
+      "kind": "observable",
+      "description": "Astigmatic cylinder optical power",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_SANS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.vision_ocular.refractive_axis_deg",
+      "name": "refractive axis deg",
+      "unit": "deg",
+      "kind": "observable",
+      "description": "Astigmatism cylinder axis",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_SANS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.vision_ocular.intraocular_pressure_pa",
+      "name": "intraocular pressure pa",
+      "unit": "Pa",
+      "kind": "observable",
+      "description": "Eye pressure measured by tonometry",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_SANS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.vision_ocular.ocular_axial_length_m",
+      "name": "ocular axial length m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Front-to-back globe length",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_SANS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.vision_ocular.corneal_curvature_diopter",
+      "name": "corneal curvature diopter",
+      "unit": "D",
+      "kind": "observable",
+      "description": "Corneal keratometric curvature",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_SANS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.vision_ocular.corneal_thickness_m",
+      "name": "corneal thickness m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Central corneal pachymetry",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_SANS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.vision_ocular.anterior_chamber_depth_m",
+      "name": "anterior chamber depth m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Anterior eye chamber depth",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_SANS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.vision_ocular.pupil_diameter_m",
+      "name": "pupil diameter m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Pupil size at stated luminance",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_SANS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.vision_ocular.pupil_light_reflex_latency_s",
+      "name": "pupil light reflex latency s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Light-evoked pupil reaction delay",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_SANS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.vision_ocular.pupil_constriction_fraction",
+      "name": "pupil constriction fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Light response constriction ratio",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_SANS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.vision_ocular.contrast_sensitivity_log_units",
+      "name": "contrast sensitivity log units",
+      "unit": "log_units",
+      "kind": "observable",
+      "description": "Contrast sensitivity at stated spatial frequencies",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_SANS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.vision_ocular.color_discrimination_score",
+      "name": "color discrimination score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Named validated color vision task result",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_SANS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.vision_ocular.visual_field_mean_deviation_db",
+      "name": "visual field mean deviation db",
+      "unit": "dB",
+      "kind": "observable",
+      "description": "Perimetry mean deviation",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_SANS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.vision_ocular.visual_field_pattern_std_db",
+      "name": "visual field pattern std db",
+      "unit": "dB",
+      "kind": "observable",
+      "description": "Perimetric localized field irregularity",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_SANS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.vision_ocular.retinal_nerve_fiber_thickness_m",
+      "name": "retinal nerve fiber thickness m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "OCT retinal nerve fiber layer thickness",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_SANS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.vision_ocular.ganglion_cell_complex_thickness_m",
+      "name": "ganglion cell complex thickness m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "OCT ganglion-cell inner plexiform layer",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_SANS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.vision_ocular.choroidal_thickness_m",
+      "name": "choroidal thickness m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "OCT choroidal layer thickness",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_SANS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.vision_ocular.macular_volume_m3",
+      "name": "macular volume m3",
+      "unit": "m^3",
+      "kind": "observable",
+      "description": "OCT measured macular tissue volume",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_SANS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.vision_ocular.optic_disc_edema_grade",
+      "name": "optic disc edema grade",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Clinical optic nerve swelling grade",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_SANS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.vision_ocular.optic_nerve_sheath_diameter_m",
+      "name": "optic nerve sheath diameter m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Ultrasound/MRI outer sheath diameter",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_SANS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.vision_ocular.ocular_globe_flattening_status",
+      "name": "ocular globe flattening status",
+      "unit": "",
+      "kind": "clinical_assessment",
+      "description": "MRI structural globe posterior flattening",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_SANS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.vision_ocular.retinal_choroidal_fold_count",
+      "name": "retinal choroidal fold count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "OCT documented posterior globe folds",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_SANS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.vision_ocular.optic_disc_volume_m3",
+      "name": "optic disc volume m3",
+      "unit": "m^3",
+      "kind": "observable",
+      "description": "OCT optic nerve head geometry",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_SANS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.vision_ocular.ocular_perfusion_pressure_pa",
+      "name": "ocular perfusion pressure pa",
+      "unit": "Pa",
+      "kind": "derived",
+      "description": "Estimated ocular perfusion driving pressure",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_SANS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.vision_ocular.ocular_blood_flow_ml_min",
+      "name": "ocular blood flow ml min",
+      "unit": "mL/min",
+      "kind": "observable",
+      "description": "Retinal/choroidal blood perfusion by qualified technique",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_SANS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.vision_ocular.visual_tracking_error_deg",
+      "name": "visual tracking error deg",
+      "unit": "deg",
+      "kind": "observable",
+      "description": "Gaze target tracking error",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_SANS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.vision_ocular.saccade_peak_velocity_deg_s",
+      "name": "saccade peak velocity deg s",
+      "unit": "deg/s",
+      "kind": "observable",
+      "description": "Rapid eye movement angular velocity",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_SANS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.vision_ocular.saccade_latency_s",
+      "name": "saccade latency s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Saccadic response onset delay",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_SANS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.vision_ocular.gaze_stabilization_error_deg",
+      "name": "gaze stabilization error deg",
+      "unit": "deg",
+      "kind": "observable",
+      "description": "Failure to maintain target gaze during motion",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_SANS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.vision_ocular.stereoacuity_arcsec",
+      "name": "stereoacuity arcsec",
+      "unit": "arcsec",
+      "kind": "observable",
+      "description": "Binocular stereo depth discrimination threshold",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_SANS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.vision_ocular.photophobia_symptom_score",
+      "name": "photophobia symptom score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Light sensitivity self-report on named scale",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_SANS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.vision_ocular.ocular_dryness_score",
+      "name": "ocular dryness score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Named ocular dryness inventory",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_SANS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.vision_ocular.ocular_accommodation_diopter",
+      "name": "ocular accommodation diopter",
+      "unit": "D",
+      "kind": "observable",
+      "description": "Visual focal accommodation range",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_SANS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.vision_ocular.visual_function_change_baseline",
+      "name": "visual function change baseline",
+      "unit": "score",
+      "kind": "derived",
+      "description": "Outcome change on specified validated vision scale",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_SANS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    }
+  ]
+}

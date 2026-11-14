@@ -1,0 +1,557 @@
+{
+  "schema_version": "1.0.0",
+  "group": "physiology",
+  "domain": "respiratory_mechanics",
+  "description": "Breathing mechanics, lung volumes and ventilation",
+  "field_count": 34,
+  "sources": [
+    "NASA_HRP_RISKS",
+    "NASA_FUNDAMENTALS"
+  ],
+  "fields": [
+    {
+      "id": "human.respiratory_mechanics.respiratory_rate_hz",
+      "name": "respiratory rate hz",
+      "unit": "Hz",
+      "kind": "observable",
+      "description": "Breathing cycles per second",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.respiratory_mechanics.tidal_volume_l",
+      "name": "tidal volume l",
+      "unit": "L",
+      "kind": "observable",
+      "description": "Air moved per normal breath at specified conditions",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.respiratory_mechanics.minute_ventilation_l_min",
+      "name": "minute ventilation l min",
+      "unit": "L/min",
+      "kind": "observable",
+      "description": "Total tidal gas flow per minute",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.respiratory_mechanics.alveolar_ventilation_l_min",
+      "name": "alveolar ventilation l min",
+      "unit": "L/min",
+      "kind": "derived",
+      "description": "Ventilation reaching gas exchange alveoli",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.respiratory_mechanics.dead_space_volume_ml",
+      "name": "dead space volume ml",
+      "unit": "mL",
+      "kind": "derived",
+      "description": "Anatomical and functional dead space volume",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.respiratory_mechanics.dead_space_fraction",
+      "name": "dead space fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Dead space divided by tidal volume",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.respiratory_mechanics.vital_capacity_l",
+      "name": "vital capacity l",
+      "unit": "L",
+      "kind": "observable",
+      "description": "Maximum exhalable volume after full inspiration",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.respiratory_mechanics.forced_vital_capacity_l",
+      "name": "forced vital capacity l",
+      "unit": "L",
+      "kind": "observable",
+      "description": "Forced vital capacity",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.respiratory_mechanics.forced_expiratory_volume_1s_l",
+      "name": "forced expiratory volume 1s l",
+      "unit": "L",
+      "kind": "observable",
+      "description": "One-second forced exhaled volume",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.respiratory_mechanics.fev1_fvc_ratio",
+      "name": "fev1 fvc ratio",
+      "unit": "1",
+      "kind": "derived",
+      "description": "One-second forced volume to FVC",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.respiratory_mechanics.total_lung_capacity_l",
+      "name": "total lung capacity l",
+      "unit": "L",
+      "kind": "observable",
+      "description": "Total maximum pulmonary gas volume",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.respiratory_mechanics.residual_volume_l",
+      "name": "residual volume l",
+      "unit": "L",
+      "kind": "observable",
+      "description": "Volume remaining after maximum expiration",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.respiratory_mechanics.functional_residual_capacity_l",
+      "name": "functional residual capacity l",
+      "unit": "L",
+      "kind": "observable",
+      "description": "Volume at end of passive exhalation",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.respiratory_mechanics.inspiratory_capacity_l",
+      "name": "inspiratory capacity l",
+      "unit": "L",
+      "kind": "observable",
+      "description": "Maximum inspired volume from end-tidal position",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.respiratory_mechanics.expiratory_reserve_volume_l",
+      "name": "expiratory reserve volume l",
+      "unit": "L",
+      "kind": "observable",
+      "description": "Extra exhaled volume after resting exhalation",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.respiratory_mechanics.inspiratory_reserve_volume_l",
+      "name": "inspiratory reserve volume l",
+      "unit": "L",
+      "kind": "observable",
+      "description": "Additional inspiratory volume over tidal inspiration",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.respiratory_mechanics.peak_expiratory_flow_l_s",
+      "name": "peak expiratory flow l s",
+      "unit": "L/s",
+      "kind": "observable",
+      "description": "Peak forced expiratory flow",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.respiratory_mechanics.maximum_voluntary_ventilation_l_min",
+      "name": "maximum voluntary ventilation l min",
+      "unit": "L/min",
+      "kind": "observable",
+      "description": "Maximum sustainable ventilation during standardized test",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.respiratory_mechanics.respiratory_muscle_max_inspiratory_pressure_pa",
+      "name": "respiratory muscle max inspiratory pressure pa",
+      "unit": "Pa",
+      "kind": "observable",
+      "description": "Maximum inspiratory pressure",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.respiratory_mechanics.respiratory_muscle_max_expiratory_pressure_pa",
+      "name": "respiratory muscle max expiratory pressure pa",
+      "unit": "Pa",
+      "kind": "observable",
+      "description": "Maximum expiratory pressure",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.respiratory_mechanics.airway_resistance_pa_s_l",
+      "name": "airway resistance pa s l",
+      "unit": "Pa s/L",
+      "kind": "derived",
+      "description": "Pulmonary airway resistance",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.respiratory_mechanics.lung_compliance_l_pa",
+      "name": "lung compliance l pa",
+      "unit": "L/Pa",
+      "kind": "derived",
+      "description": "Lung volume change per pressure change",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.respiratory_mechanics.chest_wall_compliance_l_pa",
+      "name": "chest wall compliance l pa",
+      "unit": "L/Pa",
+      "kind": "derived",
+      "description": "Thoracic compliance under method",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.respiratory_mechanics.breathing_work_j",
+      "name": "breathing work j",
+      "unit": "J",
+      "kind": "derived",
+      "description": "Mechanical work of ventilation during interval",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.respiratory_mechanics.breathing_power_w",
+      "name": "breathing power w",
+      "unit": "W",
+      "kind": "derived",
+      "description": "Work of breathing per time",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.respiratory_mechanics.inspiratory_time_s",
+      "name": "inspiratory time s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Length of inspiratory phase",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.respiratory_mechanics.expiratory_time_s",
+      "name": "expiratory time s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Length of expiratory phase",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.respiratory_mechanics.breathing_duty_cycle_fraction",
+      "name": "breathing duty cycle fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Inspiratory time fraction of breath cycle",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.respiratory_mechanics.respiratory_flow_variability_fraction",
+      "name": "respiratory flow variability fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Breathing flow variation on named scale",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.respiratory_mechanics.cough_peak_flow_l_s",
+      "name": "cough peak flow l s",
+      "unit": "L/s",
+      "kind": "observable",
+      "description": "Peak expiratory airflow in cough",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.respiratory_mechanics.apnea_event_count",
+      "name": "apnea event count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Recorded absent-breath episodes under detection method",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.respiratory_mechanics.respiratory_dyspnea_score",
+      "name": "respiratory dyspnea score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Subjective breathlessness on named scale",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.respiratory_mechanics.airway_obstruction_status",
+      "name": "airway obstruction status",
+      "unit": "",
+      "kind": "clinical_assessment",
+      "description": "Clinical pulmonary obstruction classification",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.respiratory_mechanics.breath_sound_anomaly_code",
+      "name": "breath sound anomaly code",
+      "unit": "",
+      "kind": "clinical_assessment",
+      "description": "Qualified wheeze/crackle and auscultation code",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    }
+  ]
+}

@@ -1,0 +1,573 @@
+{
+  "schema_version": "1.0.0",
+  "group": "physiology",
+  "domain": "endocrine_regulation",
+  "description": "Hormonal control and endocrine adaptation",
+  "field_count": 35,
+  "sources": [
+    "NASA_HRP_HUMAN_BODY",
+    "NASA_HRP_RISKS"
+  ],
+  "fields": [
+    {
+      "id": "human.endocrine_regulation.cortisol_am_nmol_l",
+      "name": "cortisol am nmol l",
+      "unit": "nmol/L",
+      "kind": "observable",
+      "description": "Morning cortisol with time of collection",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_HUMAN_BODY",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.endocrine_regulation.cortisol_pm_nmol_l",
+      "name": "cortisol pm nmol l",
+      "unit": "nmol/L",
+      "kind": "observable",
+      "description": "Evening cortisol",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_HUMAN_BODY",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.endocrine_regulation.cortisol_daily_slope_nmol_l_h",
+      "name": "cortisol daily slope nmol l h",
+      "unit": "nmol/(L h)",
+      "kind": "derived",
+      "description": "Circadian cortisol trend",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_HUMAN_BODY",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.endocrine_regulation.acth_pg_ml",
+      "name": "acth pg ml",
+      "unit": "pg/mL",
+      "kind": "observable",
+      "description": "Adrenocorticotropic hormone",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_HUMAN_BODY",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.endocrine_regulation.epinephrine_pmol_l",
+      "name": "epinephrine pmol l",
+      "unit": "pmol/L",
+      "kind": "observable",
+      "description": "Circulating epinephrine concentration",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_HUMAN_BODY",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.endocrine_regulation.norepinephrine_pmol_l",
+      "name": "norepinephrine pmol l",
+      "unit": "pmol/L",
+      "kind": "observable",
+      "description": "Circulating norepinephrine",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_HUMAN_BODY",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.endocrine_regulation.dopamine_pmol_l",
+      "name": "dopamine pmol l",
+      "unit": "pmol/L",
+      "kind": "observable",
+      "description": "Circulating dopamine, not brain dopamine proxy",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_HUMAN_BODY",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.endocrine_regulation.melatonin_pg_ml",
+      "name": "melatonin pg ml",
+      "unit": "pg/mL",
+      "kind": "observable",
+      "description": "Blood melatonin at recorded time",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_HUMAN_BODY",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.endocrine_regulation.melatonin_onset_utc",
+      "name": "melatonin onset utc",
+      "unit": "",
+      "kind": "derived",
+      "description": "Dim-light melatonin onset time with assay protocol",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_HUMAN_BODY",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.endocrine_regulation.tsh_miu_l",
+      "name": "tsh miu l",
+      "unit": "mIU/L",
+      "kind": "observable",
+      "description": "Thyroid stimulating hormone",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_HUMAN_BODY",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.endocrine_regulation.free_t4_pmol_l",
+      "name": "free t4 pmol l",
+      "unit": "pmol/L",
+      "kind": "observable",
+      "description": "Free thyroxine concentration",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_HUMAN_BODY",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.endocrine_regulation.free_t3_pmol_l",
+      "name": "free t3 pmol l",
+      "unit": "pmol/L",
+      "kind": "observable",
+      "description": "Free triiodothyronine concentration",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_HUMAN_BODY",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.endocrine_regulation.reverse_t3_pmol_l",
+      "name": "reverse t3 pmol l",
+      "unit": "pmol/L",
+      "kind": "observable",
+      "description": "Reverse T3",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_HUMAN_BODY",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.endocrine_regulation.insulin_pmol_l",
+      "name": "insulin pmol l",
+      "unit": "pmol/L",
+      "kind": "observable",
+      "description": "Plasma insulin",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_HUMAN_BODY",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.endocrine_regulation.glucagon_ng_l",
+      "name": "glucagon ng l",
+      "unit": "ng/L",
+      "kind": "observable",
+      "description": "Plasma glucagon",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_HUMAN_BODY",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.endocrine_regulation.c_peptide_pmol_l",
+      "name": "c peptide pmol l",
+      "unit": "pmol/L",
+      "kind": "observable",
+      "description": "C-peptide for insulin secretion evaluation",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_HUMAN_BODY",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.endocrine_regulation.growth_hormone_ug_l",
+      "name": "growth hormone ug l",
+      "unit": "ug/L",
+      "kind": "observable",
+      "description": "Growth hormone concentration",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_HUMAN_BODY",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.endocrine_regulation.igf1_ug_l",
+      "name": "igf1 ug l",
+      "unit": "ug/L",
+      "kind": "observable",
+      "description": "IGF-1 concentration",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_HUMAN_BODY",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.endocrine_regulation.prolactin_ug_l",
+      "name": "prolactin ug l",
+      "unit": "ug/L",
+      "kind": "observable",
+      "description": "Prolactin assay",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_HUMAN_BODY",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.endocrine_regulation.leptin_ng_ml",
+      "name": "leptin ng ml",
+      "unit": "ng/mL",
+      "kind": "observable",
+      "description": "Leptin concentration",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_HUMAN_BODY",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.endocrine_regulation.ghrelin_pg_ml",
+      "name": "ghrelin pg ml",
+      "unit": "pg/mL",
+      "kind": "observable",
+      "description": "Total or active ghrelin with assay label",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_HUMAN_BODY",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.endocrine_regulation.peptide_yy_pmol_l",
+      "name": "peptide yy pmol l",
+      "unit": "pmol/L",
+      "kind": "observable",
+      "description": "PYY concentration",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_HUMAN_BODY",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.endocrine_regulation.glp1_pmol_l",
+      "name": "glp1 pmol l",
+      "unit": "pmol/L",
+      "kind": "observable",
+      "description": "GLP-1 under documented assay",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_HUMAN_BODY",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.endocrine_regulation.testosterone_nmol_l",
+      "name": "testosterone nmol l",
+      "unit": "nmol/L",
+      "kind": "observable",
+      "description": "Total testosterone",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_HUMAN_BODY",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.endocrine_regulation.free_testosterone_pmol_l",
+      "name": "free testosterone pmol l",
+      "unit": "pmol/L",
+      "kind": "observable",
+      "description": "Free testosterone",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_HUMAN_BODY",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.endocrine_regulation.estradiol_pmol_l",
+      "name": "estradiol pmol l",
+      "unit": "pmol/L",
+      "kind": "observable",
+      "description": "Estradiol assay",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_HUMAN_BODY",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.endocrine_regulation.progesterone_nmol_l",
+      "name": "progesterone nmol l",
+      "unit": "nmol/L",
+      "kind": "observable",
+      "description": "Progesterone concentration",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_HUMAN_BODY",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.endocrine_regulation.lh_iu_l",
+      "name": "lh iu l",
+      "unit": "IU/L",
+      "kind": "observable",
+      "description": "Luteinizing hormone",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_HUMAN_BODY",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.endocrine_regulation.fsh_iu_l",
+      "name": "fsh iu l",
+      "unit": "IU/L",
+      "kind": "observable",
+      "description": "Follicle stimulating hormone",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_HUMAN_BODY",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.endocrine_regulation.dhea_s_umol_l",
+      "name": "dhea s umol l",
+      "unit": "umol/L",
+      "kind": "observable",
+      "description": "DHEA sulfate concentration",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_HUMAN_BODY",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.endocrine_regulation.vitamin_d_1_25oh2_pmol_l",
+      "name": "vitamin d 1 25oh2 pmol l",
+      "unit": "pmol/L",
+      "kind": "observable",
+      "description": "Active vitamin D metabolite",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_HUMAN_BODY",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.endocrine_regulation.pth_pg_ml",
+      "name": "pth pg ml",
+      "unit": "pg/mL",
+      "kind": "observable",
+      "description": "Parathyroid hormone",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_HUMAN_BODY",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.endocrine_regulation.calcitonin_pg_ml",
+      "name": "calcitonin pg ml",
+      "unit": "pg/mL",
+      "kind": "observable",
+      "description": "Calcitonin",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_HUMAN_BODY",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.endocrine_regulation.hormone_circadian_phase_h",
+      "name": "hormone circadian phase h",
+      "unit": "h",
+      "kind": "derived",
+      "description": "Defined endocrine phase marker",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_HUMAN_BODY",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.endocrine_regulation.endocrine_stress_response_index",
+      "name": "endocrine stress response index",
+      "unit": "1",
+      "kind": "latent",
+      "description": "Composite endocrine response conditional on model",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_HUMAN_BODY",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    }
+  ]
+}

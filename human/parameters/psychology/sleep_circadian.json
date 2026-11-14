@@ -1,0 +1,589 @@
+{
+  "schema_version": "1.0.0",
+  "group": "psychology",
+  "domain": "sleep_circadian",
+  "description": "Sleep, circadian timing, fatigue and alertness",
+  "field_count": 36,
+  "sources": [
+    "NASA_ISOLATION",
+    "NASA_FUNDAMENTALS"
+  ],
+  "fields": [
+    {
+      "id": "human.sleep_circadian.sleep_opportunity_s",
+      "name": "sleep opportunity s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Scheduled interval available for sleep",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.sleep_circadian.total_sleep_time_s",
+      "name": "total sleep time s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Actual sleep duration with method specified",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.sleep_circadian.time_in_bed_s",
+      "name": "time in bed s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Time physically in bed",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.sleep_circadian.sleep_onset_latency_s",
+      "name": "sleep onset latency s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Time from intended sleep start to sleep onset",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.sleep_circadian.wake_after_sleep_onset_s",
+      "name": "wake after sleep onset s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Wakefulness between first sleep and terminal wake",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.sleep_circadian.sleep_efficiency_fraction",
+      "name": "sleep efficiency fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Total sleep time / time in bed",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.sleep_circadian.sleep_stage_n1_fraction",
+      "name": "sleep stage n1 fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "N1 sleep proportion from proper polysomnography",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.sleep_circadian.sleep_stage_n2_fraction",
+      "name": "sleep stage n2 fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "N2 sleep proportion",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.sleep_circadian.sleep_stage_n3_fraction",
+      "name": "sleep stage n3 fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "N3 slow wave sleep proportion",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.sleep_circadian.sleep_stage_rem_fraction",
+      "name": "sleep stage rem fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "REM sleep proportion",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.sleep_circadian.sleep_arousal_index_per_hour",
+      "name": "sleep arousal index per hour",
+      "unit": "1/h",
+      "kind": "observable",
+      "description": "Sleep arousals per sleeping hour",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.sleep_circadian.sleep_awakenings_count",
+      "name": "sleep awakenings count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Count of nocturnal awakenings",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.sleep_circadian.sleep_fragmentation_index",
+      "name": "sleep fragmentation index",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Device- or method-specific fragmentation metric",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.sleep_circadian.sleep_breathing_apnea_index_per_hour",
+      "name": "sleep breathing apnea index per hour",
+      "unit": "1/h",
+      "kind": "observable",
+      "description": "Apnea episodes per hour under defined scoring",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.sleep_circadian.sleep_oxygen_desaturation_events_per_h",
+      "name": "sleep oxygen desaturation events per h",
+      "unit": "1/h",
+      "kind": "observable",
+      "description": "Sleep oximetry desaturation event frequency",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.sleep_circadian.sleep_slow_wave_power_uv2",
+      "name": "sleep slow wave power uv2",
+      "unit": "uV^2",
+      "kind": "observable",
+      "description": "EEG slow-frequency band power under defined window",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.sleep_circadian.sleep_spindle_density_per_min",
+      "name": "sleep spindle density per min",
+      "unit": "1/min",
+      "kind": "observable",
+      "description": "EEG sleep spindle count normalized by time",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.sleep_circadian.sleep_rem_latency_s",
+      "name": "sleep rem latency s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Time from sleep onset to first REM",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.sleep_circadian.sleep_circadian_phase_h",
+      "name": "sleep circadian phase h",
+      "unit": "h",
+      "kind": "derived",
+      "description": "Biological clock phase from valid marker",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.sleep_circadian.sleep_circadian_period_h",
+      "name": "sleep circadian period h",
+      "unit": "h",
+      "kind": "derived",
+      "description": "Estimated endogenous oscillator period",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.sleep_circadian.sleep_phase_shift_h",
+      "name": "sleep phase shift h",
+      "unit": "h",
+      "kind": "derived",
+      "description": "Circadian phase change from baseline",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.sleep_circadian.sleep_social_jetlag_h",
+      "name": "sleep social jetlag h",
+      "unit": "h",
+      "kind": "derived",
+      "description": "Difference between work and free sleep midpoints",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.sleep_circadian.sleep_melatonin_onset_h",
+      "name": "sleep melatonin onset h",
+      "unit": "h",
+      "kind": "observable",
+      "description": "Dim-light melatonin onset local reference",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.sleep_circadian.sleep_cortisol_awaken_response_nmol_l",
+      "name": "sleep cortisol awaken response nmol l",
+      "unit": "nmol/L",
+      "kind": "observable",
+      "description": "Post-wake cortisol increase",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.sleep_circadian.sleep_chronotype_score",
+      "name": "sleep chronotype score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Named morningness/eveningness questionnaire",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.sleep_circadian.sleep_quality_score",
+      "name": "sleep quality score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Named sleep quality instrument",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.sleep_circadian.sleepiness_epworth_score",
+      "name": "sleepiness epworth score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Epworth sleepiness questionnaire result",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.sleep_circadian.sleepiness_karolinska_score",
+      "name": "sleepiness karolinska score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Karolinska momentary sleepiness scale",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.sleep_circadian.sleepiness_momentary_rating",
+      "name": "sleepiness momentary rating",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Specified momentary sleepiness measure",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.sleep_circadian.sleep_debt_s",
+      "name": "sleep debt s",
+      "unit": "s",
+      "kind": "derived",
+      "description": "Cumulative deficit relative to individualized required sleep",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.sleep_circadian.time_awake_continuous_s",
+      "name": "time awake continuous s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Time since last substantial sleep interval",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.sleep_circadian.nap_duration_s",
+      "name": "nap duration s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Duration of planned/unplanned nap",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.sleep_circadian.nap_count",
+      "name": "nap count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Naps during defined mission interval",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.sleep_circadian.sleep_schedule_adherence_fraction",
+      "name": "sleep schedule adherence fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Fraction meeting individualized scheduled windows",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.sleep_circadian.circadian_light_exposure_lux_h",
+      "name": "circadian light exposure lux h",
+      "unit": "lux h",
+      "kind": "derived",
+      "description": "Integrated photopic light exposure; not circadian biologic dose",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.sleep_circadian.alertness_prediction_score",
+      "name": "alertness prediction score",
+      "unit": "score",
+      "kind": "derived",
+      "description": "Fitted fatigue/alertness model output with calibration",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    }
+  ]
+}

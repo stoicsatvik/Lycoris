@@ -1,0 +1,493 @@
+{
+  "schema_version": "1.0.0",
+  "group": "neuroscience",
+  "domain": "motor_neurology",
+  "description": "Central motor pathways, coordination and neural signaling",
+  "field_count": 30,
+  "sources": [
+    "NASA_GRAVITY",
+    "NASA_DIGITAL_ASTRONAUT"
+  ],
+  "fields": [
+    {
+      "id": "human.motor_neurology.simple_motor_reaction_time_s",
+      "name": "simple motor reaction time s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Motor onset after simple target stimulus",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.motor_neurology.motor_response_variability_s",
+      "name": "motor response variability s",
+      "unit": "s",
+      "kind": "derived",
+      "description": "Response-time variation across repetitions",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.motor_neurology.motor_reaction_error_count",
+      "name": "motor reaction error count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Incorrect motor outputs in response task",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.motor_neurology.motor_sequence_completion_s",
+      "name": "motor sequence completion s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Time to execute fixed movement pattern",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.motor_neurology.motor_sequence_error_count",
+      "name": "motor sequence error count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Incorrect steps in motor pattern",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.motor_neurology.upper_limb_movement_smoothness_index",
+      "name": "upper limb movement smoothness index",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Specified normalized kinematic jerk index",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.motor_neurology.movement_endpoint_overshoot_m",
+      "name": "movement endpoint overshoot m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Hand overshoot distance",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.motor_neurology.finger_nose_test_error_m",
+      "name": "finger nose test error m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Finger to nose endpoint error",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.motor_neurology.heel_shin_test_error_m",
+      "name": "heel shin test error m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Heel to shin track error",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.motor_neurology.tandem_gait_deviation_m",
+      "name": "tandem gait deviation m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Lateral deviation during tandem gait",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.motor_neurology.motor_unit_conduction_velocity_m_s",
+      "name": "motor unit conduction velocity m s",
+      "unit": "m/s",
+      "kind": "observable",
+      "description": "Nerve conduction velocity under test",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.motor_neurology.peripheral_nerve_latency_ms",
+      "name": "peripheral nerve latency ms",
+      "unit": "ms",
+      "kind": "observable",
+      "description": "Peripheral nerve stimulus-to-response delay",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.motor_neurology.h_reflex_amplitude_mv",
+      "name": "h reflex amplitude mv",
+      "unit": "mV",
+      "kind": "observable",
+      "description": "H-reflex electromyographic peak response",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.motor_neurology.stretch_reflex_latency_ms",
+      "name": "stretch reflex latency ms",
+      "unit": "ms",
+      "kind": "observable",
+      "description": "Stretch reflex recruitment latency",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.motor_neurology.tendon_reflex_grade",
+      "name": "tendon reflex grade",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Clinical reflex grade by muscle and side",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.motor_neurology.muscle_tone_modified_ashworth_score",
+      "name": "muscle tone modified ashworth score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Named clinical muscle tone scale",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.motor_neurology.motor_evoked_potential_latency_ms",
+      "name": "motor evoked potential latency ms",
+      "unit": "ms",
+      "kind": "observable",
+      "description": "Transcranial stimulation MEP latency, lab only",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.motor_neurology.motor_evoked_potential_amplitude_mv",
+      "name": "motor evoked potential amplitude mv",
+      "unit": "mV",
+      "kind": "observable",
+      "description": "MEP amplitude",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.motor_neurology.nerve_conduction_amplitude_mv",
+      "name": "nerve conduction amplitude mv",
+      "unit": "mV",
+      "kind": "observable",
+      "description": "Nerve action potential response amplitude",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.motor_neurology.peripheral_sensory_latency_ms",
+      "name": "peripheral sensory latency ms",
+      "unit": "ms",
+      "kind": "observable",
+      "description": "Sensory nerve transmission response latency",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.motor_neurology.upper_limb_coordination_score",
+      "name": "upper limb coordination score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Named coordination test",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.motor_neurology.lower_limb_coordination_score",
+      "name": "lower limb coordination score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Named coordination test",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.motor_neurology.postural_adjustment_onset_s",
+      "name": "postural adjustment onset s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Anticipatory postural response onset time",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.motor_neurology.interlimb_phase_synchrony_rad",
+      "name": "interlimb phase synchrony rad",
+      "unit": "rad",
+      "kind": "derived",
+      "description": "Relative phase of paired limb motion",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.motor_neurology.bilateral_motor_asymmetry_fraction",
+      "name": "bilateral motor asymmetry fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Left-right relative performance difference",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.motor_neurology.motor_learning_rate_fraction_trial",
+      "name": "motor learning rate fraction trial",
+      "unit": "1/trial",
+      "kind": "derived",
+      "description": "Improvement over repeated standardized trials",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.motor_neurology.movement_kinematic_variability_fraction",
+      "name": "movement kinematic variability fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Normalized trial-to-trial movement variation",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.motor_neurology.motor_fatigue_threshold_time_s",
+      "name": "motor fatigue threshold time s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Time before motor performance crosses defined task criterion",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.motor_neurology.fine_motor_precision_error_m",
+      "name": "fine motor precision error m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Endpoint deviation in small-amplitude manipulations",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.motor_neurology.functional_reach_compensation_m",
+      "name": "functional reach compensation m",
+      "unit": "m",
+      "kind": "derived",
+      "description": "Difference from target reach due to movement strategy",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    }
+  ]
+}

@@ -1,0 +1,573 @@
+{
+  "schema_version": "1.0.0",
+  "group": "physiology",
+  "domain": "energy_substrates",
+  "description": "Energy metabolism, substrate use and mitochondrial function",
+  "field_count": 35,
+  "sources": [
+    "NASA_FUNDAMENTALS",
+    "NASA_HRP_HUMAN_BODY"
+  ],
+  "fields": [
+    {
+      "id": "human.energy_substrates.resting_energy_expenditure_w",
+      "name": "resting energy expenditure w",
+      "unit": "W",
+      "kind": "observable",
+      "description": "Resting metabolic rate from indirect calorimetry",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.energy_substrates.basal_energy_expenditure_w",
+      "name": "basal energy expenditure w",
+      "unit": "W",
+      "kind": "observable",
+      "description": "Basal metabolism under defined fasted rest",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.energy_substrates.activity_energy_expenditure_w",
+      "name": "activity energy expenditure w",
+      "unit": "W",
+      "kind": "derived",
+      "description": "Energy expenditure attributed to activity",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.energy_substrates.daily_total_energy_j",
+      "name": "daily total energy j",
+      "unit": "J",
+      "kind": "derived",
+      "description": "Total metabolic energy over day",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.energy_substrates.nonexercise_thermogenesis_w",
+      "name": "nonexercise thermogenesis w",
+      "unit": "W",
+      "kind": "derived",
+      "description": "Energy spent outside structured exercise",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.energy_substrates.thermic_effect_food_w",
+      "name": "thermic effect food w",
+      "unit": "W",
+      "kind": "derived",
+      "description": "Post-meal metabolic energy rise",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.energy_substrates.carbohydrate_oxidation_mol_s",
+      "name": "carbohydrate oxidation mol s",
+      "unit": "mol/s",
+      "kind": "derived",
+      "description": "Molar carbohydrate oxidation equivalent",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.energy_substrates.fat_oxidation_mol_s",
+      "name": "fat oxidation mol s",
+      "unit": "mol/s",
+      "kind": "derived",
+      "description": "Fatty acid oxidation equivalent",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.energy_substrates.protein_oxidation_mol_s",
+      "name": "protein oxidation mol s",
+      "unit": "mol/s",
+      "kind": "derived",
+      "description": "Protein oxidation inferred with nitrogen corrections",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.energy_substrates.respiratory_quotient",
+      "name": "respiratory quotient",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Cellular CO2 production / O2 consumption",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.energy_substrates.blood_glucose_mmol_l",
+      "name": "blood glucose mmol l",
+      "unit": "mmol/L",
+      "kind": "observable",
+      "description": "Plasma glucose",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.energy_substrates.continuous_glucose_mmol_l",
+      "name": "continuous glucose mmol l",
+      "unit": "mmol/L",
+      "kind": "observable",
+      "description": "Interstitial sensor-derived glucose after calibration",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.energy_substrates.glucose_variability_cv_fraction",
+      "name": "glucose variability cv fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Coefficient of variation for glucose time series",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.energy_substrates.glucose_time_in_target_fraction",
+      "name": "glucose time in target fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Fraction in clinically specified glucose target band",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.energy_substrates.hba1c_fraction",
+      "name": "hba1c fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Glycated hemoglobin fraction by standardized assay",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.energy_substrates.blood_lactate_mmol_l",
+      "name": "blood lactate mmol l",
+      "unit": "mmol/L",
+      "kind": "observable",
+      "description": "Circulating lactate",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.energy_substrates.blood_pyruvate_mmol_l",
+      "name": "blood pyruvate mmol l",
+      "unit": "mmol/L",
+      "kind": "observable",
+      "description": "Circulating pyruvate",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.energy_substrates.blood_beta_hydroxybutyrate_mmol_l",
+      "name": "blood beta hydroxybutyrate mmol l",
+      "unit": "mmol/L",
+      "kind": "observable",
+      "description": "Ketone body concentration",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.energy_substrates.plasma_free_fatty_acid_mmol_l",
+      "name": "plasma free fatty acid mmol l",
+      "unit": "mmol/L",
+      "kind": "observable",
+      "description": "Circulating unesterified fatty acids",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.energy_substrates.plasma_triglyceride_mmol_l",
+      "name": "plasma triglyceride mmol l",
+      "unit": "mmol/L",
+      "kind": "observable",
+      "description": "Triglycerides by assay",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.energy_substrates.total_cholesterol_mmol_l",
+      "name": "total cholesterol mmol l",
+      "unit": "mmol/L",
+      "kind": "observable",
+      "description": "Serum cholesterol",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.energy_substrates.hdl_cholesterol_mmol_l",
+      "name": "hdl cholesterol mmol l",
+      "unit": "mmol/L",
+      "kind": "observable",
+      "description": "HDL cholesterol",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.energy_substrates.ldl_cholesterol_mmol_l",
+      "name": "ldl cholesterol mmol l",
+      "unit": "mmol/L",
+      "kind": "observable",
+      "description": "LDL cholesterol",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.energy_substrates.glycogen_liver_g",
+      "name": "glycogen liver g",
+      "unit": "g",
+      "kind": "latent",
+      "description": "Liver glycogen stores; special imaging needed",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.energy_substrates.glycogen_muscle_g",
+      "name": "glycogen muscle g",
+      "unit": "g",
+      "kind": "latent",
+      "description": "Muscle glycogen inventory by tissue/model",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.energy_substrates.atp_production_mol_s",
+      "name": "atp production mol s",
+      "unit": "mol/s",
+      "kind": "latent",
+      "description": "Cellular ATP production flux under model",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.energy_substrates.mitochondrial_respiration_pmol_s_mg",
+      "name": "mitochondrial respiration pmol s mg",
+      "unit": "pmol/(s mg)",
+      "kind": "observable",
+      "description": "Isolated sample respiration normalized by protein",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.energy_substrates.oxidative_phosphorylation_efficiency_fraction",
+      "name": "oxidative phosphorylation efficiency fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Specified efficiency proxy from lab bioenergetics",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.energy_substrates.insulin_sensitivity_index",
+      "name": "insulin sensitivity index",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Named physiological insulin sensitivity index",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.energy_substrates.homa_ir_index",
+      "name": "homa ir index",
+      "unit": "1",
+      "kind": "derived",
+      "description": "HOMA-IR under formula-specific units",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.energy_substrates.metabolic_flexibility_index",
+      "name": "metabolic flexibility index",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Assay-specific substrate switching index",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.energy_substrates.exercise_oxygen_uptake_mol_s",
+      "name": "exercise oxygen uptake mol s",
+      "unit": "mol/s",
+      "kind": "observable",
+      "description": "Breath-based integrated O2 demand during exertion",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.energy_substrates.glycolytic_energy_fraction",
+      "name": "glycolytic energy fraction",
+      "unit": "1",
+      "kind": "latent",
+      "description": "Metabolic energy share via glycolysis under model",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.energy_substrates.lipid_energy_fraction",
+      "name": "lipid energy fraction",
+      "unit": "1",
+      "kind": "latent",
+      "description": "Metabolic energy derived from lipids under model",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.energy_substrates.substrate_depletion_time_s",
+      "name": "substrate depletion time s",
+      "unit": "s",
+      "kind": "derived",
+      "description": "Time to depletion under specific substrate inventory/flux model",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    }
+  ]
+}

@@ -1,0 +1,429 @@
+{
+  "schema_version": "1.0.0",
+  "group": "operations",
+  "domain": "workload_fatigue",
+  "description": "Time-dependent workload, physical and cognitive fatigue",
+  "field_count": 26,
+  "sources": [
+    "NASA_GRAVITY",
+    "NASA_ISOLATION"
+  ],
+  "fields": [
+    {
+      "id": "human.workload_fatigue.workload_physical_rate_w",
+      "name": "workload physical rate w",
+      "unit": "W",
+      "kind": "derived",
+      "description": "Mechanical physical workload per interval",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_ISOLATION"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.workload_fatigue.workload_metabolic_rate_w",
+      "name": "workload metabolic rate w",
+      "unit": "W",
+      "kind": "derived",
+      "description": "Metabolic energy demand per interval",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_ISOLATION"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.workload_fatigue.workload_cognitive_rating_score",
+      "name": "workload cognitive rating score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Named perceived cognitive load",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_ISOLATION"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.workload_fatigue.workload_visual_demand_score",
+      "name": "workload visual demand score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Named visual burden rating",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_ISOLATION"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.workload_fatigue.workload_sustained_attention_duration_s",
+      "name": "workload sustained attention duration s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Continuous attention work interval",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_ISOLATION"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.workload_fatigue.workload_manual_handling_duration_s",
+      "name": "workload manual handling duration s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Time handling scientific instruments",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_ISOLATION"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.workload_fatigue.workload_walking_duration_s",
+      "name": "workload walking duration s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Walking bout duration",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_ISOLATION"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.workload_fatigue.workload_climbing_duration_s",
+      "name": "workload climbing duration s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Climb interval duration",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_ISOLATION"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.workload_fatigue.workload_total_active_duration_s",
+      "name": "workload total active duration s",
+      "unit": "s",
+      "kind": "derived",
+      "description": "Total operational active time",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_ISOLATION"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.workload_fatigue.workload_oxygen_consumed_mol",
+      "name": "workload oxygen consumed mol",
+      "unit": "mol",
+      "kind": "derived",
+      "description": "Integrated biological oxygen demand",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_ISOLATION"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.workload_fatigue.workload_heat_generated_j",
+      "name": "workload heat generated j",
+      "unit": "J",
+      "kind": "derived",
+      "description": "Integrated biological waste heat",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_ISOLATION"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.workload_fatigue.workload_hydration_loss_kg",
+      "name": "workload hydration loss kg",
+      "unit": "kg",
+      "kind": "derived",
+      "description": "Human water deficit over interval",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_ISOLATION"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.workload_fatigue.fatigue_physical_rating_score",
+      "name": "fatigue physical rating score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Self-reported physical fatigue",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_ISOLATION"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.workload_fatigue.fatigue_mental_rating_score",
+      "name": "fatigue mental rating score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Self-reported cognitive fatigue",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_ISOLATION"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.workload_fatigue.fatigue_subjective_total_score",
+      "name": "fatigue subjective total score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Validated multidomain fatigue inventory",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_ISOLATION"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.workload_fatigue.fatigue_posture_drift_m",
+      "name": "fatigue posture drift m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Deviation from target working posture",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_ISOLATION"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.workload_fatigue.fatigue_muscle_activation_change_fraction",
+      "name": "fatigue muscle activation change fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Time-related muscle activation change",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_ISOLATION"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.workload_fatigue.fatigue_pvt_lapse_rate_hz",
+      "name": "fatigue pvt lapse rate hz",
+      "unit": "1/s",
+      "kind": "derived",
+      "description": "Attention lapses normalized by testing interval",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_ISOLATION"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.workload_fatigue.fatigue_task_accuracy_change_fraction",
+      "name": "fatigue task accuracy change fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Task-specific decline from baseline",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_ISOLATION"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.workload_fatigue.fatigue_task_speed_change_fraction",
+      "name": "fatigue task speed change fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Relative slowdown from baseline",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_ISOLATION"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.workload_fatigue.fatigue_recovery_sleep_s",
+      "name": "fatigue recovery sleep s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Sleep duration between high-demand bouts",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_ISOLATION"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.workload_fatigue.fatigue_recovery_rest_s",
+      "name": "fatigue recovery rest s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Non-sleep rest time between bouts",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_ISOLATION"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.workload_fatigue.fatigue_recovery_physiology_status",
+      "name": "fatigue recovery physiology status",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Evidence level of recovery model",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_ISOLATION"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.workload_fatigue.fatigue_accumulation_latent_state",
+      "name": "fatigue accumulation latent state",
+      "unit": "index",
+      "kind": "latent",
+      "description": "Latent physical/cognitive fatigue model state",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_ISOLATION"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.workload_fatigue.fatigue_work_rest_schedule_s",
+      "name": "fatigue work rest schedule s",
+      "unit": null,
+      "kind": "scenario_input",
+      "description": "Structured work/rest schedule time series",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_ISOLATION"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.workload_fatigue.fatigue_model_abstention_flag",
+      "name": "fatigue model abstention flag",
+      "unit": null,
+      "kind": "metadata",
+      "description": "No-calibration flag for claimed fatigue response",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_ISOLATION"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    }
+  ]
+}

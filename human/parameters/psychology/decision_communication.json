@@ -1,0 +1,524 @@
+{
+  "schema_version": "1.0.0",
+  "group": "psychology",
+  "domain": "decision_communication",
+  "description": "Decision behavior, autonomy, remote communications and error",
+  "field_count": 30,
+  "sources": [
+    "NASA_ISOLATION",
+    "NASA_IMM_2026",
+    "NASA_CHAPEA"
+  ],
+  "fields": [
+    {
+      "id": "human.decision_communication.decision_latency_ms",
+      "name": "decision latency ms",
+      "unit": "ms",
+      "kind": "observable",
+      "description": "Elapsed time between presented options and choice",
+      "measurement_context": "task_log",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_IMM_2026",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.decision_communication.decision_accuracy_fraction",
+      "name": "decision accuracy fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Correct decisions under predeclared answer key",
+      "measurement_context": "task_log",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_IMM_2026",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.decision_communication.decision_confidence_fraction",
+      "name": "decision confidence fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Expressed subjective confidence normalized on specified scale",
+      "measurement_context": "task_log",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_IMM_2026",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.decision_communication.decision_calibration_error_fraction",
+      "name": "decision calibration error fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Difference between confidence and realized correct frequency",
+      "measurement_context": "task_log",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_IMM_2026",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.decision_communication.decision_reversal_count",
+      "name": "decision reversal count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Repeated changes to chosen action",
+      "measurement_context": "task_log",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_IMM_2026",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.decision_communication.decision_deliberation_time_s",
+      "name": "decision deliberation time s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Duration spent comparing alternatives",
+      "measurement_context": "task_log",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_IMM_2026",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.decision_communication.decision_information_search_s",
+      "name": "decision information search s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Time seeking evidence before decision",
+      "measurement_context": "task_log",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_IMM_2026",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.decision_communication.decision_risk_preference_score",
+      "name": "decision risk preference score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Named experimental risk preference scale",
+      "measurement_context": "task_log",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_IMM_2026",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.decision_communication.decision_delay_discount_parameter",
+      "name": "decision delay discount parameter",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Task-specific intertemporal discount fit",
+      "measurement_context": "task_log",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_IMM_2026",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.decision_communication.decision_loss_aversion_parameter",
+      "name": "decision loss aversion parameter",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Task-specific loss aversion fit",
+      "measurement_context": "task_log",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_IMM_2026",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.decision_communication.decision_time_pressure_score",
+      "name": "decision time pressure score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Subjective time pressure scale",
+      "measurement_context": "task_log",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_IMM_2026",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.decision_communication.decision_error_severity_score",
+      "name": "decision error severity score",
+      "unit": "score",
+      "kind": "derived",
+      "description": "Incident-specific consequence grade, not clinical harm likelihood",
+      "measurement_context": "task_log",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_IMM_2026",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.decision_communication.decision_confirmation_bias_metric",
+      "name": "decision confirmation bias metric",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Instrument-defined bias under validated test",
+      "measurement_context": "task_log",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_IMM_2026",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.decision_communication.decision_workload_nasa_tlx_score",
+      "name": "decision workload nasa tlx score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "NASA-TLX multidimensional task load score",
+      "measurement_context": "task_log",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_IMM_2026",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.decision_communication.decision_situational_readiness_score",
+      "name": "decision situational readiness score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Readiness to perform task under named assessment",
+      "measurement_context": "task_log",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_IMM_2026",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.decision_communication.communication_uplink_delay_s",
+      "name": "communication uplink delay s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "One-way Earth-ground-to-crew communication delay in scenario",
+      "measurement_context": "task_log",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_IMM_2026",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.decision_communication.communication_downlink_delay_s",
+      "name": "communication downlink delay s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "One-way crew-to-Earth delay",
+      "measurement_context": "task_log",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_IMM_2026",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.decision_communication.communication_blackout_duration_s",
+      "name": "communication blackout duration s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "No-contact interval with mission control",
+      "measurement_context": "task_log",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_IMM_2026",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.decision_communication.communication_message_understanding_fraction",
+      "name": "communication message understanding fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Confirmed comprehension on specified message checks",
+      "measurement_context": "task_log",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_IMM_2026",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.decision_communication.communication_readback_error_count",
+      "name": "communication readback error count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Readback discrepancy count",
+      "measurement_context": "task_log",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_IMM_2026",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.decision_communication.communication_unanswered_query_count",
+      "name": "communication unanswered query count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Unacknowledged questions during operational window",
+      "measurement_context": "task_log",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_IMM_2026",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.decision_communication.communication_priority_conflict_count",
+      "name": "communication priority conflict count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Conflicting command priorities reported",
+      "measurement_context": "task_log",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_IMM_2026",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.decision_communication.communication_crew_autonomy_score",
+      "name": "communication crew autonomy score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Self-rated operational autonomy under defined tool",
+      "measurement_context": "task_log",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_IMM_2026",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.decision_communication.communication_ground_support_trust_score",
+      "name": "communication ground support trust score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Perceived trust in mission support",
+      "measurement_context": "task_log",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_IMM_2026",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.decision_communication.communication_emergency_response_s",
+      "name": "communication emergency response s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Time to respond to received emergency message",
+      "measurement_context": "task_log",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_IMM_2026",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.decision_communication.communication_redundancy_use_count",
+      "name": "communication redundancy use count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Backup communications invoked",
+      "measurement_context": "task_log",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_IMM_2026",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.decision_communication.communication_message_length_tokens",
+      "name": "communication message length tokens",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Message length under defined tokenizer",
+      "measurement_context": "task_log",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_IMM_2026",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.decision_communication.communication_ambiguity_error_count",
+      "name": "communication ambiguity error count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Ambiguity-associated incorrect interpretations",
+      "measurement_context": "task_log",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_IMM_2026",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.decision_communication.mission_protocol_violations_count",
+      "name": "mission protocol violations count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Verified deviations from documented procedure",
+      "measurement_context": "task_log",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_IMM_2026",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.decision_communication.decision_stop_rule_compliance_fraction",
+      "name": "decision stop rule compliance fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Fraction of safety stop rules adhered to on tested tasks",
+      "measurement_context": "task_log",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_IMM_2026",
+        "NASA_CHAPEA"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    }
+  ]
+}

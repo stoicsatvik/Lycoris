@@ -1,0 +1,541 @@
+{
+  "schema_version": "1.0.0",
+  "group": "physiology",
+  "domain": "renal_urinary",
+  "description": "Renal function, nephrolithiasis and urine output",
+  "field_count": 33,
+  "sources": [
+    "NASA_FUNDAMENTALS",
+    "NASA_HRP_RISKS"
+  ],
+  "fields": [
+    {
+      "id": "human.renal_urinary.urine_flow_ml_h",
+      "name": "urine flow ml h",
+      "unit": "mL/h",
+      "kind": "observable",
+      "description": "Hourly urine output",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.renal_urinary.urine_volume_24h_ml",
+      "name": "urine volume 24h ml",
+      "unit": "mL",
+      "kind": "observable",
+      "description": "Volume voided over 24h",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.renal_urinary.urine_osmolality_mosm_kg",
+      "name": "urine osmolality mosm kg",
+      "unit": "mOsm/kg",
+      "kind": "observable",
+      "description": "Measured urine osmolality",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.renal_urinary.urine_specific_gravity",
+      "name": "urine specific gravity",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Urine density divided by water reference",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.renal_urinary.urine_ph",
+      "name": "urine ph",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Urine acidity",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.renal_urinary.urine_sodium_mmol_l",
+      "name": "urine sodium mmol l",
+      "unit": "mmol/L",
+      "kind": "observable",
+      "description": "Urinary sodium concentration",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.renal_urinary.urine_potassium_mmol_l",
+      "name": "urine potassium mmol l",
+      "unit": "mmol/L",
+      "kind": "observable",
+      "description": "Urinary potassium concentration",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.renal_urinary.urine_calcium_mmol_l",
+      "name": "urine calcium mmol l",
+      "unit": "mmol/L",
+      "kind": "observable",
+      "description": "Urinary calcium concentration",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.renal_urinary.urine_oxalate_mmol_l",
+      "name": "urine oxalate mmol l",
+      "unit": "mmol/L",
+      "kind": "observable",
+      "description": "Urinary oxalate",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.renal_urinary.urine_citrate_mmol_l",
+      "name": "urine citrate mmol l",
+      "unit": "mmol/L",
+      "kind": "observable",
+      "description": "Urinary citrate",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.renal_urinary.urine_uric_acid_mmol_l",
+      "name": "urine uric acid mmol l",
+      "unit": "mmol/L",
+      "kind": "observable",
+      "description": "Urinary urate",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.renal_urinary.urine_protein_g_l",
+      "name": "urine protein g l",
+      "unit": "g/L",
+      "kind": "observable",
+      "description": "Total urinary protein",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.renal_urinary.urine_albumin_mg_l",
+      "name": "urine albumin mg l",
+      "unit": "mg/L",
+      "kind": "observable",
+      "description": "Urinary albumin",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.renal_urinary.urine_creatinine_mmol_l",
+      "name": "urine creatinine mmol l",
+      "unit": "mmol/L",
+      "kind": "observable",
+      "description": "Urinary creatinine concentration",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.renal_urinary.albumin_creatinine_ratio_mg_g",
+      "name": "albumin creatinine ratio mg g",
+      "unit": "mg/g",
+      "kind": "derived",
+      "description": "Urinary albumin normalized to creatinine",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.renal_urinary.serum_creatinine_umol_l",
+      "name": "serum creatinine umol l",
+      "unit": "umol/L",
+      "kind": "observable",
+      "description": "Blood creatinine level",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.renal_urinary.serum_urea_mmol_l",
+      "name": "serum urea mmol l",
+      "unit": "mmol/L",
+      "kind": "observable",
+      "description": "Blood urea",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.renal_urinary.estimated_gfr_ml_min_173m2",
+      "name": "estimated gfr ml min 173m2",
+      "unit": "mL/(min 1.73m^2)",
+      "kind": "derived",
+      "description": "Clinical eGFR formula has domain constraints",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.renal_urinary.measured_gfr_ml_min",
+      "name": "measured gfr ml min",
+      "unit": "mL/min",
+      "kind": "observable",
+      "description": "Glomerular filtration measured with tracer method",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.renal_urinary.renal_plasma_flow_ml_min",
+      "name": "renal plasma flow ml min",
+      "unit": "mL/min",
+      "kind": "observable",
+      "description": "Renal plasma flow estimate",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.renal_urinary.fractional_sodium_excretion_fraction",
+      "name": "fractional sodium excretion fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Fractional excretion of filtered sodium",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.renal_urinary.renal_water_reabsorption_fraction",
+      "name": "renal water reabsorption fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Water reclaimed from tubular filtrate under model",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.renal_urinary.renal_stone_present",
+      "name": "renal stone present",
+      "unit": "",
+      "kind": "clinical_assessment",
+      "description": "Imaging-confirmed renal calculus status",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.renal_urinary.renal_stone_diameter_m",
+      "name": "renal stone diameter m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Stone size by imaging",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.renal_urinary.renal_stone_count",
+      "name": "renal stone count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Renal stone number",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.renal_urinary.calcium_oxalate_supersaturation_index",
+      "name": "calcium oxalate supersaturation index",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Urine crystal supersaturation model score",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.renal_urinary.urine_bacterial_culture_cfu_ml",
+      "name": "urine bacterial culture cfu ml",
+      "unit": "CFU/mL",
+      "kind": "observable",
+      "description": "Culture count with microbiology method",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.renal_urinary.urinary_retention_residual_ml",
+      "name": "urinary retention residual ml",
+      "unit": "mL",
+      "kind": "observable",
+      "description": "Bladder post-void residual volume",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.renal_urinary.lower_urinary_symptom_score",
+      "name": "lower urinary symptom score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Patient urinary symptom questionnaire",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.renal_urinary.fluid_intake_24h_ml",
+      "name": "fluid intake 24h ml",
+      "unit": "mL",
+      "kind": "observable",
+      "description": "Recorded 24h oral fluid intake",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.renal_urinary.kidney_structural_volume_ml",
+      "name": "kidney structural volume ml",
+      "unit": "mL",
+      "kind": "observable",
+      "description": "Kidney volume by imaging",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.renal_urinary.glomerular_albumin_permeability_index",
+      "name": "glomerular albumin permeability index",
+      "unit": "1",
+      "kind": "latent",
+      "description": "Model-derived permeability index",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.renal_urinary.diuresis_episode_count",
+      "name": "diuresis episode count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "High-output urine episodes by documented criterion",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    }
+  ]
+}

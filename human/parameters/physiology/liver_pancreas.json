@@ -1,0 +1,493 @@
+{
+  "schema_version": "1.0.0",
+  "group": "physiology",
+  "domain": "liver_pancreas",
+  "description": "Hepatic, biliary and pancreatic chemistry",
+  "field_count": 30,
+  "sources": [
+    "NASA_FUNDAMENTALS",
+    "NASA_HRP_RISKS"
+  ],
+  "fields": [
+    {
+      "id": "human.liver_pancreas.alanine_aminotransferase_u_l",
+      "name": "alanine aminotransferase u l",
+      "unit": "U/L",
+      "kind": "observable",
+      "description": "ALT liver enzyme activity",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.liver_pancreas.aspartate_aminotransferase_u_l",
+      "name": "aspartate aminotransferase u l",
+      "unit": "U/L",
+      "kind": "observable",
+      "description": "AST enzyme activity",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.liver_pancreas.alkaline_phosphatase_u_l",
+      "name": "alkaline phosphatase u l",
+      "unit": "U/L",
+      "kind": "observable",
+      "description": "ALP activity",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.liver_pancreas.gamma_glutamyl_transferase_u_l",
+      "name": "gamma glutamyl transferase u l",
+      "unit": "U/L",
+      "kind": "observable",
+      "description": "GGT enzyme activity",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.liver_pancreas.serum_albumin_g_l",
+      "name": "serum albumin g l",
+      "unit": "g/L",
+      "kind": "observable",
+      "description": "Serum albumin concentration",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.liver_pancreas.serum_total_protein_g_l",
+      "name": "serum total protein g l",
+      "unit": "g/L",
+      "kind": "observable",
+      "description": "Total serum protein concentration",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.liver_pancreas.bilirubin_total_umol_l",
+      "name": "bilirubin total umol l",
+      "unit": "umol/L",
+      "kind": "observable",
+      "description": "Total bilirubin",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.liver_pancreas.bilirubin_direct_umol_l",
+      "name": "bilirubin direct umol l",
+      "unit": "umol/L",
+      "kind": "observable",
+      "description": "Conjugated bilirubin",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.liver_pancreas.bile_acids_umol_l",
+      "name": "bile acids umol l",
+      "unit": "umol/L",
+      "kind": "observable",
+      "description": "Total serum bile acids",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.liver_pancreas.liver_stiffness_kpa",
+      "name": "liver stiffness kpa",
+      "unit": "kPa",
+      "kind": "observable",
+      "description": "Elastography tissue stiffness",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.liver_pancreas.liver_volume_ml",
+      "name": "liver volume ml",
+      "unit": "mL",
+      "kind": "observable",
+      "description": "Liver organ volume",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.liver_pancreas.liver_fat_fraction",
+      "name": "liver fat fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "MRI proton density fat fraction",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.liver_pancreas.liver_iron_concentration_mg_g",
+      "name": "liver iron concentration mg g",
+      "unit": "mg/g",
+      "kind": "observable",
+      "description": "Liver tissue iron",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.liver_pancreas.hepatic_glycogen_mass_g",
+      "name": "hepatic glycogen mass g",
+      "unit": "g",
+      "kind": "latent",
+      "description": "Liver glycogen pool, special spectroscopy needed",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.liver_pancreas.hepatic_glucose_production_mmol_min",
+      "name": "hepatic glucose production mmol min",
+      "unit": "mmol/min",
+      "kind": "latent",
+      "description": "Endogenous glucose release rate",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.liver_pancreas.hepatic_lactate_clearance_mmol_min",
+      "name": "hepatic lactate clearance mmol min",
+      "unit": "mmol/min",
+      "kind": "latent",
+      "description": "Liver lactate clearance rate",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.liver_pancreas.hepatic_drug_clearance_l_h",
+      "name": "hepatic drug clearance l h",
+      "unit": "L/h",
+      "kind": "derived",
+      "description": "Drug-specific hepatic elimination clearance",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.liver_pancreas.ammonia_plasma_umol_l",
+      "name": "ammonia plasma umol l",
+      "unit": "umol/L",
+      "kind": "observable",
+      "description": "Blood ammonia",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.liver_pancreas.lipase_u_l",
+      "name": "lipase u l",
+      "unit": "U/L",
+      "kind": "observable",
+      "description": "Serum pancreatic lipase",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.liver_pancreas.pancreatic_amylase_u_l",
+      "name": "pancreatic amylase u l",
+      "unit": "U/L",
+      "kind": "observable",
+      "description": "Pancreatic amylase activity",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.liver_pancreas.pancreas_volume_ml",
+      "name": "pancreas volume ml",
+      "unit": "mL",
+      "kind": "observable",
+      "description": "Pancreatic organ volume",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.liver_pancreas.pancreatic_enzymatic_function_score",
+      "name": "pancreatic enzymatic function score",
+      "unit": "score",
+      "kind": "derived",
+      "description": "Assay-specific exocrine function assessment",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.liver_pancreas.fasting_insulin_pmol_l",
+      "name": "fasting insulin pmol l",
+      "unit": "pmol/L",
+      "kind": "observable",
+      "description": "Fasting insulin sample",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.liver_pancreas.insulin_secretion_rate_pmol_min",
+      "name": "insulin secretion rate pmol min",
+      "unit": "pmol/min",
+      "kind": "derived",
+      "description": "Modeled insulin secretion",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.liver_pancreas.pancreatic_beta_cell_function_index",
+      "name": "pancreatic beta cell function index",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Named beta-cell model index",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.liver_pancreas.bile_flow_ml_h",
+      "name": "bile flow ml h",
+      "unit": "mL/h",
+      "kind": "latent",
+      "description": "Bile secretory flow under physiology model",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.liver_pancreas.gallbladder_ejection_fraction",
+      "name": "gallbladder ejection fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Gallbladder fraction emptied on stimulus",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.liver_pancreas.gallstone_presence",
+      "name": "gallstone presence",
+      "unit": null,
+      "kind": "clinical_assessment",
+      "description": "Qualified gallstone imaging result",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.liver_pancreas.drug_metabolizing_cyp_activity_index",
+      "name": "drug metabolizing cyp activity index",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Drug- and assay-specific hepatic enzyme activity",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.liver_pancreas.liver_function_assessment_status",
+      "name": "liver function assessment status",
+      "unit": null,
+      "kind": "clinical_assessment",
+      "description": "Clinician evaluated hepatic status",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    }
+  ]
+}

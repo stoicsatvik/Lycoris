@@ -1,0 +1,477 @@
+{
+  "schema_version": "1.0.0",
+  "group": "anatomy",
+  "domain": "strength_dexterity",
+  "description": "Grip, reach, hand-eye coordination and task biomechanics",
+  "field_count": 29,
+  "sources": [
+    "NASA_HIDH",
+    "NASA_DIGITAL_ASTRONAUT"
+  ],
+  "fields": [
+    {
+      "id": "human.strength_dexterity.grip_strength_n",
+      "name": "grip strength n",
+      "unit": "N",
+      "kind": "observable",
+      "description": "Handgrip force, side indexed",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.strength_dexterity.pinch_strength_n",
+      "name": "pinch strength n",
+      "unit": "N",
+      "kind": "observable",
+      "description": "Finger/thumb pinch force",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.strength_dexterity.finger_tip_force_n",
+      "name": "finger tip force n",
+      "unit": "N",
+      "kind": "observable",
+      "description": "Digit tip force indexed by finger",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.strength_dexterity.hand_tremor_amplitude_m",
+      "name": "hand tremor amplitude m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Hand positional tremor amplitude under defined task",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.strength_dexterity.hand_tremor_frequency_hz",
+      "name": "hand tremor frequency hz",
+      "unit": "Hz",
+      "kind": "observable",
+      "description": "Hand tremor spectral dominant frequency",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.strength_dexterity.finger_tapping_rate_hz",
+      "name": "finger tapping rate hz",
+      "unit": "Hz",
+      "kind": "observable",
+      "description": "Repeated index-finger tapping rate",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.strength_dexterity.finger_sequence_completion_s",
+      "name": "finger sequence completion s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Time to finish specified dexterity sequence",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.strength_dexterity.fine_motor_error_count",
+      "name": "fine motor error count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Tool manipulation task errors",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.strength_dexterity.reach_horizontal_m",
+      "name": "reach horizontal m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Maximum horizontal functional reach",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.strength_dexterity.reach_overhead_m",
+      "name": "reach overhead m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Functional reach above shoulder",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.strength_dexterity.reach_forward_under_load_m",
+      "name": "reach forward under load m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Forward reach with specified payload",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.strength_dexterity.reach_accuracy_error_m",
+      "name": "reach accuracy error m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Hand endpoint error from target",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.strength_dexterity.manual_tracking_error_rms_m",
+      "name": "manual tracking error rms m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Hand-controlled target tracking error",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.strength_dexterity.bilateral_coordination_score",
+      "name": "bilateral coordination score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Named two-hand coordination test outcome",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.strength_dexterity.hand_eye_reaction_time_s",
+      "name": "hand eye reaction time s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Response latency to eye-guided reach",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.strength_dexterity.arm_push_force_n",
+      "name": "arm push force n",
+      "unit": "N",
+      "kind": "observable",
+      "description": "Voluntary arm pushing force",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.strength_dexterity.arm_pull_force_n",
+      "name": "arm pull force n",
+      "unit": "N",
+      "kind": "observable",
+      "description": "Voluntary arm pulling force",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.strength_dexterity.upper_body_lift_force_n",
+      "name": "upper body lift force n",
+      "unit": "N",
+      "kind": "observable",
+      "description": "Lifting force in standardized motion",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.strength_dexterity.lower_body_peak_force_n",
+      "name": "lower body peak force n",
+      "unit": "N",
+      "kind": "observable",
+      "description": "Lower-body force production",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.strength_dexterity.knee_extension_torque_nm",
+      "name": "knee extension torque nm",
+      "unit": "N m",
+      "kind": "observable",
+      "description": "Knee extensor maximal torque by side",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.strength_dexterity.ankle_plantarflexion_torque_nm",
+      "name": "ankle plantarflexion torque nm",
+      "unit": "N m",
+      "kind": "observable",
+      "description": "Ankle plantarflexion peak torque",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.strength_dexterity.hip_extension_torque_nm",
+      "name": "hip extension torque nm",
+      "unit": "N m",
+      "kind": "observable",
+      "description": "Hip extension maximum torque",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.strength_dexterity.trunk_rotation_torque_nm",
+      "name": "trunk rotation torque nm",
+      "unit": "N m",
+      "kind": "observable",
+      "description": "Trunk rotational effort capacity",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.strength_dexterity.grip_fatigue_slope_n_s",
+      "name": "grip fatigue slope n s",
+      "unit": "N/s",
+      "kind": "derived",
+      "description": "Force decay slope during sustained gripping",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.strength_dexterity.task_accuracy_fraction",
+      "name": "task accuracy fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Fraction successful operations on defined task",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.strength_dexterity.instrument_handling_time_s",
+      "name": "instrument handling time s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Time to manipulate defined scientific instrument",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.strength_dexterity.task_body_posture",
+      "name": "task body posture",
+      "unit": "",
+      "kind": "observable",
+      "description": "Body pose classification for defined work period",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.strength_dexterity.joint_reach_margin_m",
+      "name": "joint reach margin m",
+      "unit": "m",
+      "kind": "derived",
+      "description": "Available reach minus required distance",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.strength_dexterity.motion_range_obstruction_fraction",
+      "name": "motion range obstruction fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Fraction of motion envelope blocked in specified task",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    }
+  ]
+}

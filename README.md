@@ -19,3 +19,7 @@ No application implementation, external datasets, or empirical Marswalk safety c
 - All scientific outputs must identify model versions, evidence limitations, and reproducible test conditions.
 - A modeled route or suit parameter is never described as flight-certified astronaut safety guidance.
 - Pre-existing project material may be reused only if authorized and disclosed under applicable event rules and licenses.
+
+## Human systems research library
+
+The [`human/`](human/) subsystem contains evidence and parameter definitions for anatomy, physiology, neuroscience, psychology, space-exposure responses and mission operations. Its 1,691 candidate parameters are **declarations only**, not validated Mars physiological predictions or stored crew health data. See [`human/parameters/INDEX.json`](human/parameters/INDEX.json) for the full domain inventory.

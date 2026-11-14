@@ -1,0 +1,524 @@
+{
+  "schema_version": "1.0.0",
+  "group": "psychology",
+  "domain": "motivation_behavior",
+  "description": "Motivation, workload, habits, boredom and mission participation",
+  "field_count": 30,
+  "sources": [
+    "NASA_CHAPEA",
+    "ESA_MARS500",
+    "NASA_ISOLATION"
+  ],
+  "fields": [
+    {
+      "id": "human.motivation_behavior.motivation_intrinsic_score",
+      "name": "motivation intrinsic score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Intrinsic motivation inventory with validated scale",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_CHAPEA",
+        "ESA_MARS500",
+        "NASA_ISOLATION"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.motivation_behavior.motivation_extrinsic_score",
+      "name": "motivation extrinsic score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Extrinsic motivation scale",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_CHAPEA",
+        "ESA_MARS500",
+        "NASA_ISOLATION"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.motivation_behavior.motivation_task_value_score",
+      "name": "motivation task value score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Perceived usefulness/value of assigned task",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_CHAPEA",
+        "ESA_MARS500",
+        "NASA_ISOLATION"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.motivation_behavior.motivation_goal_commitment_score",
+      "name": "motivation goal commitment score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Goal commitment assessment",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_CHAPEA",
+        "ESA_MARS500",
+        "NASA_ISOLATION"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.motivation_behavior.motivation_persistence_duration_s",
+      "name": "motivation persistence duration s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Time working on difficult task under protocol",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_CHAPEA",
+        "ESA_MARS500",
+        "NASA_ISOLATION"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.motivation_behavior.motivation_avoidance_behavior_count",
+      "name": "motivation avoidance behavior count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Operational avoidance events under explicit coding",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_CHAPEA",
+        "ESA_MARS500",
+        "NASA_ISOLATION"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.motivation_behavior.motivation_perseverance_score",
+      "name": "motivation perseverance score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Validated perseverance self-report",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_CHAPEA",
+        "ESA_MARS500",
+        "NASA_ISOLATION"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.motivation_behavior.motivation_reward_sensitivity_score",
+      "name": "motivation reward sensitivity score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Named behavioral reward sensitivity scale",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_CHAPEA",
+        "ESA_MARS500",
+        "NASA_ISOLATION"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.motivation_behavior.habit_task_start_delay_s",
+      "name": "habit task start delay s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Delay after task becomes available",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_CHAPEA",
+        "ESA_MARS500",
+        "NASA_ISOLATION"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.motivation_behavior.habit_scheduled_activity_completion_fraction",
+      "name": "habit scheduled activity completion fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Fraction of scheduled tasks completed",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_CHAPEA",
+        "ESA_MARS500",
+        "NASA_ISOLATION"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.motivation_behavior.habit_personal_care_adherence_fraction",
+      "name": "habit personal care adherence fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Completion fraction of personal care routines",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_CHAPEA",
+        "ESA_MARS500",
+        "NASA_ISOLATION"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.motivation_behavior.habit_exercise_adherence_fraction",
+      "name": "habit exercise adherence fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Completion fraction of countermeasure exercise",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_CHAPEA",
+        "ESA_MARS500",
+        "NASA_ISOLATION"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.motivation_behavior.habit_food_log_completion_fraction",
+      "name": "habit food log completion fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Fraction diet logs completed",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_CHAPEA",
+        "ESA_MARS500",
+        "NASA_ISOLATION"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.motivation_behavior.habit_sleep_schedule_adherence_fraction",
+      "name": "habit sleep schedule adherence fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Fraction sleep windows aligned with plan",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_CHAPEA",
+        "ESA_MARS500",
+        "NASA_ISOLATION"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.motivation_behavior.routine_disruption_count",
+      "name": "routine disruption count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Recorded changes to established routine",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_CHAPEA",
+        "ESA_MARS500",
+        "NASA_ISOLATION"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.motivation_behavior.boredom_proneness_score",
+      "name": "boredom proneness score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Named boredom susceptibility inventory",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_CHAPEA",
+        "ESA_MARS500",
+        "NASA_ISOLATION"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.motivation_behavior.momentary_boredom_score",
+      "name": "momentary boredom score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Current boredom rating",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_CHAPEA",
+        "ESA_MARS500",
+        "NASA_ISOLATION"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.motivation_behavior.leisure_activity_time_s",
+      "name": "leisure activity time s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Voluntary leisure time documented",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_CHAPEA",
+        "ESA_MARS500",
+        "NASA_ISOLATION"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.motivation_behavior.social_leisure_time_s",
+      "name": "social leisure time s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Optional crew social leisure duration",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_CHAPEA",
+        "ESA_MARS500",
+        "NASA_ISOLATION"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.motivation_behavior.personal_project_time_s",
+      "name": "personal project time s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Time on individually chosen constructive projects",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_CHAPEA",
+        "ESA_MARS500",
+        "NASA_ISOLATION"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.motivation_behavior.perceived_achievement_score",
+      "name": "perceived achievement score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Self-reported accomplishment on validated scale",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_CHAPEA",
+        "ESA_MARS500",
+        "NASA_ISOLATION"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.motivation_behavior.task_meaningfulness_score",
+      "name": "task meaningfulness score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Subjective meaning of current duties",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_CHAPEA",
+        "ESA_MARS500",
+        "NASA_ISOLATION"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.motivation_behavior.task_engagement_fraction",
+      "name": "task engagement fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Observed engagement fraction under defined method",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_CHAPEA",
+        "ESA_MARS500",
+        "NASA_ISOLATION"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.motivation_behavior.workload_hours_per_day",
+      "name": "workload hours per day",
+      "unit": "h/day",
+      "kind": "observable",
+      "description": "Daily work duration",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_CHAPEA",
+        "ESA_MARS500",
+        "NASA_ISOLATION"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.motivation_behavior.workload_high_demand_time_s",
+      "name": "workload high demand time s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Time in designated cognitively/physically demanding tasks",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_CHAPEA",
+        "ESA_MARS500",
+        "NASA_ISOLATION"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.motivation_behavior.work_rest_ratio",
+      "name": "work rest ratio",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Work hours divided by recovery/rest hours",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_CHAPEA",
+        "ESA_MARS500",
+        "NASA_ISOLATION"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.motivation_behavior.perceived_workload_score",
+      "name": "perceived workload score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Named subjective workload scale",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_CHAPEA",
+        "ESA_MARS500",
+        "NASA_ISOLATION"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.motivation_behavior.time_pressure_exposure_s",
+      "name": "time pressure exposure s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Duration of tasks under explicit deadlines",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_CHAPEA",
+        "ESA_MARS500",
+        "NASA_ISOLATION"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.motivation_behavior.task_interruption_count",
+      "name": "task interruption count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Interrupted tasks in observation period",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_CHAPEA",
+        "ESA_MARS500",
+        "NASA_ISOLATION"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.motivation_behavior.task_recovery_after_interrupt_s",
+      "name": "task recovery after interrupt s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Time to resume prior task after interruption",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_CHAPEA",
+        "ESA_MARS500",
+        "NASA_ISOLATION"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    }
+  ]
+}

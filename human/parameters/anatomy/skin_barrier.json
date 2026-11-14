@@ -1,0 +1,477 @@
+{
+  "schema_version": "1.0.0",
+  "group": "anatomy",
+  "domain": "skin_barrier",
+  "description": "Skin, nails, barrier integrity and wounds",
+  "field_count": 29,
+  "sources": [
+    "NASA_CLOSED_ENVIRONMENT",
+    "NASA_FUNDAMENTALS"
+  ],
+  "fields": [
+    {
+      "id": "human.skin_barrier.skin_surface_temperature_k",
+      "name": "skin surface temperature k",
+      "unit": "K",
+      "kind": "observable",
+      "description": "Surface skin temperature at anatomical site",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ]
+    },
+    {
+      "id": "human.skin_barrier.skin_core_temperature_gradient_k",
+      "name": "skin core temperature gradient k",
+      "unit": "K",
+      "kind": "derived",
+      "description": "Core minus local skin temperature",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ]
+    },
+    {
+      "id": "human.skin_barrier.skin_hydration_fraction",
+      "name": "skin hydration fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Instrument-derived stratum corneum hydration index",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ]
+    },
+    {
+      "id": "human.skin_barrier.transepidermal_water_loss_kg_m2_s",
+      "name": "transepidermal water loss kg m2 s",
+      "unit": "kg/(m^2 s)",
+      "kind": "observable",
+      "description": "Water vapor loss per area and time",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ]
+    },
+    {
+      "id": "human.skin_barrier.skin_sebum_rate_kg_m2_s",
+      "name": "skin sebum rate kg m2 s",
+      "unit": "kg/(m^2 s)",
+      "kind": "observable",
+      "description": "Sebum secretion on specified site",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ]
+    },
+    {
+      "id": "human.skin_barrier.skin_ph",
+      "name": "skin ph",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Skin surface pH with standardized sampling",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ]
+    },
+    {
+      "id": "human.skin_barrier.skin_elasticity_fraction",
+      "name": "skin elasticity fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Instrument-specific skin recovery ratio",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ]
+    },
+    {
+      "id": "human.skin_barrier.skin_turgor_grade",
+      "name": "skin turgor grade",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Clinical skin turgor grade",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ]
+    },
+    {
+      "id": "human.skin_barrier.skin_erythema_index",
+      "name": "skin erythema index",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Instrument-defined local redness index",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ]
+    },
+    {
+      "id": "human.skin_barrier.skin_pigmentation_index",
+      "name": "skin pigmentation index",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Instrument-defined pigment index",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ]
+    },
+    {
+      "id": "human.skin_barrier.skin_thickness_m",
+      "name": "skin thickness m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Imaging-determined local skin thickness",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ]
+    },
+    {
+      "id": "human.skin_barrier.dermis_collagen_fraction",
+      "name": "dermis collagen fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Biopsy or validated imaging collagen fraction",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ]
+    },
+    {
+      "id": "human.skin_barrier.sweat_rate_kg_s",
+      "name": "sweat rate kg s",
+      "unit": "kg/s",
+      "kind": "observable",
+      "description": "Whole-body sweat mass loss over time",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ]
+    },
+    {
+      "id": "human.skin_barrier.sweat_sodium_mmol_l",
+      "name": "sweat sodium mmol l",
+      "unit": "mmol/L",
+      "kind": "observable",
+      "description": "Sweat sodium concentration",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ]
+    },
+    {
+      "id": "human.skin_barrier.sweat_potassium_mmol_l",
+      "name": "sweat potassium mmol l",
+      "unit": "mmol/L",
+      "kind": "observable",
+      "description": "Sweat potassium concentration",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ]
+    },
+    {
+      "id": "human.skin_barrier.sweat_osmolality_mosm_kg",
+      "name": "sweat osmolality mosm kg",
+      "unit": "mOsm/kg",
+      "kind": "observable",
+      "description": "Sweat osmolality",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ]
+    },
+    {
+      "id": "human.skin_barrier.wound_surface_area_m2",
+      "name": "wound surface area m2",
+      "unit": "m^2",
+      "kind": "observable",
+      "description": "Surface area of documented wound",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ]
+    },
+    {
+      "id": "human.skin_barrier.wound_depth_m",
+      "name": "wound depth m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Wound maximum depth",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ]
+    },
+    {
+      "id": "human.skin_barrier.wound_healing_rate_m2_day",
+      "name": "wound healing rate m2 day",
+      "unit": "m^2/day",
+      "kind": "derived",
+      "description": "Reduction in wound area per day",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ]
+    },
+    {
+      "id": "human.skin_barrier.wound_infection_status",
+      "name": "wound infection status",
+      "unit": "",
+      "kind": "clinical_assessment",
+      "description": "Clinically assessed wound infection status",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ]
+    },
+    {
+      "id": "human.skin_barrier.pressure_injury_area_m2",
+      "name": "pressure injury area m2",
+      "unit": "m^2",
+      "kind": "observable",
+      "description": "Pressure-injury affected area",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ]
+    },
+    {
+      "id": "human.skin_barrier.pressure_injury_stage",
+      "name": "pressure injury stage",
+      "unit": "",
+      "kind": "clinical_assessment",
+      "description": "Qualified pressure injury stage",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ]
+    },
+    {
+      "id": "human.skin_barrier.skin_fungal_symptom_score",
+      "name": "skin fungal symptom score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Documented dermatologic symptom score",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ]
+    },
+    {
+      "id": "human.skin_barrier.skin_microbiome_load_cfu_cm2",
+      "name": "skin microbiome load cfu cm2",
+      "unit": "CFU/cm^2",
+      "kind": "observable",
+      "description": "Cultured colony density for specified site/medium",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ]
+    },
+    {
+      "id": "human.skin_barrier.hair_follicle_density_m2",
+      "name": "hair follicle density m2",
+      "unit": "1/m^2",
+      "kind": "observable",
+      "description": "Regional hair follicle density",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ]
+    },
+    {
+      "id": "human.skin_barrier.nail_growth_rate_m_day",
+      "name": "nail growth rate m day",
+      "unit": "m/day",
+      "kind": "observable",
+      "description": "Nail plate longitudinal growth rate",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ]
+    },
+    {
+      "id": "human.skin_barrier.hair_growth_rate_m_day",
+      "name": "hair growth rate m day",
+      "unit": "m/day",
+      "kind": "observable",
+      "description": "Regional hair longitudinal growth",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ]
+    },
+    {
+      "id": "human.skin_barrier.skin_repair_proliferation_index",
+      "name": "skin repair proliferation index",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Cellular regeneration proxy under defined assay",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ]
+    },
+    {
+      "id": "human.skin_barrier.skin_pain_score",
+      "name": "skin pain score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Localized cutaneous pain on named scale",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ]
+    }
+  ]
+}

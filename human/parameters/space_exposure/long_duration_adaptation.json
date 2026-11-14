@@ -1,0 +1,456 @@
+{
+  "schema_version": "1.0.0",
+  "group": "space_exposure",
+  "domain": "long_duration_adaptation",
+  "description": "Months-long biological adaptation, countermeasures and recovery",
+  "field_count": 26,
+  "sources": [
+    "NASA_GRAVITY",
+    "NASA_HRP_RISKS",
+    "NASA_HRP_HUMAN_BODY"
+  ],
+  "fields": [
+    {
+      "id": "human.long_duration_adaptation.mission_phase",
+      "name": "mission phase",
+      "unit": null,
+      "kind": "scenario_input",
+      "description": "Transit landing habitat EVA or return adaptation stage",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_HRP_RISKS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.long_duration_adaptation.mission_elapsed_days",
+      "name": "mission elapsed days",
+      "unit": "day",
+      "kind": "scenario_input",
+      "description": "Time since crew launch",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_HRP_RISKS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.long_duration_adaptation.microgravity_days",
+      "name": "microgravity days",
+      "unit": "day",
+      "kind": "observable",
+      "description": "Cumulative period of near weightlessness",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_HRP_RISKS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.long_duration_adaptation.mars_gravity_days",
+      "name": "mars gravity days",
+      "unit": "day",
+      "kind": "scenario_input",
+      "description": "Time on hypothetical Mars surface",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_HRP_RISKS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.long_duration_adaptation.countermeasure_exercise_minutes_day",
+      "name": "countermeasure exercise minutes day",
+      "unit": "min/day",
+      "kind": "observable",
+      "description": "Scheduled completed physical countermeasures",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_HRP_RISKS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.long_duration_adaptation.countermeasure_resistance_load_newtons",
+      "name": "countermeasure resistance load newtons",
+      "unit": "N",
+      "kind": "observable",
+      "description": "External exercise resistance force",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_HRP_RISKS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.long_duration_adaptation.countermeasure_aerobic_work_w",
+      "name": "countermeasure aerobic work w",
+      "unit": "W",
+      "kind": "observable",
+      "description": "Aerobic training work rate",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_HRP_RISKS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.long_duration_adaptation.countermeasure_impact_loading_n_s",
+      "name": "countermeasure impact loading n s",
+      "unit": "N s",
+      "kind": "derived",
+      "description": "Integrated mechanical impulse during exercise",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_HRP_RISKS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.long_duration_adaptation.countermeasure_sleep_adherence_fraction",
+      "name": "countermeasure sleep adherence fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Completion of personalized sleep schedule",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_HRP_RISKS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.long_duration_adaptation.countermeasure_nutrition_adherence_fraction",
+      "name": "countermeasure nutrition adherence fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Completion of personalized intake targets",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_HRP_RISKS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.long_duration_adaptation.adaptation_lean_mass_change_fraction",
+      "name": "adaptation lean mass change fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Change of lean mass relative to baseline",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_HRP_RISKS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.long_duration_adaptation.adaptation_bone_density_change_fraction",
+      "name": "adaptation bone density change fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Change of BMD relative to baseline",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_HRP_RISKS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.long_duration_adaptation.adaptation_plasma_volume_change_fraction",
+      "name": "adaptation plasma volume change fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Change of plasma volume relative to baseline",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_HRP_RISKS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.long_duration_adaptation.adaptation_orthostatic_tolerance_change_fraction",
+      "name": "adaptation orthostatic tolerance change fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Change in orthostatic tolerance",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_HRP_RISKS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.long_duration_adaptation.adaptation_visual_function_change_score",
+      "name": "adaptation visual function change score",
+      "unit": "score",
+      "kind": "derived",
+      "description": "Individual visual performance change",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_HRP_RISKS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.long_duration_adaptation.adaptation_postural_control_change_fraction",
+      "name": "adaptation postural control change fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Change in named balance measure",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_HRP_RISKS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.long_duration_adaptation.adaptation_circadian_phase_shift_hours",
+      "name": "adaptation circadian phase shift hours",
+      "unit": "h",
+      "kind": "derived",
+      "description": "Shift in individual circadian phase",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_HRP_RISKS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.long_duration_adaptation.adaptation_immune_function_change_fraction",
+      "name": "adaptation immune function change fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Specific immune assay change from baseline",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_HRP_RISKS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.long_duration_adaptation.adaptation_cognitive_function_change_fraction",
+      "name": "adaptation cognitive function change fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Specified cognitive test change, not latent intelligence change",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_HRP_RISKS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.long_duration_adaptation.adaptation_recovery_after_return_days",
+      "name": "adaptation recovery after return days",
+      "unit": "day",
+      "kind": "derived",
+      "description": "Time to defined functional recovery threshold",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_HRP_RISKS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.long_duration_adaptation.adaptation_recovery_success_fraction",
+      "name": "adaptation recovery success fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Frequency of reaching target recovery endpoint",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_HRP_RISKS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.long_duration_adaptation.adaptation_model_extrapolation_domain",
+      "name": "adaptation model extrapolation domain",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Direct ISS or other analog evidence regime",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_HRP_RISKS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.long_duration_adaptation.adaptation_model_parameter_coverage_fraction",
+      "name": "adaptation model parameter coverage fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Fraction of required model coefficients calibrated",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_HRP_RISKS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.long_duration_adaptation.adaptation_missing_evidence_count",
+      "name": "adaptation missing evidence count",
+      "unit": "count",
+      "kind": "metadata",
+      "description": "Number of required unverified inputs",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_HRP_RISKS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.long_duration_adaptation.adaptation_uncertainty_interaction_index",
+      "name": "adaptation uncertainty interaction index",
+      "unit": "index",
+      "kind": "derived",
+      "description": "Uncertainty due to interacting coupled responses",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_HRP_RISKS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.long_duration_adaptation.adaptation_observational_followup_days",
+      "name": "adaptation observational followup days",
+      "unit": "day",
+      "kind": "observable",
+      "description": "Duration of postflight clinical followup",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_HRP_RISKS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    }
+  ]
+}

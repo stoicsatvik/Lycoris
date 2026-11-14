@@ -1,0 +1,493 @@
+{
+  "schema_version": "1.0.0",
+  "group": "anatomy",
+  "domain": "body_composition",
+  "description": "Body composition and volume",
+  "field_count": 30,
+  "sources": [
+    "NASA_HIDH",
+    "NASA_FUNDAMENTALS"
+  ],
+  "fields": [
+    {
+      "id": "human.body_composition.fat_mass_kg",
+      "name": "fat mass kg",
+      "unit": "kg",
+      "kind": "observable",
+      "description": "Total adipose mass by specified measurement technique",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_FUNDAMENTALS"
+      ]
+    },
+    {
+      "id": "human.body_composition.fat_free_mass_kg",
+      "name": "fat free mass kg",
+      "unit": "kg",
+      "kind": "observable",
+      "description": "Measured/estimated nonfat mass",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_FUNDAMENTALS"
+      ]
+    },
+    {
+      "id": "human.body_composition.body_fat_fraction",
+      "name": "body fat fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Fat mass divided by total body mass",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_FUNDAMENTALS"
+      ]
+    },
+    {
+      "id": "human.body_composition.skeletal_muscle_mass_kg",
+      "name": "skeletal muscle mass kg",
+      "unit": "kg",
+      "kind": "observable",
+      "description": "Estimated total skeletal muscle mass",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_FUNDAMENTALS"
+      ]
+    },
+    {
+      "id": "human.body_composition.appendicular_muscle_mass_kg",
+      "name": "appendicular muscle mass kg",
+      "unit": "kg",
+      "kind": "observable",
+      "description": "Arm and leg muscle mass",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_FUNDAMENTALS"
+      ]
+    },
+    {
+      "id": "human.body_composition.visceral_fat_mass_kg",
+      "name": "visceral fat mass kg",
+      "unit": "kg",
+      "kind": "observable",
+      "description": "Visceral adipose estimate",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_FUNDAMENTALS"
+      ]
+    },
+    {
+      "id": "human.body_composition.subcutaneous_fat_mass_kg",
+      "name": "subcutaneous fat mass kg",
+      "unit": "kg",
+      "kind": "observable",
+      "description": "Subcutaneous adipose estimate",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_FUNDAMENTALS"
+      ]
+    },
+    {
+      "id": "human.body_composition.total_body_water_kg",
+      "name": "total body water kg",
+      "unit": "kg",
+      "kind": "observable",
+      "description": "Total body-water estimate from declared method",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_FUNDAMENTALS"
+      ]
+    },
+    {
+      "id": "human.body_composition.extracellular_water_kg",
+      "name": "extracellular water kg",
+      "unit": "kg",
+      "kind": "observable",
+      "description": "Extracellular water estimate",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_FUNDAMENTALS"
+      ]
+    },
+    {
+      "id": "human.body_composition.intracellular_water_kg",
+      "name": "intracellular water kg",
+      "unit": "kg",
+      "kind": "observable",
+      "description": "Intracellular water estimate",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_FUNDAMENTALS"
+      ]
+    },
+    {
+      "id": "human.body_composition.intracellular_water_fraction",
+      "name": "intracellular water fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Intracellular fraction of total body water",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_FUNDAMENTALS"
+      ]
+    },
+    {
+      "id": "human.body_composition.extracellular_water_fraction",
+      "name": "extracellular water fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Extracellular fraction of total body water",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_FUNDAMENTALS"
+      ]
+    },
+    {
+      "id": "human.body_composition.bone_mineral_content_kg",
+      "name": "bone mineral content kg",
+      "unit": "kg",
+      "kind": "observable",
+      "description": "Total bone mineral mass estimated by imaging",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_FUNDAMENTALS"
+      ]
+    },
+    {
+      "id": "human.body_composition.fat_free_mass_index_kg_m2",
+      "name": "fat free mass index kg m2",
+      "unit": "kg/m^2",
+      "kind": "derived",
+      "description": "Fat-free mass normalized by height squared",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_FUNDAMENTALS"
+      ]
+    },
+    {
+      "id": "human.body_composition.body_mass_index_kg_m2",
+      "name": "body mass index kg m2",
+      "unit": "kg/m^2",
+      "kind": "derived",
+      "description": "BMI with defined body mass and height",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_FUNDAMENTALS"
+      ]
+    },
+    {
+      "id": "human.body_composition.regional_lean_mass_kg",
+      "name": "regional lean mass kg",
+      "unit": "kg",
+      "kind": "observable",
+      "description": "Lean tissue mass, body region indexed",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_FUNDAMENTALS"
+      ]
+    },
+    {
+      "id": "human.body_composition.regional_fat_mass_kg",
+      "name": "regional fat mass kg",
+      "unit": "kg",
+      "kind": "observable",
+      "description": "Adipose tissue mass, body region indexed",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_FUNDAMENTALS"
+      ]
+    },
+    {
+      "id": "human.body_composition.segment_mass_kg",
+      "name": "segment mass kg",
+      "unit": "kg",
+      "kind": "observable",
+      "description": "Body segment mass using validated estimation",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_FUNDAMENTALS"
+      ]
+    },
+    {
+      "id": "human.body_composition.tissue_density_kg_m3",
+      "name": "tissue density kg m3",
+      "unit": "kg/m^3",
+      "kind": "derived",
+      "description": "Assumed/estimated tissue-specific density",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_FUNDAMENTALS"
+      ]
+    },
+    {
+      "id": "human.body_composition.body_volume_m3",
+      "name": "body volume m3",
+      "unit": "m^3",
+      "kind": "observable",
+      "description": "Total displaced/imaged body volume",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_FUNDAMENTALS"
+      ]
+    },
+    {
+      "id": "human.body_composition.trunk_volume_m3",
+      "name": "trunk volume m3",
+      "unit": "m^3",
+      "kind": "observable",
+      "description": "Trunk segment volume",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_FUNDAMENTALS"
+      ]
+    },
+    {
+      "id": "human.body_composition.lung_volume_fraction",
+      "name": "lung volume fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Lung volume fraction of total body volume under defined phase",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_FUNDAMENTALS"
+      ]
+    },
+    {
+      "id": "human.body_composition.waist_hip_ratio",
+      "name": "waist hip ratio",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Circumference ratio with matched landmarks",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_FUNDAMENTALS"
+      ]
+    },
+    {
+      "id": "human.body_composition.muscle_cross_section_area_m2",
+      "name": "muscle cross section area m2",
+      "unit": "m^2",
+      "kind": "observable",
+      "description": "Muscle-group anatomical cross-sectional area",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_FUNDAMENTALS"
+      ]
+    },
+    {
+      "id": "human.body_composition.muscle_fat_infiltration_fraction",
+      "name": "muscle fat infiltration fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Intramuscular fat fraction by imaging",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_FUNDAMENTALS"
+      ]
+    },
+    {
+      "id": "human.body_composition.body_composition_assay_error_kg",
+      "name": "body composition assay error kg",
+      "unit": "kg",
+      "kind": "derived",
+      "description": "Instrument-specific mass estimate uncertainty",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_FUNDAMENTALS"
+      ]
+    },
+    {
+      "id": "human.body_composition.regional_body_water_kg",
+      "name": "regional body water kg",
+      "unit": "kg",
+      "kind": "observable",
+      "description": "Region-specific tissue water estimation",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_FUNDAMENTALS"
+      ]
+    },
+    {
+      "id": "human.body_composition.total_body_nitrogen_kg",
+      "name": "total body nitrogen kg",
+      "unit": "kg",
+      "kind": "observable",
+      "description": "Whole-body nitrogen by dedicated assay if available",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_FUNDAMENTALS"
+      ]
+    },
+    {
+      "id": "human.body_composition.mass_change_rate_kg_day",
+      "name": "mass change rate kg day",
+      "unit": "kg/day",
+      "kind": "derived",
+      "description": "Temporal change in total body mass",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_FUNDAMENTALS"
+      ]
+    },
+    {
+      "id": "human.body_composition.regional_swelling_volume_m3",
+      "name": "regional swelling volume m3",
+      "unit": "m^3",
+      "kind": "derived",
+      "description": "Volume difference within specified soft tissue region",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_FUNDAMENTALS"
+      ]
+    }
+  ]
+}

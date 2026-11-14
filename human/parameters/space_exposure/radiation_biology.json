@@ -1,0 +1,429 @@
+{
+  "schema_version": "1.0.0",
+  "group": "space_exposure",
+  "domain": "radiation_biology",
+  "description": "Radiation tissue effects, biology and long-term outcomes",
+  "field_count": 26,
+  "sources": [
+    "NASA_HRP_RISKS",
+    "NASA_FUNDAMENTALS"
+  ],
+  "fields": [
+    {
+      "id": "human.radiation_biology.whole_body_absorbed_dose_gy",
+      "name": "whole body absorbed dose gy",
+      "unit": "Gy",
+      "kind": "derived",
+      "description": "Modeled whole-body absorbed dose with specified phantom",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.radiation_biology.organ_absorbed_dose_gy",
+      "name": "organ absorbed dose gy",
+      "unit": "Gy",
+      "kind": "derived",
+      "description": "Organ-specific absorbed dose indexed by anatomical organ",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.radiation_biology.organ_equivalent_dose_sv",
+      "name": "organ equivalent dose sv",
+      "unit": "Sv",
+      "kind": "derived",
+      "description": "Organ equivalent dose with radiation quality model",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.radiation_biology.effective_dose_sv",
+      "name": "effective dose sv",
+      "unit": "Sv",
+      "kind": "derived",
+      "description": "Tissue-weighted effective dose under defined protection framework",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.radiation_biology.dose_rate_gy_s",
+      "name": "dose rate gy s",
+      "unit": "Gy/s",
+      "kind": "observable",
+      "description": "Dosimeter absorbed dose rate with calibration",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.radiation_biology.particle_lineal_energy_kev_um",
+      "name": "particle lineal energy kev um",
+      "unit": "keV/um",
+      "kind": "observable",
+      "description": "Microdosimetric lineal energy by detector",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.radiation_biology.high_let_exposure_fraction",
+      "name": "high let exposure fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Fraction from defined high-LET spectrum class",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.radiation_biology.gcr_exposure_integrated_gy",
+      "name": "gcr exposure integrated gy",
+      "unit": "Gy",
+      "kind": "derived",
+      "description": "Modeled galactic cosmic-ray absorbed dose",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.radiation_biology.sep_exposure_integrated_gy",
+      "name": "sep exposure integrated gy",
+      "unit": "Gy",
+      "kind": "derived",
+      "description": "Modeled solar event absorbed dose",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.radiation_biology.radiation_dna_double_strand_breaks_count",
+      "name": "radiation dna double strand breaks count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Measured cellular DNA break marker under assay",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.radiation_biology.radiation_micronucleus_frequency",
+      "name": "radiation micronucleus frequency",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Cell population micronucleus assay fraction",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.radiation_biology.radiation_chromosome_translocation_fraction",
+      "name": "radiation chromosome translocation fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Chromosome aberration assay fraction",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.radiation_biology.radiation_gamma_h2ax_foci_per_cell",
+      "name": "radiation gamma h2ax foci per cell",
+      "unit": "count/cell",
+      "kind": "observable",
+      "description": "Gamma H2AX foci in cells, assay specific",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.radiation_biology.radiation_lymphocyte_depletion_fraction",
+      "name": "radiation lymphocyte depletion fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Change in lymphocyte count from individual baseline",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.radiation_biology.radiation_inflammatory_response_score",
+      "name": "radiation inflammatory response score",
+      "unit": "score",
+      "kind": "derived",
+      "description": "Unvalidated response index unless independently calibrated",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.radiation_biology.radiation_cataract_opacity_score",
+      "name": "radiation cataract opacity score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Ocular lens opacity under named grading method",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.radiation_biology.radiation_skin_erythema_grade",
+      "name": "radiation skin erythema grade",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Clinical skin injury grade",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.radiation_biology.radiation_acute_syndrome_status",
+      "name": "radiation acute syndrome status",
+      "unit": null,
+      "kind": "clinical_assessment",
+      "description": "Clinical acute radiation syndrome diagnosis, never inferred simply from absorbed dose",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.radiation_biology.radiation_hematopoietic_response_index",
+      "name": "radiation hematopoietic response index",
+      "unit": "index",
+      "kind": "latent",
+      "description": "Model state for marrow biological response",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.radiation_biology.radiation_lifetime_cancer_risk_fraction",
+      "name": "radiation lifetime cancer risk fraction",
+      "unit": "1",
+      "kind": "latent",
+      "description": "Population risk estimate requires validated radiation epidemiology",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.radiation_biology.radiation_neurobehavioral_effect_score",
+      "name": "radiation neurobehavioral effect score",
+      "unit": "score",
+      "kind": "latent",
+      "description": "Hypothetical CNS impact, not directly predicted from Mars RAD",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.radiation_biology.radiation_cardiovascular_effect_score",
+      "name": "radiation cardiovascular effect score",
+      "unit": "score",
+      "kind": "latent",
+      "description": "Long-term adverse outcome model requires evidence",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.radiation_biology.radiation_individual_radiosensitivity_index",
+      "name": "radiation individual radiosensitivity index",
+      "unit": "index",
+      "kind": "latent",
+      "description": "Person-specific biological susceptibility not inferred from generic mean",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.radiation_biology.radiation_cell_repair_rate_per_day",
+      "name": "radiation cell repair rate per day",
+      "unit": "1/day",
+      "kind": "latent",
+      "description": "Mechanistic repair rate requiring experimental calibration",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.radiation_biology.radiation_chronic_effect_latency_year",
+      "name": "radiation chronic effect latency year",
+      "unit": "year",
+      "kind": "latent",
+      "description": "Outcome latency model conditional on relevant data",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.radiation_biology.radiation_risk_model_version",
+      "name": "radiation risk model version",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Exact validated/unvalidated radiation health model version",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    }
+  ]
+}

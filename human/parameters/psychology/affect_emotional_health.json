@@ -1,0 +1,509 @@
+{
+  "schema_version": "1.0.0",
+  "group": "psychology",
+  "domain": "affect_emotional_health",
+  "description": "Mood, emotional well-being, resilience and stress symptoms",
+  "field_count": 31,
+  "sources": [
+    "NASA_ISOLATION",
+    "NASA_HRP_RISKS"
+  ],
+  "fields": [
+    {
+      "id": "human.affect_emotional_health.positive_affect_score",
+      "name": "positive affect score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Validated positive mood questionnaire scale",
+      "measurement_context": "self_report",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.affect_emotional_health.negative_affect_score",
+      "name": "negative affect score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Validated negative mood questionnaire scale",
+      "measurement_context": "self_report",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.affect_emotional_health.mood_valence_score",
+      "name": "mood valence score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Self-report emotional valence on named scale",
+      "measurement_context": "self_report",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.affect_emotional_health.mood_arousal_score",
+      "name": "mood arousal score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Self-report emotional activation",
+      "measurement_context": "self_report",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.affect_emotional_health.subjective_stress_score",
+      "name": "subjective stress score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Perceived stress questionnaire score",
+      "measurement_context": "self_report",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.affect_emotional_health.acute_stress_reaction_score",
+      "name": "acute stress reaction score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Named acute stress symptom inventory",
+      "measurement_context": "self_report",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.affect_emotional_health.state_anxiety_score",
+      "name": "state anxiety score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Validated state-anxiety inventory",
+      "measurement_context": "self_report",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.affect_emotional_health.trait_anxiety_score",
+      "name": "trait anxiety score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Validated trait-anxiety inventory",
+      "measurement_context": "self_report",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.affect_emotional_health.depressive_symptom_score",
+      "name": "depressive symptom score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Named depression symptom inventory, not autonomous diagnosis",
+      "measurement_context": "self_report",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.affect_emotional_health.irritability_score",
+      "name": "irritability score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Validated irritability assessment",
+      "measurement_context": "self_report",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.affect_emotional_health.anger_intensity_score",
+      "name": "anger intensity score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Momentary anger or irritability report",
+      "measurement_context": "self_report",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.affect_emotional_health.frustration_tolerance_s",
+      "name": "frustration tolerance s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Time before quitting a standardized frustrating task",
+      "measurement_context": "self_report",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.affect_emotional_health.perceived_social_support_score",
+      "name": "perceived social support score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Self-assessed support on named scale",
+      "measurement_context": "self_report",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.affect_emotional_health.homesickness_score",
+      "name": "homesickness score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Homesickness questionnaire",
+      "measurement_context": "self_report",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.affect_emotional_health.loneliness_score",
+      "name": "loneliness score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Validated loneliness scale",
+      "measurement_context": "self_report",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.affect_emotional_health.emotional_exhaustion_score",
+      "name": "emotional exhaustion score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Named burnout/exhaustion scale",
+      "measurement_context": "self_report",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.affect_emotional_health.burnout_cynicism_score",
+      "name": "burnout cynicism score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Cynicism dimension in validated inventory",
+      "measurement_context": "self_report",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.affect_emotional_health.burnout_efficacy_score",
+      "name": "burnout efficacy score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Professional/operational efficacy scale",
+      "measurement_context": "self_report",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.affect_emotional_health.resilience_scale_score",
+      "name": "resilience scale score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Named resilience scale score",
+      "measurement_context": "self_report",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.affect_emotional_health.coping_problem_focused_score",
+      "name": "coping problem focused score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Coping orientation under validated tool",
+      "measurement_context": "self_report",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.affect_emotional_health.coping_emotion_focused_score",
+      "name": "coping emotion focused score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Emotion-focused coping orientation",
+      "measurement_context": "self_report",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.affect_emotional_health.coping_avoidance_score",
+      "name": "coping avoidance score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Avoidance under named coping inventory",
+      "measurement_context": "self_report",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.affect_emotional_health.affect_regulation_difficulty_score",
+      "name": "affect regulation difficulty score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Named emotion regulation difficulty measure",
+      "measurement_context": "self_report",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.affect_emotional_health.perceived_control_score",
+      "name": "perceived control score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Agency/controllability rating",
+      "measurement_context": "self_report",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.affect_emotional_health.self_efficacy_score",
+      "name": "self efficacy score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Task-specific confidence rating",
+      "measurement_context": "self_report",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.affect_emotional_health.life_satisfaction_score",
+      "name": "life satisfaction score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Life satisfaction questionnaire result",
+      "measurement_context": "self_report",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.affect_emotional_health.psychological_distress_score",
+      "name": "psychological distress score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Composite distress questionnaire",
+      "measurement_context": "self_report",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.affect_emotional_health.positive_engagement_score",
+      "name": "positive engagement score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Task engagement or vigor under named scale",
+      "measurement_context": "self_report",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.affect_emotional_health.emotional_recovery_latency_h",
+      "name": "emotional recovery latency h",
+      "unit": "h",
+      "kind": "derived",
+      "description": "Return to personal affect baseline after defined event",
+      "measurement_context": "self_report",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.affect_emotional_health.affect_variability_score",
+      "name": "affect variability score",
+      "unit": "score",
+      "kind": "derived",
+      "description": "Within-person affect fluctuations under named method",
+      "measurement_context": "self_report",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.affect_emotional_health.mental_health_clinician_evaluation",
+      "name": "mental health clinician evaluation",
+      "unit": "",
+      "kind": "clinical_assessment",
+      "description": "Confidential qualified clinician assessment, never inferred from model output",
+      "measurement_context": "self_report",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    }
+  ]
+}

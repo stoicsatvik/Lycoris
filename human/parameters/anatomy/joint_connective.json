@@ -1,0 +1,461 @@
+{
+  "schema_version": "1.0.0",
+  "group": "anatomy",
+  "domain": "joint_connective",
+  "description": "Joints, tendon, ligament, cartilage and connective tissue",
+  "field_count": 28,
+  "sources": [
+    "NASA_HIDH",
+    "NASA_DIGITAL_ASTRONAUT"
+  ],
+  "fields": [
+    {
+      "id": "human.joint_connective.joint_angle_rad",
+      "name": "joint angle rad",
+      "unit": "rad",
+      "kind": "observable",
+      "description": "Joint rotation by side and anatomical axis",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.joint_connective.joint_range_active_rad",
+      "name": "joint range active rad",
+      "unit": "rad",
+      "kind": "observable",
+      "description": "Voluntary active range of motion",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.joint_connective.joint_range_passive_rad",
+      "name": "joint range passive rad",
+      "unit": "rad",
+      "kind": "observable",
+      "description": "Externally elicited passive range of motion",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.joint_connective.joint_extension_limit_rad",
+      "name": "joint extension limit rad",
+      "unit": "rad",
+      "kind": "observable",
+      "description": "Extension boundary under documented procedure",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.joint_connective.joint_flexion_limit_rad",
+      "name": "joint flexion limit rad",
+      "unit": "rad",
+      "kind": "observable",
+      "description": "Flexion boundary",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.joint_connective.joint_abduction_limit_rad",
+      "name": "joint abduction limit rad",
+      "unit": "rad",
+      "kind": "observable",
+      "description": "Abduction range in specified plane",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.joint_connective.joint_rotation_limit_rad",
+      "name": "joint rotation limit rad",
+      "unit": "rad",
+      "kind": "observable",
+      "description": "Internal or external rotation boundary",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.joint_connective.joint_stiffness_nm_rad",
+      "name": "joint stiffness nm rad",
+      "unit": "N m/rad",
+      "kind": "derived",
+      "description": "Estimated rotational stiffness",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.joint_connective.joint_damping_nms_rad",
+      "name": "joint damping nms rad",
+      "unit": "N m s/rad",
+      "kind": "derived",
+      "description": "Rotational damping parameter",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.joint_connective.joint_peak_torque_nm",
+      "name": "joint peak torque nm",
+      "unit": "N m",
+      "kind": "observable",
+      "description": "Voluntary joint torque under specified contraction",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.joint_connective.joint_angular_velocity_rad_s",
+      "name": "joint angular velocity rad s",
+      "unit": "rad/s",
+      "kind": "observable",
+      "description": "Angular velocity during movement",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.joint_connective.joint_angular_acceleration_rad_s2",
+      "name": "joint angular acceleration rad s2",
+      "unit": "rad/s^2",
+      "kind": "derived",
+      "description": "Joint angular acceleration",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.joint_connective.joint_reaction_force_n",
+      "name": "joint reaction force n",
+      "unit": "N",
+      "kind": "derived",
+      "description": "Internal estimated joint reaction force",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.joint_connective.joint_reaction_moment_nm",
+      "name": "joint reaction moment nm",
+      "unit": "N m",
+      "kind": "derived",
+      "description": "Internal joint moment under model",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.joint_connective.tendon_cross_section_area_m2",
+      "name": "tendon cross section area m2",
+      "unit": "m^2",
+      "kind": "observable",
+      "description": "Tendon anatomical area",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.joint_connective.tendon_stiffness_n_m",
+      "name": "tendon stiffness n m",
+      "unit": "N/m",
+      "kind": "derived",
+      "description": "Mechanical stiffness from load/displacement",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.joint_connective.tendon_strain_fraction",
+      "name": "tendon strain fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Relative tendon extension",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.joint_connective.tendon_force_n",
+      "name": "tendon force n",
+      "unit": "N",
+      "kind": "derived",
+      "description": "Estimated tendon axial force",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.joint_connective.ligament_laxity_m",
+      "name": "ligament laxity m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Defined joint displacement under test force",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.joint_connective.ligament_load_limit_n",
+      "name": "ligament load limit n",
+      "unit": "N",
+      "kind": "derived",
+      "description": "Estimated functional ligament limit",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.joint_connective.cartilage_thickness_m",
+      "name": "cartilage thickness m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Articular cartilage thickness via imaging",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.joint_connective.cartilage_t2_relaxation_ms",
+      "name": "cartilage t2 relaxation ms",
+      "unit": "ms",
+      "kind": "observable",
+      "description": "MRI cartilage T2 relaxation parameter",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.joint_connective.synovial_effusion_volume_ml",
+      "name": "synovial effusion volume ml",
+      "unit": "mL",
+      "kind": "observable",
+      "description": "Joint fluid excess volume by imaging",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.joint_connective.joint_pain_score",
+      "name": "joint pain score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Patient-reported pain on named scale",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.joint_connective.joint_swelling_score",
+      "name": "joint swelling score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Structured examination swelling grade",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.joint_connective.joint_instability_event_count",
+      "name": "joint instability event count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Reported joint giving-way incidents",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.joint_connective.joint_crepitus_status",
+      "name": "joint crepitus status",
+      "unit": "",
+      "kind": "clinical_assessment",
+      "description": "Clinical joint crepitus observation",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.joint_connective.joint_effort_torque_nm",
+      "name": "joint effort torque nm",
+      "unit": "N m",
+      "kind": "derived",
+      "description": "Modeled net joint effort during task",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    }
+  ]
+}

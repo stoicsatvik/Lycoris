@@ -1,0 +1,557 @@
+{
+  "schema_version": "1.0.0",
+  "group": "physiology",
+  "domain": "hematology_erythropoiesis",
+  "description": "Blood volume, red blood cells, white cells and transport",
+  "field_count": 34,
+  "sources": [
+    "NASA_HRP_RISKS",
+    "NASA_HRP_HUMAN_BODY"
+  ],
+  "fields": [
+    {
+      "id": "human.hematology_erythropoiesis.blood_volume_l",
+      "name": "blood volume l",
+      "unit": "L",
+      "kind": "observable",
+      "description": "Total circulating blood volume with named method",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.hematology_erythropoiesis.plasma_volume_l",
+      "name": "plasma volume l",
+      "unit": "L",
+      "kind": "observable",
+      "description": "Plasma compartment volume estimate",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.hematology_erythropoiesis.red_cell_volume_l",
+      "name": "red cell volume l",
+      "unit": "L",
+      "kind": "observable",
+      "description": "Total circulating erythrocyte volume",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.hematology_erythropoiesis.hematocrit_fraction",
+      "name": "hematocrit fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Red-cell fraction of blood volume",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.hematology_erythropoiesis.hemoglobin_g_dl",
+      "name": "hemoglobin g dl",
+      "unit": "g/dL",
+      "kind": "observable",
+      "description": "Blood hemoglobin concentration",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.hematology_erythropoiesis.rbc_count_per_l",
+      "name": "rbc count per l",
+      "unit": "1/L",
+      "kind": "observable",
+      "description": "Red cell count",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.hematology_erythropoiesis.wbc_count_per_l",
+      "name": "wbc count per l",
+      "unit": "1/L",
+      "kind": "observable",
+      "description": "White cell count",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.hematology_erythropoiesis.platelet_count_per_l",
+      "name": "platelet count per l",
+      "unit": "1/L",
+      "kind": "observable",
+      "description": "Platelet count",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.hematology_erythropoiesis.mcv_fl",
+      "name": "mcv fl",
+      "unit": "fL",
+      "kind": "observable",
+      "description": "Mean corpuscular volume",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.hematology_erythropoiesis.mch_pg",
+      "name": "mch pg",
+      "unit": "pg",
+      "kind": "observable",
+      "description": "Mean hemoglobin per RBC",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.hematology_erythropoiesis.mchc_g_dl",
+      "name": "mchc g dl",
+      "unit": "g/dL",
+      "kind": "observable",
+      "description": "Mean corpuscular hemoglobin concentration",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.hematology_erythropoiesis.rdw_fraction",
+      "name": "rdw fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "RBC distribution width as a fraction under method",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.hematology_erythropoiesis.reticulocyte_fraction",
+      "name": "reticulocyte fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Immature red-cell fraction",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.hematology_erythropoiesis.reticulocyte_count_per_l",
+      "name": "reticulocyte count per l",
+      "unit": "1/L",
+      "kind": "observable",
+      "description": "Reticulocyte number concentration",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.hematology_erythropoiesis.serum_ferritin_ug_l",
+      "name": "serum ferritin ug l",
+      "unit": "ug/L",
+      "kind": "observable",
+      "description": "Ferritin assay, interpreted with inflammation",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.hematology_erythropoiesis.serum_iron_umol_l",
+      "name": "serum iron umol l",
+      "unit": "umol/L",
+      "kind": "observable",
+      "description": "Circulating serum iron",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.hematology_erythropoiesis.transferrin_g_l",
+      "name": "transferrin g l",
+      "unit": "g/L",
+      "kind": "observable",
+      "description": "Transferrin concentration",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.hematology_erythropoiesis.transferrin_saturation_fraction",
+      "name": "transferrin saturation fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Iron binding saturation fraction",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.hematology_erythropoiesis.total_iron_binding_capacity_umol_l",
+      "name": "total iron binding capacity umol l",
+      "unit": "umol/L",
+      "kind": "observable",
+      "description": "TIBC by assay",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.hematology_erythropoiesis.erythropoietin_iu_l",
+      "name": "erythropoietin iu l",
+      "unit": "IU/L",
+      "kind": "observable",
+      "description": "Erythropoietin hormone concentration",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.hematology_erythropoiesis.haptoglobin_g_l",
+      "name": "haptoglobin g l",
+      "unit": "g/L",
+      "kind": "observable",
+      "description": "Haptoglobin concentration",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.hematology_erythropoiesis.lactate_dehydrogenase_u_l",
+      "name": "lactate dehydrogenase u l",
+      "unit": "U/L",
+      "kind": "observable",
+      "description": "LDH serum enzyme activity",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.hematology_erythropoiesis.bilirubin_total_umol_l",
+      "name": "bilirubin total umol l",
+      "unit": "umol/L",
+      "kind": "observable",
+      "description": "Total bilirubin as hemolysis/liver context",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.hematology_erythropoiesis.blood_viscosity_pa_s",
+      "name": "blood viscosity pa s",
+      "unit": "Pa s",
+      "kind": "observable",
+      "description": "Whole blood viscosity under shear rate specified",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.hematology_erythropoiesis.plasma_viscosity_pa_s",
+      "name": "plasma viscosity pa s",
+      "unit": "Pa s",
+      "kind": "observable",
+      "description": "Plasma viscosity",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.hematology_erythropoiesis.blood_oxygen_capacity_ml_dl",
+      "name": "blood oxygen capacity ml dl",
+      "unit": "mL/dL",
+      "kind": "derived",
+      "description": "O2 carrying capacity of blood",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.hematology_erythropoiesis.red_cell_deformability_index",
+      "name": "red cell deformability index",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Ektacytometry deformation index",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.hematology_erythropoiesis.red_cell_aggregation_index",
+      "name": "red cell aggregation index",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Rouleaux aggregation metric",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.hematology_erythropoiesis.red_cell_survival_days",
+      "name": "red cell survival days",
+      "unit": "day",
+      "kind": "derived",
+      "description": "Red-cell population lifespan estimate",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.hematology_erythropoiesis.erythropoiesis_rate_cells_s",
+      "name": "erythropoiesis rate cells s",
+      "unit": "cells/s",
+      "kind": "latent",
+      "description": "Rate of red cell production under model",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.hematology_erythropoiesis.hemolysis_rate_cells_s",
+      "name": "hemolysis rate cells s",
+      "unit": "cells/s",
+      "kind": "latent",
+      "description": "Rate of red cell destruction under model",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.hematology_erythropoiesis.rbc_morphology_code",
+      "name": "rbc morphology code",
+      "unit": "",
+      "kind": "clinical_assessment",
+      "description": "Blood smear RBC morphological classification",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.hematology_erythropoiesis.blood_type_abo",
+      "name": "blood type abo",
+      "unit": "",
+      "kind": "metadata",
+      "description": "Documented ABO blood group for medical preparedness",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.hematology_erythropoiesis.blood_type_rh",
+      "name": "blood type rh",
+      "unit": "",
+      "kind": "metadata",
+      "description": "Documented Rh-D group status",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_HRP_HUMAN_BODY"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    }
+  ]
+}

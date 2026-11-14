@@ -1,0 +1,473 @@
+{
+  "schema_version": "1.0.0",
+  "group": "space_exposure",
+  "domain": "gravity_transition",
+  "description": "Changing gravity: launch, microgravity, lunar and Martian surface",
+  "field_count": 27,
+  "sources": [
+    "NASA_GRAVITY",
+    "NASA_DIGITAL_ASTRONAUT",
+    "NTRS_PARTIAL_GRAVITY_2021"
+  ],
+  "fields": [
+    {
+      "id": "human.gravity_transition.external_gravity_m_s2",
+      "name": "external gravity m s2",
+      "unit": "m/s^2",
+      "kind": "scenario_input",
+      "description": "Acceleration field at crew center of mass",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT",
+        "NTRS_PARTIAL_GRAVITY_2021"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.gravity_transition.gravity_ratio_to_earth",
+      "name": "gravity ratio to earth",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Local acceleration divided by reference Earth surface gravity",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT",
+        "NTRS_PARTIAL_GRAVITY_2021"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.gravity_transition.gravity_exposure_elapsed_s",
+      "name": "gravity exposure elapsed s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Elapsed duration in selected gravity regime",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT",
+        "NTRS_PARTIAL_GRAVITY_2021"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.gravity_transition.zero_gravity_exposure_cumulative_s",
+      "name": "zero gravity exposure cumulative s",
+      "unit": "s",
+      "kind": "derived",
+      "description": "Cumulative near zero-gravity residence time",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT",
+        "NTRS_PARTIAL_GRAVITY_2021"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.gravity_transition.partial_gravity_exposure_cumulative_s",
+      "name": "partial gravity exposure cumulative s",
+      "unit": "s",
+      "kind": "derived",
+      "description": "Cumulative residence time in declared partial-gravity range",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT",
+        "NTRS_PARTIAL_GRAVITY_2021"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.gravity_transition.earth_gravity_exposure_cumulative_s",
+      "name": "earth gravity exposure cumulative s",
+      "unit": "s",
+      "kind": "derived",
+      "description": "Time in terrestrial reference gravity",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT",
+        "NTRS_PARTIAL_GRAVITY_2021"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.gravity_transition.gravity_transition_delta_m_s2",
+      "name": "gravity transition delta m s2",
+      "unit": "m/s^2",
+      "kind": "derived",
+      "description": "Change in imposed acceleration at transition",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT",
+        "NTRS_PARTIAL_GRAVITY_2021"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.gravity_transition.gravity_transition_rate_m_s3",
+      "name": "gravity transition rate m s3",
+      "unit": "m/s^3",
+      "kind": "derived",
+      "description": "Rate of acceleration change",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT",
+        "NTRS_PARTIAL_GRAVITY_2021"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.gravity_transition.transit_microgravity_days",
+      "name": "transit microgravity days",
+      "unit": "day",
+      "kind": "observable",
+      "description": "Duration without sustained gravitational loading",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT",
+        "NTRS_PARTIAL_GRAVITY_2021"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.gravity_transition.landing_deceleration_peak_m_s2",
+      "name": "landing deceleration peak m s2",
+      "unit": "m/s^2",
+      "kind": "scenario_input",
+      "description": "Hypothetical landing peak deceleration",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT",
+        "NTRS_PARTIAL_GRAVITY_2021"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.gravity_transition.landing_jerk_peak_m_s3",
+      "name": "landing jerk peak m s3",
+      "unit": "m/s^3",
+      "kind": "scenario_input",
+      "description": "Hypothetical peak derivative of deceleration",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT",
+        "NTRS_PARTIAL_GRAVITY_2021"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.gravity_transition.landing_orientation_deg",
+      "name": "landing orientation deg",
+      "unit": "deg",
+      "kind": "scenario_input",
+      "description": "Crew orientation with respect to applied acceleration",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT",
+        "NTRS_PARTIAL_GRAVITY_2021"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.gravity_transition.head_to_foot_pressure_difference_pa",
+      "name": "head to foot pressure difference pa",
+      "unit": "Pa",
+      "kind": "derived",
+      "description": "Hydrostatic vertical pressure difference under gravity state",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT",
+        "NTRS_PARTIAL_GRAVITY_2021"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.gravity_transition.hydrostatic_fluid_shift_ml",
+      "name": "hydrostatic fluid shift ml",
+      "unit": "mL",
+      "kind": "derived",
+      "description": "Estimated headward/footward fluid movement",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT",
+        "NTRS_PARTIAL_GRAVITY_2021"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.gravity_transition.gravity_induced_load_n",
+      "name": "gravity induced load n",
+      "unit": "N",
+      "kind": "derived",
+      "description": "Weight of mass in local gravity",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT",
+        "NTRS_PARTIAL_GRAVITY_2021"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.gravity_transition.gravity_loading_cycle_count",
+      "name": "gravity loading cycle count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Repeated bone or muscle loading cycles",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT",
+        "NTRS_PARTIAL_GRAVITY_2021"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.gravity_transition.postural_control_error_m",
+      "name": "postural control error m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Postural balancing deviation after transition",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT",
+        "NTRS_PARTIAL_GRAVITY_2021"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.gravity_transition.locomotor_adaptation_duration_s",
+      "name": "locomotor adaptation duration s",
+      "unit": "s",
+      "kind": "derived",
+      "description": "Duration to named gait performance recovery criterion",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT",
+        "NTRS_PARTIAL_GRAVITY_2021"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.gravity_transition.vestibular_reorientation_duration_s",
+      "name": "vestibular reorientation duration s",
+      "unit": "s",
+      "kind": "derived",
+      "description": "Time to regain specified vestibular task performance",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT",
+        "NTRS_PARTIAL_GRAVITY_2021"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.gravity_transition.orthostatic_tolerance_duration_s",
+      "name": "orthostatic tolerance duration s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Duration maintaining standard upright posture",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT",
+        "NTRS_PARTIAL_GRAVITY_2021"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.gravity_transition.musculoskeletal_countermeasure_minutes_day",
+      "name": "musculoskeletal countermeasure minutes day",
+      "unit": "min/day",
+      "kind": "observable",
+      "description": "Documented exercise loading interventions",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT",
+        "NTRS_PARTIAL_GRAVITY_2021"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.gravity_transition.gravity_specific_gait_energy_j_m",
+      "name": "gravity specific gait energy j m",
+      "unit": "J/m",
+      "kind": "derived",
+      "description": "Work/metabolic cost in specified partial gravity",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT",
+        "NTRS_PARTIAL_GRAVITY_2021"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.gravity_transition.gravity_specific_fall_event_count",
+      "name": "gravity specific fall event count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Falls in a documented gravity analog context",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT",
+        "NTRS_PARTIAL_GRAVITY_2021"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.gravity_transition.gravity_specific_strength_change_fraction",
+      "name": "gravity specific strength change fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Relative strength change after exposure",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT",
+        "NTRS_PARTIAL_GRAVITY_2021"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.gravity_transition.gravity_recovery_trajectory_model",
+      "name": "gravity recovery trajectory model",
+      "unit": null,
+      "kind": "latent",
+      "description": "Versioned individualized response model",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT",
+        "NTRS_PARTIAL_GRAVITY_2021"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.gravity_transition.partial_gravity_uncertainty_model",
+      "name": "partial gravity uncertainty model",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Uncertainty describing microgravity-to-Mars extrapolation",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT",
+        "NTRS_PARTIAL_GRAVITY_2021"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.gravity_transition.inflight_harness_offload_fraction",
+      "name": "inflight harness offload fraction",
+      "unit": "1",
+      "kind": "scenario_input",
+      "description": "Terrestrial simulation support load compensation",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT",
+        "NTRS_PARTIAL_GRAVITY_2021"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    }
+  ]
+}

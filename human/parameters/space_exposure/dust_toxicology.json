@@ -1,0 +1,429 @@
+{
+  "schema_version": "1.0.0",
+  "group": "space_exposure",
+  "domain": "dust_toxicology",
+  "description": "Martian dust uptake, mechanical abrasion and toxicological uncertainty",
+  "field_count": 26,
+  "sources": [
+    "NASA_CLOSED_ENVIRONMENT",
+    "NASA_FUNDAMENTALS"
+  ],
+  "fields": [
+    {
+      "id": "human.dust_toxicology.mars_dust_external_concentration_ug_m3",
+      "name": "mars dust external concentration ug m3",
+      "unit": "ug/m^3",
+      "kind": "scenario_input",
+      "description": "Hypothetical exterior airborne dust concentration",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.dust_toxicology.mars_dust_habitat_intrusion_ug_m3",
+      "name": "mars dust habitat intrusion ug m3",
+      "unit": "ug/m^3",
+      "kind": "scenario_input",
+      "description": "Hypothetical tracked-in indoor dust concentration",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.dust_toxicology.mars_dust_particle_median_diameter_um",
+      "name": "mars dust particle median diameter um",
+      "unit": "um",
+      "kind": "scenario_input",
+      "description": "Dust particle median equivalent diameter",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.dust_toxicology.mars_dust_particle_size_gsd",
+      "name": "mars dust particle size gsd",
+      "unit": "1",
+      "kind": "scenario_input",
+      "description": "Particle diameter geometric standard deviation",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.dust_toxicology.mars_dust_particle_surface_area_m2_g",
+      "name": "mars dust particle surface area m2 g",
+      "unit": "m^2/g",
+      "kind": "scenario_input",
+      "description": "Specific dust surface area",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.dust_toxicology.mars_dust_silica_mass_fraction",
+      "name": "mars dust silica mass fraction",
+      "unit": "1",
+      "kind": "scenario_input",
+      "description": "Mineral silica mass fraction, composition uncertain",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.dust_toxicology.mars_dust_perchlorate_mass_fraction",
+      "name": "mars dust perchlorate mass fraction",
+      "unit": "1",
+      "kind": "scenario_input",
+      "description": "Perchlorate salt fraction, local evidence required",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.dust_toxicology.mars_dust_iron_oxide_mass_fraction",
+      "name": "mars dust iron oxide mass fraction",
+      "unit": "1",
+      "kind": "scenario_input",
+      "description": "Iron oxide content",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.dust_toxicology.mars_dust_soluble_salt_fraction",
+      "name": "mars dust soluble salt fraction",
+      "unit": "1",
+      "kind": "scenario_input",
+      "description": "Soluble salt mass fraction",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.dust_toxicology.mars_dust_reactive_oxygen_species_index",
+      "name": "mars dust reactive oxygen species index",
+      "unit": "index",
+      "kind": "latent",
+      "description": "Lab-dependent chemical reactivity proxy",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.dust_toxicology.mars_dust_dermal_contact_mass_mg",
+      "name": "mars dust dermal contact mass mg",
+      "unit": "mg",
+      "kind": "derived",
+      "description": "Estimated transferred dust mass onto skin",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.dust_toxicology.mars_dust_mucosal_contact_mass_mg",
+      "name": "mars dust mucosal contact mass mg",
+      "unit": "mg",
+      "kind": "derived",
+      "description": "Estimated contact with mucosa",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.dust_toxicology.mars_dust_inhaled_mass_mg",
+      "name": "mars dust inhaled mass mg",
+      "unit": "mg",
+      "kind": "derived",
+      "description": "Estimated inhaled dose in specified breathing atmosphere",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.dust_toxicology.mars_dust_deposited_alveolar_mass_mg",
+      "name": "mars dust deposited alveolar mass mg",
+      "unit": "mg",
+      "kind": "derived",
+      "description": "Estimated lung deposition from particle deposition model",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.dust_toxicology.mars_dust_ingested_mass_mg",
+      "name": "mars dust ingested mass mg",
+      "unit": "mg",
+      "kind": "derived",
+      "description": "Estimated incidental oral ingestion",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.dust_toxicology.mars_dust_eye_contact_event_count",
+      "name": "mars dust eye contact event count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Dust ocular contact events",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.dust_toxicology.mars_dust_abraded_skin_area_m2",
+      "name": "mars dust abraded skin area m2",
+      "unit": "m^2",
+      "kind": "observable",
+      "description": "Mechanical abrasion area after exposure",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.dust_toxicology.mars_dust_pulmonary_irritation_score",
+      "name": "mars dust pulmonary irritation score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Respiratory symptoms attributable only with clinical evaluation",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.dust_toxicology.mars_dust_oxidative_stress_proxy",
+      "name": "mars dust oxidative stress proxy",
+      "unit": "index",
+      "kind": "derived",
+      "description": "Exposure-associated oxidative burden proxy, not clinical diagnosis",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.dust_toxicology.mars_dust_clearance_half_time_s",
+      "name": "mars dust clearance half time s",
+      "unit": "s",
+      "kind": "latent",
+      "description": "Unvalidated particle clearance model",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.dust_toxicology.mars_dust_allergic_response_status",
+      "name": "mars dust allergic response status",
+      "unit": null,
+      "kind": "clinical_assessment",
+      "description": "Clinical allergy evaluation",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.dust_toxicology.mars_dust_toxicity_model_status",
+      "name": "mars dust toxicity model status",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Model evidence grade, not generic Earth dust equivalence",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.dust_toxicology.mars_dust_ingress_control_fraction",
+      "name": "mars dust ingress control fraction",
+      "unit": "1",
+      "kind": "scenario_input",
+      "description": "Fraction of dust blocked at habitat boundary",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.dust_toxicology.mars_dust_contact_duration_s",
+      "name": "mars dust contact duration s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Time in dust-affected operational phase",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.dust_toxicology.mars_dust_exposure_source_quality",
+      "name": "mars dust exposure source quality",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Species and product metadata for dust sample",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.dust_toxicology.mars_dust_hazard_unknown_flag",
+      "name": "mars dust hazard unknown flag",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Unknown local toxicology policy; cannot assume safety",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    }
+  ]
+}

@@ -1,0 +1,589 @@
+{
+  "schema_version": "1.0.0",
+  "group": "neuroscience",
+  "domain": "cognitive_function",
+  "description": "Attention, memory, executive function and cognitive performance",
+  "field_count": 36,
+  "sources": [
+    "NASA_ISOLATION",
+    "NASA_HRP_RISKS"
+  ],
+  "fields": [
+    {
+      "id": "human.cognitive_function.psychomotor_vigilance_median_rt_ms",
+      "name": "psychomotor vigilance median rt ms",
+      "unit": "ms",
+      "kind": "observable",
+      "description": "Median PVT response latency",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.cognitive_function.psychomotor_vigilance_lapses_count",
+      "name": "psychomotor vigilance lapses count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "PVT lapses beyond predeclared cutoff",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.cognitive_function.psychomotor_vigilance_false_starts_count",
+      "name": "psychomotor vigilance false starts count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "PVT premature responses",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.cognitive_function.simple_reaction_time_ms",
+      "name": "simple reaction time ms",
+      "unit": "ms",
+      "kind": "observable",
+      "description": "Single-choice motor response latency",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.cognitive_function.choice_reaction_time_ms",
+      "name": "choice reaction time ms",
+      "unit": "ms",
+      "kind": "observable",
+      "description": "Decision/response latency with alternatives",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.cognitive_function.working_memory_nback_accuracy_fraction",
+      "name": "working memory nback accuracy fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "N-back accuracy with specified N and stimuli",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.cognitive_function.working_memory_digit_span_count",
+      "name": "working memory digit span count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Maximum correctly recalled digit span",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.cognitive_function.working_memory_spatial_span_count",
+      "name": "working memory spatial span count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Spatial memory span correct sequence length",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.cognitive_function.verbal_memory_immediate_recall_count",
+      "name": "verbal memory immediate recall count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Immediately recalled words under named test",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.cognitive_function.verbal_memory_delayed_recall_count",
+      "name": "verbal memory delayed recall count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Words recalled after specified delay",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.cognitive_function.visual_memory_accuracy_fraction",
+      "name": "visual memory accuracy fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Pattern recognition or image recall success",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.cognitive_function.spatial_navigation_error_m",
+      "name": "spatial navigation error m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Error in reaching remembered spatial target",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.cognitive_function.mental_rotation_time_ms",
+      "name": "mental rotation time ms",
+      "unit": "ms",
+      "kind": "observable",
+      "description": "Rotation task completion latency",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.cognitive_function.mental_rotation_accuracy_fraction",
+      "name": "mental rotation accuracy fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Correct mental rotation decisions",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.cognitive_function.sustained_attention_error_count",
+      "name": "sustained attention error count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Errors during sustained attention test",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.cognitive_function.selective_attention_accuracy_fraction",
+      "name": "selective attention accuracy fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Relevant target detection under distractors",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.cognitive_function.divided_attention_accuracy_fraction",
+      "name": "divided attention accuracy fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Concurrent dual-task success proportion",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.cognitive_function.task_switch_cost_ms",
+      "name": "task switch cost ms",
+      "unit": "ms",
+      "kind": "derived",
+      "description": "Extra response time upon task set switch",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.cognitive_function.inhibitory_control_errors_count",
+      "name": "inhibitory control errors count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Failure-to-inhibit responses in defined test",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.cognitive_function.stroop_interference_ms",
+      "name": "stroop interference ms",
+      "unit": "ms",
+      "kind": "derived",
+      "description": "Stroop interference reaction time",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.cognitive_function.executive_planning_latency_s",
+      "name": "executive planning latency s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Time to formulate standardized task plan",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.cognitive_function.executive_plan_quality_score",
+      "name": "executive plan quality score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Named planning-performance instrument",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.cognitive_function.reasoning_problem_accuracy_fraction",
+      "name": "reasoning problem accuracy fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Accuracy on standardized reasoning problems",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.cognitive_function.numeric_reasoning_accuracy_fraction",
+      "name": "numeric reasoning accuracy fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Math problem accuracy in context",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.cognitive_function.language_comprehension_accuracy_fraction",
+      "name": "language comprehension accuracy fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Correct meaning judgments under task",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.cognitive_function.prospective_memory_miss_count",
+      "name": "prospective memory miss count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Missed intended future actions in task",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.cognitive_function.cognitive_load_subjective_score",
+      "name": "cognitive load subjective score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "NASA TLX or other defined workload inventory",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.cognitive_function.cognitive_load_physio_proxy",
+      "name": "cognitive load physio proxy",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Nonspecific physiological proxy requiring validation",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.cognitive_function.cognitive_effort_time_s",
+      "name": "cognitive effort time s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Active cognitive task time",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.cognitive_function.cognitive_task_error_rate_hz",
+      "name": "cognitive task error rate hz",
+      "unit": "1/s",
+      "kind": "derived",
+      "description": "Errors per time in specified task",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.cognitive_function.situation_awareness_score",
+      "name": "situation awareness score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Named SAGAT-like awareness assessment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.cognitive_function.temporal_attention_error_ms",
+      "name": "temporal attention error ms",
+      "unit": "ms",
+      "kind": "derived",
+      "description": "Time judgment bias under defined task",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.cognitive_function.cognitive_dual_task_cost_fraction",
+      "name": "cognitive dual task cost fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Normalized single vs dual task performance",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.cognitive_function.cognitive_recovery_time_s",
+      "name": "cognitive recovery time s",
+      "unit": "s",
+      "kind": "derived",
+      "description": "Time to return to defined personal performance baseline",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.cognitive_function.uncertainty_judgment_calibration_error",
+      "name": "uncertainty judgment calibration error",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Difference between judged confidence and actual correct frequency",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.cognitive_function.cognitive_decline_from_baseline_fraction",
+      "name": "cognitive decline from baseline fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Normalized task-specific change from preflight baseline",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    }
+  ]
+}

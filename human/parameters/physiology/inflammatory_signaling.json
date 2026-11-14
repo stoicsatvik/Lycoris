@@ -1,0 +1,493 @@
+{
+  "schema_version": "1.0.0",
+  "group": "physiology",
+  "domain": "inflammatory_signaling",
+  "description": "Inflammatory cytokines, stress signaling and immune dysregulation",
+  "field_count": 30,
+  "sources": [
+    "NASA_HRP_RISKS",
+    "NASA_CLOSED_ENVIRONMENT"
+  ],
+  "fields": [
+    {
+      "id": "human.inflammatory_signaling.high_sensitivity_crp_mg_l",
+      "name": "high sensitivity crp mg l",
+      "unit": "mg/L",
+      "kind": "observable",
+      "description": "High sensitivity C reactive protein",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_CLOSED_ENVIRONMENT"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.inflammatory_signaling.erythrocyte_sedimentation_mm_h",
+      "name": "erythrocyte sedimentation mm h",
+      "unit": "mm/h",
+      "kind": "observable",
+      "description": "Erythrocyte sedimentation rate",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_CLOSED_ENVIRONMENT"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.inflammatory_signaling.interleukin_1beta_pg_ml",
+      "name": "interleukin 1beta pg ml",
+      "unit": "pg/mL",
+      "kind": "observable",
+      "description": "IL1 beta blood concentration",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_CLOSED_ENVIRONMENT"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.inflammatory_signaling.interleukin_2_pg_ml",
+      "name": "interleukin 2 pg ml",
+      "unit": "pg/mL",
+      "kind": "observable",
+      "description": "IL2 blood concentration",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_CLOSED_ENVIRONMENT"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.inflammatory_signaling.interleukin_4_pg_ml",
+      "name": "interleukin 4 pg ml",
+      "unit": "pg/mL",
+      "kind": "observable",
+      "description": "IL4 blood concentration",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_CLOSED_ENVIRONMENT"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.inflammatory_signaling.interleukin_6_pg_ml",
+      "name": "interleukin 6 pg ml",
+      "unit": "pg/mL",
+      "kind": "observable",
+      "description": "IL6 blood concentration",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_CLOSED_ENVIRONMENT"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.inflammatory_signaling.interleukin_8_pg_ml",
+      "name": "interleukin 8 pg ml",
+      "unit": "pg/mL",
+      "kind": "observable",
+      "description": "IL8 blood concentration",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_CLOSED_ENVIRONMENT"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.inflammatory_signaling.interleukin_10_pg_ml",
+      "name": "interleukin 10 pg ml",
+      "unit": "pg/mL",
+      "kind": "observable",
+      "description": "IL10 blood concentration",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_CLOSED_ENVIRONMENT"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.inflammatory_signaling.interleukin_17_pg_ml",
+      "name": "interleukin 17 pg ml",
+      "unit": "pg/mL",
+      "kind": "observable",
+      "description": "IL17 assay",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_CLOSED_ENVIRONMENT"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.inflammatory_signaling.tumor_necrosis_factor_alpha_pg_ml",
+      "name": "tumor necrosis factor alpha pg ml",
+      "unit": "pg/mL",
+      "kind": "observable",
+      "description": "TNF alpha assay",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_CLOSED_ENVIRONMENT"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.inflammatory_signaling.interferon_gamma_pg_ml",
+      "name": "interferon gamma pg ml",
+      "unit": "pg/mL",
+      "kind": "observable",
+      "description": "Interferon gamma assay",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_CLOSED_ENVIRONMENT"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.inflammatory_signaling.transforming_growth_factor_beta_pg_ml",
+      "name": "transforming growth factor beta pg ml",
+      "unit": "pg/mL",
+      "kind": "observable",
+      "description": "TGF beta blood assay",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_CLOSED_ENVIRONMENT"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.inflammatory_signaling.chemokine_ccl2_pg_ml",
+      "name": "chemokine ccl2 pg ml",
+      "unit": "pg/mL",
+      "kind": "observable",
+      "description": "CCL2 inflammatory chemokine",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_CLOSED_ENVIRONMENT"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.inflammatory_signaling.chemokine_cxcl10_pg_ml",
+      "name": "chemokine cxcl10 pg ml",
+      "unit": "pg/mL",
+      "kind": "observable",
+      "description": "CXCL10 assay",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_CLOSED_ENVIRONMENT"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.inflammatory_signaling.serum_amyloid_a_mg_l",
+      "name": "serum amyloid a mg l",
+      "unit": "mg/L",
+      "kind": "observable",
+      "description": "Serum amyloid A",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_CLOSED_ENVIRONMENT"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.inflammatory_signaling.procalcitonin_ng_ml",
+      "name": "procalcitonin ng ml",
+      "unit": "ng/mL",
+      "kind": "observable",
+      "description": "Procalcitonin with assay specificity",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_CLOSED_ENVIRONMENT"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.inflammatory_signaling.neutrophil_lymphocyte_ratio",
+      "name": "neutrophil lymphocyte ratio",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Count ratio, nonspecific inflammation proxy",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_CLOSED_ENVIRONMENT"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.inflammatory_signaling.oxidative_stress_8ohdg_ng_ml",
+      "name": "oxidative stress 8ohdg ng ml",
+      "unit": "ng/mL",
+      "kind": "observable",
+      "description": "8-hydroxydeoxyguanosine biomarker",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_CLOSED_ENVIRONMENT"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.inflammatory_signaling.lipid_peroxidation_mda_umol_l",
+      "name": "lipid peroxidation mda umol l",
+      "unit": "umol/L",
+      "kind": "observable",
+      "description": "Malondialdehyde assay",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_CLOSED_ENVIRONMENT"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.inflammatory_signaling.glutathione_reduced_umol_l",
+      "name": "glutathione reduced umol l",
+      "unit": "umol/L",
+      "kind": "observable",
+      "description": "Reduced glutathione concentration",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_CLOSED_ENVIRONMENT"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.inflammatory_signaling.glutathione_oxidized_umol_l",
+      "name": "glutathione oxidized umol l",
+      "unit": "umol/L",
+      "kind": "observable",
+      "description": "Oxidized glutathione concentration",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_CLOSED_ENVIRONMENT"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.inflammatory_signaling.glutathione_ratio",
+      "name": "glutathione ratio",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Reduced versus oxidized glutathione ratio",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_CLOSED_ENVIRONMENT"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.inflammatory_signaling.total_antioxidant_capacity_umol_l",
+      "name": "total antioxidant capacity umol l",
+      "unit": "umol/L",
+      "kind": "observable",
+      "description": "Assay-specific antioxidant capacity",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_CLOSED_ENVIRONMENT"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.inflammatory_signaling.catalase_activity_u_l",
+      "name": "catalase activity u l",
+      "unit": "U/L",
+      "kind": "observable",
+      "description": "Catalase enzyme activity",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_CLOSED_ENVIRONMENT"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.inflammatory_signaling.superoxide_dismutase_activity_u_l",
+      "name": "superoxide dismutase activity u l",
+      "unit": "U/L",
+      "kind": "observable",
+      "description": "SOD activity",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_CLOSED_ENVIRONMENT"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.inflammatory_signaling.dna_damage_gamma_h2ax_fraction",
+      "name": "dna damage gamma h2ax fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Cells with gamma H2AX foci in named assay",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_CLOSED_ENVIRONMENT"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.inflammatory_signaling.chromosome_aberration_fraction",
+      "name": "chromosome aberration fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Lymphocyte aberration assay outcome",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_CLOSED_ENVIRONMENT"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.inflammatory_signaling.telomere_length_bp",
+      "name": "telomere length bp",
+      "unit": "bp",
+      "kind": "observable",
+      "description": "Telomere assay length, method dependent",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_CLOSED_ENVIRONMENT"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.inflammatory_signaling.cell_senescence_marker_fraction",
+      "name": "cell senescence marker fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Cell population positive for validated marker",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_CLOSED_ENVIRONMENT"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.inflammatory_signaling.immune_inflammation_state",
+      "name": "immune inflammation state",
+      "unit": "score",
+      "kind": "latent",
+      "description": "Latent immune activation model state",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_HRP_RISKS",
+        "NASA_CLOSED_ENVIRONMENT"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    }
+  ]
+}

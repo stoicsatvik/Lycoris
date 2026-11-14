@@ -1,0 +1,429 @@
+{
+  "schema_version": "1.0.0",
+  "group": "operations",
+  "domain": "task_performance",
+  "description": "Human task execution, time pressure and procedural reliability",
+  "field_count": 26,
+  "sources": [
+    "NASA_HIDH",
+    "NASA_IMM_2026"
+  ],
+  "fields": [
+    {
+      "id": "human.task_performance.task_type_code",
+      "name": "task type code",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Structured task identity and category",
+      "measurement_context": "task_log",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_IMM_2026"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.task_performance.task_duration_s",
+      "name": "task duration s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Wall-clock duration of work",
+      "measurement_context": "task_log",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_IMM_2026"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.task_performance.task_active_time_s",
+      "name": "task active time s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Actual manipulation or thinking duration",
+      "measurement_context": "task_log",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_IMM_2026"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.task_performance.task_setup_time_s",
+      "name": "task setup time s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Preparation before task begins",
+      "measurement_context": "task_log",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_IMM_2026"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.task_performance.task_pause_time_s",
+      "name": "task pause time s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Time spent on task interruptions",
+      "measurement_context": "task_log",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_IMM_2026"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.task_performance.task_completion_fraction",
+      "name": "task completion fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Completed required steps fraction",
+      "measurement_context": "task_log",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_IMM_2026"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.task_performance.task_error_count",
+      "name": "task error count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Operational mistakes meeting defined criterion",
+      "measurement_context": "task_log",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_IMM_2026"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.task_performance.task_near_miss_count",
+      "name": "task near miss count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Near-misses classified by independent observer",
+      "measurement_context": "task_log",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_IMM_2026"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.task_performance.task_rework_duration_s",
+      "name": "task rework duration s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Time repeating improperly completed operations",
+      "measurement_context": "task_log",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_IMM_2026"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.task_performance.task_critical_step_omission_count",
+      "name": "task critical step omission count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Omitted critical procedure steps",
+      "measurement_context": "task_log",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_IMM_2026"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.task_performance.task_checklist_adherence_fraction",
+      "name": "task checklist adherence fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Fraction of checklist items followed",
+      "measurement_context": "task_log",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_IMM_2026"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.task_performance.task_response_latency_s",
+      "name": "task response latency s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Time to initiate response to instruction",
+      "measurement_context": "task_log",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_IMM_2026"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.task_performance.task_tool_retrieval_time_s",
+      "name": "task tool retrieval time s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Time to locate needed equipment",
+      "measurement_context": "task_log",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_IMM_2026"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.task_performance.task_instrument_readout_error_count",
+      "name": "task instrument readout error count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Incorrect interpretation of instrument outputs",
+      "measurement_context": "task_log",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_IMM_2026"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.task_performance.task_sample_contamination_event_count",
+      "name": "task sample contamination event count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Confirmed contamination events during collection",
+      "measurement_context": "task_log",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_IMM_2026"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.task_performance.task_sample_handling_time_s",
+      "name": "task sample handling time s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Duration of material manipulation",
+      "measurement_context": "task_log",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_IMM_2026"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.task_performance.task_mobility_impairment_flag",
+      "name": "task mobility impairment flag",
+      "unit": null,
+      "kind": "clinical_assessment",
+      "description": "Clinician-documented restriction, not inferred automatically",
+      "measurement_context": "task_log",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_IMM_2026"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.task_performance.task_obstruction_handling_time_s",
+      "name": "task obstruction handling time s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Delay navigating an unexpected obstacle",
+      "measurement_context": "task_log",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_IMM_2026"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.task_performance.task_required_two_hand_fraction",
+      "name": "task required two hand fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Fraction of procedure requiring coordinated hands",
+      "measurement_context": "task_log",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_IMM_2026"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.task_performance.task_communication_cycles_count",
+      "name": "task communication cycles count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Number of team handoffs/reports",
+      "measurement_context": "task_log",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_IMM_2026"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.task_performance.task_dual_task_interference_fraction",
+      "name": "task dual task interference fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Performance reduction during concurrent demands",
+      "measurement_context": "task_log",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_IMM_2026"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.task_performance.task_after_action_error_detection_fraction",
+      "name": "task after action error detection fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Fraction of task errors detected in review",
+      "measurement_context": "task_log",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_IMM_2026"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.task_performance.task_training_repetition_count",
+      "name": "task training repetition count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Number of protocol practice trials",
+      "measurement_context": "task_log",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_IMM_2026"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.task_performance.task_learning_curve_slope",
+      "name": "task learning curve slope",
+      "unit": "1/trial",
+      "kind": "derived",
+      "description": "Task error/performance improvement with repetition",
+      "measurement_context": "task_log",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_IMM_2026"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.task_performance.task_calibration_status",
+      "name": "task calibration status",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Applicability of task benchmark to Mars scene",
+      "measurement_context": "task_log",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_IMM_2026"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.task_performance.task_completion_status",
+      "name": "task completion status",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Completed, partial, aborted, invalid or unknown",
+      "measurement_context": "task_log",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_IMM_2026"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    }
+  ]
+}

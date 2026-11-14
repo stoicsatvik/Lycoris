@@ -1,0 +1,493 @@
+{
+  "schema_version": "1.0.0",
+  "group": "anatomy",
+  "domain": "oral_dental",
+  "description": "Dental structure, periodontal tissues and oral health",
+  "field_count": 30,
+  "sources": [
+    "NASA_IMM_2026",
+    "NASA_FUNDAMENTALS"
+  ],
+  "fields": [
+    {
+      "id": "human.oral_dental.tooth_count",
+      "name": "tooth count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Remaining natural teeth with adult dentition context",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.oral_dental.dental_caries_lesion_count",
+      "name": "dental caries lesion count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Clinically detected decay lesions",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.oral_dental.dental_filling_count",
+      "name": "dental filling count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Existing fillings",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.oral_dental.dental_crown_count",
+      "name": "dental crown count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Dental crowns",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.oral_dental.dental_root_canal_count",
+      "name": "dental root canal count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Endodontic treated teeth",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.oral_dental.dental_implant_count",
+      "name": "dental implant count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Prosthetic implants",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.oral_dental.tooth_fracture_event_count",
+      "name": "tooth fracture event count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Clinically confirmed chipped/broken teeth",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.oral_dental.tooth_sensitivity_score",
+      "name": "tooth sensitivity score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Subjective dentin sensitivity rating",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.oral_dental.gingival_bleeding_fraction",
+      "name": "gingival bleeding fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Fraction of probed gum sites with bleeding",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.oral_dental.gingival_inflammation_score",
+      "name": "gingival inflammation score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Gingival inflammation index",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.oral_dental.periodontal_pocket_depth_mm",
+      "name": "periodontal pocket depth mm",
+      "unit": "mm",
+      "kind": "observable",
+      "description": "Gum sulcus depth, tooth/site indexed",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.oral_dental.periodontal_attachment_loss_mm",
+      "name": "periodontal attachment loss mm",
+      "unit": "mm",
+      "kind": "observable",
+      "description": "Loss of clinical attachment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.oral_dental.oral_plaque_index",
+      "name": "oral plaque index",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Dental plaque score under named instrument",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.oral_dental.tooth_mobility_grade",
+      "name": "tooth mobility grade",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Qualified tooth mobility grade",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.oral_dental.tooth_pain_score",
+      "name": "tooth pain score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Patient reported tooth pain",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.oral_dental.dental_abscess_status",
+      "name": "dental abscess status",
+      "unit": null,
+      "kind": "clinical_assessment",
+      "description": "Clinically confirmed localized infection",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.oral_dental.jaw_opening_range_m",
+      "name": "jaw opening range m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Maximum mouth opening",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.oral_dental.temporomandibular_joint_pain_score",
+      "name": "temporomandibular joint pain score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "TMJ-specific pain scale",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.oral_dental.bite_force_n",
+      "name": "bite force n",
+      "unit": "N",
+      "kind": "observable",
+      "description": "Measured bite force",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.oral_dental.occlusal_contact_pressure_pa",
+      "name": "occlusal contact pressure pa",
+      "unit": "Pa",
+      "kind": "observable",
+      "description": "Pressure at bite contacts under measuring device",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.oral_dental.saliva_buffering_capacity_mmol_l_ph",
+      "name": "saliva buffering capacity mmol l ph",
+      "unit": "mmol/(L pH)",
+      "kind": "observable",
+      "description": "Salivary acid neutralization assay",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.oral_dental.saliva_ph",
+      "name": "saliva ph",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Saliva acidity",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.oral_dental.saliva_flow_rate_ml_min",
+      "name": "saliva flow rate ml min",
+      "unit": "mL/min",
+      "kind": "observable",
+      "description": "Unstimulated/stimulated salivary flow",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.oral_dental.oral_mucosal_lesion_count",
+      "name": "oral mucosal lesion count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Clinically assessed oral lesions",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.oral_dental.oral_ulcer_count",
+      "name": "oral ulcer count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Documented oral ulcers",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.oral_dental.oral_halitosis_rating",
+      "name": "oral halitosis rating",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Qualified breath odor scale",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.oral_dental.oral_hygiene_adherence_fraction",
+      "name": "oral hygiene adherence fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Reported toothbrushing/flossing completion",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.oral_dental.dental_emergency_event_count",
+      "name": "dental emergency event count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Dental emergencies requiring intervention",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.oral_dental.dental_treatment_duration_s",
+      "name": "dental treatment duration s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Duration of required dental procedure",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.oral_dental.oral_mucosal_dryness_score",
+      "name": "oral mucosal dryness score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Subjective or clinical dry mouth measure",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    }
+  ]
+}

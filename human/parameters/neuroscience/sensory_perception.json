@@ -1,0 +1,477 @@
+{
+  "schema_version": "1.0.0",
+  "group": "neuroscience",
+  "domain": "sensory_perception",
+  "description": "Hearing, touch, proprioception, smell, taste and perception",
+  "field_count": 29,
+  "sources": [
+    "NASA_HIDH",
+    "NASA_HRP_RISKS"
+  ],
+  "fields": [
+    {
+      "id": "human.sensory_perception.hearing_threshold_db_hl",
+      "name": "hearing threshold db hl",
+      "unit": "dB HL",
+      "kind": "observable",
+      "description": "Pure tone hearing threshold by frequency and ear",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.sensory_perception.speech_recognition_fraction",
+      "name": "speech recognition fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Correct recognition under standardized audiometry",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.sensory_perception.speech_in_noise_signal_ratio_db",
+      "name": "speech in noise signal ratio db",
+      "unit": "dB",
+      "kind": "observable",
+      "description": "Signal-noise condition for specified recognition criterion",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.sensory_perception.tympanic_membrane_mobility_ml",
+      "name": "tympanic membrane mobility ml",
+      "unit": "mL",
+      "kind": "observable",
+      "description": "Equivalent volume or compliance from tympanometry",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.sensory_perception.auditory_brainstem_latency_ms",
+      "name": "auditory brainstem latency ms",
+      "unit": "ms",
+      "kind": "observable",
+      "description": "ABR peak latency by wave",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.sensory_perception.sound_localization_error_deg",
+      "name": "sound localization error deg",
+      "unit": "deg",
+      "kind": "observable",
+      "description": "Hearing-based direction error",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.sensory_perception.tinnitus_severity_score",
+      "name": "tinnitus severity score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Patient-reported tinnitus severity instrument",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.sensory_perception.auditory_fatigue_score",
+      "name": "auditory fatigue score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Listening effort or fatigue assessment",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.sensory_perception.cutaneous_touch_threshold_n",
+      "name": "cutaneous touch threshold n",
+      "unit": "N",
+      "kind": "observable",
+      "description": "Minimum detected contact force",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.sensory_perception.two_point_discrimination_m",
+      "name": "two point discrimination m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Minimum spatial gap between two points",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.sensory_perception.vibration_detection_threshold_m_s2",
+      "name": "vibration detection threshold m s2",
+      "unit": "m/s^2",
+      "kind": "observable",
+      "description": "Vibration intensity detection limit at site/frequency",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.sensory_perception.joint_position_reproduction_error_rad",
+      "name": "joint position reproduction error rad",
+      "unit": "rad",
+      "kind": "observable",
+      "description": "Proprioceptive repositioning angle error",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.sensory_perception.limb_velocity_perception_error_rad_s",
+      "name": "limb velocity perception error rad s",
+      "unit": "rad/s",
+      "kind": "observable",
+      "description": "Perceived versus imposed limb angular speed",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.sensory_perception.thermal_detection_cold_threshold_k",
+      "name": "thermal detection cold threshold k",
+      "unit": "K",
+      "kind": "observable",
+      "description": "Temperature detection cold threshold",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.sensory_perception.thermal_detection_warm_threshold_k",
+      "name": "thermal detection warm threshold k",
+      "unit": "K",
+      "kind": "observable",
+      "description": "Temperature detection warm threshold",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.sensory_perception.nociception_vibration_threshold_m_s2",
+      "name": "nociception vibration threshold m s2",
+      "unit": "m/s^2",
+      "kind": "observable",
+      "description": "Noxious-vibration sensory threshold protocol",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.sensory_perception.smell_identification_score",
+      "name": "smell identification score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Validated olfaction naming test",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.sensory_perception.odor_detection_threshold_fraction",
+      "name": "odor detection threshold fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Relative concentration detection threshold under protocol",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.sensory_perception.taste_identification_score",
+      "name": "taste identification score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Named gustatory identification test",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.sensory_perception.taste_sensitivity_salty_mmol_l",
+      "name": "taste sensitivity salty mmol l",
+      "unit": "mmol/L",
+      "kind": "observable",
+      "description": "Salty taste detection threshold",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.sensory_perception.taste_sensitivity_sweet_mmol_l",
+      "name": "taste sensitivity sweet mmol l",
+      "unit": "mmol/L",
+      "kind": "observable",
+      "description": "Sweet taste stimulus threshold",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.sensory_perception.taste_sensitivity_bitter_mmol_l",
+      "name": "taste sensitivity bitter mmol l",
+      "unit": "mmol/L",
+      "kind": "observable",
+      "description": "Bitter stimulus detection threshold",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.sensory_perception.vestibular_visual_conflict_score",
+      "name": "vestibular visual conflict score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Sensory mismatch symptom inventory",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.sensory_perception.tactile_object_recognition_score",
+      "name": "tactile object recognition score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Stereognosis task result",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.sensory_perception.visual_depth_estimation_error_m",
+      "name": "visual depth estimation error m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Distance estimation error in visual task",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.sensory_perception.time_interval_perception_error_s",
+      "name": "time interval perception error s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Error in estimating duration",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.sensory_perception.sensory_overload_score",
+      "name": "sensory overload score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Validated subjective sensory overload assessment",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.sensory_perception.multisensory_integration_latency_s",
+      "name": "multisensory integration latency s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Cross-modal stimulus integration delay",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.sensory_perception.perceptual_attention_capture_time_s",
+      "name": "perceptual attention capture time s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Latency to attention diversion by salient cue",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    }
+  ]
+}

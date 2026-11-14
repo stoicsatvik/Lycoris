@@ -1,0 +1,573 @@
+{
+  "schema_version": "1.0.0",
+  "group": "anatomy",
+  "domain": "muscular_system",
+  "description": "Skeletal muscle groups and contractile physiology",
+  "field_count": 35,
+  "sources": [
+    "NASA_DIGITAL_ASTRONAUT",
+    "NASA_GRAVITY"
+  ],
+  "fields": [
+    {
+      "id": "human.muscular_system.muscle_group_mass_kg",
+      "name": "muscle group mass kg",
+      "unit": "kg",
+      "kind": "observable",
+      "description": "Muscle group mass, region and side indexed",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_DIGITAL_ASTRONAUT",
+        "NASA_GRAVITY"
+      ]
+    },
+    {
+      "id": "human.muscular_system.muscle_cross_section_area_m2",
+      "name": "muscle cross section area m2",
+      "unit": "m^2",
+      "kind": "observable",
+      "description": "Anatomical cross-sectional area of specific muscle",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_DIGITAL_ASTRONAUT",
+        "NASA_GRAVITY"
+      ]
+    },
+    {
+      "id": "human.muscular_system.muscle_fiber_length_m",
+      "name": "muscle fiber length m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Estimated fascicle fiber length",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_DIGITAL_ASTRONAUT",
+        "NASA_GRAVITY"
+      ]
+    },
+    {
+      "id": "human.muscular_system.muscle_pennation_angle_rad",
+      "name": "muscle pennation angle rad",
+      "unit": "rad",
+      "kind": "observable",
+      "description": "Fiber pennation angle",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_DIGITAL_ASTRONAUT",
+        "NASA_GRAVITY"
+      ]
+    },
+    {
+      "id": "human.muscular_system.muscle_fascicle_count",
+      "name": "muscle fascicle count",
+      "unit": "count",
+      "kind": "latent",
+      "description": "Muscle fascicle count requiring specific evidence",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_DIGITAL_ASTRONAUT",
+        "NASA_GRAVITY"
+      ]
+    },
+    {
+      "id": "human.muscular_system.muscle_tendon_length_m",
+      "name": "muscle tendon length m",
+      "unit": "m",
+      "kind": "derived",
+      "description": "Musculotendon unit length",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_DIGITAL_ASTRONAUT",
+        "NASA_GRAVITY"
+      ]
+    },
+    {
+      "id": "human.muscular_system.muscle_tendon_velocity_m_s",
+      "name": "muscle tendon velocity m s",
+      "unit": "m/s",
+      "kind": "derived",
+      "description": "Change of musculotendon length per time",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_DIGITAL_ASTRONAUT",
+        "NASA_GRAVITY"
+      ]
+    },
+    {
+      "id": "human.muscular_system.muscle_activation_fraction",
+      "name": "muscle activation fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Normalized muscle recruitment estimate",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_DIGITAL_ASTRONAUT",
+        "NASA_GRAVITY"
+      ]
+    },
+    {
+      "id": "human.muscular_system.muscle_emg_rms_v",
+      "name": "muscle emg rms v",
+      "unit": "V",
+      "kind": "observable",
+      "description": "Surface EMG root mean square in defined window",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_DIGITAL_ASTRONAUT",
+        "NASA_GRAVITY"
+      ]
+    },
+    {
+      "id": "human.muscular_system.muscle_emg_median_frequency_hz",
+      "name": "muscle emg median frequency hz",
+      "unit": "Hz",
+      "kind": "observable",
+      "description": "EMG median spectral frequency",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_DIGITAL_ASTRONAUT",
+        "NASA_GRAVITY"
+      ]
+    },
+    {
+      "id": "human.muscular_system.muscle_peak_isometric_force_n",
+      "name": "muscle peak isometric force n",
+      "unit": "N",
+      "kind": "observable",
+      "description": "Maximum voluntary isometric force",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_DIGITAL_ASTRONAUT",
+        "NASA_GRAVITY"
+      ]
+    },
+    {
+      "id": "human.muscular_system.muscle_peak_dynamic_force_n",
+      "name": "muscle peak dynamic force n",
+      "unit": "N",
+      "kind": "observable",
+      "description": "Task-dependent force maximum",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_DIGITAL_ASTRONAUT",
+        "NASA_GRAVITY"
+      ]
+    },
+    {
+      "id": "human.muscular_system.muscle_endurance_time_s",
+      "name": "muscle endurance time s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Time sustained at defined standardized load",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_DIGITAL_ASTRONAUT",
+        "NASA_GRAVITY"
+      ]
+    },
+    {
+      "id": "human.muscular_system.muscle_contraction_velocity_m_s",
+      "name": "muscle contraction velocity m s",
+      "unit": "m/s",
+      "kind": "derived",
+      "description": "Fiber shortening or lengthening velocity",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_DIGITAL_ASTRONAUT",
+        "NASA_GRAVITY"
+      ]
+    },
+    {
+      "id": "human.muscular_system.muscle_contraction_power_w",
+      "name": "muscle contraction power w",
+      "unit": "W",
+      "kind": "derived",
+      "description": "Mechanical power in specific muscle group",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_DIGITAL_ASTRONAUT",
+        "NASA_GRAVITY"
+      ]
+    },
+    {
+      "id": "human.muscular_system.muscle_fatigue_index",
+      "name": "muscle fatigue index",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Task/algorithm-defined fatigue index",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_DIGITAL_ASTRONAUT",
+        "NASA_GRAVITY"
+      ]
+    },
+    {
+      "id": "human.muscular_system.muscle_recovery_time_s",
+      "name": "muscle recovery time s",
+      "unit": "s",
+      "kind": "derived",
+      "description": "Recovery interval to specified response target",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_DIGITAL_ASTRONAUT",
+        "NASA_GRAVITY"
+      ]
+    },
+    {
+      "id": "human.muscular_system.muscle_fiber_type_i_fraction",
+      "name": "muscle fiber type i fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Type I myosin fibers from biopsy; invasive",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_DIGITAL_ASTRONAUT",
+        "NASA_GRAVITY"
+      ]
+    },
+    {
+      "id": "human.muscular_system.muscle_fiber_type_ii_fraction",
+      "name": "muscle fiber type ii fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Type II fibers from biopsy",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_DIGITAL_ASTRONAUT",
+        "NASA_GRAVITY"
+      ]
+    },
+    {
+      "id": "human.muscular_system.muscle_capillary_density_per_m2",
+      "name": "muscle capillary density per m2",
+      "unit": "1/m^2",
+      "kind": "observable",
+      "description": "Histologic muscle capillary density",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_DIGITAL_ASTRONAUT",
+        "NASA_GRAVITY"
+      ]
+    },
+    {
+      "id": "human.muscular_system.muscle_mitochondrial_volume_fraction",
+      "name": "muscle mitochondrial volume fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Mitochondrial tissue volume fraction",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_DIGITAL_ASTRONAUT",
+        "NASA_GRAVITY"
+      ]
+    },
+    {
+      "id": "human.muscular_system.muscle_glycogen_mmol_kg",
+      "name": "muscle glycogen mmol kg",
+      "unit": "mmol/kg",
+      "kind": "observable",
+      "description": "Muscle tissue glycogen by dedicated assay",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_DIGITAL_ASTRONAUT",
+        "NASA_GRAVITY"
+      ]
+    },
+    {
+      "id": "human.muscular_system.muscle_phosphocreatine_mmol_kg",
+      "name": "muscle phosphocreatine mmol kg",
+      "unit": "mmol/kg",
+      "kind": "observable",
+      "description": "Muscle phosphocreatine measure",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_DIGITAL_ASTRONAUT",
+        "NASA_GRAVITY"
+      ]
+    },
+    {
+      "id": "human.muscular_system.muscle_atp_mmol_kg",
+      "name": "muscle atp mmol kg",
+      "unit": "mmol/kg",
+      "kind": "observable",
+      "description": "Muscle tissue adenosine triphosphate",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_DIGITAL_ASTRONAUT",
+        "NASA_GRAVITY"
+      ]
+    },
+    {
+      "id": "human.muscular_system.muscle_intracellular_ph",
+      "name": "muscle intracellular ph",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Intramyocellular pH by valid spectroscopy",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_DIGITAL_ASTRONAUT",
+        "NASA_GRAVITY"
+      ]
+    },
+    {
+      "id": "human.muscular_system.muscle_oxygen_saturation_fraction",
+      "name": "muscle oxygen saturation fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Localized tissue O2 saturation by validated technique",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_DIGITAL_ASTRONAUT",
+        "NASA_GRAVITY"
+      ]
+    },
+    {
+      "id": "human.muscular_system.muscle_soreness_score",
+      "name": "muscle soreness score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Subjective muscle soreness scale",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_DIGITAL_ASTRONAUT",
+        "NASA_GRAVITY"
+      ]
+    },
+    {
+      "id": "human.muscular_system.muscle_damage_creatine_kinase_u_l",
+      "name": "muscle damage creatine kinase u l",
+      "unit": "U/L",
+      "kind": "observable",
+      "description": "Serum CK, an indirect nonspecific damage biomarker",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_DIGITAL_ASTRONAUT",
+        "NASA_GRAVITY"
+      ]
+    },
+    {
+      "id": "human.muscular_system.muscle_protein_synthesis_fraction_day",
+      "name": "muscle protein synthesis fraction day",
+      "unit": "1/day",
+      "kind": "latent",
+      "description": "Muscle synthesis fractional rate, tracer model needed",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_DIGITAL_ASTRONAUT",
+        "NASA_GRAVITY"
+      ]
+    },
+    {
+      "id": "human.muscular_system.muscle_protein_breakdown_fraction_day",
+      "name": "muscle protein breakdown fraction day",
+      "unit": "1/day",
+      "kind": "latent",
+      "description": "Estimated muscle breakdown fractional rate",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_DIGITAL_ASTRONAUT",
+        "NASA_GRAVITY"
+      ]
+    },
+    {
+      "id": "human.muscular_system.muscle_hypertrophy_rate_fraction_day",
+      "name": "muscle hypertrophy rate fraction day",
+      "unit": "1/day",
+      "kind": "derived",
+      "description": "Relative tissue volume change over time",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_DIGITAL_ASTRONAUT",
+        "NASA_GRAVITY"
+      ]
+    },
+    {
+      "id": "human.muscular_system.muscle_atrophy_rate_fraction_day",
+      "name": "muscle atrophy rate fraction day",
+      "unit": "1/day",
+      "kind": "derived",
+      "description": "Relative muscle loss over time",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_DIGITAL_ASTRONAUT",
+        "NASA_GRAVITY"
+      ]
+    },
+    {
+      "id": "human.muscular_system.muscle_contractile_efficiency_fraction",
+      "name": "muscle contractile efficiency fraction",
+      "unit": "1",
+      "kind": "latent",
+      "description": "Defined work/chemical efficiency model",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_DIGITAL_ASTRONAUT",
+        "NASA_GRAVITY"
+      ]
+    },
+    {
+      "id": "human.muscular_system.muscle_motor_unit_recruitment_count",
+      "name": "muscle motor unit recruitment count",
+      "unit": "count",
+      "kind": "derived",
+      "description": "Estimated active motor units under validated modeling",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_DIGITAL_ASTRONAUT",
+        "NASA_GRAVITY"
+      ]
+    },
+    {
+      "id": "human.muscular_system.muscle_injury_status",
+      "name": "muscle injury status",
+      "unit": "",
+      "kind": "clinical_assessment",
+      "description": "Clinically assessed strain or other muscle injury",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_DIGITAL_ASTRONAUT",
+        "NASA_GRAVITY"
+      ]
+    }
+  ]
+}

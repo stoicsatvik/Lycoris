@@ -1,0 +1,413 @@
+{
+  "schema_version": "1.0.0",
+  "group": "operations",
+  "domain": "functional_disability",
+  "description": "Human functional availability, operational limits and crew health impact",
+  "field_count": 25,
+  "sources": [
+    "NASA_IMM_2026",
+    "NASA_HRP_RISKS"
+  ],
+  "fields": [
+    {
+      "id": "human.functional_disability.functional_walking_capacity_m",
+      "name": "functional walking capacity m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Distance feasible in standardized locomotion test",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.functional_disability.functional_standing_duration_s",
+      "name": "functional standing duration s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Duration able to stand under specified task",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.functional_disability.functional_lifting_capacity_n",
+      "name": "functional lifting capacity n",
+      "unit": "N",
+      "kind": "observable",
+      "description": "Maximum safe measured lift force under procedure",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.functional_disability.functional_carrying_capacity_kg",
+      "name": "functional carrying capacity kg",
+      "unit": "kg",
+      "kind": "observable",
+      "description": "Maximum carried payload mass under safe test",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.functional_disability.functional_grip_capacity_n",
+      "name": "functional grip capacity n",
+      "unit": "N",
+      "kind": "observable",
+      "description": "Available handgrip output for task",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.functional_disability.functional_reach_capacity_m",
+      "name": "functional reach capacity m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Maximum reach under defined body posture",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.functional_disability.functional_vision_readability_fraction",
+      "name": "functional vision readability fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Correct legibility of standardized display in context",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.functional_disability.functional_hearing_intelligibility_fraction",
+      "name": "functional hearing intelligibility fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Successful heard commands with defined environment",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.functional_disability.functional_alertness_test_accuracy_fraction",
+      "name": "functional alertness test accuracy fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Performance on named vigilance test",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.functional_disability.functional_cognitive_task_success_fraction",
+      "name": "functional cognitive task success fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Task success fraction under standardized workload",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.functional_disability.functional_work_duration_s",
+      "name": "functional work duration s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Sustainable task time before qualified stop",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.functional_disability.functional_rest_duration_required_s",
+      "name": "functional rest duration required s",
+      "unit": "s",
+      "kind": "derived",
+      "description": "Rest interval needed under tested criteria",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.functional_disability.functional_crew_available_fraction",
+      "name": "functional crew available fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Fraction of scheduled task time medically and operationally available",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.functional_disability.functional_crew_reallocation_count",
+      "name": "functional crew reallocation count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Tasks reassigned due to human limits",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.functional_disability.functional_mission_science_time_lost_s",
+      "name": "functional mission science time lost s",
+      "unit": "s",
+      "kind": "derived",
+      "description": "Lost mission scientific task availability",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.functional_disability.functional_medical_time_lost_s",
+      "name": "functional medical time lost s",
+      "unit": "s",
+      "kind": "derived",
+      "description": "Work time lost to assessment/treatment",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.functional_disability.functional_safety_margin_task_score",
+      "name": "functional safety margin task score",
+      "unit": "score",
+      "kind": "derived",
+      "description": "Task-dependent margin under disclosed performance constraints",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.functional_disability.functional_degraded_status",
+      "name": "functional degraded status",
+      "unit": null,
+      "kind": "clinical_assessment",
+      "description": "Qualified restricted functional duty status",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.functional_disability.functional_eva_eligibility_status",
+      "name": "functional eva eligibility status",
+      "unit": null,
+      "kind": "clinical_assessment",
+      "description": "Clinical EVA clearance from authorized medical process, never from automated index",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.functional_disability.functional_emergency_assistance_required",
+      "name": "functional emergency assistance required",
+      "unit": null,
+      "kind": "clinical_assessment",
+      "description": "Qualified required aid status",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.functional_disability.functional_return_to_habitat_assistance_count",
+      "name": "functional return to habitat assistance count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Assisted returns from outdoor operations",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.functional_disability.functional_suitable_task_list",
+      "name": "functional suitable task list",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Allowed task list assigned by qualified crew protocols",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.functional_disability.functional_stop_condition_count",
+      "name": "functional stop condition count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Stop-rule events requiring reassessment",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.functional_disability.functional_decision_uncertainty_status",
+      "name": "functional decision uncertainty status",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Evidence strength and model abstention reason",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.functional_disability.functional_individual_baseline_valid_flag",
+      "name": "functional individual baseline valid flag",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Has validated preflight baseline for compared function",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    }
+  ]
+}

@@ -1,0 +1,429 @@
+{
+  "schema_version": "1.0.0",
+  "group": "physiology",
+  "domain": "coagulation_hemostasis",
+  "description": "Blood clotting, hemorrhage, platelets and thrombosis",
+  "field_count": 26,
+  "sources": [
+    "NASA_FUNDAMENTALS",
+    "NASA_HRP_RISKS"
+  ],
+  "fields": [
+    {
+      "id": "human.coagulation_hemostasis.prothrombin_time_s",
+      "name": "prothrombin time s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Extrinsic coagulation pathway laboratory time",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.coagulation_hemostasis.inr_ratio",
+      "name": "inr ratio",
+      "unit": "1",
+      "kind": "derived",
+      "description": "International normalized ratio",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.coagulation_hemostasis.activated_partial_thromboplastin_s",
+      "name": "activated partial thromboplastin s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Intrinsic coagulation lab time",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.coagulation_hemostasis.fibrinogen_g_l",
+      "name": "fibrinogen g l",
+      "unit": "g/L",
+      "kind": "observable",
+      "description": "Plasma fibrinogen concentration",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.coagulation_hemostasis.d_dimer_ng_ml",
+      "name": "d dimer ng ml",
+      "unit": "ng/mL",
+      "kind": "observable",
+      "description": "D-dimer assay with stated unit calibration",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.coagulation_hemostasis.antithrombin_activity_fraction",
+      "name": "antithrombin activity fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Antithrombin clot inhibition assay",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.coagulation_hemostasis.protein_c_activity_fraction",
+      "name": "protein c activity fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Protein C functional activity",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.coagulation_hemostasis.protein_s_activity_fraction",
+      "name": "protein s activity fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Protein S functional activity",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.coagulation_hemostasis.factor_viii_activity_fraction",
+      "name": "factor viii activity fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Factor VIII clotting activity",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.coagulation_hemostasis.factor_ix_activity_fraction",
+      "name": "factor ix activity fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Factor IX clotting activity",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.coagulation_hemostasis.von_willebrand_antigen_fraction",
+      "name": "von willebrand antigen fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "VWF antigen normalized to assay reference",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.coagulation_hemostasis.platelet_aggregation_response_fraction",
+      "name": "platelet aggregation response fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Agonist-specific platelet aggregation",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.coagulation_hemostasis.platelet_activation_p_selectin_fraction",
+      "name": "platelet activation p selectin fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Activated platelet surface fraction",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.coagulation_hemostasis.thrombin_generation_peak_nm",
+      "name": "thrombin generation peak nm",
+      "unit": "nmol/L",
+      "kind": "observable",
+      "description": "Peak thrombin concentration in calibrated assay",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.coagulation_hemostasis.thrombin_generation_time_s",
+      "name": "thrombin generation time s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Time to peak thrombin generation",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.coagulation_hemostasis.fibrinolysis_activity_fraction",
+      "name": "fibrinolysis activity fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Functional fibrinolysis assay",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.coagulation_hemostasis.plasminogen_activity_fraction",
+      "name": "plasminogen activity fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Plasminogen activity ratio",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.coagulation_hemostasis.clot_lysis_time_s",
+      "name": "clot lysis time s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Standardized plasma clot lysis duration",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.coagulation_hemostasis.clot_strength_pa",
+      "name": "clot strength pa",
+      "unit": "Pa",
+      "kind": "derived",
+      "description": "Viscoelastic clot strength using defined device",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.coagulation_hemostasis.bleeding_time_s",
+      "name": "bleeding time s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Standardized prolonged-bleeding lab procedure, limited use",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.coagulation_hemostasis.bleeding_event_count",
+      "name": "bleeding event count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Documented spontaneous or traumatic hemorrhage events",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.coagulation_hemostasis.venous_thromboembolism_event_count",
+      "name": "venous thromboembolism event count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Clinically confirmed VTE events",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.coagulation_hemostasis.thromboembolic_risk_model_score",
+      "name": "thromboembolic risk model score",
+      "unit": "score",
+      "kind": "derived",
+      "description": "Validated instrument-specific VTE risk estimate only",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.coagulation_hemostasis.platelet_mean_volume_fl",
+      "name": "platelet mean volume fl",
+      "unit": "fL",
+      "kind": "observable",
+      "description": "Mean platelet size",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.coagulation_hemostasis.hematoma_volume_ml",
+      "name": "hematoma volume ml",
+      "unit": "mL",
+      "kind": "observable",
+      "description": "Localized hematoma imaging volume",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.coagulation_hemostasis.inflammatory_coagulation_index",
+      "name": "inflammatory coagulation index",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Named inflammation-coagulation metric if justified",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    }
+  ]
+}

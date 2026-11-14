@@ -1,0 +1,456 @@
+{
+  "schema_version": "1.0.0",
+  "group": "space_exposure",
+  "domain": "isolation_habitat",
+  "description": "Confinement, sensory monotony, communication and living context",
+  "field_count": 26,
+  "sources": [
+    "NASA_ISOLATION",
+    "NASA_CHAPEA",
+    "ESA_MARS500"
+  ],
+  "fields": [
+    {
+      "id": "human.isolation_habitat.habitat_confinement_duration_days",
+      "name": "habitat confinement duration days",
+      "unit": "day",
+      "kind": "scenario_input",
+      "description": "Duration in closed shared environment",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_CHAPEA",
+        "ESA_MARS500"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.isolation_habitat.habitat_crew_density_person_m3",
+      "name": "habitat crew density person m3",
+      "unit": "1/m^3",
+      "kind": "scenario_input",
+      "description": "Crew count divided by usable habitat volume",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_CHAPEA",
+        "ESA_MARS500"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.isolation_habitat.habitat_usable_personal_volume_m3",
+      "name": "habitat usable personal volume m3",
+      "unit": "m^3",
+      "kind": "scenario_input",
+      "description": "Private crew living volume",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_CHAPEA",
+        "ESA_MARS500"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.isolation_habitat.habitat_social_interaction_hours_day",
+      "name": "habitat social interaction hours day",
+      "unit": "h/day",
+      "kind": "observable",
+      "description": "Face-to-face crew social interaction",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_CHAPEA",
+        "ESA_MARS500"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.isolation_habitat.habitat_private_time_hours_day",
+      "name": "habitat private time hours day",
+      "unit": "h/day",
+      "kind": "observable",
+      "description": "Time available for private activities",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_CHAPEA",
+        "ESA_MARS500"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.isolation_habitat.habitat_window_view_time_s",
+      "name": "habitat window view time s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Exterior natural-view exposure opportunity",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_CHAPEA",
+        "ESA_MARS500"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.isolation_habitat.habitat_light_dark_schedule_hours",
+      "name": "habitat light dark schedule hours",
+      "unit": "h",
+      "kind": "scenario_input",
+      "description": "Scheduled day or light cycle duration",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_CHAPEA",
+        "ESA_MARS500"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.isolation_habitat.habitat_sleep_shift_count",
+      "name": "habitat sleep shift count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Number of sleep schedule change events",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_CHAPEA",
+        "ESA_MARS500"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.isolation_habitat.habitat_alarm_events_count",
+      "name": "habitat alarm events count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Operational alarms and interruptions",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_CHAPEA",
+        "ESA_MARS500"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.isolation_habitat.habitat_emergency_drills_count",
+      "name": "habitat emergency drills count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Completed crew emergency drills",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_CHAPEA",
+        "ESA_MARS500"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.isolation_habitat.habitat_privacy_perceived_score",
+      "name": "habitat privacy perceived score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Subjective privacy adequacy",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_CHAPEA",
+        "ESA_MARS500"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.isolation_habitat.habitat_crowding_perceived_score",
+      "name": "habitat crowding perceived score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Subjective crowding experience",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_CHAPEA",
+        "ESA_MARS500"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.isolation_habitat.habitat_sensory_monotony_score",
+      "name": "habitat sensory monotony score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Self-reported monotony",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_CHAPEA",
+        "ESA_MARS500"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.isolation_habitat.habitat_temporal_disorientation_score",
+      "name": "habitat temporal disorientation score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Subjective temporal disorientation",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_CHAPEA",
+        "ESA_MARS500"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.isolation_habitat.habitat_environmental_control_score",
+      "name": "habitat environmental control score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Ability to adjust temperature light and noise",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_CHAPEA",
+        "ESA_MARS500"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.isolation_habitat.habitat_leisure_diversity_index",
+      "name": "habitat leisure diversity index",
+      "unit": "index",
+      "kind": "derived",
+      "description": "Diversity of optional recreation activities",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_CHAPEA",
+        "ESA_MARS500"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.isolation_habitat.habitat_group_cohesion_change_score",
+      "name": "habitat group cohesion change score",
+      "unit": "score",
+      "kind": "derived",
+      "description": "Named team cohesion change from personal baseline",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_CHAPEA",
+        "ESA_MARS500"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.isolation_habitat.habitat_interpersonal_stressor_count",
+      "name": "habitat interpersonal stressor count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Documented interpersonal stress episodes",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_CHAPEA",
+        "ESA_MARS500"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.isolation_habitat.habitat_family_contact_delay_s",
+      "name": "habitat family contact delay s",
+      "unit": "s",
+      "kind": "scenario_input",
+      "description": "One-way family communication delay",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_CHAPEA",
+        "ESA_MARS500"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.isolation_habitat.habitat_earth_news_access_interval_s",
+      "name": "habitat earth news access interval s",
+      "unit": "s",
+      "kind": "scenario_input",
+      "description": "Frequency of Earth information access",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_CHAPEA",
+        "ESA_MARS500"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.isolation_habitat.habitat_resupply_interval_days",
+      "name": "habitat resupply interval days",
+      "unit": "day",
+      "kind": "scenario_input",
+      "description": "Time between food/equipment resupplies",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_CHAPEA",
+        "ESA_MARS500"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.isolation_habitat.habitat_supply_shortage_event_count",
+      "name": "habitat supply shortage event count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Recorded resource shortages",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_CHAPEA",
+        "ESA_MARS500"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.isolation_habitat.habitat_crew_autonomy_fraction",
+      "name": "habitat crew autonomy fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Fraction of decision types made by crew under operational framework",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_CHAPEA",
+        "ESA_MARS500"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.isolation_habitat.habitat_psychological_recovery_duration_s",
+      "name": "habitat psychological recovery duration s",
+      "unit": "s",
+      "kind": "derived",
+      "description": "Recovery after standardized stress assessment",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_CHAPEA",
+        "ESA_MARS500"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.isolation_habitat.habitat_clinical_support_delay_s",
+      "name": "habitat clinical support delay s",
+      "unit": "s",
+      "kind": "scenario_input",
+      "description": "Delay in qualified healthcare consultation",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_CHAPEA",
+        "ESA_MARS500"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.isolation_habitat.habitat_stress_model_status",
+      "name": "habitat stress model status",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Applicability domain of analog study and predictor",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_ISOLATION",
+        "NASA_CHAPEA",
+        "ESA_MARS500"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    }
+  ]
+}

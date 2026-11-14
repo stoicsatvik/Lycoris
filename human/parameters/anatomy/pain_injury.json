@@ -1,0 +1,493 @@
+{
+  "schema_version": "1.0.0",
+  "group": "anatomy",
+  "domain": "pain_injury",
+  "description": "Pain, trauma, injury susceptibility and rehabilitation",
+  "field_count": 30,
+  "sources": [
+    "NASA_FUNDAMENTALS",
+    "NASA_IMM_2026"
+  ],
+  "fields": [
+    {
+      "id": "human.pain_injury.pain_intensity_score",
+      "name": "pain intensity score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Patient-reported pain on validated named scale",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_IMM_2026"
+      ]
+    },
+    {
+      "id": "human.pain_injury.pain_interference_score",
+      "name": "pain interference score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Impact of pain on daily function under named scale",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_IMM_2026"
+      ]
+    },
+    {
+      "id": "human.pain_injury.pain_duration_s",
+      "name": "pain duration s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Duration of a documented pain event",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_IMM_2026"
+      ]
+    },
+    {
+      "id": "human.pain_injury.pain_location_code",
+      "name": "pain location code",
+      "unit": "",
+      "kind": "clinical_assessment",
+      "description": "Structured body region and side for symptoms",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_IMM_2026"
+      ]
+    },
+    {
+      "id": "human.pain_injury.pain_quality_code",
+      "name": "pain quality code",
+      "unit": "",
+      "kind": "clinical_assessment",
+      "description": "Descriptive quality classification, not diagnosis alone",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_IMM_2026"
+      ]
+    },
+    {
+      "id": "human.pain_injury.mechanical_pain_threshold_pa",
+      "name": "mechanical pain threshold pa",
+      "unit": "Pa",
+      "kind": "observable",
+      "description": "Local pressure pain threshold via algometry",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_IMM_2026"
+      ]
+    },
+    {
+      "id": "human.pain_injury.thermal_pain_threshold_k",
+      "name": "thermal pain threshold k",
+      "unit": "K",
+      "kind": "observable",
+      "description": "Thermal stimulus threshold under controlled lab method",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_IMM_2026"
+      ]
+    },
+    {
+      "id": "human.pain_injury.nociceptive_reflex_latency_s",
+      "name": "nociceptive reflex latency s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Nociceptive reflex response latency",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_IMM_2026"
+      ]
+    },
+    {
+      "id": "human.pain_injury.injury_event_count",
+      "name": "injury event count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Accidental injury events, case definition recorded",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_IMM_2026"
+      ]
+    },
+    {
+      "id": "human.pain_injury.impact_peak_force_n",
+      "name": "impact peak force n",
+      "unit": "N",
+      "kind": "observable",
+      "description": "Peak force during measured impact event",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_IMM_2026"
+      ]
+    },
+    {
+      "id": "human.pain_injury.impact_energy_j",
+      "name": "impact energy j",
+      "unit": "J",
+      "kind": "derived",
+      "description": "Estimated energy transferred during impact",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_IMM_2026"
+      ]
+    },
+    {
+      "id": "human.pain_injury.contusion_volume_m3",
+      "name": "contusion volume m3",
+      "unit": "m^3",
+      "kind": "observable",
+      "description": "Estimated localized contusion volume",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_IMM_2026"
+      ]
+    },
+    {
+      "id": "human.pain_injury.abrasion_area_m2",
+      "name": "abrasion area m2",
+      "unit": "m^2",
+      "kind": "observable",
+      "description": "Observed superficial abrasion area",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_IMM_2026"
+      ]
+    },
+    {
+      "id": "human.pain_injury.laceration_length_m",
+      "name": "laceration length m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Wound line length",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_IMM_2026"
+      ]
+    },
+    {
+      "id": "human.pain_injury.fracture_confirmed_status",
+      "name": "fracture confirmed status",
+      "unit": "",
+      "kind": "clinical_assessment",
+      "description": "Imaging-confirmed fracture classification",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_IMM_2026"
+      ]
+    },
+    {
+      "id": "human.pain_injury.sprain_grade",
+      "name": "sprain grade",
+      "unit": "",
+      "kind": "clinical_assessment",
+      "description": "Qualified ligament injury severity grade",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_IMM_2026"
+      ]
+    },
+    {
+      "id": "human.pain_injury.concussion_symptom_score",
+      "name": "concussion symptom score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Named concussion assessment total",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_IMM_2026"
+      ]
+    },
+    {
+      "id": "human.pain_injury.loss_of_consciousness_duration_s",
+      "name": "loss of consciousness duration s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Reported/documented loss of consciousness duration",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_IMM_2026"
+      ]
+    },
+    {
+      "id": "human.pain_injury.return_to_task_time_s",
+      "name": "return to task time s",
+      "unit": "s",
+      "kind": "derived",
+      "description": "Interval until medically cleared operational return",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_IMM_2026"
+      ]
+    },
+    {
+      "id": "human.pain_injury.injury_recovery_day",
+      "name": "injury recovery day",
+      "unit": "day",
+      "kind": "derived",
+      "description": "Days since injury under defined event anchor",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_IMM_2026"
+      ]
+    },
+    {
+      "id": "human.pain_injury.rehabilitation_completion_fraction",
+      "name": "rehabilitation completion fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Fraction of scheduled rehabilitation milestones completed",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_IMM_2026"
+      ]
+    },
+    {
+      "id": "human.pain_injury.functional_disability_score",
+      "name": "functional disability score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Named functional impact questionnaire",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_IMM_2026"
+      ]
+    },
+    {
+      "id": "human.pain_injury.injury_recurrence_event_count",
+      "name": "injury recurrence event count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Reinjury episodes after qualifying previous injury",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_IMM_2026"
+      ]
+    },
+    {
+      "id": "human.pain_injury.head_impact_count",
+      "name": "head impact count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Recorded head impacts under validated event threshold",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_IMM_2026"
+      ]
+    },
+    {
+      "id": "human.pain_injury.minor_trauma_count",
+      "name": "minor trauma count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Minor injuries meeting predefined criteria",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_IMM_2026"
+      ]
+    },
+    {
+      "id": "human.pain_injury.repetitive_strain_symptom_score",
+      "name": "repetitive strain symptom score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Repetitive strain symptom scale",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_IMM_2026"
+      ]
+    },
+    {
+      "id": "human.pain_injury.overuse_load_exposure_hours",
+      "name": "overuse load exposure hours",
+      "unit": "h",
+      "kind": "observable",
+      "description": "Duration of repeated loading exposure",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_IMM_2026"
+      ]
+    },
+    {
+      "id": "human.pain_injury.symptom_onset_latency_s",
+      "name": "symptom onset latency s",
+      "unit": "s",
+      "kind": "derived",
+      "description": "Time between defined exposure and symptom onset",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_IMM_2026"
+      ]
+    },
+    {
+      "id": "human.pain_injury.physical_function_recovery_fraction",
+      "name": "physical function recovery fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Personal-baseline functional capacity recovered",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_IMM_2026"
+      ]
+    },
+    {
+      "id": "human.pain_injury.clinician_activity_restriction_status",
+      "name": "clinician activity restriction status",
+      "unit": "",
+      "kind": "clinical_assessment",
+      "description": "Medical clearance or restriction, qualified clinician only",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_IMM_2026"
+      ]
+    }
+  ]
+}

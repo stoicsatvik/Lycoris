@@ -1,0 +1,227 @@
+{
+  "registry_version": "1.0.0",
+  "created": "2026-11-14",
+  "note": "Curated verified public entrypoints. Links are references; full technical reports and videos are not claimed read or watched end-to-end.",
+  "sources": [
+    {
+      "id": "NASA_HRP_HAZARDS",
+      "title": "NASA Human Research Program: Five Hazards of Human Spaceflight",
+      "url": "https://www.nasa.gov/hrp/hazards/",
+      "source_type": "risk_framework",
+      "scope": "NASA primary overview of interacting hazards",
+      "access": "public_reference",
+      "human_data_context": "research_or_standards",
+      "review_status": "source_page_located; full linked reports not individually audited"
+    },
+    {
+      "id": "NASA_HRP_RISKS",
+      "title": "NASA HRP: Risks of Human Spaceflight",
+      "url": "https://www.nasa.gov/hrp/risks/",
+      "source_type": "risk_framework",
+      "scope": "Specific physiological, behavioral and radiation risk families",
+      "access": "public_reference",
+      "human_data_context": "research_or_standards",
+      "review_status": "source_page_located; full linked reports not individually audited"
+    },
+    {
+      "id": "NASA_HUMAN_RESEARCH_ROADMAP",
+      "title": "Human Research Roadmap risk and evidence registry",
+      "url": "https://humanresearchroadmap.nasa.gov/Risks/default.aspx",
+      "source_type": "evidence_portal",
+      "scope": "Risk evidence and research gaps; individual reports require separate review",
+      "access": "public_reference",
+      "human_data_context": "research_or_standards",
+      "review_status": "source_page_located; full linked reports not individually audited"
+    },
+    {
+      "id": "NASA_STD_3001_V1_2023",
+      "title": "NASA-STD-3001 Volume 1 Crew Health",
+      "url": "https://www.nasa.gov/reference/nasa-std-3001v1/",
+      "source_type": "standards",
+      "scope": "Pre/in/postflight crew medical requirements; check applicable edition",
+      "access": "public_reference",
+      "human_data_context": "research_or_standards",
+      "review_status": "source_page_located; full linked reports not individually audited"
+    },
+    {
+      "id": "NASA_STD_3001_V2_2026",
+      "title": "NASA-STD-3001 Volume 2 Human Factors and Environmental Health",
+      "url": "https://www.nasa.gov/reference/nasa-std-3001v2/",
+      "source_type": "standards",
+      "scope": "2026 human interfaces and habitability standard",
+      "access": "public_reference",
+      "human_data_context": "research_or_standards",
+      "review_status": "source_page_located; full linked reports not individually audited"
+    },
+    {
+      "id": "NASA_HIDH",
+      "title": "NASA Human Integration Design Handbook Revision 1",
+      "url": "https://www.nasa.gov/human-integration-design-handbook/",
+      "source_type": "handbook",
+      "scope": "Anthropometry, biomechanics, strength and other background",
+      "access": "public_reference",
+      "human_data_context": "research_or_standards",
+      "review_status": "source_page_located; full linked reports not individually audited"
+    },
+    {
+      "id": "NASA_FUNDAMENTALS",
+      "title": "NASA Fundamentals of Human Health medical technical briefs",
+      "url": "https://www.nasa.gov/reference/fundamentals-of-human-health/",
+      "source_type": "medical_briefs",
+      "scope": "SANS, orthostatic, venous thrombosis, nutrition, sleep and other risk briefs",
+      "access": "public_reference",
+      "human_data_context": "research_or_standards",
+      "review_status": "source_page_located; full linked reports not individually audited"
+    },
+    {
+      "id": "NASA_DIGITAL_ASTRONAUT",
+      "title": "NASA Digital Astronaut Simulation Tool",
+      "url": "https://www.nasa.gov/general/digital-astronaut-simulation-tool/",
+      "source_type": "biomechanics_model",
+      "scope": "Dynamic musculoskeletal simulation in reduced gravity",
+      "access": "public_reference",
+      "human_data_context": "research_or_standards",
+      "review_status": "source_page_located; full linked reports not individually audited"
+    },
+    {
+      "id": "NASA_IMM_2026",
+      "title": "NASA Integrated Medical Model",
+      "url": "https://www.nasa.gov/general/nasas-integrated-medical-model-imm/",
+      "source_type": "risk_model",
+      "scope": "2026 account of evidence-driven clinical mission risk prediction",
+      "access": "public_reference",
+      "human_data_context": "research_or_standards",
+      "review_status": "source_page_located; full linked reports not individually audited"
+    },
+    {
+      "id": "NASA_COMPUTATIONAL_MODELING",
+      "title": "NASA Glenn human health and performance computational modeling",
+      "url": "https://www.nasa.gov/glenn/glenn-expertise-space-exploration/human-health-performance/computational-modeling/",
+      "source_type": "modeling_overview",
+      "scope": "Quantitative medical and physiological risks; no model internals claimed",
+      "access": "public_reference",
+      "human_data_context": "research_or_standards",
+      "review_status": "source_page_located; full linked reports not individually audited"
+    },
+    {
+      "id": "NASA_SANS",
+      "title": "NASA Spaceflight-Associated Neuro-ocular Syndrome risk",
+      "url": "https://www.nasa.gov/reference/risk-of-spaceflight-associated-neuro-ocular-syndrome-sans/",
+      "source_type": "clinical_risk",
+      "scope": "Headward fluid shift and observed eye/optic findings",
+      "access": "public_reference",
+      "human_data_context": "research_or_standards",
+      "review_status": "source_page_located; full linked reports not individually audited"
+    },
+    {
+      "id": "NASA_GRAVITY",
+      "title": "NASA HRP Gravity Fields hazard",
+      "url": "https://www.nasa.gov/hrp/hazard-gravity-fields/",
+      "source_type": "gravity_risk",
+      "scope": "Microgravity and transitions, not measured human long-term Mars effects",
+      "access": "public_reference",
+      "human_data_context": "research_or_standards",
+      "review_status": "source_page_located; full linked reports not individually audited"
+    },
+    {
+      "id": "NASA_ISOLATION",
+      "title": "NASA HRP Isolation and Confinement hazard",
+      "url": "https://www.nasa.gov/hrp/hazard-isolation-and-confinement/",
+      "source_type": "behavioral_risk",
+      "scope": "Sleep, circadian and workload interactions",
+      "access": "public_reference",
+      "human_data_context": "research_or_standards",
+      "review_status": "source_page_located; full linked reports not individually audited"
+    },
+    {
+      "id": "NASA_CLOSED_ENVIRONMENT",
+      "title": "NASA HRP Hostile/Closed Environments",
+      "url": "https://www.nasa.gov/hrp/hazard-hostile-closed-environments/",
+      "source_type": "environment_risk",
+      "scope": "Microbial and immune interactions with closed habitats",
+      "access": "public_reference",
+      "human_data_context": "research_or_standards",
+      "review_status": "source_page_located; full linked reports not individually audited"
+    },
+    {
+      "id": "NASA_TWINS_2019",
+      "title": "NASA Twins Study results summary",
+      "url": "https://www.nasa.gov/humans-in-space/nasas-twins-study-results-published-in-science-journal/",
+      "source_type": "individual_case",
+      "scope": "Single twin-pair longitudinal study; cannot generalize population rate",
+      "access": "public_reference",
+      "human_data_context": "human_low_earth_orbit_case",
+      "review_status": "source_page_located; full linked reports not individually audited"
+    },
+    {
+      "id": "NASA_APOLLO17",
+      "title": "Apollo 17 Mission Details",
+      "url": "https://www.nasa.gov/missions/apollo/apollo-17-mission-details/",
+      "source_type": "lunar_flight",
+      "scope": "Human lunar surface EVA operations, not Mars surface evidence",
+      "access": "public_reference",
+      "human_data_context": "human_lunar_flight",
+      "review_status": "source_page_located; full linked reports not individually audited"
+    },
+    {
+      "id": "NASA_CHAPEA2_2026",
+      "title": "CHAPEA Mission 2 crew reflects after simulated Mars mission",
+      "url": "https://www.nasa.gov/centers-and-facilities/johnson/chapea-mission-2-crew-reflects-after-378-days-on-simulated-mars/",
+      "source_type": "earth_analog",
+      "scope": "October 31 2026 completion; no actual Mars gravity",
+      "access": "public_reference",
+      "human_data_context": "earth_analog",
+      "review_status": "source_page_located; full linked reports not individually audited"
+    },
+    {
+      "id": "NASA_CHAPEA",
+      "title": "NASA CHAPEA program",
+      "url": "https://www.nasa.gov/humans-in-space/chapea/about-chapea/",
+      "source_type": "earth_analog",
+      "scope": "Resource limits, high-tempo simulated EVAs, isolation and communications",
+      "access": "public_reference",
+      "human_data_context": "earth_analog",
+      "review_status": "source_page_located; full linked reports not individually audited"
+    },
+    {
+      "id": "ESA_MARS500",
+      "title": "ESA Mars500 study overview",
+      "url": "https://www.esa.int/articles/mars500-study-overview",
+      "source_type": "earth_analog",
+      "scope": "520-day ground-based isolation with communications delays",
+      "access": "public_reference",
+      "human_data_context": "earth_analog",
+      "review_status": "source_page_located; full linked reports not individually audited"
+    },
+    {
+      "id": "NASA_HRP_VIDEO",
+      "title": "NASA HRP Videos",
+      "url": "https://www.nasa.gov/hrp/hrp-videos/",
+      "source_type": "video",
+      "scope": "Official hazard and research explainers",
+      "access": "public_reference",
+      "human_data_context": "research_or_standards",
+      "review_status": "source_page_located; full linked reports not individually audited"
+    },
+    {
+      "id": "NASA_HRP_HUMAN_BODY",
+      "title": "NASA The Human Body in Space",
+      "url": "https://www.nasa.gov/humans-in-space/the-human-body-in-space/",
+      "source_type": "overview",
+      "scope": "Crew physiological and psychological adaptations",
+      "access": "public_reference",
+      "human_data_context": "research_or_standards",
+      "review_status": "source_page_located; full linked reports not individually audited"
+    },
+    {
+      "id": "NTRS_PARTIAL_GRAVITY_2021",
+      "title": "NASA NTRS: Partial gravity of Moon and Mars appears insufficient",
+      "url": "https://ntrs.nasa.gov/citations/20210019591",
+      "source_type": "research_hypothesis",
+      "scope": "Analysis argues uncertain long-term partial-gravity sufficiency; not direct Mars proof",
+      "access": "public_reference",
+      "human_data_context": "hypothesis_from_indirect_evidence",
+      "review_status": "source_page_located; full linked reports not individually audited"
+    }
+  ]
+}

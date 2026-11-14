@@ -1,0 +1,541 @@
+{
+  "schema_version": "1.0.0",
+  "group": "physiology",
+  "domain": "gas_exchange",
+  "description": "Oxygen, carbon dioxide, blood gases and exchange",
+  "field_count": 33,
+  "sources": [
+    "NASA_FUNDAMENTALS",
+    "NASA_HRP_RISKS"
+  ],
+  "fields": [
+    {
+      "id": "human.gas_exchange.oxygen_uptake_mol_s",
+      "name": "oxygen uptake mol s",
+      "unit": "mol/s",
+      "kind": "observable",
+      "description": "Metabolically consumed O2 from indirect calorimetry",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.gas_exchange.co2_output_mol_s",
+      "name": "co2 output mol s",
+      "unit": "mol/s",
+      "kind": "observable",
+      "description": "CO2 produced from expired gas analysis",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.gas_exchange.respiratory_exchange_ratio",
+      "name": "respiratory exchange ratio",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Molar CO2 produced divided by molar O2 consumed",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.gas_exchange.arterial_pao2_pa",
+      "name": "arterial pao2 pa",
+      "unit": "Pa",
+      "kind": "observable",
+      "description": "Arterial blood oxygen partial pressure",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.gas_exchange.arterial_paco2_pa",
+      "name": "arterial paco2 pa",
+      "unit": "Pa",
+      "kind": "observable",
+      "description": "Arterial CO2 partial pressure",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.gas_exchange.arterial_ph",
+      "name": "arterial ph",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Arterial blood pH",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.gas_exchange.arterial_bicarbonate_mmol_l",
+      "name": "arterial bicarbonate mmol l",
+      "unit": "mmol/L",
+      "kind": "observable",
+      "description": "Calculated/measured blood bicarbonate",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.gas_exchange.arterial_base_excess_mmol_l",
+      "name": "arterial base excess mmol l",
+      "unit": "mmol/L",
+      "kind": "derived",
+      "description": "Acid base excess under named method",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.gas_exchange.venous_pvo2_pa",
+      "name": "venous pvo2 pa",
+      "unit": "Pa",
+      "kind": "observable",
+      "description": "Venous blood O2 partial pressure",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.gas_exchange.venous_pvco2_pa",
+      "name": "venous pvco2 pa",
+      "unit": "Pa",
+      "kind": "observable",
+      "description": "Venous CO2 partial pressure",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.gas_exchange.venous_ph",
+      "name": "venous ph",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Venous blood pH",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.gas_exchange.sp_o2_fraction",
+      "name": "sp o2 fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Pulse oximetry estimated saturation",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.gas_exchange.arterial_sa_o2_fraction",
+      "name": "arterial sa o2 fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Actual arterial O2 hemoglobin saturation",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.gas_exchange.central_venous_svo2_fraction",
+      "name": "central venous svo2 fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Central venous hemoglobin O2 saturation",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.gas_exchange.end_tidal_co2_pa",
+      "name": "end tidal co2 pa",
+      "unit": "Pa",
+      "kind": "observable",
+      "description": "End-expired carbon dioxide partial pressure",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.gas_exchange.end_tidal_o2_pa",
+      "name": "end tidal o2 pa",
+      "unit": "Pa",
+      "kind": "observable",
+      "description": "End-expired oxygen partial pressure",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.gas_exchange.alveolar_o2_pa",
+      "name": "alveolar o2 pa",
+      "unit": "Pa",
+      "kind": "derived",
+      "description": "Estimated alveolar oxygen partial pressure",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.gas_exchange.alveolar_co2_pa",
+      "name": "alveolar co2 pa",
+      "unit": "Pa",
+      "kind": "derived",
+      "description": "Estimated alveolar CO2 pressure",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.gas_exchange.alveolar_arterial_o2_gradient_pa",
+      "name": "alveolar arterial o2 gradient pa",
+      "unit": "Pa",
+      "kind": "derived",
+      "description": "Alveolar minus arterial oxygen pressure",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.gas_exchange.pao2_fio2_ratio_pa",
+      "name": "pao2 fio2 ratio pa",
+      "unit": "Pa",
+      "kind": "derived",
+      "description": "Arterial O2 divided by inspired oxygen fraction",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.gas_exchange.fraction_inspired_o2",
+      "name": "fraction inspired o2",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Inspired breathing gas O2 fraction",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.gas_exchange.fraction_inspired_co2",
+      "name": "fraction inspired co2",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Inspired breathing gas CO2 fraction",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.gas_exchange.gas_diffusion_capacity_mol_s_pa",
+      "name": "gas diffusion capacity mol s pa",
+      "unit": "mol/(s Pa)",
+      "kind": "observable",
+      "description": "Measured gas diffusion transfer capacity under method",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.gas_exchange.lung_vq_mismatch_index",
+      "name": "lung vq mismatch index",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Ventilation/perfusion mismatch under specified method",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.gas_exchange.airway_co2_retention_pa",
+      "name": "airway co2 retention pa",
+      "unit": "Pa",
+      "kind": "derived",
+      "description": "Modeled retained CO2 over suitable reference",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.gas_exchange.blood_oxygen_content_mol_l",
+      "name": "blood oxygen content mol l",
+      "unit": "mol/L",
+      "kind": "derived",
+      "description": "Total O2 blood content including bound/dissolved gas",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.gas_exchange.oxygen_delivery_mol_s",
+      "name": "oxygen delivery mol s",
+      "unit": "mol/s",
+      "kind": "derived",
+      "description": "Cardiac flow multiplied by blood O2 content",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.gas_exchange.oxygen_extraction_fraction",
+      "name": "oxygen extraction fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Fraction of O2 removed across tissue circulation",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.gas_exchange.oxygen_debt_mol",
+      "name": "oxygen debt mol",
+      "unit": "mol",
+      "kind": "latent",
+      "description": "Excess demand compared with modeled aerobic supply",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.gas_exchange.co2_buffering_capacity_mol_pa",
+      "name": "co2 buffering capacity mol pa",
+      "unit": "mol/Pa",
+      "kind": "derived",
+      "description": "Gas/bicarbonate buffering capacity under model",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.gas_exchange.hypoxemia_event_count",
+      "name": "hypoxemia event count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Blood oxygen deficit episodes under clinician-set cutoff",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.gas_exchange.hypercapnia_event_count",
+      "name": "hypercapnia event count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Elevated blood CO2 episodes under documented cutoff",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.gas_exchange.air_hunger_score",
+      "name": "air hunger score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Subjective respiratory discomfort score",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    }
+  ]
+}

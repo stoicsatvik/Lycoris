@@ -1,0 +1,493 @@
+{
+  "schema_version": "1.0.0",
+  "group": "physiology",
+  "domain": "immune_cellular",
+  "description": "Immune cells, host defense, infection response",
+  "field_count": 30,
+  "sources": [
+    "NASA_CLOSED_ENVIRONMENT",
+    "NASA_HRP_RISKS"
+  ],
+  "fields": [
+    {
+      "id": "human.immune_cellular.absolute_neutrophils_per_l",
+      "name": "absolute neutrophils per l",
+      "unit": "1/L",
+      "kind": "observable",
+      "description": "Circulating neutrophil count",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.immune_cellular.absolute_lymphocytes_per_l",
+      "name": "absolute lymphocytes per l",
+      "unit": "1/L",
+      "kind": "observable",
+      "description": "Circulating lymphocyte count",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.immune_cellular.absolute_monocytes_per_l",
+      "name": "absolute monocytes per l",
+      "unit": "1/L",
+      "kind": "observable",
+      "description": "Circulating monocyte count",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.immune_cellular.absolute_eosinophils_per_l",
+      "name": "absolute eosinophils per l",
+      "unit": "1/L",
+      "kind": "observable",
+      "description": "Circulating eosinophil count",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.immune_cellular.absolute_basophils_per_l",
+      "name": "absolute basophils per l",
+      "unit": "1/L",
+      "kind": "observable",
+      "description": "Circulating basophil count",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.immune_cellular.cd4_t_cells_per_l",
+      "name": "cd4 t cells per l",
+      "unit": "1/L",
+      "kind": "observable",
+      "description": "CD4 T-cell absolute count",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.immune_cellular.cd8_t_cells_per_l",
+      "name": "cd8 t cells per l",
+      "unit": "1/L",
+      "kind": "observable",
+      "description": "CD8 T-cell absolute count",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.immune_cellular.cd4_cd8_ratio",
+      "name": "cd4 cd8 ratio",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Lymphocyte subset ratio",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.immune_cellular.natural_killer_cells_per_l",
+      "name": "natural killer cells per l",
+      "unit": "1/L",
+      "kind": "observable",
+      "description": "NK cell number",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.immune_cellular.b_cells_per_l",
+      "name": "b cells per l",
+      "unit": "1/L",
+      "kind": "observable",
+      "description": "B cell number",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.immune_cellular.naive_t_cell_fraction",
+      "name": "naive t cell fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Naive T-cell population fraction",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.immune_cellular.memory_t_cell_fraction",
+      "name": "memory t cell fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Memory T-cell fraction",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.immune_cellular.regulatory_t_cell_fraction",
+      "name": "regulatory t cell fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Regulatory T-cell fraction",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.immune_cellular.activated_t_cell_fraction",
+      "name": "activated t cell fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Activation marker positive T-cell fraction",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.immune_cellular.nk_cytotoxicity_fraction",
+      "name": "nk cytotoxicity fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Cytotoxicity assay normalized outcome",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.immune_cellular.phagocytosis_assay_fraction",
+      "name": "phagocytosis assay fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Phagocytic uptake fraction",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.immune_cellular.neutrophil_oxidative_burst_fraction",
+      "name": "neutrophil oxidative burst fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Activated neutrophil oxidative burst",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.immune_cellular.serum_igg_g_l",
+      "name": "serum igg g l",
+      "unit": "g/L",
+      "kind": "observable",
+      "description": "Immunoglobulin G concentration",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.immune_cellular.serum_iga_g_l",
+      "name": "serum iga g l",
+      "unit": "g/L",
+      "kind": "observable",
+      "description": "Immunoglobulin A concentration",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.immune_cellular.serum_igm_g_l",
+      "name": "serum igm g l",
+      "unit": "g/L",
+      "kind": "observable",
+      "description": "Immunoglobulin M concentration",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.immune_cellular.serum_ige_iu_ml",
+      "name": "serum ige iu ml",
+      "unit": "IU/mL",
+      "kind": "observable",
+      "description": "Total immunoglobulin E assay",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.immune_cellular.complement_c3_g_l",
+      "name": "complement c3 g l",
+      "unit": "g/L",
+      "kind": "observable",
+      "description": "Serum complement component C3",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.immune_cellular.complement_c4_g_l",
+      "name": "complement c4 g l",
+      "unit": "g/L",
+      "kind": "observable",
+      "description": "Serum complement component C4",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.immune_cellular.pathogen_specific_antibody_titer",
+      "name": "pathogen specific antibody titer",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Antibody titer for named pathogen",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.immune_cellular.vaccine_seroconversion_status",
+      "name": "vaccine seroconversion status",
+      "unit": null,
+      "kind": "clinical_assessment",
+      "description": "Assay documented vaccine response",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.immune_cellular.viral_reactivation_event_count",
+      "name": "viral reactivation event count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Validated latent virus reactivation events",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.immune_cellular.cmv_viral_load_copies_ml",
+      "name": "cmv viral load copies ml",
+      "unit": "copies/mL",
+      "kind": "observable",
+      "description": "CMV DNA PCR measurement",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.immune_cellular.ebv_viral_load_copies_ml",
+      "name": "ebv viral load copies ml",
+      "unit": "copies/mL",
+      "kind": "observable",
+      "description": "EBV DNA PCR measurement",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.immune_cellular.infectious_illness_incidents_count",
+      "name": "infectious illness incidents count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Confirmed infection events",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.immune_cellular.immune_function_composite",
+      "name": "immune function composite",
+      "unit": "score",
+      "kind": "derived",
+      "description": "Model specific composite not a clinical diagnosis",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    }
+  ]
+}

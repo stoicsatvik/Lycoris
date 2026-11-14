@@ -1,0 +1,493 @@
+{
+  "schema_version": "1.0.0",
+  "group": "neuroscience",
+  "domain": "vestibular_balance",
+  "description": "Vestibular function, spatial orientation and motion adaptation",
+  "field_count": 30,
+  "sources": [
+    "NASA_GRAVITY",
+    "NASA_FUNDAMENTALS"
+  ],
+  "fields": [
+    {
+      "id": "human.vestibular_balance.vestibulo_ocular_gain",
+      "name": "vestibulo ocular gain",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Ratio of eye to head velocity under head impulse testing",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.vestibular_balance.vestibulo_ocular_latency_s",
+      "name": "vestibulo ocular latency s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Delay in vestibulo-ocular reflex",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.vestibular_balance.vemp_amplitude_uv",
+      "name": "vemp amplitude uv",
+      "unit": "uV",
+      "kind": "observable",
+      "description": "Vestibular evoked myogenic potential amplitude",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.vestibular_balance.vemp_latency_ms",
+      "name": "vemp latency ms",
+      "unit": "ms",
+      "kind": "observable",
+      "description": "Vestibular potential response latency",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.vestibular_balance.semicircular_canal_response_gain",
+      "name": "semicircular canal response gain",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Canal response gain by axis and side",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.vestibular_balance.otolith_tilt_perception_error_deg",
+      "name": "otolith tilt perception error deg",
+      "unit": "deg",
+      "kind": "observable",
+      "description": "Otolith-informed vertical-tilt estimate error",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.vestibular_balance.subjective_visual_vertical_error_deg",
+      "name": "subjective visual vertical error deg",
+      "unit": "deg",
+      "kind": "observable",
+      "description": "Perceived vertical deviation from true vertical",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.vestibular_balance.perceived_body_orientation_error_deg",
+      "name": "perceived body orientation error deg",
+      "unit": "deg",
+      "kind": "observable",
+      "description": "Orientation judgement error under test gravity",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.vestibular_balance.postural_sway_rms_m",
+      "name": "postural sway rms m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Postural center of pressure RMS displacement",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.vestibular_balance.postural_sway_spectral_peak_hz",
+      "name": "postural sway spectral peak hz",
+      "unit": "Hz",
+      "kind": "derived",
+      "description": "Frequency of dominant postural oscillation",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.vestibular_balance.balance_recovery_latency_s",
+      "name": "balance recovery latency s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Response delay after balance perturbation",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.vestibular_balance.balance_recovery_success_fraction",
+      "name": "balance recovery success fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Recovery successes under defined repeated trials",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.vestibular_balance.motion_sickness_score",
+      "name": "motion sickness score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Named space motion sickness severity scale",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.vestibular_balance.motion_sickness_episode_count",
+      "name": "motion sickness episode count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Episodes meeting preset symptom criteria",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.vestibular_balance.nystagmus_frequency_hz",
+      "name": "nystagmus frequency hz",
+      "unit": "Hz",
+      "kind": "observable",
+      "description": "Eye-beating cycles per second",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.vestibular_balance.nystagmus_slow_phase_deg_s",
+      "name": "nystagmus slow phase deg s",
+      "unit": "deg/s",
+      "kind": "observable",
+      "description": "Slow phase eye velocity",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.vestibular_balance.visual_motion_tolerance_s",
+      "name": "visual motion tolerance s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Exposure tolerated under defined virtual-motion test",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.vestibular_balance.head_rotation_tolerance_deg_s",
+      "name": "head rotation tolerance deg s",
+      "unit": "deg/s",
+      "kind": "observable",
+      "description": "Angular velocity tolerated during standardized motion",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.vestibular_balance.vestibular_habituation_trial_count",
+      "name": "vestibular habituation trial count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Training trials before target response reached",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.vestibular_balance.vestibular_adaptation_tau_s",
+      "name": "vestibular adaptation tau s",
+      "unit": "s",
+      "kind": "derived",
+      "description": "Adaptation time constant under fitted response model",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.vestibular_balance.gravity_transition_elapsed_s",
+      "name": "gravity transition elapsed s",
+      "unit": "s",
+      "kind": "scenario_input",
+      "description": "Elapsed interval since transition to new gravity regime",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.vestibular_balance.gravity_reference_level_m_s2",
+      "name": "gravity reference level m s2",
+      "unit": "m/s^2",
+      "kind": "scenario_input",
+      "description": "Reference acceleration during vestibular task",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.vestibular_balance.gait_veering_deg",
+      "name": "gait veering deg",
+      "unit": "deg",
+      "kind": "observable",
+      "description": "Angular departure from planned walking direction",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.vestibular_balance.head_eye_coordination_error_deg",
+      "name": "head eye coordination error deg",
+      "unit": "deg",
+      "kind": "observable",
+      "description": "Head-eye coordination angular error",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.vestibular_balance.postural_orientation_reaction_time_s",
+      "name": "postural orientation reaction time s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Latency to target equilibrium correction",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.vestibular_balance.balance_confidence_score",
+      "name": "balance confidence score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Named activities-specific balance confidence survey",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.vestibular_balance.standing_stability_duration_s",
+      "name": "standing stability duration s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Time maintaining defined unsupported stance",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.vestibular_balance.dynamic_gait_index_score",
+      "name": "dynamic gait index score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Named Dynamic Gait Index test",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.vestibular_balance.functional_gait_assessment_score",
+      "name": "functional gait assessment score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Functional gait assessment total",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.vestibular_balance.vestibular_symptom_burden_score",
+      "name": "vestibular symptom burden score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Named symptom scale for vestibular dysfunction",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_site_eye_side_or_task_reference"
+    }
+  ]
+}

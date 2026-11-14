@@ -1,0 +1,413 @@
+{
+  "schema_version": "1.0.0",
+  "group": "space_exposure",
+  "domain": "medical_uncertainty",
+  "description": "Mars medical-event risk, inference boundaries and model identifiability",
+  "field_count": 25,
+  "sources": [
+    "NASA_IMM_2026",
+    "NASA_FUNDAMENTALS"
+  ],
+  "fields": [
+    {
+      "id": "human.medical_uncertainty.crew_risk_population_id",
+      "name": "crew risk population id",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Population underlying baseline medical risk statistics",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_uncertainty.crew_medical_evidence_sample_size",
+      "name": "crew medical evidence sample size",
+      "unit": "count",
+      "kind": "metadata",
+      "description": "Human observations supporting risk parameter",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_uncertainty.crew_medical_evidence_setting",
+      "name": "crew medical evidence setting",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Earth ISS lunar transit analog or Mars hypothetical setting",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_uncertainty.medical_event_incidence_per_person_year",
+      "name": "medical event incidence per person year",
+      "unit": "1/year",
+      "kind": "derived",
+      "description": "Event incidence conditional on relevant reference cohort",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_uncertainty.medical_event_probability_mission",
+      "name": "medical event probability mission",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Modeled event probability over declared mission and exposure",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_uncertainty.medical_event_probability_credible_low",
+      "name": "medical event probability credible low",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Lower credible bound under specified model",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_uncertainty.medical_event_probability_credible_high",
+      "name": "medical event probability credible high",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Upper credible bound under specified model",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_uncertainty.medical_severity_score",
+      "name": "medical severity score",
+      "unit": "score",
+      "kind": "derived",
+      "description": "Qualified clinical event severity scale",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_uncertainty.medical_event_time_to_diagnosis_s",
+      "name": "medical event time to diagnosis s",
+      "unit": "s",
+      "kind": "derived",
+      "description": "Time needed to identify medical issue under scenario",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_uncertainty.medical_event_time_to_treatment_s",
+      "name": "medical event time to treatment s",
+      "unit": "s",
+      "kind": "derived",
+      "description": "Time until indicated treatment can begin",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_uncertainty.medical_event_recovery_duration_s",
+      "name": "medical event recovery duration s",
+      "unit": "s",
+      "kind": "derived",
+      "description": "Recovery period conditional on medical care and disorder",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_uncertainty.medical_event_medication_required_count",
+      "name": "medical event medication required count",
+      "unit": "count",
+      "kind": "derived",
+      "description": "Modeled count of medication units required",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_uncertainty.medical_event_diagnostic_resources_count",
+      "name": "medical event diagnostic resources count",
+      "unit": "count",
+      "kind": "derived",
+      "description": "Needed diagnostic testing resources",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_uncertainty.medical_event_crew_days_lost",
+      "name": "medical event crew days lost",
+      "unit": "day",
+      "kind": "derived",
+      "description": "Estimated crew functional time lost",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_uncertainty.medical_event_resource_shortage_count",
+      "name": "medical event resource shortage count",
+      "unit": "count",
+      "kind": "derived",
+      "description": "Missing treatment/diagnostic supplies",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_uncertainty.medical_event_undiagnosed_fraction",
+      "name": "medical event undiagnosed fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Simulation fraction of missed diagnosis, unlike optimistic defaults",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_uncertainty.medical_risk_validation_domain",
+      "name": "medical risk validation domain",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Validated settings for baseline incidence and treatment success",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_uncertainty.medical_risk_transfer_uncertainty_fraction",
+      "name": "medical risk transfer uncertainty fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Relative uncertainty in transferring baseline evidence",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_uncertainty.clinical_risk_prior_source_id",
+      "name": "clinical risk prior source id",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Identified study for prior probability",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_uncertainty.clinical_risk_outcome_assessment_id",
+      "name": "clinical risk outcome assessment id",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Named clinical endpoint definition",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_uncertainty.latent_human_state_observability_fraction",
+      "name": "latent human state observability fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Fraction latent state distinguishable with actual sensors",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_uncertainty.measurement_delay_s",
+      "name": "measurement delay s",
+      "unit": "s",
+      "kind": "derived",
+      "description": "Age of latest observed medical variable",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_uncertainty.missing_measurement_fraction",
+      "name": "missing measurement fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Fraction of required observations unavailable",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_uncertainty.model_parameter_calibration_fraction",
+      "name": "model parameter calibration fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Fraction model coefficients backed by comparable evidence",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.medical_uncertainty.model_abstention_reason",
+      "name": "model abstention reason",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Explanation for unsupported medical risk forecast",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_IMM_2026",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    }
+  ]
+}

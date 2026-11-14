@@ -1,0 +1,621 @@
+{
+  "schema_version": "1.0.0",
+  "group": "anatomy",
+  "domain": "anthropometry",
+  "description": "Anthropometry and body geometry",
+  "field_count": 38,
+  "sources": [
+    "NASA_HIDH",
+    "NASA_STD_3001_V2_2026"
+  ],
+  "fields": [
+    {
+      "id": "human.anthropometry.body_mass_kg",
+      "name": "body mass kg",
+      "unit": "kg",
+      "kind": "observable",
+      "description": "Total body mass with equipment excluded",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_STD_3001_V2_2026"
+      ]
+    },
+    {
+      "id": "human.anthropometry.standing_height_m",
+      "name": "standing height m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Standing height under a specified loading and posture",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_STD_3001_V2_2026"
+      ]
+    },
+    {
+      "id": "human.anthropometry.sitting_height_m",
+      "name": "sitting height m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Vertical seated torso height",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_STD_3001_V2_2026"
+      ]
+    },
+    {
+      "id": "human.anthropometry.head_circumference_m",
+      "name": "head circumference m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Maximum head perimeter",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_STD_3001_V2_2026"
+      ]
+    },
+    {
+      "id": "human.anthropometry.head_width_m",
+      "name": "head width m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Biparietal head width",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_STD_3001_V2_2026"
+      ]
+    },
+    {
+      "id": "human.anthropometry.head_length_m",
+      "name": "head length m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Anterior to posterior head dimension",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_STD_3001_V2_2026"
+      ]
+    },
+    {
+      "id": "human.anthropometry.face_width_m",
+      "name": "face width m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Bizygomatic width",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_STD_3001_V2_2026"
+      ]
+    },
+    {
+      "id": "human.anthropometry.face_length_m",
+      "name": "face length m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Face vertical anthropometric length",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_STD_3001_V2_2026"
+      ]
+    },
+    {
+      "id": "human.anthropometry.neck_circumference_m",
+      "name": "neck circumference m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Neck perimeter at documented landmark",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_STD_3001_V2_2026"
+      ]
+    },
+    {
+      "id": "human.anthropometry.shoulder_biacromial_width_m",
+      "name": "shoulder biacromial width m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Distance across acromia",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_STD_3001_V2_2026"
+      ]
+    },
+    {
+      "id": "human.anthropometry.chest_circumference_m",
+      "name": "chest circumference m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Chest perimeter at standardized inspiration state",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_STD_3001_V2_2026"
+      ]
+    },
+    {
+      "id": "human.anthropometry.waist_circumference_m",
+      "name": "waist circumference m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Abdominal perimeter at documented landmark",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_STD_3001_V2_2026"
+      ]
+    },
+    {
+      "id": "human.anthropometry.hip_circumference_m",
+      "name": "hip circumference m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Pelvic/hip circumference",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_STD_3001_V2_2026"
+      ]
+    },
+    {
+      "id": "human.anthropometry.torso_length_m",
+      "name": "torso length m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Trunk length by specified anatomical landmarks",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_STD_3001_V2_2026"
+      ]
+    },
+    {
+      "id": "human.anthropometry.arm_span_m",
+      "name": "arm span m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Tip-to-tip arm reach",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_STD_3001_V2_2026"
+      ]
+    },
+    {
+      "id": "human.anthropometry.upper_arm_length_m",
+      "name": "upper arm length m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Shoulder-to-elbow segment length, side indexed",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_STD_3001_V2_2026"
+      ]
+    },
+    {
+      "id": "human.anthropometry.forearm_length_m",
+      "name": "forearm length m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Elbow-to-wrist segment length, side indexed",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_STD_3001_V2_2026"
+      ]
+    },
+    {
+      "id": "human.anthropometry.hand_length_m",
+      "name": "hand length m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Palm/finger longitudinal dimension, side indexed",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_STD_3001_V2_2026"
+      ]
+    },
+    {
+      "id": "human.anthropometry.hand_width_m",
+      "name": "hand width m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Metacarpal breadth, side indexed",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_STD_3001_V2_2026"
+      ]
+    },
+    {
+      "id": "human.anthropometry.palm_length_m",
+      "name": "palm length m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Palm segment length, side indexed",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_STD_3001_V2_2026"
+      ]
+    },
+    {
+      "id": "human.anthropometry.finger_length_m",
+      "name": "finger length m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Digit-specific segment length, side and digit indexed",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_STD_3001_V2_2026"
+      ]
+    },
+    {
+      "id": "human.anthropometry.thumb_length_m",
+      "name": "thumb length m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Thumb anthropometric length",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_STD_3001_V2_2026"
+      ]
+    },
+    {
+      "id": "human.anthropometry.leg_length_m",
+      "name": "leg length m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Functionally measured leg length, side indexed",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_STD_3001_V2_2026"
+      ]
+    },
+    {
+      "id": "human.anthropometry.thigh_length_m",
+      "name": "thigh length m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Hip-to-knee segment length",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_STD_3001_V2_2026"
+      ]
+    },
+    {
+      "id": "human.anthropometry.shank_length_m",
+      "name": "shank length m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Knee-to-ankle segment length",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_STD_3001_V2_2026"
+      ]
+    },
+    {
+      "id": "human.anthropometry.foot_length_m",
+      "name": "foot length m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Heel-to-toe anatomical length",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_STD_3001_V2_2026"
+      ]
+    },
+    {
+      "id": "human.anthropometry.foot_width_m",
+      "name": "foot width m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Forefoot width",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_STD_3001_V2_2026"
+      ]
+    },
+    {
+      "id": "human.anthropometry.arch_height_m",
+      "name": "arch height m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Longitudinal foot arch height",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_STD_3001_V2_2026"
+      ]
+    },
+    {
+      "id": "human.anthropometry.ankle_circumference_m",
+      "name": "ankle circumference m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Ankle circumference at documented landmark",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_STD_3001_V2_2026"
+      ]
+    },
+    {
+      "id": "human.anthropometry.calf_circumference_m",
+      "name": "calf circumference m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Calf perimeter at documented landmark",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_STD_3001_V2_2026"
+      ]
+    },
+    {
+      "id": "human.anthropometry.thigh_circumference_m",
+      "name": "thigh circumference m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Thigh girth at chosen landmark",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_STD_3001_V2_2026"
+      ]
+    },
+    {
+      "id": "human.anthropometry.wrist_circumference_m",
+      "name": "wrist circumference m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Wrist perimeter",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_STD_3001_V2_2026"
+      ]
+    },
+    {
+      "id": "human.anthropometry.elbow_circumference_m",
+      "name": "elbow circumference m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Elbow perimeter at defined joint position",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_STD_3001_V2_2026"
+      ]
+    },
+    {
+      "id": "human.anthropometry.body_surface_area_m2",
+      "name": "body surface area m2",
+      "unit": "m^2",
+      "kind": "derived",
+      "description": "Estimated total external body area with formula specified",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_STD_3001_V2_2026"
+      ]
+    },
+    {
+      "id": "human.anthropometry.center_of_mass_height_m",
+      "name": "center of mass height m",
+      "unit": "m",
+      "kind": "derived",
+      "description": "Vertical center-of-mass location for defined posture",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_STD_3001_V2_2026"
+      ]
+    },
+    {
+      "id": "human.anthropometry.segment_center_of_mass_m",
+      "name": "segment center of mass m",
+      "unit": "m",
+      "kind": "derived",
+      "description": "Anatomic segment center of mass, body-part indexed",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_STD_3001_V2_2026"
+      ]
+    },
+    {
+      "id": "human.anthropometry.segment_length_ratio",
+      "name": "segment length ratio",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Ratio between defined segment lengths",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_STD_3001_V2_2026"
+      ]
+    },
+    {
+      "id": "human.anthropometry.body_symmetry_difference_m",
+      "name": "body symmetry difference m",
+      "unit": "m",
+      "kind": "derived",
+      "description": "Left-right matched anthropometric difference",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "clinical_exam",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_HIDH",
+        "NASA_STD_3001_V2_2026"
+      ]
+    }
+  ]
+}

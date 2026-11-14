@@ -1,0 +1,493 @@
+{
+  "schema_version": "1.0.0",
+  "group": "physiology",
+  "domain": "gut_oral_microbiome",
+  "description": "Human microbial communities and host microbial interactions",
+  "field_count": 30,
+  "sources": [
+    "NASA_CLOSED_ENVIRONMENT",
+    "NASA_HRP_RISKS"
+  ],
+  "fields": [
+    {
+      "id": "human.gut_oral_microbiome.gut_bacterial_alpha_diversity",
+      "name": "gut bacterial alpha diversity",
+      "unit": "index",
+      "kind": "derived",
+      "description": "Taxonomic alpha diversity by declared metric",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.gut_oral_microbiome.gut_shannon_diversity",
+      "name": "gut shannon diversity",
+      "unit": "nat",
+      "kind": "derived",
+      "description": "Shannon entropy of gut taxonomic proportions",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.gut_oral_microbiome.gut_simpson_diversity",
+      "name": "gut simpson diversity",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Simpson diversity index",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.gut_oral_microbiome.gut_firmicutes_fraction",
+      "name": "gut firmicutes fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Reference taxonomy dependent relative abundance",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.gut_oral_microbiome.gut_bacteroidota_fraction",
+      "name": "gut bacteroidota fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Bacteroidota relative abundance",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.gut_oral_microbiome.gut_actinobacteriota_fraction",
+      "name": "gut actinobacteriota fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Actinobacteriota relative abundance",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.gut_oral_microbiome.gut_proteobacteria_fraction",
+      "name": "gut proteobacteria fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Proteobacteria relative abundance",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.gut_oral_microbiome.gut_pathobiont_relative_abundance",
+      "name": "gut pathobiont relative abundance",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Species-specific pathobiont fraction",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.gut_oral_microbiome.gut_resistome_gene_count",
+      "name": "gut resistome gene count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Detected antimicrobial resistance gene count",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.gut_oral_microbiome.gut_microbiome_read_depth_count",
+      "name": "gut microbiome read depth count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Valid sequence read count",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.gut_oral_microbiome.gut_microbiome_beta_distance",
+      "name": "gut microbiome beta distance",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Compositional community distance by declared method",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.gut_oral_microbiome.stool_butyrate_mmol_kg",
+      "name": "stool butyrate mmol kg",
+      "unit": "mmol/kg",
+      "kind": "observable",
+      "description": "Fecal butyrate concentration",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.gut_oral_microbiome.stool_propionate_mmol_kg",
+      "name": "stool propionate mmol kg",
+      "unit": "mmol/kg",
+      "kind": "observable",
+      "description": "Fecal propionate concentration",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.gut_oral_microbiome.stool_acetate_mmol_kg",
+      "name": "stool acetate mmol kg",
+      "unit": "mmol/kg",
+      "kind": "observable",
+      "description": "Fecal acetate concentration",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.gut_oral_microbiome.stool_total_short_chain_fatty_acids_mmol_kg",
+      "name": "stool total short chain fatty acids mmol kg",
+      "unit": "mmol/kg",
+      "kind": "observable",
+      "description": "Total fecal SCFA",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.gut_oral_microbiome.gut_barrier_proxy_index",
+      "name": "gut barrier proxy index",
+      "unit": "index",
+      "kind": "derived",
+      "description": "Specified host barrier surrogate not clinical diagnosis",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.gut_oral_microbiome.gut_infection_pathogen_load_copies_g",
+      "name": "gut infection pathogen load copies g",
+      "unit": "copies/g",
+      "kind": "observable",
+      "description": "Stool pathogen nucleic acid copies",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.gut_oral_microbiome.oral_microbiome_diversity",
+      "name": "oral microbiome diversity",
+      "unit": "index",
+      "kind": "derived",
+      "description": "Oral community diversity under sequencing method",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.gut_oral_microbiome.oral_pathogen_load_cfu_ml",
+      "name": "oral pathogen load cfu ml",
+      "unit": "CFU/mL",
+      "kind": "observable",
+      "description": "Oral culture colony count",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.gut_oral_microbiome.nasal_microbiome_diversity",
+      "name": "nasal microbiome diversity",
+      "unit": "index",
+      "kind": "derived",
+      "description": "Nasal microbial diversity",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.gut_oral_microbiome.skin_microbiome_diversity",
+      "name": "skin microbiome diversity",
+      "unit": "index",
+      "kind": "derived",
+      "description": "Skin microbiota diversity",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.gut_oral_microbiome.nasal_pathogen_detection",
+      "name": "nasal pathogen detection",
+      "unit": null,
+      "kind": "observable",
+      "description": "Qualified nasal pathogen PCR/culture status",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.gut_oral_microbiome.oral_candida_cfu_ml",
+      "name": "oral candida cfu ml",
+      "unit": "CFU/mL",
+      "kind": "observable",
+      "description": "Oral Candida fungal burden",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.gut_oral_microbiome.microbial_community_stability_index",
+      "name": "microbial community stability index",
+      "unit": "index",
+      "kind": "derived",
+      "description": "Longitudinal community stability estimate",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.gut_oral_microbiome.microbial_virulence_gene_count",
+      "name": "microbial virulence gene count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Detected virulence gene instances",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.gut_oral_microbiome.microbial_biofilm_fraction",
+      "name": "microbial biofilm fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Biofilm-associated cells by assay",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.gut_oral_microbiome.host_microbe_interaction_score",
+      "name": "host microbe interaction score",
+      "unit": "score",
+      "kind": "latent",
+      "description": "Unvalidated latent host response model",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.gut_oral_microbiome.antibiotic_exposure_days",
+      "name": "antibiotic exposure days",
+      "unit": "day",
+      "kind": "observable",
+      "description": "Recorded course of antibiotic exposure",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.gut_oral_microbiome.probiotic_exposure_days",
+      "name": "probiotic exposure days",
+      "unit": "day",
+      "kind": "observable",
+      "description": "Recorded probiotic intervention duration",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.gut_oral_microbiome.microbial_cross_contamination_event_count",
+      "name": "microbial cross contamination event count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Detected transfer event if strain-resolved evidence exists",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    }
+  ]
+}

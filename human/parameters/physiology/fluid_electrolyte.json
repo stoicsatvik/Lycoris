@@ -1,0 +1,557 @@
+{
+  "schema_version": "1.0.0",
+  "group": "physiology",
+  "domain": "fluid_electrolyte",
+  "description": "Fluid distribution, electrolytes, acid-base and osmoregulation",
+  "field_count": 34,
+  "sources": [
+    "NASA_GRAVITY",
+    "NASA_FUNDAMENTALS"
+  ],
+  "fields": [
+    {
+      "id": "human.fluid_electrolyte.total_body_water_kg",
+      "name": "total body water kg",
+      "unit": "kg",
+      "kind": "observable",
+      "description": "Whole-body water estimate",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.fluid_electrolyte.intracellular_fluid_l",
+      "name": "intracellular fluid l",
+      "unit": "L",
+      "kind": "observable",
+      "description": "Intracellular fluid volume",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.fluid_electrolyte.extracellular_fluid_l",
+      "name": "extracellular fluid l",
+      "unit": "L",
+      "kind": "observable",
+      "description": "Extracellular fluid volume",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.fluid_electrolyte.interstitial_fluid_l",
+      "name": "interstitial fluid l",
+      "unit": "L",
+      "kind": "derived",
+      "description": "Nonvascular extracellular volume by model",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.fluid_electrolyte.plasma_volume_l",
+      "name": "plasma volume l",
+      "unit": "L",
+      "kind": "observable",
+      "description": "Circulating plasma volume",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.fluid_electrolyte.serum_sodium_mmol_l",
+      "name": "serum sodium mmol l",
+      "unit": "mmol/L",
+      "kind": "observable",
+      "description": "Serum sodium",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.fluid_electrolyte.serum_potassium_mmol_l",
+      "name": "serum potassium mmol l",
+      "unit": "mmol/L",
+      "kind": "observable",
+      "description": "Serum potassium",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.fluid_electrolyte.serum_chloride_mmol_l",
+      "name": "serum chloride mmol l",
+      "unit": "mmol/L",
+      "kind": "observable",
+      "description": "Serum chloride",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.fluid_electrolyte.serum_bicarbonate_mmol_l",
+      "name": "serum bicarbonate mmol l",
+      "unit": "mmol/L",
+      "kind": "observable",
+      "description": "Serum bicarbonate",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.fluid_electrolyte.serum_magnesium_mmol_l",
+      "name": "serum magnesium mmol l",
+      "unit": "mmol/L",
+      "kind": "observable",
+      "description": "Serum magnesium",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.fluid_electrolyte.serum_calcium_total_mmol_l",
+      "name": "serum calcium total mmol l",
+      "unit": "mmol/L",
+      "kind": "observable",
+      "description": "Total serum calcium",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.fluid_electrolyte.serum_ionized_calcium_mmol_l",
+      "name": "serum ionized calcium mmol l",
+      "unit": "mmol/L",
+      "kind": "observable",
+      "description": "Ionized serum calcium",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.fluid_electrolyte.serum_phosphate_mmol_l",
+      "name": "serum phosphate mmol l",
+      "unit": "mmol/L",
+      "kind": "observable",
+      "description": "Inorganic serum phosphate",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.fluid_electrolyte.serum_osmolality_mosm_kg",
+      "name": "serum osmolality mosm kg",
+      "unit": "mOsm/kg",
+      "kind": "observable",
+      "description": "Measured serum osmolality",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.fluid_electrolyte.calculated_osmolality_mosm_kg",
+      "name": "calculated osmolality mosm kg",
+      "unit": "mOsm/kg",
+      "kind": "derived",
+      "description": "Calculated from chemistry under named formula",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.fluid_electrolyte.osmolal_gap_mosm_kg",
+      "name": "osmolal gap mosm kg",
+      "unit": "mOsm/kg",
+      "kind": "derived",
+      "description": "Measured minus calculated osmolality",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.fluid_electrolyte.plasma_oncotic_pressure_pa",
+      "name": "plasma oncotic pressure pa",
+      "unit": "Pa",
+      "kind": "observable",
+      "description": "Plasma colloid osmotic pressure",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.fluid_electrolyte.fluid_intake_rate_ml_h",
+      "name": "fluid intake rate ml h",
+      "unit": "mL/h",
+      "kind": "observable",
+      "description": "Total ingested fluid per hour",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.fluid_electrolyte.fluid_urine_loss_rate_ml_h",
+      "name": "fluid urine loss rate ml h",
+      "unit": "mL/h",
+      "kind": "observable",
+      "description": "Urinary fluid output rate",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.fluid_electrolyte.fluid_sweat_loss_rate_ml_h",
+      "name": "fluid sweat loss rate ml h",
+      "unit": "mL/h",
+      "kind": "observable",
+      "description": "Estimated sweat output",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.fluid_electrolyte.fluid_respiratory_loss_rate_ml_h",
+      "name": "fluid respiratory loss rate ml h",
+      "unit": "mL/h",
+      "kind": "derived",
+      "description": "Expired humidification water loss",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.fluid_electrolyte.fluid_net_balance_ml",
+      "name": "fluid net balance ml",
+      "unit": "mL",
+      "kind": "derived",
+      "description": "Cumulative intake minus modeled/documented loss",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.fluid_electrolyte.fluid_balance_rate_ml_h",
+      "name": "fluid balance rate ml h",
+      "unit": "mL/h",
+      "kind": "derived",
+      "description": "Net fluid change over time",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.fluid_electrolyte.fluid_shift_to_head_ml",
+      "name": "fluid shift to head ml",
+      "unit": "mL",
+      "kind": "derived",
+      "description": "Headward compartment redistribution estimate",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.fluid_electrolyte.fluid_shift_to_legs_ml",
+      "name": "fluid shift to legs ml",
+      "unit": "mL",
+      "kind": "derived",
+      "description": "Leg fluid redistribution estimate",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.fluid_electrolyte.interstitial_edema_volume_ml",
+      "name": "interstitial edema volume ml",
+      "unit": "mL",
+      "kind": "observable",
+      "description": "Tissue swelling fluid volume estimate",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.fluid_electrolyte.interstitial_edema_score",
+      "name": "interstitial edema score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Clinical edema grading",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.fluid_electrolyte.dehydration_fraction_body_mass",
+      "name": "dehydration fraction body mass",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Net fluid loss as fraction of initial mass",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.fluid_electrolyte.thirst_ratings_score",
+      "name": "thirst ratings score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Named thirst intensity scale",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.fluid_electrolyte.plasma_renin_activity_ng_ml_h",
+      "name": "plasma renin activity ng ml h",
+      "unit": "ng/(mL h)",
+      "kind": "observable",
+      "description": "Plasma renin enzyme activity",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.fluid_electrolyte.aldosterone_pg_ml",
+      "name": "aldosterone pg ml",
+      "unit": "pg/mL",
+      "kind": "observable",
+      "description": "Plasma aldosterone concentration",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.fluid_electrolyte.vasopressin_pg_ml",
+      "name": "vasopressin pg ml",
+      "unit": "pg/mL",
+      "kind": "observable",
+      "description": "Antidiuretic hormone concentration",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.fluid_electrolyte.copeptin_pmol_l",
+      "name": "copeptin pmol l",
+      "unit": "pmol/L",
+      "kind": "observable",
+      "description": "Stable vasopressin-surrogate assay",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    },
+    {
+      "id": "human.fluid_electrolyte.net_acid_excretion_mmol_day",
+      "name": "net acid excretion mmol day",
+      "unit": "mmol/day",
+      "kind": "observable",
+      "description": "Urine acid excretion over 24h",
+      "measurement_context": "laboratory",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_region_side_or_sampling_site"
+    }
+  ]
+}

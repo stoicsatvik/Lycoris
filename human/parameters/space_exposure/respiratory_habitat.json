@@ -1,0 +1,429 @@
+{
+  "schema_version": "1.0.0",
+  "group": "space_exposure",
+  "domain": "respiratory_habitat",
+  "description": "Habitat air, respiratory toxicants, CO2, pressure changes",
+  "field_count": 26,
+  "sources": [
+    "NASA_CLOSED_ENVIRONMENT",
+    "NASA_FUNDAMENTALS"
+  ],
+  "fields": [
+    {
+      "id": "human.respiratory_habitat.habitat_total_pressure_pa",
+      "name": "habitat total pressure pa",
+      "unit": "Pa",
+      "kind": "scenario_input",
+      "description": "Hypothetical crew breathable ambient pressure",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.respiratory_habitat.habitat_inspired_o2_partial_pressure_pa",
+      "name": "habitat inspired o2 partial pressure pa",
+      "unit": "Pa",
+      "kind": "scenario_input",
+      "description": "Inspired oxygen partial pressure",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.respiratory_habitat.habitat_inspired_co2_partial_pressure_pa",
+      "name": "habitat inspired co2 partial pressure pa",
+      "unit": "Pa",
+      "kind": "scenario_input",
+      "description": "Inspired carbon dioxide partial pressure",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.respiratory_habitat.habitat_nitrogen_fraction",
+      "name": "habitat nitrogen fraction",
+      "unit": "1",
+      "kind": "scenario_input",
+      "description": "Breathing mixture nitrogen fraction",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.respiratory_habitat.habitat_co2_exposure_pa_s",
+      "name": "habitat co2 exposure pa s",
+      "unit": "Pa s",
+      "kind": "derived",
+      "description": "Integrated CO2 partial pressure exposure",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.respiratory_habitat.habitat_o2_exposure_pa_s",
+      "name": "habitat o2 exposure pa s",
+      "unit": "Pa s",
+      "kind": "derived",
+      "description": "Integrated inspired O2 partial pressure exposure",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.respiratory_habitat.habitat_ammonia_mg_m3",
+      "name": "habitat ammonia mg m3",
+      "unit": "mg/m^3",
+      "kind": "scenario_input",
+      "description": "Ambient ammonia exposure concentration",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.respiratory_habitat.habitat_carbon_monoxide_ppm",
+      "name": "habitat carbon monoxide ppm",
+      "unit": "ppm",
+      "kind": "scenario_input",
+      "description": "Environmental CO concentration",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.respiratory_habitat.habitat_formaldehyde_ppm",
+      "name": "habitat formaldehyde ppm",
+      "unit": "ppm",
+      "kind": "scenario_input",
+      "description": "Environmental formaldehyde",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.respiratory_habitat.habitat_benzene_ppm",
+      "name": "habitat benzene ppm",
+      "unit": "ppm",
+      "kind": "scenario_input",
+      "description": "Ambient benzene exposure",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.respiratory_habitat.habitat_voc_total_ppm",
+      "name": "habitat voc total ppm",
+      "unit": "ppm",
+      "kind": "scenario_input",
+      "description": "Measured or assumed total VOC concentration, instrument dependent",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.respiratory_habitat.habitat_airborne_particulate_pm25_ug_m3",
+      "name": "habitat airborne particulate pm25 ug m3",
+      "unit": "ug/m^3",
+      "kind": "scenario_input",
+      "description": "Fine particle matter concentration",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.respiratory_habitat.habitat_airborne_particulate_pm10_ug_m3",
+      "name": "habitat airborne particulate pm10 ug m3",
+      "unit": "ug/m^3",
+      "kind": "scenario_input",
+      "description": "Coarse particulate matter concentration",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.respiratory_habitat.habitat_relative_humidity_fraction",
+      "name": "habitat relative humidity fraction",
+      "unit": "1",
+      "kind": "scenario_input",
+      "description": "Ambient relative humidity",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.respiratory_habitat.habitat_air_temperature_k",
+      "name": "habitat air temperature k",
+      "unit": "K",
+      "kind": "scenario_input",
+      "description": "Ambient breathing-zone temperature",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.respiratory_habitat.habitat_airflow_speed_m_s",
+      "name": "habitat airflow speed m s",
+      "unit": "m/s",
+      "kind": "scenario_input",
+      "description": "Local cabin ventilation airflow",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.respiratory_habitat.habitat_noise_level_dba",
+      "name": "habitat noise level dba",
+      "unit": "dBA",
+      "kind": "scenario_input",
+      "description": "Equivalent A-weighted noise level",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.respiratory_habitat.habitat_illumination_lux",
+      "name": "habitat illumination lux",
+      "unit": "lux",
+      "kind": "scenario_input",
+      "description": "Work-surface illuminance in cabin",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.respiratory_habitat.habitat_pressure_transition_rate_pa_s",
+      "name": "habitat pressure transition rate pa s",
+      "unit": "Pa/s",
+      "kind": "scenario_input",
+      "description": "Changing habitat ambient pressure",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.respiratory_habitat.habitat_ventilation_dead_zone_fraction",
+      "name": "habitat ventilation dead zone fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Fraction of cabin with low air exchange under validated fluid model",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.respiratory_habitat.environment_associated_headache_score",
+      "name": "environment associated headache score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Subjective headache rating during exposure",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.respiratory_habitat.environment_associated_mucosal_irritation_score",
+      "name": "environment associated mucosal irritation score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Clinical nose/throat/eye irritation score",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.respiratory_habitat.hypoxia_symptom_score",
+      "name": "hypoxia symptom score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Clinical symptoms under low inspired oxygen",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.respiratory_habitat.hypercapnia_symptom_score",
+      "name": "hypercapnia symptom score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Clinical symptom score from high inspired CO2",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.respiratory_habitat.environmental_exposure_toxicology_status",
+      "name": "environmental exposure toxicology status",
+      "unit": null,
+      "kind": "clinical_assessment",
+      "description": "Medical assessment with exposure-specific toxicology model",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.respiratory_habitat.environmental_air_quality_uncertainty",
+      "name": "environmental air quality uncertainty",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Quality and temporal representativeness of exposure inputs",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_direct_mars_human_evidence",
+      "source_leads": [
+        "NASA_CLOSED_ENVIRONMENT",
+        "NASA_FUNDAMENTALS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    }
+  ]
+}

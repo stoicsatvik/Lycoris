@@ -1,0 +1,413 @@
+{
+  "schema_version": "1.0.0",
+  "group": "operations",
+  "domain": "rehabilitation_recovery",
+  "description": "Recovery trajectories, countermeasure adherence and functional return",
+  "field_count": 25,
+  "sources": [
+    "NASA_GRAVITY",
+    "NASA_DIGITAL_ASTRONAUT"
+  ],
+  "fields": [
+    {
+      "id": "human.rehabilitation_recovery.recovery_baseline_date_utc",
+      "name": "recovery baseline date utc",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Date of personal preflight reference test",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.rehabilitation_recovery.recovery_postflight_elapsed_days",
+      "name": "recovery postflight elapsed days",
+      "unit": "day",
+      "kind": "derived",
+      "description": "Time from Earth return to assessment",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.rehabilitation_recovery.recovery_post_illness_elapsed_days",
+      "name": "recovery post illness elapsed days",
+      "unit": "day",
+      "kind": "derived",
+      "description": "Time since clinically diagnosed illness event",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.rehabilitation_recovery.recovery_resistance_exercise_completed_s",
+      "name": "recovery resistance exercise completed s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Completed resistance exercise time",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.rehabilitation_recovery.recovery_aerobic_exercise_completed_s",
+      "name": "recovery aerobic exercise completed s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Completed aerobic exercise time",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.rehabilitation_recovery.recovery_balance_training_completed_s",
+      "name": "recovery balance training completed s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Completed vestibular/balance training",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.rehabilitation_recovery.recovery_strength_fraction_baseline",
+      "name": "recovery strength fraction baseline",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Strength recovered relative to individual baseline",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.rehabilitation_recovery.recovery_bmd_fraction_baseline",
+      "name": "recovery bmd fraction baseline",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Bone density relative to individual baseline",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.rehabilitation_recovery.recovery_aerobic_capacity_fraction_baseline",
+      "name": "recovery aerobic capacity fraction baseline",
+      "unit": "1",
+      "kind": "derived",
+      "description": "VO2 peak recovered relative to baseline",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.rehabilitation_recovery.recovery_orthostatic_fraction_baseline",
+      "name": "recovery orthostatic fraction baseline",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Orthostatic performance fraction of baseline",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.rehabilitation_recovery.recovery_visual_function_fraction_baseline",
+      "name": "recovery visual function fraction baseline",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Valid metric visual recovery ratio",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.rehabilitation_recovery.recovery_sleep_quality_change_score",
+      "name": "recovery sleep quality change score",
+      "unit": "score",
+      "kind": "derived",
+      "description": "Change in validated sleep quality tool",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.rehabilitation_recovery.recovery_gait_variability_change_fraction",
+      "name": "recovery gait variability change fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Change in gait variability",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.rehabilitation_recovery.recovery_psychomotor_speed_fraction_baseline",
+      "name": "recovery psychomotor speed fraction baseline",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Recovery of reaction speed relative to baseline",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.rehabilitation_recovery.recovery_pain_severity_score",
+      "name": "recovery pain severity score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Self-reported ongoing pain severity",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.rehabilitation_recovery.recovery_mental_wellbeing_score",
+      "name": "recovery mental wellbeing score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Postflight mental wellbeing assessment",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.rehabilitation_recovery.recovery_clinical_clearance_status",
+      "name": "recovery clinical clearance status",
+      "unit": null,
+      "kind": "clinical_assessment",
+      "description": "Qualified medical return-to-activity recommendation",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.rehabilitation_recovery.recovery_work_capacity_w",
+      "name": "recovery work capacity w",
+      "unit": "W",
+      "kind": "observable",
+      "description": "Work rate sustainable at followup",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.rehabilitation_recovery.recovery_unresolved_symptom_count",
+      "name": "recovery unresolved symptom count",
+      "unit": "count",
+      "kind": "clinical_assessment",
+      "description": "Number of reported ongoing clinical symptoms",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.rehabilitation_recovery.recovery_adverse_event_count",
+      "name": "recovery adverse event count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Medical adverse events during rehabilitation",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.rehabilitation_recovery.recovery_rehabilitation_session_count",
+      "name": "recovery rehabilitation session count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Completed rehab sessions",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.rehabilitation_recovery.recovery_adherence_fraction",
+      "name": "recovery adherence fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Fraction sessions completed as prescribed",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.rehabilitation_recovery.recovery_reassessment_interval_s",
+      "name": "recovery reassessment interval s",
+      "unit": "s",
+      "kind": "scenario_input",
+      "description": "Time between scheduled clinician assessments",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.rehabilitation_recovery.recovery_individual_model_version",
+      "name": "recovery individual model version",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Versioned individualized adaptation model",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.rehabilitation_recovery.recovery_recovery_probability_fraction",
+      "name": "recovery recovery probability fraction",
+      "unit": "1",
+      "kind": "latent",
+      "description": "Outcome probability only if evidence-calibrated",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_DIGITAL_ASTRONAUT"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    }
+  ]
+}

@@ -1,0 +1,589 @@
+{
+  "schema_version": "1.0.0",
+  "group": "physiology",
+  "domain": "nutrition_micronutrients",
+  "description": "Food intake, macro/micronutrients, palatability and appetite",
+  "field_count": 36,
+  "sources": [
+    "NASA_FUNDAMENTALS",
+    "NASA_HRP_RISKS"
+  ],
+  "fields": [
+    {
+      "id": "human.nutrition_micronutrients.diet_energy_intake_kj_day",
+      "name": "diet energy intake kj day",
+      "unit": "kJ/day",
+      "kind": "observable",
+      "description": "Recorded daily intake energy",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.nutrition_micronutrients.diet_protein_intake_g_day",
+      "name": "diet protein intake g day",
+      "unit": "g/day",
+      "kind": "observable",
+      "description": "Recorded protein intake",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.nutrition_micronutrients.diet_carbohydrate_intake_g_day",
+      "name": "diet carbohydrate intake g day",
+      "unit": "g/day",
+      "kind": "observable",
+      "description": "Daily carbohydrate amount",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.nutrition_micronutrients.diet_fat_intake_g_day",
+      "name": "diet fat intake g day",
+      "unit": "g/day",
+      "kind": "observable",
+      "description": "Daily fat amount",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.nutrition_micronutrients.diet_fiber_intake_g_day",
+      "name": "diet fiber intake g day",
+      "unit": "g/day",
+      "kind": "observable",
+      "description": "Daily fiber",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.nutrition_micronutrients.diet_saturated_fat_intake_g_day",
+      "name": "diet saturated fat intake g day",
+      "unit": "g/day",
+      "kind": "observable",
+      "description": "Saturated fat consumed",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.nutrition_micronutrients.diet_polyunsaturated_fat_g_day",
+      "name": "diet polyunsaturated fat g day",
+      "unit": "g/day",
+      "kind": "observable",
+      "description": "Polyunsaturated fat",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.nutrition_micronutrients.diet_omega3_intake_g_day",
+      "name": "diet omega3 intake g day",
+      "unit": "g/day",
+      "kind": "observable",
+      "description": "Omega-3 essential fatty acid intake",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.nutrition_micronutrients.diet_sodium_intake_mmol_day",
+      "name": "diet sodium intake mmol day",
+      "unit": "mmol/day",
+      "kind": "observable",
+      "description": "Estimated dietary sodium",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.nutrition_micronutrients.diet_potassium_intake_mmol_day",
+      "name": "diet potassium intake mmol day",
+      "unit": "mmol/day",
+      "kind": "observable",
+      "description": "Dietary potassium",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.nutrition_micronutrients.diet_calcium_intake_mg_day",
+      "name": "diet calcium intake mg day",
+      "unit": "mg/day",
+      "kind": "observable",
+      "description": "Calcium consumption",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.nutrition_micronutrients.diet_iron_intake_mg_day",
+      "name": "diet iron intake mg day",
+      "unit": "mg/day",
+      "kind": "observable",
+      "description": "Iron intake",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.nutrition_micronutrients.diet_magnesium_intake_mg_day",
+      "name": "diet magnesium intake mg day",
+      "unit": "mg/day",
+      "kind": "observable",
+      "description": "Magnesium intake",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.nutrition_micronutrients.diet_zinc_intake_mg_day",
+      "name": "diet zinc intake mg day",
+      "unit": "mg/day",
+      "kind": "observable",
+      "description": "Zinc intake",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.nutrition_micronutrients.diet_selenium_intake_ug_day",
+      "name": "diet selenium intake ug day",
+      "unit": "ug/day",
+      "kind": "observable",
+      "description": "Selenium consumption",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.nutrition_micronutrients.diet_iodine_intake_ug_day",
+      "name": "diet iodine intake ug day",
+      "unit": "ug/day",
+      "kind": "observable",
+      "description": "Iodine consumption",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.nutrition_micronutrients.diet_vitamin_a_intake_ug_rae_day",
+      "name": "diet vitamin a intake ug rae day",
+      "unit": "ugRAE/day",
+      "kind": "observable",
+      "description": "Vitamin A retinol equivalent intake",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.nutrition_micronutrients.diet_vitamin_c_intake_mg_day",
+      "name": "diet vitamin c intake mg day",
+      "unit": "mg/day",
+      "kind": "observable",
+      "description": "Vitamin C intake",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.nutrition_micronutrients.diet_vitamin_d_intake_ug_day",
+      "name": "diet vitamin d intake ug day",
+      "unit": "ug/day",
+      "kind": "observable",
+      "description": "Vitamin D intake",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.nutrition_micronutrients.diet_vitamin_e_intake_mg_day",
+      "name": "diet vitamin e intake mg day",
+      "unit": "mg/day",
+      "kind": "observable",
+      "description": "Vitamin E alpha tocopherol intake",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.nutrition_micronutrients.diet_vitamin_k_intake_ug_day",
+      "name": "diet vitamin k intake ug day",
+      "unit": "ug/day",
+      "kind": "observable",
+      "description": "Vitamin K intake",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.nutrition_micronutrients.diet_folate_intake_ug_dfe_day",
+      "name": "diet folate intake ug dfe day",
+      "unit": "ugDFE/day",
+      "kind": "observable",
+      "description": "Dietary folate equivalents",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.nutrition_micronutrients.diet_vitamin_b12_intake_ug_day",
+      "name": "diet vitamin b12 intake ug day",
+      "unit": "ug/day",
+      "kind": "observable",
+      "description": "Vitamin B12 intake",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.nutrition_micronutrients.diet_thiamin_intake_mg_day",
+      "name": "diet thiamin intake mg day",
+      "unit": "mg/day",
+      "kind": "observable",
+      "description": "Vitamin B1 intake",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.nutrition_micronutrients.diet_riboflavin_intake_mg_day",
+      "name": "diet riboflavin intake mg day",
+      "unit": "mg/day",
+      "kind": "observable",
+      "description": "Vitamin B2 intake",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.nutrition_micronutrients.diet_niacin_intake_mg_ne_day",
+      "name": "diet niacin intake mg ne day",
+      "unit": "mgNE/day",
+      "kind": "observable",
+      "description": "Niacin equivalent intake",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.nutrition_micronutrients.diet_vitamin_b6_intake_mg_day",
+      "name": "diet vitamin b6 intake mg day",
+      "unit": "mg/day",
+      "kind": "observable",
+      "description": "Vitamin B6 intake",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.nutrition_micronutrients.diet_water_intake_ml_day",
+      "name": "diet water intake ml day",
+      "unit": "mL/day",
+      "kind": "observable",
+      "description": "Ingested water and beverages",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.nutrition_micronutrients.diet_energy_availability_j_kg_day",
+      "name": "diet energy availability j kg day",
+      "unit": "J/(kg day)",
+      "kind": "derived",
+      "description": "Available energy normalized to lean body mass",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.nutrition_micronutrients.food_palatatability_score",
+      "name": "food palatatability score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Self-rated food acceptance and palatability",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.nutrition_micronutrients.food_appetite_score",
+      "name": "food appetite score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Subjective desire to eat",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.nutrition_micronutrients.food_nausea_associated_intake_loss_g",
+      "name": "food nausea associated intake loss g",
+      "unit": "g",
+      "kind": "observable",
+      "description": "Uneaten planned food mass during nausea",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.nutrition_micronutrients.food_variety_index",
+      "name": "food variety index",
+      "unit": "index",
+      "kind": "derived",
+      "description": "Menu diversity with named method",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.nutrition_micronutrients.food_spoilage_event_count",
+      "name": "food spoilage event count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Confirmed spoiled food incidents",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.nutrition_micronutrients.food_allergy_reaction_count",
+      "name": "food allergy reaction count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Clinically assessed allergic food events",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    },
+    {
+      "id": "human.nutrition_micronutrients.nutrition_deficit_estimate_fraction",
+      "name": "nutrition deficit estimate fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Relative intake shortfall against individualized target",
+      "measurement_context": "mixed",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_only_no_mars_validation",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_HRP_RISKS"
+      ],
+      "anatomical_index": "optional_anatomical_site_or_time_window"
+    }
+  ]
+}

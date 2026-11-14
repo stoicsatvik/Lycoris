@@ -1,0 +1,493 @@
+{
+  "schema_version": "1.0.0",
+  "group": "anatomy",
+  "domain": "skeletal_bone",
+  "description": "Bone density, mineral homeostasis and fracture mechanics",
+  "field_count": 30,
+  "sources": [
+    "NASA_GRAVITY",
+    "NASA_HRP_RISKS"
+  ],
+  "fields": [
+    {
+      "id": "human.skeletal_bone.areal_bmd_kg_m2",
+      "name": "areal bmd kg m2",
+      "unit": "kg/m^2",
+      "kind": "observable",
+      "description": "DXA areal bone mineral density by bone site",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_HRP_RISKS"
+      ]
+    },
+    {
+      "id": "human.skeletal_bone.volumetric_bmd_kg_m3",
+      "name": "volumetric bmd kg m3",
+      "unit": "kg/m^3",
+      "kind": "observable",
+      "description": "QCT volumetric bone mineral density by site",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_HRP_RISKS"
+      ]
+    },
+    {
+      "id": "human.skeletal_bone.bone_mineral_content_kg",
+      "name": "bone mineral content kg",
+      "unit": "kg",
+      "kind": "observable",
+      "description": "Bone-specific mineral mass by region",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_HRP_RISKS"
+      ]
+    },
+    {
+      "id": "human.skeletal_bone.cortical_thickness_m",
+      "name": "cortical thickness m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Cortical bone thickness",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_HRP_RISKS"
+      ]
+    },
+    {
+      "id": "human.skeletal_bone.cortical_porosity_fraction",
+      "name": "cortical porosity fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Cortical void-volume fraction",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_HRP_RISKS"
+      ]
+    },
+    {
+      "id": "human.skeletal_bone.trabecular_bone_fraction",
+      "name": "trabecular bone fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Trabecular bone volume fraction",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_HRP_RISKS"
+      ]
+    },
+    {
+      "id": "human.skeletal_bone.trabecular_thickness_m",
+      "name": "trabecular thickness m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Mean trabecular thickness",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_HRP_RISKS"
+      ]
+    },
+    {
+      "id": "human.skeletal_bone.trabecular_separation_m",
+      "name": "trabecular separation m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Mean spacing between trabeculae",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_HRP_RISKS"
+      ]
+    },
+    {
+      "id": "human.skeletal_bone.trabecular_number_per_m",
+      "name": "trabecular number per m",
+      "unit": "1/m",
+      "kind": "observable",
+      "description": "Trabecular element number density",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_HRP_RISKS"
+      ]
+    },
+    {
+      "id": "human.skeletal_bone.bone_cross_section_area_m2",
+      "name": "bone cross section area m2",
+      "unit": "m^2",
+      "kind": "observable",
+      "description": "Bone geometric cross-sectional area",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_HRP_RISKS"
+      ]
+    },
+    {
+      "id": "human.skeletal_bone.bone_second_moment_area_m4",
+      "name": "bone second moment area m4",
+      "unit": "m^4",
+      "kind": "derived",
+      "description": "Second moment of bone area in selected axis",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_HRP_RISKS"
+      ]
+    },
+    {
+      "id": "human.skeletal_bone.bone_bending_strength_n_m",
+      "name": "bone bending strength n m",
+      "unit": "N m",
+      "kind": "derived",
+      "description": "Estimated bending resistance under model",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_HRP_RISKS"
+      ]
+    },
+    {
+      "id": "human.skeletal_bone.bone_compressive_strength_pa",
+      "name": "bone compressive strength pa",
+      "unit": "Pa",
+      "kind": "derived",
+      "description": "Estimated bone compressive strength",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_HRP_RISKS"
+      ]
+    },
+    {
+      "id": "human.skeletal_bone.bone_failure_load_n",
+      "name": "bone failure load n",
+      "unit": "N",
+      "kind": "derived",
+      "description": "Failure force from validated structure/material model",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_HRP_RISKS"
+      ]
+    },
+    {
+      "id": "human.skeletal_bone.bone_elastic_modulus_pa",
+      "name": "bone elastic modulus pa",
+      "unit": "Pa",
+      "kind": "derived",
+      "description": "Elastic modulus estimated from suitable source",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_HRP_RISKS"
+      ]
+    },
+    {
+      "id": "human.skeletal_bone.hip_structural_analysis_index",
+      "name": "hip structural analysis index",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Defined hip geometry structural index",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_HRP_RISKS"
+      ]
+    },
+    {
+      "id": "human.skeletal_bone.bone_resorption_marker_ctx_ng_ml",
+      "name": "bone resorption marker ctx ng ml",
+      "unit": "ng/mL",
+      "kind": "observable",
+      "description": "Serum CTX bone resorption biomarker, assay-specific",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_HRP_RISKS"
+      ]
+    },
+    {
+      "id": "human.skeletal_bone.bone_formation_marker_p1np_ng_ml",
+      "name": "bone formation marker p1np ng ml",
+      "unit": "ng/mL",
+      "kind": "observable",
+      "description": "Serum PINP formation biomarker, assay-specific",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_HRP_RISKS"
+      ]
+    },
+    {
+      "id": "human.skeletal_bone.bone_alkaline_phosphatase_ug_l",
+      "name": "bone alkaline phosphatase ug l",
+      "unit": "ug/L",
+      "kind": "observable",
+      "description": "Bone-specific alkaline phosphatase assay",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_HRP_RISKS"
+      ]
+    },
+    {
+      "id": "human.skeletal_bone.osteocalcin_ng_ml",
+      "name": "osteocalcin ng ml",
+      "unit": "ng/mL",
+      "kind": "observable",
+      "description": "Osteocalcin marker concentration",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_HRP_RISKS"
+      ]
+    },
+    {
+      "id": "human.skeletal_bone.serum_calcium_mmol_l",
+      "name": "serum calcium mmol l",
+      "unit": "mmol/L",
+      "kind": "observable",
+      "description": "Total serum calcium",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_HRP_RISKS"
+      ]
+    },
+    {
+      "id": "human.skeletal_bone.ionized_calcium_mmol_l",
+      "name": "ionized calcium mmol l",
+      "unit": "mmol/L",
+      "kind": "observable",
+      "description": "Free serum ionized calcium",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_HRP_RISKS"
+      ]
+    },
+    {
+      "id": "human.skeletal_bone.serum_phosphate_mmol_l",
+      "name": "serum phosphate mmol l",
+      "unit": "mmol/L",
+      "kind": "observable",
+      "description": "Inorganic phosphate",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_HRP_RISKS"
+      ]
+    },
+    {
+      "id": "human.skeletal_bone.parathyroid_hormone_pg_ml",
+      "name": "parathyroid hormone pg ml",
+      "unit": "pg/mL",
+      "kind": "observable",
+      "description": "Parathyroid hormone assay",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_HRP_RISKS"
+      ]
+    },
+    {
+      "id": "human.skeletal_bone.vitamin_d_25oh_nmol_l",
+      "name": "vitamin d 25oh nmol l",
+      "unit": "nmol/L",
+      "kind": "observable",
+      "description": "25-hydroxyvitamin D assay",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_HRP_RISKS"
+      ]
+    },
+    {
+      "id": "human.skeletal_bone.bone_remodeling_rate_fraction_day",
+      "name": "bone remodeling rate fraction day",
+      "unit": "1/day",
+      "kind": "latent",
+      "description": "Latent fractional remodeling rate, model-specific",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_HRP_RISKS"
+      ]
+    },
+    {
+      "id": "human.skeletal_bone.bone_strength_relative_baseline",
+      "name": "bone strength relative baseline",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Estimated mechanical strength relative to personal baseline",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_HRP_RISKS"
+      ]
+    },
+    {
+      "id": "human.skeletal_bone.stress_fracture_symptom_score",
+      "name": "stress fracture symptom score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Instrument-defined stress injury symptom score",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_HRP_RISKS"
+      ]
+    },
+    {
+      "id": "human.skeletal_bone.fall_related_fracture_probability",
+      "name": "fall related fracture probability",
+      "unit": "1",
+      "kind": "latent",
+      "description": "Scenario-specific fracture probability only if validated",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_HRP_RISKS"
+      ]
+    },
+    {
+      "id": "human.skeletal_bone.mineral_loss_rate_fraction_day",
+      "name": "mineral loss rate fraction day",
+      "unit": "1/day",
+      "kind": "derived",
+      "description": "Measured bone mineral content decline over time",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_GRAVITY",
+        "NASA_HRP_RISKS"
+      ]
+    }
+  ]
+}

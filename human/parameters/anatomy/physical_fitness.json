@@ -1,0 +1,557 @@
+{
+  "schema_version": "1.0.0",
+  "group": "anatomy",
+  "domain": "physical_fitness",
+  "description": "Aerobic fitness, exercise response and recovery",
+  "field_count": 34,
+  "sources": [
+    "NASA_FUNDAMENTALS",
+    "NASA_DIGITAL_ASTRONAUT"
+  ],
+  "fields": [
+    {
+      "id": "human.physical_fitness.vo2_max_ml_kg_min",
+      "name": "vo2 max ml kg min",
+      "unit": "mL/(kg min)",
+      "kind": "observable",
+      "description": "Peak laboratory oxygen uptake relative to mass",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.physical_fitness.vo2_peak_l_min",
+      "name": "vo2 peak l min",
+      "unit": "L/min",
+      "kind": "observable",
+      "description": "Peak absolute oxygen uptake during test",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.physical_fitness.vco2_peak_l_min",
+      "name": "vco2 peak l min",
+      "unit": "L/min",
+      "kind": "observable",
+      "description": "Peak carbon dioxide output during test",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.physical_fitness.respiratory_exchange_ratio_peak",
+      "name": "respiratory exchange ratio peak",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Peak CO2 output divided by O2 consumption",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.physical_fitness.anaerobic_threshold_vo2_ml_kg_min",
+      "name": "anaerobic threshold vo2 ml kg min",
+      "unit": "mL/(kg min)",
+      "kind": "derived",
+      "description": "Ventilatory/lactate threshold with named detection method",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.physical_fitness.ventilatory_threshold_work_w",
+      "name": "ventilatory threshold work w",
+      "unit": "W",
+      "kind": "derived",
+      "description": "Mechanical work rate at ventilatory threshold",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.physical_fitness.exercise_peak_power_w",
+      "name": "exercise peak power w",
+      "unit": "W",
+      "kind": "observable",
+      "description": "Peak performed physical work rate",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.physical_fitness.exercise_steady_power_w",
+      "name": "exercise steady power w",
+      "unit": "W",
+      "kind": "observable",
+      "description": "Steady exercise mechanical output",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.physical_fitness.exercise_efficiency_fraction",
+      "name": "exercise efficiency fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "External work over appropriate metabolic energy",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.physical_fitness.exercise_energy_cost_j",
+      "name": "exercise energy cost j",
+      "unit": "J",
+      "kind": "derived",
+      "description": "Integrated energy expense over defined exercise",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.physical_fitness.exercise_heart_rate_peak_bpm",
+      "name": "exercise heart rate peak bpm",
+      "unit": "1/min",
+      "kind": "observable",
+      "description": "Maximum attained heart rate in standardized effort",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.physical_fitness.exercise_heart_rate_recovery_bpm",
+      "name": "exercise heart rate recovery bpm",
+      "unit": "1/min",
+      "kind": "derived",
+      "description": "Heart-rate reduction after standardized rest interval",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.physical_fitness.exercise_blood_lactate_mmol_l",
+      "name": "exercise blood lactate mmol l",
+      "unit": "mmol/L",
+      "kind": "observable",
+      "description": "Lactate during graded workload",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.physical_fitness.exercise_borg_rpe_score",
+      "name": "exercise borg rpe score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Perceived exertion rating on specified Borg scale",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.physical_fitness.exercise_sweat_loss_kg",
+      "name": "exercise sweat loss kg",
+      "unit": "kg",
+      "kind": "observable",
+      "description": "Sweat mass lost across exercise session",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.physical_fitness.exercise_time_to_exhaustion_s",
+      "name": "exercise time to exhaustion s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Time until specified volitional/test endpoint",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.physical_fitness.exercise_test_duration_s",
+      "name": "exercise test duration s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Standardized graded test total duration",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.physical_fitness.exercise_oxygen_pulse_ml_beat",
+      "name": "exercise oxygen pulse ml beat",
+      "unit": "mL/beat",
+      "kind": "derived",
+      "description": "Oxygen uptake per cardiac beat",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.physical_fitness.exercise_ventilatory_equivalent_o2",
+      "name": "exercise ventilatory equivalent o2",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Ventilation over oxygen uptake with coherent units",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.physical_fitness.exercise_ventilatory_equivalent_co2",
+      "name": "exercise ventilatory equivalent co2",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Ventilation over CO2 output with coherent units",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.physical_fitness.exercise_tidal_volume_l",
+      "name": "exercise tidal volume l",
+      "unit": "L",
+      "kind": "observable",
+      "description": "Tidal volume under exercise load",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.physical_fitness.exercise_respiratory_frequency_hz",
+      "name": "exercise respiratory frequency hz",
+      "unit": "Hz",
+      "kind": "observable",
+      "description": "Breathing frequency during exercise",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.physical_fitness.exercise_vo2_recovery_tau_s",
+      "name": "exercise vo2 recovery tau s",
+      "unit": "s",
+      "kind": "derived",
+      "description": "Time constant for post-exercise oxygen uptake decay",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.physical_fitness.exercise_fatigue_onset_s",
+      "name": "exercise fatigue onset s",
+      "unit": "s",
+      "kind": "observable",
+      "description": "Time to defined fatigue criterion",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.physical_fitness.exercise_muscle_oxygenation_fraction",
+      "name": "exercise muscle oxygenation fraction",
+      "unit": "1",
+      "kind": "observable",
+      "description": "Regional tissue oxygenation during movement",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.physical_fitness.exercise_hydration_change_kg",
+      "name": "exercise hydration change kg",
+      "unit": "kg",
+      "kind": "derived",
+      "description": "Body-water change during exercise assessment",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.physical_fitness.exercise_temperature_rise_k",
+      "name": "exercise temperature rise k",
+      "unit": "K",
+      "kind": "derived",
+      "description": "Core temperature elevation during exercise",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.physical_fitness.exercise_critical_power_w",
+      "name": "exercise critical power w",
+      "unit": "W",
+      "kind": "derived",
+      "description": "Critical power fit under specified test protocol",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.physical_fitness.exercise_w_prime_j",
+      "name": "exercise w prime j",
+      "unit": "J",
+      "kind": "derived",
+      "description": "Work capacity above critical power under fit",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.physical_fitness.exercise_6min_walk_m",
+      "name": "exercise 6min walk m",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Six-minute walking test distance",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.physical_fitness.exercise_step_test_score",
+      "name": "exercise step test score",
+      "unit": "score",
+      "kind": "clinical_assessment",
+      "description": "Named standardized step-test performance",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.physical_fitness.exercise_resistance_training_volume_kg",
+      "name": "exercise resistance training volume kg",
+      "unit": "kg",
+      "kind": "observable",
+      "description": "Sum of external resistance mass repetitions under definition",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.physical_fitness.exercise_training_compliance_fraction",
+      "name": "exercise training compliance fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Fraction of prescribed sessions completed",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    },
+    {
+      "id": "human.physical_fitness.exercise_session_count",
+      "name": "exercise session count",
+      "unit": "count",
+      "kind": "observable",
+      "description": "Number of documented training sessions",
+      "anatomical_index": "optional_anatomical_region_side_or_segment",
+      "measurement_context": "functional_test",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "candidate_measurement_or_model_not_approved_mars_response",
+      "source_leads": [
+        "NASA_FUNDAMENTALS",
+        "NASA_DIGITAL_ASTRONAUT"
+      ]
+    }
+  ]
+}
