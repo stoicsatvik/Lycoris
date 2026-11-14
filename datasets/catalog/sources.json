@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "policy": "Only compact catalog metadata may be fetched automatically. Raw science products, imagery, and DEMs require an exact product URL, licence check, checksum, and an explicit manifest change.",
+  "sources": [
+    {
+      "id": "pds-keyword-search",
+      "fetch_enabled": true,
+      "url": "https://pds.nasa.gov/services/search/index.jsp",
+      "output": "raw/catalog/pds_keyword_search.html",
+      "max_bytes": 2000000,
+      "sha256": null,
+      "purpose": "PDS discovery-page snapshot; not a science measurement",
+      "license_or_attribution": "NASA Planetary Data System; cite any selected product separately"
+    },
+    {
+      "id": "usgs-mars-human-exploration-zone-index",
+      "fetch_enabled": true,
+      "url": "https://asc-pds-individual-investigations.s3.us-west-2.amazonaws.com/mars_mro_hirise_explorationzones_day_2023/index.html",
+      "output": "raw/catalog/usgs_mars_human_exploration_zone_index.html",
+      "max_bytes": 5000000,
+      "sha256": null,
+      "purpose": "USGS/PDS archive index only; never bulk-download its terrain or image products",
+      "license_or_attribution": "USGS Astrogeology / NASA PDS; cite the selected DEM product"
+    },
+    {
+      "id": "curiosity-rad-rdr",
+      "fetch_enabled": false,
+      "url": "https://pds-ppi.igpp.ucla.edu/mission/Mars_Science_Laboratory/RAD/",
+      "output": "raw/pds/curiosity_rad_rdr",
+      "max_bytes": 0,
+      "sha256": null,
+      "purpose": "Exact PDS product selection is required before download",
+      "license_or_attribution": "NASA PDS PPI; retain product ID, label, QA fields, and citation"
+    },
+    {
+      "id": "curiosity-rems-env-rdr",
+      "fetch_enabled": false,
+      "url": "https://pds-atmospheres.nmsu.edu/",
+      "output": "raw/pds/curiosity_rems_env_rdr",
+      "max_bytes": 0,
+      "sha256": null,
+      "purpose": "Exact PDS product selection is required before download",
+      "license_or_attribution": "NASA PDS Atmospheres; retain product ID, label, QA fields, and citation"
+    }
+  ]
+}
