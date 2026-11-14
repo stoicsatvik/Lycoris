@@ -31,3 +31,10 @@ The repository root contains a Cloudflare Worker backed by D1. It serves a read-
 ## NASA Mars Trek map synchronization
 
 `GET /api/maps/nasa-mars-trek` returns NASA Mars Trek WMTS capability URLs for the global MOLA hillshade and controlled Jezero HiRISE mosaic. Map clients must use these upstream services directly rather than copied tiles, so NASA-published tile updates can appear without a Lycoris re-ingestion run. A Cloudflare Cron Trigger checks capability ETag and Last-Modified headers every six hours and exposes the latest check state from that endpoint.
+
+
+## Solar-storm training scenarios
+
+`GET /api/simulations/solar-storm?journey_day=12&seed=42` produces a deterministic, illustrative solar-storm scenario for journey rehearsal. Omit `seed` for a new scenario and retain the returned seed to reproduce it. The API intentionally provides no dose calculation, medical recommendation, or crew-authorization decision.
+
+`GET /api/space-weather/source` identifies the official NOAA SWPC alerts feed. NASA and NOAA operational monitoring, mission-specific flight rules, vehicle configuration, shelter design, and authorized dosimetry remain the source of real crew decisions.

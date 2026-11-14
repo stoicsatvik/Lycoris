@@ -1,0 +1,22 @@
+{
+  "provider": "NASA and NOAA space-weather operations",
+  "classification": "training and situational-awareness references; not crew medical or flight authorization",
+  "sources": [
+    {
+      "id": "noaa-swpc-alerts",
+      "url": "https://services.swpc.noaa.gov/products/alerts.json",
+      "purpose": "Official NOAA space-weather alert feed for situational awareness",
+      "automation": "Link only; downstream UI must display provider time and preserve the original message."
+    },
+    {
+      "id": "nasa-artemis-space-weather-operations",
+      "url": "https://science.nasa.gov/missions/artemis/artemis-2/to-protect-artemis-ii-astronauts-nasa-experts-keep-eyes-on-sun/",
+      "purpose": "NASA context for round-the-clock monitoring, mission thresholds, and shelter recommendations"
+    },
+    {
+      "id": "nasa-sep-forecasting-limits",
+      "url": "https://science.nasa.gov/science-research/heliophysics/how-nasa-will-protect-astronauts-from-space-radiation-at-the-moon/",
+      "purpose": "NASA context for solar energetic particle forecast uncertainty"
+    }
+  ]
+}
