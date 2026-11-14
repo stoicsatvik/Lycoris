@@ -82,7 +82,7 @@ export function mapView(P, S, ui) {
       ${tile("Dose equivalent", calc("dose", f(r.dose.equivalentMsv, 3), "big") + '<span class="unit">mSv</span>', u ? `5th–95th percentile <span class="num">${f(u.hMsv.p5, 3)} – ${f(u.hMsv.p95, 3)}</span> · cosmic rays only` : "")}
     </div>
 
-    <div class="grid" style="grid-template-columns: 286px minmax(0, 1fr) 336px; align-items: stretch">
+    <div class="grid planrow" style="grid-template-columns: 286px minmax(0, 1fr) 336px; align-items: stretch">
       <section class="panel" aria-label="Route planner">
         <div class="ph"><h2>Route planner</h2></div>
         <form class="pb" id="planner" style="display: flex; flex-direction: column; gap: 12px" novalidate>
@@ -112,11 +112,11 @@ export function mapView(P, S, ui) {
 
       <div style="position: relative; min-width: 0; display: flex">
         ${mapFrame(P, { box: routeBox(P), label: "Jezero map with planned route" })}
-        <div class="ovl" style="left: 12px; top: 12px; width: 168px; padding: 8px; z-index: 2">
+        <div class="ovl global-inset" style="left: 12px; top: 12px; width: 168px; padding: 8px; z-index: 2">
           <div class="lbl" style="color: #A3B4CD; margin-bottom: 6px">Global view</div>
           <div style="position: relative"><img src="img/mars-global.webp" alt="Global map of Mars with Jezero marked" style="display: block; width: 100%; border-radius: 3px; filter: saturate(.7) brightness(.8)"><span class="pin" style="left: 71.5%; top: 39.8%; width: 9px; height: 9px"></span></div>
         </div>
-        ${crossing ? `<a class="ovl" href="#/craters" style="left: 192px; right: 60px; top: 12px; display: flex; align-items: center; gap: 12px; padding: 9px 12px; border-color: #E8793F; z-index: 2">
+        ${crossing ? `<a class="ovl crater-alert" href="#/craters" style="left: 192px; right: 60px; top: 12px; display: flex; align-items: center; gap: 12px; padding: 9px 12px; border-color: #E8793F; z-index: 2">
           <svg width="18" height="18" viewBox="0 0 16 16" fill="none" stroke="#E8793F" stroke-width="1.5" aria-hidden="true"><ellipse cx="8" cy="9" rx="6" ry="3"/><ellipse cx="8" cy="9" rx="3" ry="1.3"/></svg>
           <span><b style="font-weight: 600">Crater ahead: ${esc(crossing.name ?? `crater ${crossing.id}`)}</b><br><span style="font-size: 11.5px; color: #A3B4CD">${f(crossing.diameterM, 0)} m wide${crossing.rimSlopeDeg ? `, ${crossing.rimSlopeDeg}° walls` : ""}. Compare across and around</span></span></a>` : ""}
         <div class="ovl" style="left: 12px; bottom: 12px; padding: 9px 11px; max-width: 320px; font-size: 11.5px; line-height: 1.5; z-index: 2">
@@ -134,7 +134,7 @@ export function mapView(P, S, ui) {
       </section>
     </div>
 
-    <div class="grid" style="grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr) 336px">
+    <div class="grid inforow" style="grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr) 336px">
       <section class="panel" aria-label="Route profile"><div class="ph"><h2>Route profile${S.ret === "back" ? ", outbound" : ""}</h2>${badge("measured", "Measured · CTX DEM")}</div><div class="pb">${profile(P)}</div></section>
       <section class="panel" aria-label="Crew"><div class="ph"><h2>Crew at end of EVA</h2></div>
         <div class="scroll-x"><table class="tb"><thead><tr><th>Crew</th><th class="r">O₂ used</th><th class="r">O₂ left</th><th class="r">Fatigue</th><th>Battery</th><th>Water</th><th>Scrubber</th></tr></thead><tbody>
@@ -178,7 +178,7 @@ export function craterView(P, C) {
   const overHazard = (C.c.alphaDeg ?? 0) > 20;
   return `<header class="top"><h1>Craters <span class="dim" style="font-weight: 400">/ ${esc(name)}</span></h1><span class="chip sim">Simulation</span>
     <label class="meta" style="display: flex; align-items: center; gap: 8px">On this route <select class="inp" data-field-crater style="min-height: 32px; width: auto">${options}</select></label></header>
-  <div class="body"><div class="grid" style="grid-template-columns: 500px minmax(0, 1fr); align-items: start">
+  <div class="body"><div class="grid craterrow" style="grid-template-columns: 500px minmax(0, 1fr); align-items: start">
     <div style="display: flex; flex-direction: column; gap: 16px">
       <div style="position: relative; display: flex">${mapFrame(P, { box, height: 520, label: `${name} with the planned route`, pins: false })}
         <div class="ovl" style="left: 12px; bottom: 12px; padding: 9px 11px; font-size: 11.5px; line-height: 1.7; z-index: 2">
