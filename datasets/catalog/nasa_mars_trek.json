@@ -1,0 +1,18 @@
+{
+  "provider": "NASA Mars Trek",
+  "delivery": "OGC WMTS capabilities and tiles are consumed directly from NASA; Lycoris never mirrors basemap imagery.",
+  "sources": [
+    {
+      "id": "mars-trek-global-mola-hillshade",
+      "title": "MGS MOLA global color hillshade",
+      "capabilities_url": "https://trek.nasa.gov/tiles/Mars/EQ/Mars_MGS_MOLA_ClrShade_merge_global_463m/1.0.0/WMTSCapabilities.xml",
+      "coordinate_reference": "urn:ogc:def:crs:EPSG::104905"
+    },
+    {
+      "id": "mars-trek-jezero-hirise-controlled",
+      "title": "MRO HiRISE Jezero controlled mosaic",
+      "capabilities_url": "https://trek.nasa.gov/tiles/Mars/EQ/JEZ_hirise_soc_006_orthoMosaic_25cm_Eqc_latTs0_lon0_first_dd/1.0.0/WMTSCapabilities.xml",
+      "coordinate_reference": "Mars equirectangular, as declared in upstream WMTS capabilities"
+    }
+  ]
+}
