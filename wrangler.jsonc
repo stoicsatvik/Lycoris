@@ -1,0 +1,16 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "lycoris",
+  "main": "src/worker.ts",
+  "compatibility_date": "2026-11-14",
+  "workers_dev": true,
+  "observability": { "enabled": true, "head_sampling_rate": 1 },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "lycoris-catalog",
+      "database_id": "4d069e92-c0e0-4c0d-b89e-2bca38342234",
+      "migrations_dir": "migrations"
+    }
+  ]
+}

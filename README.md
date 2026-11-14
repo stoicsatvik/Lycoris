@@ -23,3 +23,6 @@ No application implementation, external datasets, or empirical Marswalk safety c
 ## Human systems research library
 
 The [`human/`](human/) subsystem contains evidence and parameter definitions for anatomy, physiology, neuroscience, psychology, space-exposure responses and mission operations. Its 1,691 candidate parameters are **declarations only**, not validated Mars physiological predictions or stored crew health data. See [`human/parameters/INDEX.json`](human/parameters/INDEX.json) for the full domain inventory.
+## Cloudflare catalog API
+
+The repository root contains a Cloudflare Worker backed by D1. It serves a read-only, provenance-aware dataset catalog at `/api/health`, `/api/datasets`, `/api/datasets/:id`, and `/api/observations`. Run `npm install`, then `npm run dev` locally; apply database migrations explicitly before deploying. Raw research files are not copied into D1 until a source-hash and quality-preserving ingestion run is recorded.
