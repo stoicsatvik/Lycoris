@@ -1,0 +1,24 @@
+# Dataset source record template
+
+- Stable source key:
+- Mission / instrument:
+- Product title:
+- Product identifier / collection / version:
+- Official archive URL:
+- Observed quantity:
+- Observation interval (UTC / sol / LMST conventions):
+- Spatial footprint / coordinate reference / longitude convention:
+- Grid resolution and effective resolution:
+- Physical units / scale factors / vertical datum:
+- Missing-value and quality-flag definitions:
+- Accuracy / uncertainty / correlation assumptions:
+- Calibration / processing history:
+- Acquisition date / source publication date:
+- License / redistribution / attribution:
+- Download location or object-store URI (no embedded secret):
+- SHA-256 or other integrity record:
+- Independent validation evidence:
+- NASA challenge Resources-tab eligibility: UNVERIFIED
+- Status: candidate | metadata-reviewed | acquired | validated | rejected
+- Known limitations:
+- Responsible reviewer:

@@ -1,0 +1,21 @@
+# Scientific model specification template
+
+- Model key / semantic version:
+- Physical question and intended use:
+- Outputs, meanings, units and evidence category:
+- Inputs, meanings, units, accepted ranges and dependencies:
+- Governing equations, with definitions of every symbol:
+- Derivation or cited source (URL/DOI/product ID):
+- Fundamental principles / conserved quantities:
+- Assumptions and applicability domain:
+- Spatial and temporal reference conventions:
+- Missing, invalid and out-of-range input behavior:
+- Numerical algorithm and convergence criteria:
+- Parameter priors / likelihood / evidence (if probabilistic):
+- Uncertainty treatment, including correlations:
+- Independent Fermi / analytical bounds:
+- Falsification and regression test plan:
+- Known limitations and unsafe interpretations:
+- Downstream consumers and cache invalidation triggers:
+- Implementation status: specification | experimental | tested | source-validated
+- Reviewer and date:
