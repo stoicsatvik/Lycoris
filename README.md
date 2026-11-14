@@ -6,9 +6,9 @@ Scientific mission-planning architecture for the 2026 NASA Space Apps Challenge:
 
 This first milestone establishes documentation and directories only:
 
-- `datasets/` — scientific sources, provenance, processing stages, and validation evidence.
-- `formulae/` — mathematical model specifications with units, dependencies, assumptions, and checks.
-- `principles/` — first-principles reasoning, Fermi bounds, Bayesian inference, and scientific validation standards.
+- `datasets/` -> scientific sources, provenance, processing stages, and validation evidence.
+- `formulae/` -> mathematical model specifications with units, dependencies, assumptions, and checks.
+- `principles/` -> first-principles reasoning, Fermi bounds, Bayesian inference, and scientific validation standards.
 
 No application implementation, external datasets, or empirical Marswalk safety certification are included in this initial scaffold.
 
