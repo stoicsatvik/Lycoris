@@ -1,0 +1,8 @@
+[project]
+name = "lycoris-engine"
+version = "0.1.0"
+description = "Evidence-aware Mars route and EVA resource computation core"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -23,3 +23,6 @@ No application implementation, external datasets, or empirical Marswalk safety c
 ## Human systems research library
 
 The [`human/`](human/) subsystem contains evidence and parameter definitions for anatomy, physiology, neuroscience, psychology, space-exposure responses and mission operations. Its 1,691 candidate parameters are **declarations only**, not validated Mars physiological predictions or stored crew health data. See [`human/parameters/INDEX.json`](human/parameters/INDEX.json) for the full domain inventory.
+## Experimental Python engine
+
+[`engine/`](engine/) contains an independent, standard-library Python computation core for a future integration. It provides fail-closed terrain routing and unit-explicit human-demand/suit-inventory integration. It has no bound Mars DEM, physiology coefficient, or certified safety decision logic; see its [README](engine/README.md).
