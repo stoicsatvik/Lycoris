@@ -21,3 +21,15 @@ Raw RAD/REMS products and Mars terrain imagery are deliberately disabled until a
 Record mission, instrument, exact product ID/version, source URL, acquisition and processing time, coordinate frame, geospatial extent, spatial and temporal resolution, units, missing-data flags, quality measures, checksum, license/attribution, uncertainty, and permitted uses.
 
 Do not label historical observations as current conditions or consider visualization tiles equivalent to quantitative terrain data.
+
+
+## One-time extraction and compression
+
+`python3 datasets/prepare.py --all` creates reproducible `.gz` derivatives without altering any original file:
+
+- CSV, JSON, Markdown, XML, HTML and text files are compressed under `normalized/compressed/`.
+- PDFs with embedded text are extracted with local `pdftotext`; scanned PDFs use `ocrmypdf`/Tesseract when available.
+- PNG, JPEG and TIFF images use local Tesseract OCR.
+- Every derivative has a receipt containing input/output hashes, byte counts and the extraction method.
+
+OCR is intentionally never applied to numeric scientific tables. It is only for documents and scanned imagery; preserve source products unchanged.
