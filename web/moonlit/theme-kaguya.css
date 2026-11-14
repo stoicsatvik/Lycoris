@@ -1,0 +1,168 @@
+/* Lycoris "moonlit" theme layer. Loaded after the page's own styles and only restyles them:
+   layout, the three.js globe and the NASA Trek map are untouched. Mars keeps its own colour. */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap');
+
+:root {
+  --ink: #0A0A22; --ink-2: #0E1750; --paper: #F4F0FF; --muted: #A8A6D8;
+  --line: rgba(186, 178, 255, .22);
+  --gold: #F6D272; --pink: #FF74AC; --cyan: #74E2FF; --violet: #8B7CF8;
+  --card: rgba(20, 19, 58, .84); --card-line: rgba(176, 166, 255, .28);
+  --orange: var(--gold); /* the page's accent variable now points at moon gold */
+}
+
+body { background: var(--ink); }
+
+/* Night sky: indigo falling to deep blue, with a faint warm halo left behind Mars. */
+#hero {
+  background:
+    radial-gradient(circle at 73% 46%, rgba(255, 122, 60, .20) 0, rgba(120, 60, 110, .12) 24%, transparent 48%),
+    linear-gradient(180deg, #08081C 0%, #0B0D30 42%, #0F1B5E 100%);
+}
+/* Stars replace the engineering grid. Three sparse tiled layers of different sizes. */
+#hero:before {
+  background-image:
+    radial-gradient(1.2px 1.2px at 22px 34px, rgba(255, 255, 255, .9) 50%, transparent 51%),
+    radial-gradient(1px 1px at 148px 96px, rgba(220, 225, 255, .75) 50%, transparent 51%),
+    radial-gradient(1.6px 1.6px at 88px 182px, rgba(246, 210, 114, .8) 50%, transparent 51%),
+    radial-gradient(1px 1px at 210px 228px, rgba(255, 255, 255, .6) 50%, transparent 51%),
+    radial-gradient(1px 1px at 300px 60px, rgba(116, 226, 255, .7) 50%, transparent 51%);
+  background-size: 260px 260px, 330px 330px, 410px 410px, 290px 290px, 520px 520px;
+  mask-image: linear-gradient(180deg, #000 0, #000 62%, transparent 100%);
+  opacity: .8;
+}
+
+/* Top bar */
+.topbar { border-bottom-color: var(--line); }
+.brand { letter-spacing: .2em; }
+/* Brand mark: a waxing crescent in place of the skewed bars. */
+.brand-mark { width: 22px; height: 22px; border: 0; transform: none; border-radius: 50%; box-shadow: inset -7px -2px 0 0 var(--gold); }
+.brand-mark:after { display: none; }
+.nav, .nav button { color: var(--muted); }
+.nav button.active, .nav button:hover, .nav span:first-child { color: var(--gold); }
+.nav button.active { box-shadow: 0 1px 0 0 var(--gold); padding-bottom: 6px; }
+.state { color: var(--cyan); }
+.state:before { background: var(--cyan); box-shadow: 0 0 10px rgba(116, 226, 255, .7); }
+
+/* Headline block */
+.eyebrow { color: var(--gold); }
+.eyebrow i { border-left-color: var(--pink); }
+.copy h1 { font-family: 'Fraunces', Georgia, serif; font-weight: 600; letter-spacing: -.025em; line-height: 1.02; font-size: clamp(46px, 5.4vw, 84px); }
+.copy p { color: #D2CFF2; }
+.mission-button {
+  border: 0; border-radius: 14px; clip-path: none;
+  background: var(--gold); color: #14123A;
+  box-shadow: 0 0 0 1px rgba(246, 210, 114, .5), 0 14px 40px rgba(10, 8, 40, .55);
+}
+.mission-button:hover { filter: none; background: #FFE08F; transform: translateY(-2px); }
+.mission-button:focus-visible, .nav button:focus-visible, .close:focus-visible, .sim-controls button:focus-visible, .map-tabs button:focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px; }
+.source { color: var(--muted); }
+.source:hover { color: var(--cyan); }
+
+/* Mars stays Mars. The two rings become the orbits of its moons. */
+#mars { filter: drop-shadow(0 0 60px rgba(255, 104, 40, .30)); }
+.planet-stage:after { border-color: rgba(214, 208, 255, .55); }
+.planet-stage:before { border-color: rgba(214, 208, 255, .32); }
+.moon { position: absolute; z-index: 2; display: flex; align-items: center; gap: 8px; font: 9px 'IBM Plex Mono', monospace; letter-spacing: .14em; color: var(--muted); pointer-events: none; }
+.moon i { width: 9px; height: 9px; border-radius: 50%; background: #D9D6F2; box-shadow: inset -3px -1px 0 0 #6A6790; }
+.moon.phobos { left: 17%; top: 61%; }
+.moon.deimos { right: 3%; top: 24%; }
+.moon.deimos i { width: 6px; height: 6px; }
+.target { border-color: #FFF6E0; box-shadow: 0 0 0 9px rgba(255, 240, 210, .12), 0 0 26px rgba(255, 124, 44, .9); }
+.target:before { border: 1px solid var(--card-line); border-radius: 8px; background: var(--card); color: var(--paper); }
+.provenance { color: #7F7DB0; }
+.provenance strong { color: var(--muted); }
+
+/* Mission map screen */
+#mission-map { background: #0A0A22; }
+#real-mars-map, .leaflet-container { background: #0B0B28 !important; }
+.map-grid { opacity: 0; }
+.map-head { border-bottom-color: var(--line); background: linear-gradient(180deg, rgba(10, 10, 34, .92), rgba(10, 10, 34, 0)); }
+.map-title b { color: var(--gold); }
+.map-tabs button { color: var(--muted); }
+.map-tabs button:first-child { color: var(--muted); }
+.map-tabs button:nth-child(2) { color: var(--gold); }
+.close { border-radius: 10px; border-color: var(--card-line); background: var(--card); }
+.close:hover { border-color: var(--cyan); }
+
+.science-rail, .mission-panel { border: 1px solid var(--card-line); border-radius: 16px; background: var(--card); }
+.science-rail h2, .mission-panel h2 { font-family: 'Fraunces', Georgia, serif; font-weight: 600; letter-spacing: -.01em; }
+.science-rail small, .mission-panel small { color: var(--gold); }
+.science-rail .formula, .science-rail .metric, .mission-route, .resource { border-color: rgba(186, 178, 255, .16); }
+.science-rail .formula, .mission-route { color: #E6E2FF; }
+.science-rail .metric b, .resource b { color: var(--cyan); }
+.science-rail .note { color: var(--muted); }
+/* Reserve bars: moonlight cyan running into pink. */
+.resource i { height: 5px; border-radius: 3px; background: linear-gradient(90deg, var(--cyan) 0, var(--pink) var(--level), rgba(186, 178, 255, .16) var(--level)); }
+.action-readout { border-left-color: var(--pink); border-radius: 0 10px 10px 0; background: rgba(255, 116, 172, .08); }
+.eva-progress { accent-color: var(--pink); }
+.sim-controls button { border-radius: 10px; border-color: var(--card-line); color: var(--paper); }
+.sim-controls button:first-child { border-color: var(--gold); color: var(--gold); }
+.sim-controls button:hover { border-color: var(--cyan); }
+
+.leaflet-control-zoom { border: 1px solid var(--card-line) !important; border-radius: 10px !important; overflow: hidden; }
+.leaflet-control-zoom a { background: #14133A !important; color: var(--paper) !important; border-color: var(--card-line) !important; }
+.leaflet-tooltip { background: #14133A !important; color: var(--paper) !important; border: 1px solid var(--card-line) !important; border-radius: 8px !important; }
+.leaflet-tooltip:before { display: none; }
+.mars-dot { border-color: #FFE9C6; }
+.map-attribution { border-radius: 8px; background: rgba(12, 12, 40, .78); color: var(--muted); }
+
+/* ---- homepage additions ---- */
+.copy { top: 19vh; }
+.copy h1 em { font-style: italic; font-weight: 500; color: var(--gold); white-space: nowrap; }
+.nav { align-items: center; }
+.nav a { color: var(--muted); font: 11px 'IBM Plex Mono', monospace; letter-spacing: .14em; text-decoration: none; }
+.nav a:hover { color: var(--gold); }
+.top-right { display: flex; align-items: center; gap: 14px; }
+.motion { cursor: pointer; min-height: 36px; padding: 0 4px; border: 0; background: transparent; color: var(--muted); font: 10px 'IBM Plex Mono', monospace; letter-spacing: .12em; }
+.motion:before { content: ''; display: inline-block; width: 7px; height: 7px; margin-right: 8px; border-radius: 50%; background: var(--cyan); }
+.motion[aria-pressed="false"]:before { background: transparent; box-shadow: inset 0 0 0 1.5px var(--muted); }
+.motion:hover { color: var(--paper); }
+.claire-btn { display: inline-flex; align-items: center; min-height: 40px; padding: 0 16px; border: 1px dashed var(--pink); border-radius: 12px; color: var(--pink); font: 500 10.5px 'IBM Plex Mono', monospace; letter-spacing: .12em; text-decoration: none; }
+.claire-btn:hover { background: rgba(255, 116, 172, .1); }
+.hud-link { display: inline-block; margin: 22px 0 0 22px; padding-bottom: 3px; border-bottom: 1px solid var(--muted); color: var(--paper); font-size: 15px; text-decoration: none; }
+.hud-link:hover { border-bottom-color: var(--cyan); color: var(--cyan); }
+.source { margin-top: 20px; }
+/* Coordinates set sideways down the left edge. */
+.edge-note { position: absolute; z-index: 3; left: 1.7vw; top: 30vh; writing-mode: vertical-rl; transform: rotate(180deg); white-space: nowrap; font: 9px 'IBM Plex Mono', monospace; letter-spacing: .26em; color: #6E6CA6; }
+
+/* Corner brackets framing the globe, and the zoom button. */
+.bracket { position: absolute; z-index: 2; width: 26px; height: 26px; border: 0 solid var(--gold); pointer-events: none; opacity: .85; }
+.bracket.tl { left: 9%; top: 9%; border-left-width: 2px; border-top-width: 2px; }
+.bracket.tr { right: 9%; top: 9%; border-right-width: 2px; border-top-width: 2px; }
+.bracket.bl { left: 9%; bottom: 27%; border-left-width: 2px; border-bottom-width: 2px; }
+.bracket.br { right: 9%; bottom: 27%; border-right-width: 2px; border-bottom-width: 2px; }
+.zoom-in { position: absolute; z-index: 3; right: 1%; top: 44%; width: 44px; height: 44px; cursor: pointer; border: 1px solid var(--card-line); border-radius: 12px; background: var(--card); color: var(--paper); font: 400 20px 'IBM Plex Mono', monospace; }
+.zoom-in:hover { border-color: var(--gold); color: var(--gold); }
+.planet-stage.zoom .bracket, .planet-stage.zoom .moon, .planet-stage.zoom .zoom-in { opacity: 0; }
+
+/* Numbered index strip in place of three boxed cards. */
+.provenance { bottom: 138px; }
+.home-index:before { content: ''; position: absolute; left: -5vw; right: -5vw; top: -40px; bottom: -22px; z-index: -1; background: linear-gradient(180deg, transparent, rgba(11, 14, 52, .88) 38%, #0D1650); pointer-events: none; }
+.home-index { position: absolute; z-index: 4; left: 5vw; right: 5vw; bottom: 22px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid var(--line); }
+.home-index a { display: flex; align-items: center; gap: 18px; min-height: 96px; padding: 14px 22px 10px 0; color: var(--paper); text-decoration: none; border-top: 2px solid transparent; margin-top: -1px; }
+.home-index a + a { padding-left: 26px; border-left: 1px solid var(--line); }
+.home-index a:hover { border-top-color: var(--gold); }
+.home-index .no { font: italic 500 40px/1 'Fraunces', Georgia, serif; color: rgba(214, 208, 255, .42); }
+.home-index a:hover .no { color: var(--gold); }
+.home-index b { display: block; font: 500 12px 'IBM Plex Mono', monospace; letter-spacing: .14em; text-transform: uppercase; }
+.home-index em { display: block; margin-top: 6px; font-style: normal; font-size: 14px; color: #C9C6EE; }
+.home-index i { margin-left: auto; font: 400 20px 'IBM Plex Mono', monospace; font-style: normal; color: var(--muted); transition: transform .2s; }
+.home-index a:hover i { transform: translateX(5px); color: var(--gold); }
+.home-index .claire { border-top: 2px dashed rgba(255, 116, 172, .55); }
+.home-index .claire:hover { border-top-color: var(--pink); }
+.home-index .claire b, .home-index .claire:hover .no, .home-index .claire:hover i { color: var(--pink); }
+.home-index u { margin-left: 8px; padding: 2px 6px; border: 1px solid var(--pink); border-radius: 6px; font-size: 9px; letter-spacing: .1em; text-decoration: none; }
+.home-index a:focus-visible, .nav a:focus-visible, .claire-btn:focus-visible, .hud-link:focus-visible, .zoom-in:focus-visible, .motion:focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px; }
+
+@media (max-height: 780px) { .home-index em { display: none; } .home-index a { min-height: 64px; } .home-index .no { font-size: 28px; } .provenance { bottom: 100px; } }
+@media (max-width: 1000px) { .nav a { display: none; } .motion { display: none; } }
+@media (max-width: 760px) {
+  .top-right, .edge-note, .bracket, .moon, .zoom-in, .provenance { display: none; }
+  .home-index { left: 4vw; right: 4vw; bottom: 12px; }
+  .home-index a { min-height: 56px; gap: 8px; padding: 8px 6px 4px 0; }
+  .home-index a + a { padding-left: 8px; }
+  .home-index .no, .home-index em, .home-index i, .home-index u { display: none; }
+  .home-index b { font-size: 9px; letter-spacing: .08em; }
+}
+
+@media (prefers-reduced-motion: reduce) { * { transition-duration: .01ms !important; animation: none !important; } }
