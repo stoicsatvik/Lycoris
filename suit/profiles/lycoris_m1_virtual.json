@@ -1,0 +1,16 @@
+{
+  "profile_id": "lycoris_m1_virtual_v0",
+  "classification": "hypothetical_virtual_profile_not_human_rated",
+  "evidence_id": "NASA_PLSS_ROADMAP_2024+NASA_STD_3001_V2",
+  "dry_mass_kg": 65.0,
+  "eva_operational_life": 100,
+  "dust_connector_cycles": 1000,
+  "supports_9_torr_co2": true,
+  "atmosphere_telemetry": true,
+  "thermal_control_adjustable": true,
+  "virtual_pressure_hold_passed": true,
+  "virtual_thermal_vacuum_passed": true,
+  "virtual_human_in_loop_passed": true,
+  "notional_suit_pressure_kpa": 40.0,
+  "warning": "Values are simulation inputs. They do not represent a manufactured or certified suit."
+}
