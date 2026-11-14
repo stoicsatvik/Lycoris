@@ -36,6 +36,61 @@ type MapCheck = {
   changed_at: string;
 };
 
+type SolarStormScenario = {
+  seed: number;
+  journey_day: number;
+  mode: "illustrative_training";
+  tier: "quiet" | "elevated_watch" | "simulated_sep_event";
+  onset_hours_from_now: number | null;
+  duration_hours: number | null;
+  uncertainty: string[];
+  operational_prompts: string[];
+};
+
+const SWPC_ALERTS_URL = "https://services.swpc.noaa.gov/products/alerts.json";
+
+const seededRandom = (seed: number): (() => number) => {
+  let state = seed >>> 0;
+  return () => {
+    state += 0x6d2b79f5;
+    let value = state;
+    value = Math.imul(value ^ (value >>> 15), value | 1);
+    value ^= value + Math.imul(value ^ (value >>> 7), value | 61);
+    return ((value ^ (value >>> 14)) >>> 0) / 4_294_967_296;
+  };
+};
+
+const solarStormScenario = (seed: number, journeyDay: number): SolarStormScenario => {
+  const random = seededRandom(seed);
+  const roll = random();
+  const tier = roll < 0.76 ? "quiet" : roll < 0.94 ? "elevated_watch" : "simulated_sep_event";
+  const event = tier === "simulated_sep_event";
+  return {
+    seed,
+    journey_day: journeyDay,
+    mode: "illustrative_training",
+    tier,
+    onset_hours_from_now: event ? 1 + Math.floor(random() * 24) : null,
+    duration_hours: event ? 6 + Math.floor(random() * 67) : null,
+    uncertainty: [
+      "This is a seeded training scenario, not a forecast, dose estimate, or operational warning.",
+      "Real solar energetic particle events have uncertain occurrence, timing, intensity, spectrum, duration, and magnetic connection to a crew location.",
+      "Use current mission-authorized space-weather, vehicle, and dosimetry systems for any real decision.",
+    ],
+    operational_prompts: event
+      ? [
+          "Simulation prompt: notify the designated flight/mission authority and confirm the current official space-weather message.",
+          "Simulation prompt: follow the mission-approved storm-shelter and vehicle-configuration procedure when directed.",
+          "Simulation prompt: defer EVA and other exposure-prone activities only under the applicable mission rules and authority.",
+          "Simulation prompt: record the scenario, communications state, and authorized return-to-work decision.",
+        ]
+      : [
+          "Simulation prompt: maintain normal monitoring and rehearse communication/escalation readiness.",
+          "Simulation prompt: do not treat this quiet scenario as an all-clear forecast.",
+        ],
+  };
+};
+
 const NASA_MARS_TREK: MapSource[] = [
   {
     id: "mars-trek-global-mola-hillshade",
@@ -99,6 +154,27 @@ export default {
 
     const url = new URL(request.url);
     if (url.pathname === "/api/health") return json({ status: "ok", service: "lycoris-api" });
+
+    if (url.pathname === "/api/space-weather/source") {
+      return json({
+        official_alert_feed: SWPC_ALERTS_URL,
+        provider: "NOAA Space Weather Prediction Center",
+        use: "Situational-awareness source only. Lycoris does not convert this feed into crew authorization or medical advice.",
+        nasa_context: "NASA operations combine continuous monitoring with mission-specific decision thresholds and shelter procedures.",
+      });
+    }
+
+    if (url.pathname === "/api/simulations/solar-storm") {
+      const journeyDay = integer(url.searchParams.get("journey_day"), 1, 1_000);
+      const requestedSeed = url.searchParams.get("seed");
+      if (journeyDay === null || journeyDay < 0 || (requestedSeed !== null && !/^\d{1,10}$/.test(requestedSeed))) {
+        return json({ error: "invalid_query" }, 400);
+      }
+      const seed = requestedSeed === null
+        ? crypto.getRandomValues(new Uint32Array(1))[0]
+        : Number(requestedSeed);
+      return json(solarStormScenario(seed, journeyDay));
+    }
 
     if (url.pathname === "/api/maps/nasa-mars-trek") {
       const { results } = await env.DB.prepare(
