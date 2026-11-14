@@ -26,3 +26,8 @@ The [`human/`](human/) subsystem contains evidence and parameter definitions for
 ## Cloudflare catalog API
 
 The repository root contains a Cloudflare Worker backed by D1. It serves a read-only, provenance-aware dataset catalog at `/api/health`, `/api/datasets`, `/api/datasets/:id`, and `/api/observations`. Run `npm install`, then `npm run dev` locally; apply database migrations explicitly before deploying. Raw research files are not copied into D1 until a source-hash and quality-preserving ingestion run is recorded.
+
+
+## NASA Mars Trek map synchronization
+
+`GET /api/maps/nasa-mars-trek` returns NASA Mars Trek WMTS capability URLs for the global MOLA hillshade and controlled Jezero HiRISE mosaic. Map clients must use these upstream services directly rather than copied tiles, so NASA-published tile updates can appear without a Lycoris re-ingestion run. A Cloudflare Cron Trigger checks capability ETag and Last-Modified headers every six hours and exposes the latest check state from that endpoint.
