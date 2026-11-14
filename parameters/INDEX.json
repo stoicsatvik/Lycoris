@@ -1,0 +1,82 @@
+{
+  "registry_version": "1.0.0",
+  "status": "DECLARED_UNBOUND",
+  "created_for": "NASA Space Apps 2026 Interplanetary Survival Guide: Martian Map",
+  "reference_records": {
+    "mars_nasa_2025": 39,
+    "jezero_ctx_science_product_usgs_2021": 10
+  },
+  "canonical_field_count": 297,
+  "canonical_domain_count": 12,
+  "description": "Field names and types are proposed Lycoris model interfaces, not official NASA/PDS column names or filled values.",
+  "domain_files": [
+    {
+      "name": "geodesy",
+      "path": "domains/geodesy.json",
+      "declared_field_count": 24
+    },
+    {
+      "name": "terrain",
+      "path": "domains/terrain.json",
+      "declared_field_count": 24
+    },
+    {
+      "name": "atmosphere",
+      "path": "domains/atmosphere.json",
+      "declared_field_count": 26
+    },
+    {
+      "name": "radiation",
+      "path": "domains/radiation.json",
+      "declared_field_count": 18
+    },
+    {
+      "name": "illumination",
+      "path": "domains/illumination.json",
+      "declared_field_count": 17
+    },
+    {
+      "name": "imagery_geology",
+      "path": "domains/imagery_geology.json",
+      "declared_field_count": 22
+    },
+    {
+      "name": "astronaut",
+      "path": "domains/astronaut.json",
+      "declared_field_count": 26
+    },
+    {
+      "name": "life_support",
+      "path": "domains/life_support.json",
+      "declared_field_count": 38
+    },
+    {
+      "name": "mission_navigation",
+      "path": "domains/mission_navigation.json",
+      "declared_field_count": 38
+    },
+    {
+      "name": "science",
+      "path": "domains/science.json",
+      "declared_field_count": 17
+    },
+    {
+      "name": "uncertainty",
+      "path": "domains/uncertainty.json",
+      "declared_field_count": 19
+    },
+    {
+      "name": "evidence",
+      "path": "domains/evidence.json",
+      "declared_field_count": 28
+    }
+  ],
+  "reference_files": [
+    "constants/mars_nasa_2025.json",
+    "constants/jezero_ctx_science_product_usgs_2021.json"
+  ],
+  "binding_spec": "DATASET_BINDINGS.md",
+  "schema": "SCHEMA.md",
+  "first_data_import_allowed": false,
+  "reason": "Source product IDs, official instrument label fields, checksums, unit conversions and quality masks await dataset upload and validation."
+}

@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0.0",
+  "sources": [
+    {
+      "id": "NASA_MARS_FACT_SHEET_2025",
+      "title": "NASA NSSDCA Mars Fact Sheet",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html",
+      "last_updated": "2025-05-19",
+      "role": "planetary and summary atmospheric benchmark constants",
+      "verified_for_register": true
+    },
+    {
+      "id": "USGS_JEZERO_SCI_CTX_DEM_2021",
+      "title": "USGS Mars 2020 Science Investigation CTX DEM Mosaic",
+      "url": "https://astrogeology.usgs.gov/search/map/mars_2020_science_investigation_ctx_dem_mosaic",
+      "last_updated": "2021-10-14",
+      "role": "scientific raster source metadata for Jezero",
+      "verified_for_register": true
+    },
+    {
+      "id": "PDS_MARS2020_MEDA",
+      "title": "PDS Perseverance MEDA archive",
+      "url": "https://pds-atmospheres.nmsu.edu/data_and_services/atmospheres_data/PERSEVERANCE/meda.html",
+      "role": "candidate product families; exact PDS4 field names from uploaded product labels",
+      "verified_for_register": true
+    },
+    {
+      "id": "PDS_MSL_RAD",
+      "title": "PDS MSL Radiation Assessment Detector archives",
+      "url": "https://pds-geosciences.wustl.edu/missions/msl/",
+      "role": "historical Gale ionizing radiation source candidate; inspect product labels",
+      "verified_for_register": true
+    },
+    {
+      "id": "NAIF_SPICE_MARS2020",
+      "title": "NASA NAIF Mars2020 SPICE ancillary",
+      "url": "https://naif.jpl.nasa.gov/pub/naif/pds/pds4/mars2020/mars2020_spice/document/spiceds_v001.html",
+      "role": "ephemerides, orientation and instrument geometry; exact kernel/version at ingestion",
+      "verified_for_register": true
+    },
+    {
+      "id": "USGS_JEZERO_TRN_CTX_2020",
+      "title": "USGS Mars2020 Terrain Relative Navigation CTX DTM",
+      "url": "https://astrogeology.usgs.gov/search/map/mars_2020_terrain_relative_navigation_ctx_dtm_mosaic",
+      "role": "separate Jezero DEM for cross-check; not pixel-compatible by default",
+      "verified_for_register": true
+    }
+  ]
+}

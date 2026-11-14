@@ -1,0 +1,207 @@
+{
+  "schema_version": "1.0.0",
+  "domain": "imagery_geology",
+  "source_family": "MRO CTX / HiRISE / NASA Mars Trek / PDS geology products",
+  "description": "Lycoris canonical field definitions only; actual native source columns must be confirmed against PDS4 label or raster metadata.",
+  "field_count": 22,
+  "fields": [
+    {
+      "id": "imagery.product_id",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Imagery archive product ID and version",
+      "source_family": "MRO CTX / HiRISE / NASA Mars Trek / PDS geology products",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "imagery.image_epoch_utc",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Original observation epoch, not tile retrieval time",
+      "source_family": "MRO CTX / HiRISE / NASA Mars Trek / PDS geology products",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "imagery.native_resolution_m_pixel",
+      "unit": "m/pixel",
+      "kind": "metadata",
+      "description": "Nominal source image ground sample distance",
+      "source_family": "MRO CTX / HiRISE / NASA Mars Trek / PDS geology products",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "imagery.effective_resolution_m",
+      "unit": "m",
+      "kind": "metadata",
+      "description": "Estimated effective feature resolution",
+      "source_family": "MRO CTX / HiRISE / NASA Mars Trek / PDS geology products",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "imagery.crs_wkt",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Original image coordinate reference, with registration to DEM",
+      "source_family": "MRO CTX / HiRISE / NASA Mars Trek / PDS geology products",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "imagery.band_wavelength_nm",
+      "unit": "nm",
+      "kind": "metadata",
+      "description": "Calibrated sensor channel center wavelength where applicable",
+      "source_family": "MRO CTX / HiRISE / NASA Mars Trek / PDS geology products",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "imagery.pixel_radiance_w_m2_sr_um",
+      "unit": "W/(m^2 sr um)",
+      "kind": "observed",
+      "description": "Spectral radiance only if source is radiometrically calibrated",
+      "source_family": "MRO CTX / HiRISE / NASA Mars Trek / PDS geology products",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "imagery.reflectance_fraction",
+      "unit": "1",
+      "kind": "observed",
+      "description": "Reflectance from properly calibrated image products",
+      "source_family": "MRO CTX / HiRISE / NASA Mars Trek / PDS geology products",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "imagery.visible_obstacle_candidate",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Candidate hazard segmentation; not terrain measurement",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "imagery.crater_boundary_polygon",
+      "unit": null,
+      "kind": "derived",
+      "description": "Crater outline with geospatial confidence",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "geology.geologic_unit_id",
+      "unit": null,
+      "kind": "observed",
+      "description": "Mapped geologic unit from source with feature attribution",
+      "source_family": "MRO CTX / HiRISE / NASA Mars Trek / PDS geology products",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "geology.lithology_class",
+      "unit": null,
+      "kind": "derived",
+      "description": "Interpreted rock class and classification confidence",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "geology.delta_feature_mask",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Mapped Jezero delta footprint under geologic reference",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "geology.mineral_abundance_fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Mineralogic inference where calibrated spectral analysis allows",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "geology.spectral_absorption_strength",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Mineral-specific absorption metric after proper calibration",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "geology.hydration_candidate_index",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Contextual hydrated mineral signal, not proof of liquid water",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "geology.regolith_grain_size_m",
+      "unit": "m",
+      "kind": "derived",
+      "description": "Estimated regolith grain size only if validated imaging permits",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "geology.subsurface_ice_probability",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Posterior subsurface ice probability requiring actual evidence and model",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "geology.radar_depth_m",
+      "unit": "m",
+      "kind": "derived",
+      "description": "Subsurface radar depth estimate with calibrated dielectric assumptions",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "geology.radar_reflector_strength",
+      "unit": "1",
+      "kind": "observed",
+      "description": "Product-specific radar reflection strength with original scaling",
+      "source_family": "MRO CTX / HiRISE / NASA Mars Trek / PDS geology products",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "geology.instrument_detection_limit",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Source-specific detector threshold and units",
+      "source_family": "MRO CTX / HiRISE / NASA Mars Trek / PDS geology products",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "geology.scientific_interest_score",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Explicit mission-scoring result, not a NASA measured quantity",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    }
+  ]
+}

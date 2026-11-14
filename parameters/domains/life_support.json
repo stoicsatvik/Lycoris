@@ -1,0 +1,351 @@
+{
+  "schema_version": "1.0.0",
+  "domain": "life_support",
+  "source_family": "Hypothetical suit/PLSS configuration, not an official Mars EVA suit product",
+  "description": "Canonical interface declarations only; no actual values or official source columns are imputed.",
+  "field_count": 38,
+  "fields": [
+    {
+      "id": "suit.configuration_id",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Versioned hypothetical spacesuit and PLSS profile",
+      "source_family": "Hypothetical suit/PLSS configuration, not an official Mars EVA suit product",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "suit.dry_mass_kg",
+      "unit": "kg",
+      "kind": "scenario",
+      "description": "Suit equipment mass excluding consumables, with boundary documented",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "suit.total_worn_mass_kg",
+      "unit": "kg",
+      "kind": "derived",
+      "description": "Total worn suit and consumable mass",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "suit.oxygen_initial_mol",
+      "unit": "mol",
+      "kind": "scenario",
+      "description": "Stored metabolically available oxygen at mission departure",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "suit.oxygen_remaining_mol",
+      "unit": "mol",
+      "kind": "derived",
+      "description": "Time-varying oxygen inventory after metabolism, leaks and supplies",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "suit.oxygen_supply_flow_mol_s",
+      "unit": "mol/s",
+      "kind": "scenario",
+      "description": "Oxygen regeneration or externally delivered gas flow",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "suit.oxygen_leak_rate_mol_s",
+      "unit": "mol/s",
+      "kind": "scenario",
+      "description": "Oxygen loss rate under assumed suit sealing",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "suit.oxygen_emergency_reserve_mol",
+      "unit": "mol",
+      "kind": "scenario",
+      "description": "Declared reserved O2 inventory, not NASA-authorized threshold",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "suit.oxygen_return_budget_mol",
+      "unit": "mol",
+      "kind": "derived",
+      "description": "Predicted oxygen for complete return under assumptions",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "suit.co2_storage_capacity_mol",
+      "unit": "mol",
+      "kind": "scenario",
+      "description": "Capacity of selected CO2 removal technology",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "suit.co2_removed_mol",
+      "unit": "mol",
+      "kind": "derived",
+      "description": "Accumulated CO2 removed from breathing atmosphere",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "suit.co2_removal_rate_mol_s",
+      "unit": "mol/s",
+      "kind": "scenario",
+      "description": "Hypothetical CO2 scrubber removal performance",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "suit.co2_partial_pressure_pa",
+      "unit": "Pa",
+      "kind": "derived",
+      "description": "Predicted suit gas CO2 partial pressure with gas balance",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "suit.internal_total_pressure_pa",
+      "unit": "Pa",
+      "kind": "scenario",
+      "description": "Nominal internal atmosphere pressure, hypothetical config",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "suit.internal_o2_partial_pressure_pa",
+      "unit": "Pa",
+      "kind": "derived",
+      "description": "Predicted breathable O2 partial pressure given composition and pressure",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "suit.pressure_loss_rate_pa_s",
+      "unit": "Pa/s",
+      "kind": "scenario",
+      "description": "Scenario depressurization rate",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "suit.air_volume_m3",
+      "unit": "m^3",
+      "kind": "scenario",
+      "description": "Pressurized breathing enclosure volume",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "suit.ventilation_mass_flow_kg_s",
+      "unit": "kg/s",
+      "kind": "scenario",
+      "description": "Circulating breathable gas mass flow",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "suit.thermal_cooling_capacity_w",
+      "unit": "W",
+      "kind": "scenario",
+      "description": "Maximum assumed active heat rejection capacity",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "suit.cooling_heat_removed_w",
+      "unit": "W",
+      "kind": "derived",
+      "description": "Achieved heat removal, subject to available resources",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "suit.internal_temperature_k",
+      "unit": "K",
+      "kind": "derived",
+      "description": "Suit regulated internal temperature under thermal model",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "suit.internal_humidity_fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Suit breathing-atmosphere humidity under stated vapor balance",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "suit.battery_initial_j",
+      "unit": "J",
+      "kind": "scenario",
+      "description": "Initial usable energy in suit power supply",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "suit.battery_remaining_j",
+      "unit": "J",
+      "kind": "derived",
+      "description": "Remaining electrical energy",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "suit.electrical_power_draw_w",
+      "unit": "W",
+      "kind": "derived",
+      "description": "Suit system power draw under active equipment configuration",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "suit.battery_reserve_j",
+      "unit": "J",
+      "kind": "scenario",
+      "description": "Energy reserved for return and contingency scenario",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "suit.water_cooling_initial_kg",
+      "unit": "kg",
+      "kind": "scenario",
+      "description": "Initial liquid cooling water inventory if relevant to suit profile",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "suit.water_cooling_remaining_kg",
+      "unit": "kg",
+      "kind": "derived",
+      "description": "Remaining cooling water inventory",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "suit.radiation_shield_areal_density_kg_m2",
+      "unit": "kg/m^2",
+      "kind": "scenario",
+      "description": "Effective shielding column density requires material/geometry details",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "suit.material_equivalent_thickness_m",
+      "unit": "m",
+      "kind": "scenario",
+      "description": "Shield layer effective thickness for explicit material",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "suit.material_density_kg_m3",
+      "unit": "kg/m^3",
+      "kind": "scenario",
+      "description": "Shield or structural material density for selected material",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "suit.structural_load_limit_n",
+      "unit": "N",
+      "kind": "scenario",
+      "description": "Assumed mechanical structural limit, not operational approval",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "suit.mobility_torque_limit_nm",
+      "unit": "N m",
+      "kind": "scenario",
+      "description": "Assumed joint torque capability or restriction",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "suit.fault_mode",
+      "unit": null,
+      "kind": "scenario",
+      "description": "Normal, leak, cooling loss, scrubber failure, power loss",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "suit.fault_detection_delay_s",
+      "unit": "s",
+      "kind": "scenario",
+      "description": "Assumed delay before fault recognition",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "suit.communication_power_draw_w",
+      "unit": "W",
+      "kind": "scenario",
+      "description": "Power required by communications subsystem",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "suit.telemetry_status",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Simulated values are not live PLSS readings",
+      "source_family": "Hypothetical suit/PLSS configuration, not an official Mars EVA suit product",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "suit.life_support_model_status",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Calibrated status and underlying research evidence",
+      "source_family": "Hypothetical suit/PLSS configuration, not an official Mars EVA suit product",
+      "dependencies": [],
+      "status": "declared_unbound"
+    }
+  ]
+}

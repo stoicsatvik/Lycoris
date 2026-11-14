@@ -1,0 +1,269 @@
+{
+  "schema_version": "1.0.0",
+  "domain": "terrain",
+  "source_family": "USGS_JEZERO_SCI_CTX_DEM_2021",
+  "description": "Lycoris canonical field definitions only; actual native source columns must be confirmed against PDS4 label or raster metadata.",
+  "field_count": 24,
+  "fields": [
+    {
+      "id": "terrain.elevation_m",
+      "unit": "m",
+      "kind": "observed",
+      "description": "Elevation in stated vertical datum, sampled from DEM",
+      "source_family": "USGS_JEZERO_SCI_CTX_DEM_2021",
+      "dependencies": [
+        "geodesy.dem_product_id"
+      ],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "terrain.elevation_valid_mask",
+      "unit": "1",
+      "kind": "observed",
+      "description": "NoData/quality validity for terrain cell",
+      "source_family": "USGS_JEZERO_SCI_CTX_DEM_2021",
+      "dependencies": [
+        "geodesy.dem_quality_mask"
+      ],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "terrain.slope_deg",
+      "unit": "deg",
+      "kind": "derived",
+      "description": "Local DEM-estimated slope at stated support scale",
+      "source_family": "model_output",
+      "dependencies": [
+        "terrain.elevation_m",
+        "geodesy.dem_pixel_spacing_x_m",
+        "geodesy.dem_pixel_spacing_y_m"
+      ],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "terrain.aspect_deg",
+      "unit": "deg",
+      "kind": "derived",
+      "description": "Downslope compass azimuth at stated support scale",
+      "source_family": "model_output",
+      "dependencies": [
+        "terrain.elevation_m"
+      ],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "terrain.gradient_east",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Elevation change per horizontal eastward distance",
+      "source_family": "model_output",
+      "dependencies": [
+        "terrain.elevation_m"
+      ],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "terrain.gradient_north",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Elevation change per horizontal northward distance",
+      "source_family": "model_output",
+      "dependencies": [
+        "terrain.elevation_m"
+      ],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "terrain.local_relief_m",
+      "unit": "m",
+      "kind": "derived",
+      "description": "Max-min elevation in declared neighborhood",
+      "source_family": "model_output",
+      "dependencies": [
+        "terrain.elevation_m"
+      ],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "terrain.roughness_rms_m",
+      "unit": "m",
+      "kind": "derived",
+      "description": "Root-mean-square residual relief on specified spatial scale",
+      "source_family": "model_output",
+      "dependencies": [
+        "terrain.elevation_m"
+      ],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "terrain.curvature_profile_m_inv",
+      "unit": "1/m",
+      "kind": "derived",
+      "description": "Profile curvature under documented gridding method",
+      "source_family": "model_output",
+      "dependencies": [
+        "terrain.elevation_m"
+      ],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "terrain.curvature_plan_m_inv",
+      "unit": "1/m",
+      "kind": "derived",
+      "description": "Plan curvature under documented gridding method",
+      "source_family": "model_output",
+      "dependencies": [
+        "terrain.elevation_m"
+      ],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "terrain.traverse_slope_along_path_deg",
+      "unit": "deg",
+      "kind": "derived",
+      "description": "Slope component along proposed travel direction",
+      "source_family": "model_output",
+      "dependencies": [
+        "terrain.slope_deg",
+        "terrain.aspect_deg"
+      ],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "terrain.cross_slope_deg",
+      "unit": "deg",
+      "kind": "derived",
+      "description": "Transverse component of grade along path",
+      "source_family": "model_output",
+      "dependencies": [
+        "terrain.slope_deg",
+        "terrain.aspect_deg"
+      ],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "terrain.obstacle_candidate_mask",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Raster-classified obstacle candidate, not visually validated",
+      "source_family": "model_output",
+      "dependencies": [
+        "terrain.roughness_rms_m"
+      ],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "terrain.crater_rim_candidate_mask",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Potential crater rim classified from terrain",
+      "source_family": "model_output",
+      "dependencies": [
+        "terrain.elevation_m"
+      ],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "terrain.regolith_mechanical_cohesion_pa",
+      "unit": "Pa",
+      "kind": "scenario",
+      "description": "Unmeasured local soil strength; require justified scenario",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "terrain.regolith_internal_friction_deg",
+      "unit": "deg",
+      "kind": "scenario",
+      "description": "Unmeasured soil friction angle; require justified scenario",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "terrain.ground_bearing_capacity_pa",
+      "unit": "Pa",
+      "kind": "scenario",
+      "description": "Hypothetical load-bearing capacity, not inferable from CTX DEM",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "terrain.terrain_resolution_effective_m",
+      "unit": "m",
+      "kind": "metadata",
+      "description": "Effective resolved feature scale based on source and processing",
+      "source_family": "USGS_JEZERO_SCI_CTX_DEM_2021",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "terrain.interpolation_error_m",
+      "unit": "m",
+      "kind": "derived",
+      "description": "Estimated DEM resampling or interpolation error",
+      "source_family": "model_output",
+      "dependencies": [
+        "terrain.elevation_m"
+      ],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "terrain.slope_uncertainty_deg",
+      "unit": "deg",
+      "kind": "derived",
+      "description": "Slope uncertainty under source and registration model",
+      "source_family": "model_output",
+      "dependencies": [
+        "terrain.slope_deg",
+        "geodesy.vertical_error_m"
+      ],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "terrain.local_ice_likelihood",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Conditional inferred ice likelihood when suitable separate evidence exists",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "terrain.visibility_line_of_sight",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Geometric line-of-sight under DEM and target heights",
+      "source_family": "model_output",
+      "dependencies": [
+        "terrain.elevation_m"
+      ],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "terrain.available_coverage_fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Fraction of relevant region with usable measured terrain",
+      "source_family": "model_output",
+      "dependencies": [
+        "terrain.elevation_valid_mask"
+      ],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "terrain.traversability_status",
+      "unit": null,
+      "kind": "derived",
+      "description": "One of passable, blocked, unknown conditional on limits",
+      "source_family": "model_output",
+      "dependencies": [
+        "terrain.slope_deg",
+        "terrain.elevation_valid_mask"
+      ],
+      "status": "declared_unbound"
+    }
+  ]
+}

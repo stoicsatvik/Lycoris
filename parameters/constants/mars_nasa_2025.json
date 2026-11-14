@@ -1,0 +1,323 @@
+{
+  "schema_version": "1.0.0",
+  "source_id": "NASA_MARS_FACT_SHEET_2025",
+  "source_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html",
+  "source_date": "2025-05-19",
+  "usage": "reference factsheet values, not local mission forecast",
+  "units_policy": "values converted from NASA fact sheet display units to declared units; retain source rounded precision",
+  "entry_count": 39,
+  "values": [
+    {
+      "id": "mars.mass_kg",
+      "quantity": "Mars planetary mass",
+      "value": 6.4169e+23,
+      "unit": "kg",
+      "category": "planetary_reference",
+      "caveat": "Reference value; not a spatially varying site measurement."
+    },
+    {
+      "id": "mars.radius_equatorial_mean_m",
+      "quantity": "Mars equatorial radius, fact-sheet rounded",
+      "value": 3396200,
+      "unit": "m",
+      "category": "planetary_reference",
+      "caveat": "Reference value; not a spatially varying site measurement."
+    },
+    {
+      "id": "mars.radius_polar_mean_m",
+      "quantity": "Mars polar radius, fact-sheet rounded",
+      "value": 3376200,
+      "unit": "m",
+      "category": "planetary_reference",
+      "caveat": "Reference value; not a spatially varying site measurement."
+    },
+    {
+      "id": "mars.radius_volumetric_mean_m",
+      "quantity": "Mars volumetric mean radius",
+      "value": 3389500,
+      "unit": "m",
+      "category": "planetary_reference",
+      "caveat": "Reference value; not a spatially varying site measurement."
+    },
+    {
+      "id": "mars.flattening",
+      "quantity": "Mars flattening",
+      "value": 0.00589,
+      "unit": "1",
+      "category": "planetary_reference",
+      "caveat": "Reference value; not a spatially varying site measurement."
+    },
+    {
+      "id": "mars.mean_density_kg_m3",
+      "quantity": "Mean density",
+      "value": 3934,
+      "unit": "kg/m^3",
+      "category": "planetary_reference",
+      "caveat": "Reference value; not a spatially varying site measurement."
+    },
+    {
+      "id": "mars.surface_gravity_mean_m_s2",
+      "quantity": "Mean surface gravity",
+      "value": 3.73,
+      "unit": "m/s^2",
+      "category": "planetary_reference",
+      "caveat": "Global reference only. Local gravity varies with altitude/latitude; do not silently use as exact local acceleration."
+    },
+    {
+      "id": "mars.surface_gravity_equator_m_s2",
+      "quantity": "Surface acceleration at equator",
+      "value": 3.69,
+      "unit": "m/s^2",
+      "category": "planetary_reference",
+      "caveat": "Reference value; not a spatially varying site measurement."
+    },
+    {
+      "id": "mars.surface_gravity_pole_m_s2",
+      "quantity": "Surface acceleration at pole",
+      "value": 3.73,
+      "unit": "m/s^2",
+      "category": "planetary_reference",
+      "caveat": "Reference value; not a spatially varying site measurement."
+    },
+    {
+      "id": "mars.escape_speed_m_s",
+      "quantity": "Escape speed",
+      "value": 5030,
+      "unit": "m/s",
+      "category": "planetary_reference",
+      "caveat": "Reference value; not a spatially varying site measurement."
+    },
+    {
+      "id": "mars.gravitational_parameter_m3_s2",
+      "quantity": "Mars GM",
+      "value": 42828000000000,
+      "unit": "m^3/s^2",
+      "category": "planetary_reference",
+      "caveat": "Reference value; not a spatially varying site measurement."
+    },
+    {
+      "id": "mars.mean_solar_day_hours",
+      "quantity": "Mean length of day",
+      "value": 24.6597,
+      "unit": "h",
+      "category": "time_reference",
+      "caveat": "NASA fact sheet precision is rounded. Not an exact LMST conversion ephemeris."
+    },
+    {
+      "id": "mars.sidereal_rotation_hours",
+      "quantity": "Sidereal rotation period",
+      "value": 24.6229,
+      "unit": "h",
+      "category": "time_reference",
+      "caveat": "Do not interchange sidereal rotation and the mean solar day."
+    },
+    {
+      "id": "mars.orbit_sidereal_period_earth_days",
+      "quantity": "Sidereal orbital period",
+      "value": 686.98,
+      "unit": "d_earth",
+      "category": "orbital_reference",
+      "caveat": "Earth days of 86400 s; not Mars sols."
+    },
+    {
+      "id": "mars.orbit_tropical_period_earth_days",
+      "quantity": "Mean tropical orbital period",
+      "value": 686.972,
+      "unit": "d_earth",
+      "category": "orbital_reference",
+      "caveat": "The source notes small variation with epoch."
+    },
+    {
+      "id": "mars.orbit_semimajor_axis_m",
+      "quantity": "Orbital semimajor axis",
+      "value": 227956000000,
+      "unit": "m",
+      "category": "orbital_reference",
+      "caveat": "Not the instantaneous Mars–Sun distance."
+    },
+    {
+      "id": "mars.orbit_perihelion_distance_m",
+      "quantity": "Perihelion",
+      "value": 206650000000,
+      "unit": "m",
+      "category": "orbital_reference",
+      "caveat": "Orbital reference."
+    },
+    {
+      "id": "mars.orbit_aphelion_distance_m",
+      "quantity": "Aphelion",
+      "value": 249261000000,
+      "unit": "m",
+      "category": "orbital_reference",
+      "caveat": "Orbital reference."
+    },
+    {
+      "id": "mars.orbit_eccentricity",
+      "quantity": "Orbital eccentricity",
+      "value": 0.0935,
+      "unit": "1",
+      "category": "orbital_reference",
+      "caveat": "Reference value; not a spatially varying site measurement."
+    },
+    {
+      "id": "mars.orbit_inclination_deg",
+      "quantity": "Orbit inclination",
+      "value": 1.848,
+      "unit": "deg",
+      "category": "orbital_reference",
+      "caveat": "Reference value; not a spatially varying site measurement."
+    },
+    {
+      "id": "mars.obliquity_deg",
+      "quantity": "Axial obliquity to orbit",
+      "value": 25.19,
+      "unit": "deg",
+      "category": "orbital_reference",
+      "caveat": "Reference obliquity; use dated ephemerides for precision solar geometry."
+    },
+    {
+      "id": "mars.mean_top_atmosphere_solar_irradiance_w_m2",
+      "quantity": "Solar irradiance reference",
+      "value": 586.2,
+      "unit": "W/m^2",
+      "category": "planetary_reference",
+      "caveat": "Reference insolation near orbital mean; not ground-level light, local weather or fixed instantaneous irradiance."
+    },
+    {
+      "id": "mars.bond_albedo",
+      "quantity": "Bond albedo",
+      "value": 0.25,
+      "unit": "1",
+      "category": "planetary_reference",
+      "caveat": "Global energy-budget reference; not local ground reflectance."
+    },
+    {
+      "id": "mars.geometric_albedo",
+      "quantity": "Geometric albedo",
+      "value": 0.17,
+      "unit": "1",
+      "category": "planetary_reference",
+      "caveat": "Reference value; not a spatially varying site measurement."
+    },
+    {
+      "id": "mars.blackbody_temperature_reference_k",
+      "quantity": "Black-body temperature",
+      "value": 209.8,
+      "unit": "K",
+      "category": "planetary_reference",
+      "caveat": "Planetary effective black-body temperature; not local ambient surface temperature."
+    },
+    {
+      "id": "mars.atmosphere.pressure_at_mean_radius_reference_pa",
+      "quantity": "Surface pressure at mean radius",
+      "value": 636,
+      "unit": "Pa",
+      "category": "climatological_reference",
+      "caveat": "6.36 millibar from NASA factsheet; local pressure varies strongly by altitude/season/time; DO NOT use as Jezero reading."
+    },
+    {
+      "id": "mars.atmosphere.pressure_seasonal_reference_min_pa",
+      "quantity": "Reported pressure reference lower bound",
+      "value": 400,
+      "unit": "Pa",
+      "category": "climatological_reference",
+      "caveat": "NASA factsheet states 4.0 mb at mean radius by season; not hard site bound."
+    },
+    {
+      "id": "mars.atmosphere.pressure_seasonal_reference_max_pa",
+      "quantity": "Reported pressure reference upper bound",
+      "value": 870,
+      "unit": "Pa",
+      "category": "climatological_reference",
+      "caveat": "NASA factsheet states 8.7 mb at mean radius by season; not hard site bound."
+    },
+    {
+      "id": "mars.atmosphere.density_reference_kg_m3",
+      "quantity": "Mean surface atmospheric density",
+      "value": 0.016,
+      "unit": "kg/m^3",
+      "category": "climatological_reference",
+      "caveat": "Approximate mean; NASA lists +/- 0.006 kg/m^3."
+    },
+    {
+      "id": "mars.atmosphere.density_reference_spread_kg_m3",
+      "quantity": "Reported density +/- spread",
+      "value": 0.006,
+      "unit": "kg/m^3",
+      "category": "climatological_reference",
+      "caveat": "NASA fact-sheet +/- reference not a calibrated probability standard deviation."
+    },
+    {
+      "id": "mars.atmosphere.scale_height_reference_m",
+      "quantity": "Atmospheric scale height",
+      "value": 11000,
+      "unit": "m",
+      "category": "climatological_reference",
+      "caveat": "Approximate; does not replace profile observations."
+    },
+    {
+      "id": "mars.atmosphere.mean_temperature_reference_k",
+      "quantity": "Mean atmospheric temperature",
+      "value": 214,
+      "unit": "K",
+      "category": "climatological_reference",
+      "caveat": "Approximate global reference, not Jezero temperature for a chosen sol."
+    },
+    {
+      "id": "mars.atmosphere.mean_molar_mass_reference_g_mol",
+      "quantity": "Atmospheric mean molar mass",
+      "value": 43.49,
+      "unit": "g/mol",
+      "category": "climatological_reference",
+      "caveat": "Reference atmospheric composition model."
+    },
+    {
+      "id": "mars.atmosphere.co2_volume_fraction_reference",
+      "quantity": "Atmospheric CO2 reference volume fraction",
+      "value": 0.951,
+      "unit": "1",
+      "category": "composition_reference",
+      "caveat": "Global reference mixture, not a local time-resolved sample."
+    },
+    {
+      "id": "mars.atmosphere.n2_volume_fraction_reference",
+      "quantity": "Atmospheric N2 reference volume fraction",
+      "value": 0.0259,
+      "unit": "1",
+      "category": "composition_reference",
+      "caveat": "Reference value; not a spatially varying site measurement."
+    },
+    {
+      "id": "mars.atmosphere.ar_volume_fraction_reference",
+      "quantity": "Atmospheric Ar reference volume fraction",
+      "value": 0.0194,
+      "unit": "1",
+      "category": "composition_reference",
+      "caveat": "Reference value; not a spatially varying site measurement."
+    },
+    {
+      "id": "mars.atmosphere.o2_volume_fraction_reference",
+      "quantity": "Atmospheric O2 reference volume fraction",
+      "value": 0.0016,
+      "unit": "1",
+      "category": "composition_reference",
+      "caveat": "Trace Martian atmospheric oxygen is not respirable atmosphere for an unprotected astronaut."
+    },
+    {
+      "id": "mars.atmosphere.co_volume_fraction_reference",
+      "quantity": "Atmospheric CO reference volume fraction",
+      "value": 0.0006,
+      "unit": "1",
+      "category": "composition_reference",
+      "caveat": "Reference value; not a spatially varying site measurement."
+    },
+    {
+      "id": "mars.atmosphere.h2o_volume_fraction_reference",
+      "quantity": "Atmospheric H2O reference trace fraction",
+      "value": 0.00021,
+      "unit": "1",
+      "category": "composition_reference",
+      "caveat": "210 ppm source reference; variable with local atmospheric conditions."
+    }
+  ]
+}

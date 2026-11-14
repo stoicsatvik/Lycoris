@@ -1,0 +1,66 @@
+{
+  "registry_version": "1.0.0",
+  "id": "USGS_JEZERO_SCI_CTX_DEM_2021",
+  "source_url": "https://astrogeology.usgs.gov/search/map/mars_2020_science_investigation_ctx_dem_mosaic",
+  "scope": "Specific CTX science-investigation DEM; these are dataset metadata, not universal Mars constants.",
+  "status": "product_metadata_verified_raster_not_ingested",
+  "fields": [
+    {
+      "id": "jezero.ctx_science_dem.pixel_spacing_m",
+      "value": 20,
+      "unit": "m/pixel",
+      "context": "nominal raster posting; does not establish effective terrain resolving power"
+    },
+    {
+      "id": "jezero.ctx_science_dem.columns",
+      "value": 4456,
+      "unit": "pixel"
+    },
+    {
+      "id": "jezero.ctx_science_dem.rows",
+      "value": 5067,
+      "unit": "pixel"
+    },
+    {
+      "id": "jezero.ctx_science_dem.bands",
+      "value": 1,
+      "unit": "1"
+    },
+    {
+      "id": "jezero.ctx_science_dem.crs_latitude_type",
+      "value": "planetocentric",
+      "unit": null
+    },
+    {
+      "id": "jezero.ctx_science_dem.crs_longitude_direction",
+      "value": "positive_east",
+      "unit": null
+    },
+    {
+      "id": "jezero.ctx_science_dem.crs_longitude_domain",
+      "value": "-180_to_180",
+      "unit": "deg"
+    },
+    {
+      "id": "jezero.ctx_science_dem.projection",
+      "value": "equirectangular",
+      "unit": null
+    },
+    {
+      "id": "jezero.ctx_science_dem.projection_reference_sphere_radius_m",
+      "value": 3396160,
+      "unit": "m",
+      "context": "Product-specific projection sphere radius; differs from NASA volumetric mean radius"
+    },
+    {
+      "id": "jezero.ctx_science_dem.vertical_unit",
+      "value": "m",
+      "unit": null
+    }
+  ],
+  "cautions": [
+    "Read actual GeoTIFF CRS, affine transform, nodata and vertical datum before raster use.",
+    "Coverage may contain gaps and nonuniform vertical/horizontal accuracy.",
+    "TRN CTX product uses a different raster geometry and nominal sphere radius; never mix pixel indices."
+  ]
+}

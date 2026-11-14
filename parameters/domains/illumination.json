@@ -1,0 +1,170 @@
+{
+  "schema_version": "1.0.0",
+  "domain": "illumination",
+  "source_family": "NAIF_SPICE_MARS2020 / PDS_MARS2020_MEDA",
+  "description": "Lycoris canonical field definitions only; actual native source columns must be confirmed against PDS4 label or raster metadata.",
+  "field_count": 17,
+  "fields": [
+    {
+      "id": "illumination.epoch_utc",
+      "unit": null,
+      "kind": "scenario",
+      "description": "Mission epoch in UTC if scenario specified",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "illumination.sol_index",
+      "unit": "sol",
+      "kind": "derived",
+      "description": "Mars sol tied to mission time conventions",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "illumination.ls_deg",
+      "unit": "deg",
+      "kind": "derived",
+      "description": "Areocentric solar longitude from dated geometry/kernel",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "illumination.local_mean_solar_time_hours",
+      "unit": "h",
+      "kind": "derived",
+      "description": "Local mean solar time using declared Mars longitude and epoch",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "illumination.local_true_solar_time_hours",
+      "unit": "h",
+      "kind": "derived",
+      "description": "Local true solar time with equation-of-time correction",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "illumination.sun_azimuth_deg",
+      "unit": "deg",
+      "kind": "derived",
+      "description": "Local topocentric solar azimuth in declared convention",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "illumination.sun_elevation_deg",
+      "unit": "deg",
+      "kind": "derived",
+      "description": "Local solar elevation angle above local horizon",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "illumination.sun_zenith_deg",
+      "unit": "deg",
+      "kind": "derived",
+      "description": "Complement of sun elevation",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "illumination.sun_mars_distance_au",
+      "unit": "AU",
+      "kind": "derived",
+      "description": "Instantaneous heliocentric distance from ephemeris",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "illumination.top_atmosphere_irradiance_w_m2",
+      "unit": "W/m^2",
+      "kind": "derived",
+      "description": "Top-of-atmosphere irradiance under dated orbital geometry",
+      "source_family": "model_output",
+      "dependencies": [
+        "illumination.sun_mars_distance_au"
+      ],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "illumination.ground_direct_irradiance_w_m2",
+      "unit": "W/m^2",
+      "kind": "derived",
+      "description": "Surface direct solar irradiance under specified aerosol model",
+      "source_family": "model_output",
+      "dependencies": [
+        "illumination.top_atmosphere_irradiance_w_m2",
+        "atmosphere.aerosol_optical_depth"
+      ],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "illumination.ground_diffuse_irradiance_w_m2",
+      "unit": "W/m^2",
+      "kind": "derived",
+      "description": "Diffuse surface component under atmospheric radiative transfer model",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "illumination.shadow_mask",
+      "unit": "1",
+      "kind": "derived",
+      "description": "DEM + sun geometric candidate shadows, not full optical visibility",
+      "source_family": "model_output",
+      "dependencies": [
+        "illumination.sun_elevation_deg",
+        "terrain.elevation_m"
+      ],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "illumination.remaining_daylight_s",
+      "unit": "s",
+      "kind": "derived",
+      "description": "Time until local terrain-dependent twilight threshold",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "illumination.panel_incident_irradiance_w_m2",
+      "unit": "W/m^2",
+      "kind": "derived",
+      "description": "Incident light on specified panel orientation and sky model",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "illumination.uv_flux_w_m2",
+      "unit": "W/m^2",
+      "kind": "observed",
+      "description": "UV optical flux where appropriate calibrated observations exist",
+      "source_family": "NAIF_SPICE_MARS2020 / PDS_MARS2020_MEDA",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "illumination.observation_geometry_quality",
+      "unit": null,
+      "kind": "metadata",
+      "description": "SPICE kernels and instrument pointing data quality state",
+      "source_family": "NAIF_SPICE_MARS2020 / PDS_MARS2020_MEDA",
+      "dependencies": [],
+      "status": "declared_unbound"
+    }
+  ]
+}

@@ -1,0 +1,351 @@
+{
+  "schema_version": "1.0.0",
+  "domain": "mission_navigation",
+  "source_family": "Hypothetical mission planner plus source-backed terrain and environment",
+  "description": "Canonical interface declarations only; no actual values or official source columns are imputed.",
+  "field_count": 38,
+  "fields": [
+    {
+      "id": "mission.scenario_id",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Versioned mission scenario identifier",
+      "source_family": "Hypothetical mission planner plus source-backed terrain and environment",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "mission.scenario_epoch_utc",
+      "unit": null,
+      "kind": "scenario",
+      "description": "Hypothetical mission start time",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "mission.crew_count",
+      "unit": "1",
+      "kind": "scenario",
+      "description": "Number of astronauts in EVA",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "mission.origin_latitude_deg",
+      "unit": "deg",
+      "kind": "scenario",
+      "description": "Habitat/start geodetic latitude",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "mission.origin_longitude_east_deg",
+      "unit": "deg",
+      "kind": "scenario",
+      "description": "Habitat/start geodetic longitude",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "mission.target_latitude_deg",
+      "unit": "deg",
+      "kind": "scenario",
+      "description": "Geoscience target latitude",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "mission.target_longitude_east_deg",
+      "unit": "deg",
+      "kind": "scenario",
+      "description": "Geoscience target longitude",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "mission.origin_elevation_m",
+      "unit": "m",
+      "kind": "derived",
+      "description": "Sampled habitat elevation",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "mission.target_elevation_m",
+      "unit": "m",
+      "kind": "derived",
+      "description": "Sampled target elevation",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "mission.elapsed_time_s",
+      "unit": "s",
+      "kind": "derived",
+      "description": "Mission clock since EVA start",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "mission.time_outbound_s",
+      "unit": "s",
+      "kind": "derived",
+      "description": "Summed outbound traverse and planned stops",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "mission.time_return_s",
+      "unit": "s",
+      "kind": "derived",
+      "description": "Complete modeled route return time",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "mission.science_stop_duration_s",
+      "unit": "s",
+      "kind": "scenario",
+      "description": "Scheduled sampling and observational work duration",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "mission.rest_total_s",
+      "unit": "s",
+      "kind": "derived",
+      "description": "Modeled sum of rest stops over all segments",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "mission.walking_distance_m",
+      "unit": "m",
+      "kind": "derived",
+      "description": "Integrated walked 3D or 2D surface route length with convention stated",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "mission.route_terrain_exposure_s",
+      "unit": "s",
+      "kind": "derived",
+      "description": "Duration on selected terrain hazard segments",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "mission.geodesic_lower_bound_m",
+      "unit": "m",
+      "kind": "derived",
+      "description": "Reference geometry lower bound on route length",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "mission.route_graph_cell_count",
+      "unit": "1",
+      "kind": "metadata",
+      "description": "Number of analyzed graph cells for this result",
+      "source_family": "Hypothetical mission planner plus source-backed terrain and environment",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "mission.max_route_slope_deg",
+      "unit": "deg",
+      "kind": "derived",
+      "description": "Maximum traversed DEM-estimated slope, footprint qualified",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "mission.eva_time_limit_s",
+      "unit": "s",
+      "kind": "scenario",
+      "description": "Scenario-specific time budget, not a universal NASA EVA limit",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "mission.speed_limit_m_s",
+      "unit": "m/s",
+      "kind": "scenario",
+      "description": "Chosen operational locomotion speed limit",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "mission.slope_hard_limit_deg",
+      "unit": "deg",
+      "kind": "scenario",
+      "description": "Explicit assumed terrain cutoff, not NASA-certified EVA constraint",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "mission.slope_unknown_action",
+      "unit": null,
+      "kind": "scenario",
+      "description": "Unknown terrain policy: reject, warn or request evidence",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "mission.science_value_score",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Score under disclosed task-specific weights and assumptions",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "mission.human_activity_sequence",
+      "unit": null,
+      "kind": "scenario",
+      "description": "Time-ordered activity plan; structured list stored separately",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "mission.route_waypoints",
+      "unit": null,
+      "kind": "derived",
+      "description": "Georeferenced waypoint series with individual provenance",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "mission.route_status",
+      "unit": null,
+      "kind": "derived",
+      "description": "Valid, invalid, no_path or insufficient_data",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "mission.return_path_status",
+      "unit": null,
+      "kind": "derived",
+      "description": "Return connectivity and evaluated feasibility status",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "mission.resource_margin_oxygen_mol",
+      "unit": "mol",
+      "kind": "derived",
+      "description": "Oxygen after roundtrip minus scenario reserve",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "mission.resource_margin_energy_j",
+      "unit": "J",
+      "kind": "derived",
+      "description": "Battery after roundtrip minus scenario reserve",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "mission.resource_margin_time_s",
+      "unit": "s",
+      "kind": "derived",
+      "description": "Available time minus complete modeled EVA duration",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "mission.resource_margin_cooling_j",
+      "unit": "J",
+      "kind": "derived",
+      "description": "Thermal removal margin over time with model details",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "mission.modeled_risk_metric",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Scenario-specific risk proxy, explicitly NOT official failure probability",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "mission.traverse_action",
+      "unit": null,
+      "kind": "scenario",
+      "description": "Walk, traverse with rover, rest, sample, abort or return",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "mission.return_emergency_mode",
+      "unit": null,
+      "kind": "scenario",
+      "description": "Assumed fallback strategy requiring separate feasibility assessment",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "mission.recommended_route_id",
+      "unit": null,
+      "kind": "derived",
+      "description": "Chosen route after constraints and multiobjective analysis",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "mission.route_pareto_rank",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Nondominated solution set member under specified objectives",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "mission.model_decision_status",
+      "unit": null,
+      "kind": "derived",
+      "description": "feasible_under_assumptions, constraint_violation, uncertain, no_route, insufficient_evidence",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    }
+  ]
+}

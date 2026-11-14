@@ -1,0 +1,257 @@
+{
+  "schema_version": "1.0.0",
+  "domain": "atmosphere",
+  "source_family": "PDS_MARS2020_MEDA",
+  "description": "Lycoris canonical field definitions only; actual native source columns must be confirmed against PDS4 label or raster metadata.",
+  "field_count": 26,
+  "fields": [
+    {
+      "id": "atmosphere.air_temperature_k",
+      "unit": "K",
+      "kind": "observed",
+      "description": "Near-surface air temperature in Jezero from correct MEDA product",
+      "source_family": "PDS_MARS2020_MEDA",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "atmosphere.air_temperature_sensor_height_m",
+      "unit": "m",
+      "kind": "metadata",
+      "description": "Height of each instrument temperature measurement",
+      "source_family": "PDS_MARS2020_MEDA",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "atmosphere.surface_brightness_temperature_k",
+      "unit": "K",
+      "kind": "observed",
+      "description": "Thermal infrared brightness temperature, not automatically kinetic temperature",
+      "source_family": "PDS_MARS2020_MEDA",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "atmosphere.surface_kinetic_temperature_k",
+      "unit": "K",
+      "kind": "derived",
+      "description": "Surface temperature inferred from thermal model and assumptions",
+      "source_family": "model_output",
+      "dependencies": [
+        "atmosphere.surface_brightness_temperature_k"
+      ],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "atmosphere.pressure_pa",
+      "unit": "Pa",
+      "kind": "observed",
+      "description": "Atmospheric pressure at sensor location and measurement time",
+      "source_family": "PDS_MARS2020_MEDA",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "atmosphere.relative_humidity_fraction",
+      "unit": "1",
+      "kind": "observed",
+      "description": "Instrument RH converted to fraction with defined reference regime",
+      "source_family": "PDS_MARS2020_MEDA",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "atmosphere.water_vapor_partial_pressure_pa",
+      "unit": "Pa",
+      "kind": "derived",
+      "description": "Derived water vapor partial pressure when saturation reference is defined",
+      "source_family": "model_output",
+      "dependencies": [
+        "atmosphere.air_temperature_k",
+        "atmosphere.relative_humidity_fraction"
+      ],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "atmosphere.wind_speed_m_s",
+      "unit": "m/s",
+      "kind": "observed",
+      "description": "Measured horizontal wind magnitude at measurement height",
+      "source_family": "PDS_MARS2020_MEDA",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "atmosphere.wind_direction_deg",
+      "unit": "deg",
+      "kind": "observed",
+      "description": "MEDA wind direction; document from/to direction convention",
+      "source_family": "PDS_MARS2020_MEDA",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "atmosphere.wind_u_east_m_s",
+      "unit": "m/s",
+      "kind": "derived",
+      "description": "Eastward wind vector component",
+      "source_family": "model_output",
+      "dependencies": [
+        "atmosphere.wind_speed_m_s",
+        "atmosphere.wind_direction_deg"
+      ],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "atmosphere.wind_v_north_m_s",
+      "unit": "m/s",
+      "kind": "derived",
+      "description": "Northward wind vector component",
+      "source_family": "model_output",
+      "dependencies": [
+        "atmosphere.wind_speed_m_s",
+        "atmosphere.wind_direction_deg"
+      ],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "atmosphere.wind_gust_m_s",
+      "unit": "m/s",
+      "kind": "derived",
+      "description": "Peak wind over declared averaging window",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "atmosphere.density_kg_m3",
+      "unit": "kg/m^3",
+      "kind": "derived",
+      "description": "Atmospheric bulk density from composition/pressure/temperature",
+      "source_family": "model_output",
+      "dependencies": [
+        "atmosphere.pressure_pa",
+        "atmosphere.air_temperature_k"
+      ],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "atmosphere.mean_molar_mass_kg_mol",
+      "unit": "kg/mol",
+      "kind": "scenario",
+      "description": "Assumed local gas mixture until relevant observations constrain it",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "atmosphere.co2_mole_fraction",
+      "unit": "1",
+      "kind": "scenario",
+      "description": "Scenario CO2 abundance; global fact-sheet baseline is separate",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "atmosphere.o2_mole_fraction",
+      "unit": "1",
+      "kind": "scenario",
+      "description": "Scenario free O2 mole fraction; not respirable",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "atmosphere.aerosol_optical_depth",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Inferred atmospheric dust optical depth from appropriate calibrated optical observations",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "atmosphere.dust_scattering_radiance_w_m2_sr",
+      "unit": "W/(m^2 sr)",
+      "kind": "observed",
+      "description": "Calibrated sky radiance from appropriate optical channel if available",
+      "source_family": "PDS_MARS2020_MEDA",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "atmosphere.dust_particle_size_um",
+      "unit": "um",
+      "kind": "derived",
+      "description": "Aerosol characteristic size inferred only with calibrated retrieval",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "atmosphere.dust_mass_concentration_kg_m3",
+      "unit": "kg/m^3",
+      "kind": "derived",
+      "description": "Derived dust abundance only if valid retrieval exists",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "atmosphere.air_thermal_conductivity_w_m_k",
+      "unit": "W/(m K)",
+      "kind": "derived",
+      "description": "Temperature/composition-dependent gas conductivity",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "atmosphere.air_heat_capacity_j_kg_k",
+      "unit": "J/(kg K)",
+      "kind": "derived",
+      "description": "Scenario mixture heat capacity with documented model",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "atmosphere.weather_observation_sol",
+      "unit": "sol",
+      "kind": "observed",
+      "description": "Observation mission sol, not current weather forecast",
+      "source_family": "PDS_MARS2020_MEDA",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "atmosphere.weather_quality_mask",
+      "unit": "1",
+      "kind": "observed",
+      "description": "Sensor-specific PDS calibration/health flag interpretation",
+      "source_family": "PDS_MARS2020_MEDA",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "atmosphere.weather_interpolation_uncertainty_k",
+      "unit": "K",
+      "kind": "derived",
+      "description": "Temperature interpolation uncertainty in time and space",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "atmosphere.forecast_available",
+      "unit": "1",
+      "kind": "metadata",
+      "description": "Whether scientifically justified external forecast exists; false otherwise",
+      "source_family": "PDS_MARS2020_MEDA",
+      "dependencies": [],
+      "status": "declared_unbound"
+    }
+  ]
+}

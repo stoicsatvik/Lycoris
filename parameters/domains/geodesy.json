@@ -1,0 +1,241 @@
+{
+  "schema_version": "1.0.0",
+  "domain": "geodesy",
+  "source_family": "USGS_JEZERO_SCI_CTX_DEM_2021 / NAIF_SPICE_MARS2020",
+  "description": "Lycoris canonical field definitions only; actual native source columns must be confirmed against PDS4 label or raster metadata.",
+  "field_count": 24,
+  "fields": [
+    {
+      "id": "position.latitude_deg",
+      "unit": "deg",
+      "kind": "scenario",
+      "description": "Target planetocentric latitude, if explicitly configured",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "position.longitude_east_deg",
+      "unit": "deg",
+      "kind": "scenario",
+      "description": "Target east-positive longitude, declared domain",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "geodesy.coordinate_frame",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Named planet-fixed Mars reference frame",
+      "source_family": "USGS_JEZERO_SCI_CTX_DEM_2021 / NAIF_SPICE_MARS2020",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "geodesy.latitude_convention",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Planetocentric or planetographic coordinate basis",
+      "source_family": "USGS_JEZERO_SCI_CTX_DEM_2021 / NAIF_SPICE_MARS2020",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "geodesy.longitude_convention",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Direction, origin and domain of longitude",
+      "source_family": "USGS_JEZERO_SCI_CTX_DEM_2021 / NAIF_SPICE_MARS2020",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "geodesy.crs_wkt",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Actual geospatial CRS taken from dataset",
+      "source_family": "USGS_JEZERO_SCI_CTX_DEM_2021 / NAIF_SPICE_MARS2020",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "geodesy.raster_affine_transform",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Raster pixel-to-projected-coordinate mapping",
+      "source_family": "USGS_JEZERO_SCI_CTX_DEM_2021 / NAIF_SPICE_MARS2020",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "geodesy.elevation_vertical_datum",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Surface elevation vertical reference",
+      "source_family": "USGS_JEZERO_SCI_CTX_DEM_2021 / NAIF_SPICE_MARS2020",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "geodesy.dem_product_id",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Immutable source product identifier",
+      "source_family": "USGS_JEZERO_SCI_CTX_DEM_2021 / NAIF_SPICE_MARS2020",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "geodesy.dem_product_version",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Product processing release identifier",
+      "source_family": "USGS_JEZERO_SCI_CTX_DEM_2021 / NAIF_SPICE_MARS2020",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "geodesy.dem_pixel_spacing_x_m",
+      "unit": "m",
+      "kind": "metadata",
+      "description": "Raster horizontal pixel spacing in local projected frame",
+      "source_family": "USGS_JEZERO_SCI_CTX_DEM_2021 / NAIF_SPICE_MARS2020",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "geodesy.dem_pixel_spacing_y_m",
+      "unit": "m",
+      "kind": "metadata",
+      "description": "Raster vertical pixel spacing in local projected frame",
+      "source_family": "USGS_JEZERO_SCI_CTX_DEM_2021 / NAIF_SPICE_MARS2020",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "geodesy.dem_nodata_value",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Native raster sentinel, with separate mask",
+      "source_family": "USGS_JEZERO_SCI_CTX_DEM_2021 / NAIF_SPICE_MARS2020",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "geodesy.dem_quality_mask",
+      "unit": "1",
+      "kind": "observed",
+      "description": "Data-validity mask from product metadata",
+      "source_family": "USGS_JEZERO_SCI_CTX_DEM_2021 / NAIF_SPICE_MARS2020",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "geodesy.sample_x_m",
+      "unit": "m",
+      "kind": "derived",
+      "description": "Projected sample easting",
+      "source_family": "model_output",
+      "dependencies": [
+        "position.longitude_east_deg",
+        "position.latitude_deg"
+      ],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "geodesy.sample_y_m",
+      "unit": "m",
+      "kind": "derived",
+      "description": "Projected sample northing",
+      "source_family": "model_output",
+      "dependencies": [
+        "position.longitude_east_deg",
+        "position.latitude_deg"
+      ],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "geodesy.map_scale_m_per_px",
+      "unit": "m/pixel",
+      "kind": "derived",
+      "description": "Map-ground resolution at sampled location",
+      "source_family": "model_output",
+      "dependencies": [
+        "geodesy.crs_wkt"
+      ],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "geodesy.horizontal_registration_error_m",
+      "unit": "m",
+      "kind": "scenario",
+      "description": "Estimated co-registration uncertainty, not assumed zero",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "geodesy.vertical_error_m",
+      "unit": "m",
+      "kind": "scenario",
+      "description": "Estimated height uncertainty, source-dependent",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "geodesy.local_gravity_m_s2",
+      "unit": "m/s^2",
+      "kind": "derived",
+      "description": "Location-dependent gravity under explicit model",
+      "source_family": "model_output",
+      "dependencies": [
+        "position.latitude_deg",
+        "position.longitude_east_deg"
+      ],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "geodesy.distance_geodesic_m",
+      "unit": "m",
+      "kind": "derived",
+      "description": "Surface distance using declared planet shape and points",
+      "source_family": "model_output",
+      "dependencies": [
+        "position.latitude_deg",
+        "position.longitude_east_deg"
+      ],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "geodesy.rover_epoch_utc",
+      "unit": null,
+      "kind": "observed",
+      "description": "Observation epoch if supplied by source instrument",
+      "source_family": "USGS_JEZERO_SCI_CTX_DEM_2021 / NAIF_SPICE_MARS2020",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "geodesy.mars_sol",
+      "unit": "sol",
+      "kind": "observed",
+      "description": "Mission-specific sol counter tied to source product",
+      "source_family": "USGS_JEZERO_SCI_CTX_DEM_2021 / NAIF_SPICE_MARS2020",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "geodesy.local_mean_solar_time_hours",
+      "unit": "h",
+      "kind": "derived",
+      "description": "Local mean solar time at declared longitude and epoch",
+      "source_family": "model_output",
+      "dependencies": [
+        "position.longitude_east_deg"
+      ],
+      "status": "declared_unbound"
+    }
+  ]
+}

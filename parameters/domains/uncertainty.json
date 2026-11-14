@@ -1,0 +1,180 @@
+{
+  "schema_version": "1.0.0",
+  "domain": "uncertainty",
+  "source_family": "Statistical model definitions and verified source metadata",
+  "description": "Canonical interface declarations only; no actual values or official source columns are imputed.",
+  "field_count": 19,
+  "fields": [
+    {
+      "id": "uncertainty.model_id",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Identity of uncertainty model and its version",
+      "source_family": "Statistical model definitions and verified source metadata",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "uncertainty.prior_family",
+      "unit": null,
+      "kind": "scenario",
+      "description": "Distribution family for uncertain input parameters",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "uncertainty.prior_parameters",
+      "unit": null,
+      "kind": "scenario",
+      "description": "Versioned prior hyperparameter document",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "uncertainty.likelihood_family",
+      "unit": null,
+      "kind": "scenario",
+      "description": "Evidence likelihood under measurement assumptions",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "uncertainty.likelihood_parameters",
+      "unit": null,
+      "kind": "scenario",
+      "description": "Versioned evidence model and calibration details",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "uncertainty.posterior_mean",
+      "unit": null,
+      "kind": "derived",
+      "description": "Posterior mean of declared target variable; unit inherited from target",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "uncertainty.posterior_std",
+      "unit": null,
+      "kind": "derived",
+      "description": "Posterior SD of declared target variable; unit inherited from target",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "uncertainty.posterior_quantile_lower",
+      "unit": null,
+      "kind": "derived",
+      "description": "Lower posterior quantile; unit inherited from target",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "uncertainty.posterior_quantile_upper",
+      "unit": null,
+      "kind": "derived",
+      "description": "Upper posterior quantile; unit inherited from target",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "uncertainty.credible_interval_mass",
+      "unit": "1",
+      "kind": "scenario",
+      "description": "Coverage mass corresponding to posterior quantile interval",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "uncertainty.measurement_error_model",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Documented per-instrument noise and bias model",
+      "source_family": "Statistical model definitions and verified source metadata",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "uncertainty.registration_covariance_m2",
+      "unit": "m^2",
+      "kind": "scenario",
+      "description": "Covariance for shared image/raster translation error",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "uncertainty.input_correlation_matrix",
+      "unit": "1",
+      "kind": "scenario",
+      "description": "Explicit input correlation structure, not independent by default",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "uncertainty.sample_count",
+      "unit": "1",
+      "kind": "metadata",
+      "description": "Number of numerical uncertainty samples",
+      "source_family": "Statistical model definitions and verified source metadata",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "uncertainty.random_seed",
+      "unit": "1",
+      "kind": "metadata",
+      "description": "Deterministic Monte Carlo reproducibility seed",
+      "source_family": "Statistical model definitions and verified source metadata",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "uncertainty.monte_carlo_convergence_error",
+      "unit": null,
+      "kind": "derived",
+      "description": "Estimated sample error with target-specific inherited units",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "uncertainty.sensitivity_index",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Scaled effect-size index with declared method",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "uncertainty.probability_constraint_violation",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Probability conditional on calibrated model and assumptions, NOT certified risk",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "uncertainty.confidence_class",
+      "unit": null,
+      "kind": "derived",
+      "description": "Evidence level or abstention label under documented criteria",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    }
+  ]
+}

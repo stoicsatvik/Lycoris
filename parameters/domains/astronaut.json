@@ -1,0 +1,243 @@
+{
+  "schema_version": "1.0.0",
+  "domain": "astronaut",
+  "source_family": "Hypothetical mission crew profile, not an official NASA-certified Mars EVA standard",
+  "description": "Canonical interface declarations only; no actual values or official source columns are imputed.",
+  "field_count": 26,
+  "fields": [
+    {
+      "id": "astronaut.crew_id",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Pseudonymous scenario participant identifier",
+      "source_family": "Hypothetical mission crew profile, not an official NASA-certified Mars EVA standard",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "astronaut.body_mass_kg",
+      "unit": "kg",
+      "kind": "scenario",
+      "description": "Crew member body mass, including declared context",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "astronaut.height_m",
+      "unit": "m",
+      "kind": "scenario",
+      "description": "Crew member height",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "astronaut.suit_carried_mass_kg",
+      "unit": "kg",
+      "kind": "scenario",
+      "description": "Effective mass added to walking system, stated whether suit included",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "astronaut.payload_mass_kg",
+      "unit": "kg",
+      "kind": "scenario",
+      "description": "Tools and samples carried for this segment",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "astronaut.functional_capacity_vo2max_ml_kg_min",
+      "unit": "mL/(kg min)",
+      "kind": "scenario",
+      "description": "Assumed maximal aerobic capacity, not measured",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "astronaut.resting_vo2_ml_kg_min",
+      "unit": "mL/(kg min)",
+      "kind": "scenario",
+      "description": "Assumed resting oxygen consumption per body mass",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "astronaut.walking_vo2_ml_kg_min",
+      "unit": "mL/(kg min)",
+      "kind": "derived",
+      "description": "Activity-specific metabolic oxygen consumption rate",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "astronaut.oxygen_consumption_mol_s",
+      "unit": "mol/s",
+      "kind": "derived",
+      "description": "Metabolic O2 demand as substance flow with stated conditions",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "astronaut.co2_production_mol_s",
+      "unit": "mol/s",
+      "kind": "derived",
+      "description": "Physiological carbon dioxide production rate",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "astronaut.respiratory_exchange_ratio",
+      "unit": "1",
+      "kind": "scenario",
+      "description": "Scenario CO2/O2 metabolic ratio under stated activity",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "astronaut.metabolic_power_w",
+      "unit": "W",
+      "kind": "derived",
+      "description": "Metabolic energy turnover rate under documented conversion",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "astronaut.heat_generation_w",
+      "unit": "W",
+      "kind": "derived",
+      "description": "Biological heat generated requiring thermal balance",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "astronaut.walk_speed_level_m_s",
+      "unit": "m/s",
+      "kind": "scenario",
+      "description": "Hypothetical suited pace on reference terrain",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "astronaut.walk_speed_actual_m_s",
+      "unit": "m/s",
+      "kind": "derived",
+      "description": "Terrain-, fatigue- and configuration-dependent pace",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "astronaut.heart_rate_bpm",
+      "unit": "1/min",
+      "kind": "scenario",
+      "description": "Optional illustrative physiological input, not measured telemetry",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "astronaut.exertion_factor",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Dimensionless workload multiplier from calibrated model, if available",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "astronaut.fatigue_state",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Explicitly defined state variable; no universal physiology meaning",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "astronaut.rest_required_s",
+      "unit": "s",
+      "kind": "derived",
+      "description": "Predicted rest time under declared human performance model",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "astronaut.dehydration_loss_kg",
+      "unit": "kg",
+      "kind": "derived",
+      "description": "Scenario fluid mass loss, only with heat/hydration model",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "astronaut.hydration_inventory_kg",
+      "unit": "kg",
+      "kind": "scenario",
+      "description": "Carried accessible hydration amount",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "astronaut.thermal_strain_index",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Explicitly modeled physiological thermal index, not measured safety score",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "astronaut.activity_mode",
+      "unit": null,
+      "kind": "scenario",
+      "description": "Walking, resting, sampling or emergency return",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "astronaut.injury_or_mobility_restriction",
+      "unit": null,
+      "kind": "scenario",
+      "description": "Assumed functional impairment restrictions for scenarios",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "astronaut.crew_spacing_m",
+      "unit": "m",
+      "kind": "scenario",
+      "description": "Planned crew separation for communications/operations",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "astronaut.human_model_status",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Uncalibrated, analogue-based or validated model status",
+      "source_family": "Hypothetical mission crew profile, not an official NASA-certified Mars EVA standard",
+      "dependencies": [],
+      "status": "declared_unbound"
+    }
+  ]
+}

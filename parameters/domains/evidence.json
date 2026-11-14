@@ -1,0 +1,261 @@
+{
+  "schema_version": "1.0.0",
+  "domain": "evidence",
+  "source_family": "Source provenance and PDS4 product labels",
+  "description": "Canonical interface declarations only; no actual values or official source columns are imputed.",
+  "field_count": 28,
+  "fields": [
+    {
+      "id": "evidence.product_urn",
+      "unit": null,
+      "kind": "metadata",
+      "description": "PDS4 logical identifier or source product URN",
+      "source_family": "Source provenance and PDS4 product labels",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "evidence.product_version",
+      "unit": null,
+      "kind": "metadata",
+      "description": "PDS4 version ID or source archive version",
+      "source_family": "Source provenance and PDS4 product labels",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "evidence.instrument",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Measurement instrument and mission",
+      "source_family": "Source provenance and PDS4 product labels",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "evidence.raw_column_name",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Native CSV/archive field name from actual source label",
+      "source_family": "Source provenance and PDS4 product labels",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "evidence.raw_unit",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Native unit from product label",
+      "source_family": "Source provenance and PDS4 product labels",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "evidence.raw_quality_flag",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Native instrument/product quality indicator",
+      "source_family": "Source provenance and PDS4 product labels",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "evidence.source_url",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Stable archive URL",
+      "source_family": "Source provenance and PDS4 product labels",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "evidence.sha256",
+      "unit": null,
+      "kind": "metadata",
+      "description": "SHA256 checksum for file integrity",
+      "source_family": "Source provenance and PDS4 product labels",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "evidence.observation_start_utc",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Temporal support start of observation",
+      "source_family": "Source provenance and PDS4 product labels",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "evidence.observation_end_utc",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Temporal support end of observation",
+      "source_family": "Source provenance and PDS4 product labels",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "evidence.sclk",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Spacecraft clock when provided",
+      "source_family": "Source provenance and PDS4 product labels",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "evidence.lmst",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Local mean solar time at source longitude",
+      "source_family": "Source provenance and PDS4 product labels",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "evidence.ltst",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Local true solar time if present",
+      "source_family": "Source provenance and PDS4 product labels",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "evidence.mars_sol",
+      "unit": "sol",
+      "kind": "metadata",
+      "description": "Mission sol counter for source row or file",
+      "source_family": "Source provenance and PDS4 product labels",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "evidence.latitude_deg",
+      "unit": "deg",
+      "kind": "metadata",
+      "description": "Observation site/footprint latitude",
+      "source_family": "Source provenance and PDS4 product labels",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "evidence.longitude_east_deg",
+      "unit": "deg",
+      "kind": "metadata",
+      "description": "Observation site/footprint east longitude",
+      "source_family": "Source provenance and PDS4 product labels",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "evidence.planetary_crs",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Observation geometry reference and longitude convention",
+      "source_family": "Source provenance and PDS4 product labels",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "evidence.raster_nodata_value",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Recorded missing-data sentinel",
+      "source_family": "Source provenance and PDS4 product labels",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "evidence.calibration_level",
+      "unit": null,
+      "kind": "metadata",
+      "description": "EDR, calibrated RDR, derived or equivalent",
+      "source_family": "Source provenance and PDS4 product labels",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "evidence.processing_pipeline_version",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Software version and parameters of transformations",
+      "source_family": "Source provenance and PDS4 product labels",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "evidence.source_spatial_support_m",
+      "unit": "m",
+      "kind": "metadata",
+      "description": "Resolution or footprint scale relevant to observation",
+      "source_family": "Source provenance and PDS4 product labels",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "evidence.source_temporal_support_s",
+      "unit": "s",
+      "kind": "metadata",
+      "description": "Integration or aggregation window",
+      "source_family": "Source provenance and PDS4 product labels",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "evidence.license",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Product license or usage and attribution requirement",
+      "source_family": "Source provenance and PDS4 product labels",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "evidence.evidence_category",
+      "unit": null,
+      "kind": "metadata",
+      "description": "measured, derived, assumed, unknown classification",
+      "source_family": "Source provenance and PDS4 product labels",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "evidence.validation_status",
+      "unit": null,
+      "kind": "metadata",
+      "description": "candidate, metadata-verified, ingested, tested, validated or rejected",
+      "source_family": "Source provenance and PDS4 product labels",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "evidence.provenance_citation",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Citable source identifier or DOI",
+      "source_family": "Source provenance and PDS4 product labels",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "evidence.raw_to_canonical_conversion",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Transformation statement with unit/time/CRS handling",
+      "source_family": "Source provenance and PDS4 product labels",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "evidence.limitations",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Known transfer, calibration, saturation and geometry caveats",
+      "source_family": "Source provenance and PDS4 product labels",
+      "dependencies": [],
+      "status": "declared_unbound"
+    }
+  ]
+}

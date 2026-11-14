@@ -1,0 +1,177 @@
+{
+  "schema_version": "1.0.0",
+  "domain": "radiation",
+  "source_family": "PDS_MSL_RAD",
+  "description": "Lycoris canonical field definitions only; actual native source columns must be confirmed against PDS4 label or raster metadata.",
+  "field_count": 18,
+  "fields": [
+    {
+      "id": "radiation.rad_instrument_site",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Gale Crater instrument location and source geometry",
+      "source_family": "PDS_MSL_RAD",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "radiation.absorbed_dose_rate_gy_s",
+      "unit": "Gy/s",
+      "kind": "observed",
+      "description": "Absorbed dose rate after explicit unit conversion, historical Curiosity RAD",
+      "source_family": "PDS_MSL_RAD",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "radiation.dose_equivalent_rate_sv_s",
+      "unit": "Sv/s",
+      "kind": "derived",
+      "description": "Dose equivalent rate only if supported by product radiation weighting",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "radiation.total_absorbed_dose_gy",
+      "unit": "Gy",
+      "kind": "derived",
+      "description": "Integrated absorbed dose over specified modeled interval",
+      "source_family": "model_output",
+      "dependencies": [
+        "radiation.absorbed_dose_rate_gy_s"
+      ],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "radiation.total_dose_equivalent_sv",
+      "unit": "Sv",
+      "kind": "derived",
+      "description": "Integrated equivalent dose under explicit radiation quality convention",
+      "source_family": "model_output",
+      "dependencies": [
+        "radiation.dose_equivalent_rate_sv_s"
+      ],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "radiation.particle_flux_m2_s",
+      "unit": "1/(m^2 s)",
+      "kind": "observed",
+      "description": "RAD particle event flux only where calibrated products support it",
+      "source_family": "PDS_MSL_RAD",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "radiation.particle_energy_mev",
+      "unit": "MeV",
+      "kind": "observed",
+      "description": "Energy bin/particle energy in product-specific measurement",
+      "source_family": "PDS_MSL_RAD",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "radiation.particle_species",
+      "unit": null,
+      "kind": "observed",
+      "description": "Qualified species/class associated with calibrated observations",
+      "source_family": "PDS_MSL_RAD",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "radiation.rad_quality_factor",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Radiation weighting/quality factor under declared convention",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "radiation.gcr_reference_rate_gy_s",
+      "unit": "Gy/s",
+      "kind": "derived",
+      "description": "Historical Galactic cosmic-ray scenario anchor from RAD",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "radiation.sep_exposure_scenario_gy_s",
+      "unit": "Gy/s",
+      "kind": "scenario",
+      "description": "Hypothetical solar energetic particle event profile, not observed forecast",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "radiation.shielding_areal_density_kg_m2",
+      "unit": "kg/m^2",
+      "kind": "scenario",
+      "description": "Assumed suit/habitat shielding column density",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "radiation.shielding_transfer_fraction",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Energy/species-dependent transmitted dose fraction only with validated transport model",
+      "source_family": "model_output",
+      "dependencies": [
+        "radiation.shielding_areal_density_kg_m2"
+      ],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "radiation.jezero_transfer_model_uncertainty",
+      "unit": "1",
+      "kind": "scenario",
+      "description": "Explicit uncertainty for Gale-to-Jezero modeling; no direct equivalence",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "radiation.surface_atmospheric_column_kg_m2",
+      "unit": "kg/m^2",
+      "kind": "derived",
+      "description": "Column mass from appropriate local model and topography",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "radiation.exposure_elapsed_s",
+      "unit": "s",
+      "kind": "derived",
+      "description": "Mission exposure duration determined by route and tasks",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "radiation.dose_model_status",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Not-computed, historical-reference, scenario-only, calibrated, etc.",
+      "source_family": "PDS_MSL_RAD",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "radiation.effective_dose_sv",
+      "unit": "Sv",
+      "kind": "derived",
+      "description": "Effective dose only with explicit organ/tissue weighting model; not equal to absorbed dose",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    }
+  ]
+}

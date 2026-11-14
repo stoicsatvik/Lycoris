@@ -1,0 +1,162 @@
+{
+  "schema_version": "1.0.0",
+  "domain": "science",
+  "source_family": "Geological maps / NASA and USGS observation products / hypothetical field task objectives",
+  "description": "Canonical interface declarations only; no actual values or official source columns are imputed.",
+  "field_count": 17,
+  "fields": [
+    {
+      "id": "science.target_id",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Stable georeferenced science target identifier",
+      "source_family": "Geological maps / NASA and USGS observation products / hypothetical field task objectives",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "science.target_latitude_deg",
+      "unit": "deg",
+      "kind": "observed",
+      "description": "Target catalog latitude from documented map feature",
+      "source_family": "Geological maps / NASA and USGS observation products / hypothetical field task objectives",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "science.target_longitude_east_deg",
+      "unit": "deg",
+      "kind": "observed",
+      "description": "Target catalog longitude from documented map feature",
+      "source_family": "Geological maps / NASA and USGS observation products / hypothetical field task objectives",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "science.target_feature_type",
+      "unit": null,
+      "kind": "observed",
+      "description": "Mapped geomorphological target class",
+      "source_family": "Geological maps / NASA and USGS observation products / hypothetical field task objectives",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "science.target_geologic_unit",
+      "unit": null,
+      "kind": "observed",
+      "description": "Mapped geological unit from cited source",
+      "source_family": "Geological maps / NASA and USGS observation products / hypothetical field task objectives",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "science.target_instrument_requirement",
+      "unit": null,
+      "kind": "scenario",
+      "description": "Required human-operated instrument or observation method",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "science.target_sample_mass_kg",
+      "unit": "kg",
+      "kind": "scenario",
+      "description": "Expected sample load added during EVA",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "science.target_setup_time_s",
+      "unit": "s",
+      "kind": "scenario",
+      "description": "Expected time to prepare sampling instruments",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "science.target_observation_time_s",
+      "unit": "s",
+      "kind": "scenario",
+      "description": "Time allocated to observation/measurement",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "science.target_accessibility",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Conditional access under route/equipment/terrain rules",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "science.hypothesis_id",
+      "unit": null,
+      "kind": "scenario",
+      "description": "Explicit scientific hypothesis being investigated",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "science.hypothesis_prior_probability",
+      "unit": "1",
+      "kind": "scenario",
+      "description": "Prior, only if actual probabilistic hypothesis model is constructed",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "science.expected_information_gain_nats",
+      "unit": "nat",
+      "kind": "derived",
+      "description": "Expected KL divergence when likelihood and data model are defined",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "science.goal_priority_weight",
+      "unit": "1",
+      "kind": "scenario",
+      "description": "User-declared importance, not a NASA-reported number",
+      "source_family": "mission_scenario_input",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "science.instrument_data_quality",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Measurement resolution, accuracy and instrument limitations",
+      "source_family": "Geological maps / NASA and USGS observation products / hypothetical field task objectives",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "science.target_interest_score",
+      "unit": "1",
+      "kind": "derived",
+      "description": "Operational scientific priority under a versioned scoring model",
+      "source_family": "model_output",
+      "dependencies": [],
+      "status": "declared_unbound"
+    },
+    {
+      "id": "science.target_attribution_url",
+      "unit": null,
+      "kind": "metadata",
+      "description": "Source feature/citation URL",
+      "source_family": "Geological maps / NASA and USGS observation products / hypothetical field task objectives",
+      "dependencies": [],
+      "status": "declared_unbound"
+    }
+  ]
+}
