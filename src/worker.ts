@@ -1,3 +1,5 @@
+import { FEATURES, featurePage } from "./features";
+
 export interface Env {
   DB: D1Database;
 }
@@ -153,6 +155,8 @@ export default {
     if (request.method !== "GET") return json({ error: "method_not_allowed" }, 405);
 
     const url = new URL(request.url);
+    if (url.pathname === "/") return featurePage();
+    if (url.pathname === "/api/features") return json({ features: FEATURES });
     if (url.pathname === "/api/health") return json({ status: "ok", service: "lycoris-api" });
 
     if (url.pathname === "/api/space-weather/source") {
