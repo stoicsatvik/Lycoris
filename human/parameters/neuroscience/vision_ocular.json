@@ -3,7 +3,7 @@
   "group": "neuroscience",
   "domain": "vision_ocular",
   "description": "Visual acuity, retina, optic nerve, SANS and ocular physiology",
-  "field_count": 37,
+  "field_count": 38,
   "sources": [
     "NASA_SANS",
     "NASA_HRP_RISKS"
@@ -600,6 +600,21 @@
         "NASA_HRP_RISKS"
       ],
       "anatomical_index": "optional_site_eye_side_or_task_reference"
+    },
+    {
+      "id": "human.vision_ocular.peripapillary_total_retinal_thickness_m",
+      "name": "peripapillary total retinal thickness",
+      "unit": "m",
+      "kind": "observable",
+      "description": "Optical-coherence-tomography measurement of total retinal thickness around the optic nerve head; a candidate observation for tracking spaceflight-associated neuro-ocular structural change, not a Mars risk predictor.",
+      "measurement_context": "imaging",
+      "privacy": "restricted",
+      "binding_status": "declared_unbound",
+      "evidence_status": "Candidate clinical-imaging quantity supported by long-duration ISS observations; no direct validated human Mars response or operational threshold.",
+      "source_leads": [
+        "NASA_SANS",
+        "PUBMED_SANS_OCULAR_2020"
+      ]
     }
   ]
 }
