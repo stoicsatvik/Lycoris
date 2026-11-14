@@ -2,6 +2,7 @@
 // Claire's experimental dose is reported beside the checks but never decides them.
 import { simulate } from "./simulate.js";
 
+const hm = (h) => { const m = Math.round(h * 60); return `${String(Math.floor(m / 60) % 24).padStart(2, "0")}:${String(m % 60).padStart(2, "0")}`; };
 export const OUTCOME = { nogo: "NO-GO", undetermined: "UNDETERMINED", ok: "WITHIN ENTERED LIMITS" };
 
 // M_R = remaining − needed to return − reserve.
@@ -38,12 +39,12 @@ export function checkConstraints(input, result, { outAndBack = true } = {}) {
   add("EVA duration", pass(totalH <= P.evaLimitH), `${totalH.toFixed(2)} h of ${P.evaLimitH} h`);
   const endHour = result.startHour + totalH;
   const t0 = input.env(result.startHour);
-  add("Daylight", pass(result.startHour >= t0.sunrise && endHour <= t0.sunset), `${result.startHour.toFixed(2)}–${endHour.toFixed(2)} h, sun ${t0.sunrise.toFixed(2)}–${t0.sunset.toFixed(2)} h`);
+  add("Daylight", pass(result.startHour >= t0.sunrise && endHour <= t0.sunset), `${hm(result.startHour)}–${hm(endHour)}, sun ${hm(t0.sunrise)}–${hm(t0.sunset)}`);
 
   result.people.forEach((m, i) => {
     if (m.o2CarriedL == null) return add(`Oxygen, ${m.id}`, "undetermined", "Oxygen carried not entered");
     const reserve = P.o2ReserveFraction * m.o2CarriedL;
-    const worst = Math.min(...(outAndBack ? back : [{ o2UsedL: [m.o2UsedL], o2ReturnL: [0] }]).map((b) => margin(m.o2CarriedL - b.o2UsedL[i], b.o2ReturnL[i], reserve)));
+    const worst = Math.min(...(outAndBack ? back : [{ o2UsedL: result.people.map((p) => p.o2UsedL), o2ReturnL: result.people.map(() => 0) }]).map((b) => margin(m.o2CarriedL - b.o2UsedL[i], b.o2ReturnL[i], reserve)));
     add(`Oxygen, ${m.id}`, pass(worst >= 0), `Smallest margin ${worst.toFixed(1)} L after a ${reserve.toFixed(0)} L reserve`);
   });
 

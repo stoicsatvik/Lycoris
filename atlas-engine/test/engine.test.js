@@ -122,5 +122,10 @@ export function runTests() {
     const r2 = one(around, { batteryWh: 1000, powerW: 100, scrubberG: 500, coolingW: 300 });
     near(r2.people[0].battery, 1000 - 100 * r2.hours, 1e-6, "battery"); ok(r2.people[0].scrubberG < 500 && r2.people[0].co2G >= 0, "scrubber used");
   });
+  t("One-way plan: every crew member gets a real oxygen margin", () => {
+    const out = planEVA({ route: around, env: flatEnv(), outAndBack: false, crew: [{ o2CarriedL: 300 }, { o2CarriedL: 300 }] });
+    const m = out.checks.filter((c) => c.name.startsWith("Oxygen")).map((c) => +c.detail.match(/-?[0-9.]+/)[0]);
+    ok(m.length === 2 && m.every(Number.isFinite) && Math.abs(m[0] - m[1]) < 1e-9, `margins ${m}`);
+  });
   return passed;
 }

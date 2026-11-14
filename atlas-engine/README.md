@@ -67,7 +67,7 @@ The research behind these values is in [`datasets/raw/Mars_Atlas_Research_Report
 node atlas-engine/test/run.mjs
 ```
 
-21 assert-based checks. They cover the notebook's Belva geometry and wall speeds, the 4.92 L/h oxygen factor,
+22 assert-based checks. They cover the notebook's Belva geometry and wall speeds, the 4.92 L/h oxygen factor,
 fatigue recovery, the radiation reference and the Hassler cross-check, the solar-event flag, Claire reducing to the
 standard model, recovery of known coefficients by the joint fit, held-out ΔMAE, the NO-GO / UNDETERMINED / WITHIN
 outcomes, the walk-home oxygen margin, real MCD climate end to end, seeded Monte Carlo, observation updates and the
