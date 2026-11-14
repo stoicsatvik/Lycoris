@@ -9,7 +9,7 @@
     {
       "binding": "DB",
       "database_name": "lycoris-catalog",
-      "database_id": "4d069e92-c0e0-4c0d-b89e-2bca38342234",
+      "database_id": "c81e630b-10f5-4724-ac1f-6d23a69983cb",
       "migrations_dir": "migrations"
     }
   ]
