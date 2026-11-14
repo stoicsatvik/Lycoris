@@ -222,6 +222,96 @@
       "access": "public_reference",
       "human_data_context": "hypothesis_from_indirect_evidence",
       "review_status": "source_page_located; full linked reports not individually audited"
+    },
+    {
+      "id": "NASA_HRP_EVIDENCE",
+      "title": "NASA Human Research Roadmap: Evidence Reports",
+      "url": "https://humanresearchroadmap.nasa.gov/evidence/",
+      "source_type": "evidence_portal",
+      "scope": "NASA's risk-specific evidence reports and cited literature for human health and performance risks; each linked report requires scope-specific review.",
+      "access": "public_reference",
+      "human_data_context": "research_or_standards",
+      "review_status": "source page reviewed; linked risk reports not individually treated as universal Mars-response models"
+    },
+    {
+      "id": "NASA_HSRMP_2020",
+      "title": "NASA Human System Risk Management Plan, JSC-66705 Rev. B",
+      "url": "https://ntrs.nasa.gov/citations/20205008887",
+      "source_type": "risk_framework",
+      "scope": "NASA framework relating altered gravity, radiation, isolation/confinement, hostile/closed environments and distance from Earth to human-system risk management.",
+      "access": "public_reference",
+      "human_data_context": "research_or_standards",
+      "review_status": "public NASA technical report reviewed at framework level; not a source of individual Mars physiological coefficients"
+    },
+    {
+      "id": "NASA_HHC_SPACEFLIGHT_RISKS",
+      "title": "NASA Human Health Countermeasures: Spaceflight Risks",
+      "url": "https://www.nasa.gov/humans-in-space/hhc-spaceflight-risks/",
+      "source_type": "risk_framework",
+      "scope": "NASA overview of altered immune, sensorimotor/vestibular, cardiovascular, EVA and other countermeasure risk areas.",
+      "access": "public_reference",
+      "human_data_context": "research_or_standards",
+      "review_status": "source page reviewed; overview only, not parameter calibration"
+    },
+    {
+      "id": "PUBMED_BONE_RENAL_2015",
+      "title": "Bone metabolism and renal stone risk during International Space Station missions",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26456109/",
+      "source_type": "peer_reviewed_human_spaceflight_study",
+      "scope": "ISS astronaut study of bone biochemistry and renal-stone risk; microgravity, 4- to 6-month missions, not Mars partial gravity.",
+      "access": "public_reference",
+      "human_data_context": "human_low_earth_orbit_cohort",
+      "review_status": "abstract and bibliographic record reviewed; no Mars transfer coefficient inferred"
+    },
+    {
+      "id": "PUBMED_SANS_OCULAR_2020",
+      "title": "Association of Long-Duration Spaceflight With Anterior and Posterior Ocular Structure Changes in Astronauts and Their Recovery",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32239198/",
+      "source_type": "peer_reviewed_human_spaceflight_study",
+      "scope": "Prospective ISS cohort study of ocular structural changes over approximately six-month missions; direct microgravity evidence, not Mars surface evidence.",
+      "access": "public_reference",
+      "human_data_context": "human_low_earth_orbit_cohort",
+      "review_status": "abstract and bibliographic record reviewed; supports measurement vocabulary only, not Mars-risk prediction"
+    },
+    {
+      "id": "PUBMED_SOMA_2024",
+      "title": "The Space Omics and Medical Atlas (SOMA) and international astronaut biobank",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38862028/",
+      "source_type": "peer_reviewed_data_resource",
+      "scope": "Integrated astronaut clinical, cellular and multi-omic research resource spanning several mission programs; heterogeneous mission and assay contexts.",
+      "access": "public_reference",
+      "human_data_context": "mixed_human_spaceflight_dataset",
+      "review_status": "abstract and bibliographic record reviewed; data resource is a future evidence lead, not a pre-bound dataset"
+    },
+    {
+      "id": "PUBMED_ASTROIMMUNOLOGY_2025",
+      "title": "Astroimmunology: the effects of spaceflight and its associated stressors on the immune system",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41102553/",
+      "source_type": "peer_reviewed_review",
+      "scope": "Review of immune-cell, host-microbiome and viral-reactivation evidence across spaceflight and analog stressors.",
+      "access": "public_reference",
+      "human_data_context": "mixed_human_and_analogue_evidence",
+      "review_status": "abstract and bibliographic record reviewed; no individual immune-risk coefficient inferred"
+    },
+    {
+      "id": "PUBMED_BHP_MEDICAL_2021",
+      "title": "Assessment of Spaceflight Medical Conditions' and Treatments' Potential Impacts on Behavioral Health and Performance",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34281667/",
+      "source_type": "peer_reviewed_operational_review",
+      "scope": "Assessment linking spaceflight medical conditions and treatments to behavioral-health and performance domains; not a diagnostic model.",
+      "access": "public_reference",
+      "human_data_context": "spaceflight_operational_evidence",
+      "review_status": "abstract and bibliographic record reviewed; supports cross-domain caution only"
+    },
+    {
+      "id": "PUBMED_NEURO_STRESSORS_2022",
+      "title": "Impact of spaceflight stressors on behavior and cognition: A molecular, neurochemical, and neurobiological perspective",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35461987/",
+      "source_type": "peer_reviewed_review",
+      "scope": "Review of radiation, altered gravity, isolation/confinement and sleep disruption interactions relevant to neurobehavioral performance.",
+      "access": "public_reference",
+      "human_data_context": "mixed_human_animal_and_analogue_evidence",
+      "review_status": "abstract and bibliographic record reviewed; combined-stressor evidence remains insufficient for a Mars predictor"
     }
   ]
 }
