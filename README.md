@@ -1,40 +1,42 @@
 # Lycoris
 
-Scientific mission-planning architecture for the 2026 NASA Space Apps Challenge: Interplanetary Survival Guide: Martian Map.
+**Explore. Simulate. Verify.**
 
-## Initial repository scope
+Lycoris is an evidence-bound Mars EVA planning and training prototype for the 2026 NASA Space Apps Challenge: *Interplanetary Survival Guide: Martian Map*.
 
-This first milestone establishes documentation and directories only:
+**Live prototype:** https://lycoris.buildwithsatvik.workers.dev/
 
-- `datasets/` -> scientific sources, provenance, processing stages, and validation evidence.
-- `formulae/` -> mathematical model specifications with units, dependencies, assumptions, and checks.
-- `principles/` -> first-principles reasoning, Fermi bounds, Bayesian inference, and scientific validation standards.
+## What it includes
 
-No application implementation, external datasets, or empirical Marswalk safety certification are included in this initial scaffold.
+- Interactive Jezero mission map with named locations, terrain imagery, crater context and route exploration.
+- Scenario route model that updates distance, duration, oxygen, radiation and return margins from selected inputs.
+- Virtual traverse with an illustrative rover point-of-view background, resource instruments, vital-sign estimates, minimap, science objective and end-of-expedition report.
+- Atlas companion for contextual route, science and safety questions through a server-side AI endpoint.
+- Interactive supplied 3D suit reference with visible subsystems and attribution.
+- Evidence workspace for sources, assumptions, formulae and model limitations.
+- NASA Mars Trek map synchronization and randomized solar-storm training scenarios.
 
-## Ground rules
+## Unified state model
 
-- Observations, derived outputs, hypothetical assumptions, and unknowns stay distinct.
-- Data products retain source IDs, planetary coordinate reference, units, spatial and temporal support, and quality flags.
-- All scientific outputs must identify model versions, evidence limitations, and reproducible test conditions.
-- A modeled route or suit parameter is never described as flight-certified astronaut safety guidance.
-- Pre-existing project material may be reused only if authorized and disclosed under applicable event rules and licenses.
+```
+xₖ₊₁ = xₖ + Δtₖ f(xₖ, uₖ, eₖ; θ) + wₖ
+```
 
-## Human systems research library
+Each simulation step updates mission state (such as position, oxygen, water, battery, fatigue and cumulative dose) from elapsed time, crew choices, environment, stated parameters and uncertainty. Outputs remain bounded by the quality and completeness of their inputs.
 
-The [`human/`](human/) subsystem contains evidence and parameter definitions for anatomy, physiology, neuroscience, psychology, space-exposure responses and mission operations. Its 1,691 candidate parameters are **declarations only**, not validated Mars physiological predictions or stored crew health data. See [`human/parameters/INDEX.json`](human/parameters/INDEX.json) for the full domain inventory.
-## Cloudflare catalog API
+## Repository structure
 
-The repository root contains a Cloudflare Worker backed by D1. It serves a read-only, provenance-aware dataset catalog at `/api/health`, `/api/datasets`, `/api/datasets/:id`, and `/api/observations`. Run `npm install`, then `npm run dev` locally; apply database migrations explicitly before deploying. Raw research files are not copied into D1 until a source-hash and quality-preserving ingestion run is recorded.
+- `datasets/` — scientific sources, provenance, processing stages and validation evidence.
+- `formulae/` — mathematical specifications, units, dependencies, assumptions and checks.
+- `principles/` — first-principles reasoning, Fermi bounds, Bayesian inference and validation standards.
+- `human/` — evidence and parameter declarations for human systems research; not crew health data or Mars physiological predictions.
 
+## Scientific and safety boundary
 
-## NASA Mars Trek map synchronization
+Lycoris is a research concept. It does **not** provide astronaut medical advice, live crew telemetry, real-time solar forecasts, operational route authorization, flight certification or a human-rated suit design.
 
-`GET /api/maps/nasa-mars-trek` returns NASA Mars Trek WMTS capability URLs for the global MOLA hillshade and controlled Jezero HiRISE mosaic. Map clients must use these upstream services directly rather than copied tiles, so NASA-published tile updates can appear without a Lycoris re-ingestion run. A Cloudflare Cron Trigger checks capability ETag and Last-Modified headers every six hours and exposes the latest check state from that endpoint.
+Observations, derived outputs, hypothetical assumptions and unknowns are kept distinct. Map tiles should use their identified upstream source, and all data products should retain provenance, coordinate reference, units, spatial/temporal support and quality flags.
 
+## Credits
 
-## Solar-storm training scenarios
-
-`GET /api/simulations/solar-storm?journey_day=12&seed=42` produces a deterministic, illustrative solar-storm scenario for journey rehearsal. Omit `seed` for a new scenario and retain the returned seed to reproduce it. The API intentionally provides no dose calculation, medical recommendation, or crew-authorization decision.
-
-`GET /api/space-weather/source` identifies the official NOAA SWPC alerts feed. NASA and NOAA operational monitoring, mission-specific flight rules, vehicle configuration, shelter design, and authorized dosimetry remain the source of real crew decisions.
+The suit visual is the user-supplied **“Astronaut by Jungle Jim”** GLB, licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Its creator is credited in the application. Rover POV footage is user-supplied illustrative background material, not live Mars imagery or telemetry.
