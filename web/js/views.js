@@ -2,6 +2,7 @@
 import { KM_PER_X, KM_PER_Y, SOURCES } from "./terrain/places.js";
 import { DEFAULTS } from "./engine/index.js";
 import { LOCAL, placeById } from "./plan.js";
+import { claireSoundtrackView } from "./claire-soundtrack.js";
 
 export const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
 export const f = (x, d = 1) => (x == null || !Number.isFinite(x) ? "—" : Number(x).toLocaleString("en-GB", { minimumFractionDigits: d, maximumFractionDigits: d }));
@@ -284,6 +285,7 @@ export function claireView(P, rows) {
   <div class="hatch" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 6px 20px; padding: 8px 24px; border-bottom: 1px dashed var(--claire); font: 500 11px/1.3 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--claire)"><span>Experimental / unvalidated</span><span>Radiation estimates here may be wrong</span><a href="#/map" style="text-decoration: underline">Leave Claire</a></div>
   <header class="top"><h1>Experimental Claire</h1><span class="chip exp">Experimental · unvalidated</span><span class="meta"><b>${esc(P.state.date)}</b> · Ls ${f(P.env(12).ls, 1)}°</span><span class="meta">Same route as Mars Atlas</span></header>
   <div class="body">
+    ${claireSoundtrackView()}
     <div class="grid" style="grid-template-columns: minmax(0, 1fr) 440px; align-items: stretch">
       <section style="position: relative; min-height: 460px; overflow: hidden; border-radius: 8px; border: 1px dashed rgba(176,160,255,.6)">
         <div class="scene photo" aria-hidden="true"><img src="img/belva-rim-sol772.jpg" alt=""><div class="vig"></div></div>
