@@ -7,13 +7,6 @@ const PX_PER_DEG = 4;
 const POINTS = ["N", "NE", "E", "SE", "S", "SW", "W", "NW"];
 
 export function journeyView(P) {
-  const nearBelva = P.route.craters.some((c) => c.crater.id === "belva");
-  const scene = nearBelva
-    ? `<div class="scene photo" aria-hidden="true"><img src="img/belva-rim-sol772.jpg" alt=""><div class="vig"></div></div>`
-    : `<div class="scene" aria-hidden="true"><div class="ground"><img src="img/jezero-terrain.webp" alt="" style="object-position: 50% 50%"></div><div class="haze"></div><div class="vig"></div></div>`;
-  const caption = nearBelva
-    ? "Photo: Belva crater rim, Perseverance Mastcam-Z, sol 772. Raw image, NASA/JPL-Caltech/ASU. A real view of this crater, not a live view of your position."
-    : "Illustrative view built from the orbital image. Not a photograph of this place.";
   const ticks = [];
   for (let d = -360; d <= 720; d += 15) {
     const deg = ((d % 360) + 360) % 360, major = deg % 45 === 0;
@@ -24,7 +17,12 @@ export function journeyView(P) {
   const r = (P.route.craters[0]?.crater.diameterM ?? 900) / 1000 * 1.3;
   const c0 = P.route.craters[0]?.crater ?? BELVA;
   return `<div class="journey">
-    ${scene}
+    <div class="scene" aria-hidden="true">
+      <video id="j-walk-video" muted playsinline loop preload="none" poster="img/curiosity-walk-poster.webp">
+        <source src="img/curiosity-walk-loop.mp4" type="video/mp4">
+      </video>
+      <div class="vig"></div>
+    </div>
     <div class="layout">
       <div style="display: flex; align-items: center; gap: 12px">
         <svg width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true"><circle cx="13" cy="13" r="10.5" stroke="#E8793F" stroke-width="1.6"/><path d="M5.5 15.5c3.2-4.4 9.6-5.6 15-2.2" stroke="#E4ECF7" stroke-width="1.6" stroke-linecap="round"/><circle cx="18" cy="8.6" r="1.7" fill="#3FB6F2"/></svg>
@@ -105,7 +103,7 @@ export function journeyView(P) {
           <div class="seg" style="flex: 0 0 168px">${[10, 60, 300].map((s) => `<button data-act="j-speed" data-v="${s}" aria-pressed="${s === 60}">×${s}</button>`).join("")}</div>
           <div style="flex: 0 0 auto; padding: 6px 12px; border: 1px solid var(--line-2); border-radius: 6px"><span class="st ${({ "WITHIN ENTERED LIMITS": "pass", "NO-GO": "fail", UNDETERMINED: "und" })[P.plan.outcome]}">${esc(P.plan.outcome.toLowerCase().replace(/^\w/, (c) => c.toUpperCase()))}</span><div class="sub" style="margin-top: 3px; color: #A3B4CD">Not a statement that the journey is safe</div></div>
         </div>
-        <p style="font: 400 10.5px/1.3 var(--mono); color: #A3B4CD; text-align: center">${caption}</p>
+        <p style="font: 400 10.5px/1.3 var(--mono); color: #A3B4CD; text-align: center">Illustrative Mars walk · Curiosity imagery, Gale Crater</p>
       </div>
     </div>
   </div>`;
@@ -132,6 +130,13 @@ export function startJourney(P, root) {
   const tl = P.plan.result.timeline, T = P.plan.result.hours, segs = P.segs, places = P.places;
   const $ = (id) => root.querySelector(`#${id}`);
   const st = { t: 0, playing: false, speed: 60, crew: 0, last: 0, raf: 0 };
+  const video = $("j-walk-video");
+  const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)");
+  const syncVideo = () => {
+    if (st.playing && !reducedMotion.matches) video.play().catch(() => {});
+    else video.pause();
+  };
+  reducedMotion.addEventListener("change", syncVideo);
   const params = P.plan.result.params;
   const cumM = []; let acc = 0; for (const g of segs) { acc += g.horizontalM; cumM.push(acc); }
 
@@ -179,7 +184,7 @@ export function startJourney(P, root) {
   function frame(now) {
     if (st.playing) {
       st.t = Math.min(T, st.t + ((now - st.last) / 1000) * (st.speed / 3600));
-      if (st.t >= T) { st.playing = false; $("j-play").textContent = "▶"; }
+      if (st.t >= T) { st.playing = false; $("j-play").textContent = "▶"; syncVideo(); }
       draw();
     }
     st.last = now; st.raf = requestAnimationFrame(frame);
@@ -189,7 +194,12 @@ export function startJourney(P, root) {
   scrub.addEventListener("input", () => { st.t = (scrub.value / 1000) * T; draw(); });
   function onClick(e) {
     const b = e.target.closest("[data-act]"); if (!b) return;
-    if (b.dataset.act === "j-play") { if (st.t >= T) st.t = 0; st.playing = !st.playing; b.textContent = st.playing ? "❚❚" : "▶"; }
+    if (b.dataset.act === "j-play") {
+      if (st.t >= T) st.t = 0;
+      st.playing = !st.playing;
+      b.textContent = st.playing ? "❚❚" : "▶";
+      syncVideo();
+    }
     if (b.dataset.act === "j-speed") { st.speed = +b.dataset.v; root.querySelectorAll('[data-act="j-speed"]').forEach((x) => x.setAttribute("aria-pressed", x === b)); }
     if (b.dataset.act === "j-crew") { st.crew = +b.dataset.i; root.querySelectorAll('[data-act="j-crew"]').forEach((x) => x.setAttribute("aria-pressed", x === b)); draw(); }
   }
@@ -197,5 +207,11 @@ export function startJourney(P, root) {
   document.addEventListener("keydown", key);
   draw();
   st.last = performance.now(); st.raf = requestAnimationFrame(frame);
-  return () => { cancelAnimationFrame(st.raf); root.removeEventListener("click", onClick); document.removeEventListener("keydown", key); };
+  return () => {
+    video.pause();
+    reducedMotion.removeEventListener("change", syncVideo);
+    cancelAnimationFrame(st.raf);
+    root.removeEventListener("click", onClick);
+    document.removeEventListener("keydown", key);
+  };
 }

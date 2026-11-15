@@ -42,6 +42,7 @@ details.more[open] > summary::after { content: "−"; }
 
 /* Journey view */
 .journey { position: relative; min-height: 100vh; overflow: hidden; background: #05080F; color: #E4ECF7; }
+.journey .scene > video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 40%; }
 .journey .layout { position: relative; min-height: 100vh; padding: 20px 24px 22px; display: grid; grid-template-columns: 304px minmax(0, 1fr) 320px; grid-template-rows: auto 1fr auto; gap: 16px; align-items: start; }
 .compass { overflow: hidden; position: relative; height: 40px; }
 .compass .strip { position: absolute; top: 0; left: 50%; height: 40px; white-space: nowrap; will-change: transform; }
