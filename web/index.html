@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lycoris · Mars operations at Jezero</title>
+<meta name="description" content="Plan a Marswalk at Jezero Crater: slope-aware routes, oxygen, radiation, crater crossings and a journey view, with every calculation shown.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 26 26'%3E%3CradialGradient id='m' cx='35%25' cy='28%25'%3E%3Cstop stop-color='%23ffad72'/%3E%3Cstop offset='1' stop-color='%23bc3d25'/%3E%3C/radialGradient%3E%3Ccircle cx='13' cy='13' r='11' fill='url(%23m)'/%3E%3Ccircle cx='9' cy='8' r='1.4' fill='%23722920'/%3E%3Ccircle cx='17' cy='17' r='2' fill='%23722920'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="css/atlas.css?v=planet-20261115">
+<link rel="stylesheet" href="css/app.css?v=planet-20261115">
+<link rel="stylesheet" href="css/lycoris.css?v=planet-20261115">
+<link rel="stylesheet" href="css/instruments.css?v=planet-20261115">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="css/mission-home.css?v=rover-1">
+<link rel="stylesheet" href="css/mission-theme.css?v=mission-1">
+<link rel="stylesheet" href="css/site-music.css?v=bgm-1">
+<link rel="stylesheet" href="css/hud-fit.css?v=warning-1">
+</head>
+<body>
+<div class="atlas app" id="app">
+  <header class="lnav" id="side">
+    <a class="lbrand" href="#/home"><span class="mars-mark" aria-hidden="true"></span>LYCORIS</a>
+    <nav aria-label="Sections">
+      <a data-nav="map" href="#/map">Mission map</a>
+      <a data-nav="craters" href="#/craters">Craters</a>
+      <a data-nav="calc" href="#/calc">Research</a>
+      <a data-nav="data" href="#/data">Data sources</a>
+      <a data-nav="suit" href="#/suit">Suit</a>
+    </nav>
+    <a class="claire-btn" data-nav="claire" href="#/claire-gate">Experimental Claire</a>
+  </header>
+  <div class="version-note" aria-label="Version: Claire">VERSION · “CLAIRE”</div>
+  <main class="main" id="view" tabindex="-1">
+    <div class="loading"><div class="bar" style="width: 220px"><i style="width: 40%"></i></div><p class="sub">Loading terrain and climate data…</p></div>
+  </main>
+</div>
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.1/build/three.module.js"}}</script>
+<script type="module" src="js/app.js?v=warning-1"></script>
+<div class="lycoris-music-controls">
+  <p id="lycoris-music-status" role="status"></p>
+  <button id="lycoris-music" type="button" aria-label="Background music" aria-pressed="true"><b aria-hidden="true">♫</b><span>Music on</span></button>
+</div>
+<audio id="lycoris-bgm" src="/audio/lycoris-bgm.mp3" preload="none" loop></audio>
+<script type="module" src="js/site-music.js?v=mahabre-1"></script>
+</body>
+</html>

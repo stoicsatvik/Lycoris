@@ -1,0 +1,46 @@
+.app:not(:has(.mission-home)),
+.app:not(:has(.mission-home)) #view .atlas {
+  --sans: "Chakra Petch", system-ui, sans-serif;
+  --serif: "Chakra Petch", system-ui, sans-serif;
+  --text: #edf8ff;
+  --text-2: #bbcbe2;
+  --text-3: #9baecb;
+  --line: #293d60;
+  --line-2: #3e597b;
+  --panel: #0b1834;
+  --panel-2: #122546;
+  --inset: #07132c;
+  --cyan: #8de0ff;
+  --accent: #8de0ff;
+  --accent-bg: #163655;
+  --gold: #bce9ff;
+}
+.app:not(:has(.mission-home)) { background: radial-gradient(ellipse at 80% 30%, #132655, transparent 62%), linear-gradient(150deg, #070a20, #0e1946); }
+.app:not(:has(.mission-home)) .lnav { margin: 0; padding-inline: max(4vw, 20px); background: #03071c94; }
+.app:not(:has(.mission-home)) .lnav a[aria-current] { color: #c0ecff; border-color: #8de0ff; }
+.app:not(:has(.mission-home)) .claire-btn { border: 1px solid #345577; border-radius: 2px; color: #e6f5ff; background: #0d1937; }
+.app:not(:has(.mission-home)) :is(a, button, input, select, textarea):focus-visible { outline: 2px solid #8de0ff; outline-offset: 3px; }
+#view:not([data-screen="home"]) .top { padding-block: clamp(18px, 3vw, 38px) 16px; }
+#view:not([data-screen="home"]) .top h1 { font-family: var(--sans); color: #f3faff; letter-spacing: -.035em; }
+#view:not([data-screen="home"]) .atlas-kicker { color: #8de0ff; }
+#view:not([data-screen="home"]) .top h1 em { color: #9bdcfa; font-style: normal; }
+#view:not([data-screen="home"]) :is(.panel, .hud-card, .glass, .tile, .suit-system-grid article) {
+  border: 1px solid #385477;
+  border-radius: 5px;
+  background: linear-gradient(150deg, #122746f5, #09142def);
+  box-shadow: inset 0 1px #d1efff0d, 0 10px 36px #03091d38;
+}
+#view:not([data-screen="home"]) :is(.ph, .hud-card .hh) { border-bottom-color: #314d6b; }
+#view:not([data-screen="home"]) :is(.ph h2, .hud-card .hh, .suit-system-grid span) { color: #a9e7ff; font-family: var(--mono); }
+#view:not([data-screen="home"]) :is(.btn, .inp, .seg, .formula, .rec-list button) { border-color: #3b587b; border-radius: 4px; }
+#view:not([data-screen="home"]) .btn:not(.pri) { background-color: #0d1b38; }
+#view:not([data-screen="home"]) .btn.pri { background: linear-gradient(100deg, #82d8fa, #d9f4ff); color: #0b1830; border-color: #9adeff; }
+#view:not([data-screen="home"]) .btn:hover:not(:disabled) { border-color: #8de0ff; }
+#view:not([data-screen="home"]) :is(.map, .journey-map-sheet, .suit-hero figure) { border-radius: 5px; }
+#view:not([data-screen="home"]) .suit-hero figure { background: radial-gradient(circle at 48% 38%, #213d61, #08132b 72%); }
+#view:not([data-screen="home"]) :is(.journey-map-sheet, .journey .top-mid) { background: #0a1833ee; border-color: #3e597b; }
+#view:not([data-screen="home"]) .journey::after { border-color: #83cfff40; border-radius: 8px; }
+#view:not([data-screen="home"]) .journey .ring span { color: #8de0ff; }
+#view:not([data-screen="home"]) .claire-page > .hatch { background-color: #151b3a; }
+#view[data-screen="claire-gate"] > .atlas { background: #0a1430 !important; }
+#view[data-screen="claire-gate"] [role="alertdialog"] { background: linear-gradient(90deg, #0f2244de, transparent); }
