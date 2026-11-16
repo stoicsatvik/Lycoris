@@ -1,0 +1,36 @@
+.lycoris-music-controls {
+  position: fixed;
+  right: max(14px, env(safe-area-inset-right));
+  bottom: max(14px, env(safe-area-inset-bottom));
+  z-index: 25;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5px;
+  pointer-events: none;
+}
+#lycoris-music {
+  pointer-events: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 42px;
+  padding: 0 13px;
+  border: 1px solid #486888;
+  border-radius: 5px;
+  background: #08152ff5;
+  color: #ebf8ff;
+  font: 600 11px/1 "IBM Plex Mono", monospace;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+#lycoris-music[aria-pressed="true"] { border-color: #8de0ff; color: #8de0ff; }
+#lycoris-music:hover { background: #152c4f; }
+#lycoris-music:focus-visible { outline: 2px solid #8de0ff; outline-offset: 3px; }
+#lycoris-music-status:not(:empty) {
+  padding: 6px 9px;
+  background: #08152f;
+  color: #ecf7ff;
+  font: 12px system-ui, sans-serif;
+}

@@ -1,0 +1,81 @@
+#view[data-screen="map"] .inforow { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+#view[data-screen="map"] .inforow > section { grid-column: auto; min-width: 0; }
+
+#view[data-screen="journey"] { min-height: 100dvh; }
+.journey .layout.journey-viewport {
+  height: 100dvh;
+  min-height: 0;
+  grid-template-columns: clamp(240px, 23vw, 345px) minmax(0, 1fr) clamp(240px, 23vw, 345px);
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  gap: 10px 16px;
+  align-items: stretch;
+  padding: 12px 18px;
+}
+.journey-viewport > div:first-child { align-self: start; }
+.journey-viewport > .top-mid { align-self: start; padding-block: 6px; }
+.journey .journey-bank {
+  min-height: 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  overscroll-behavior: contain;
+}
+.journey-bank > .hud-card { flex: 0 0 auto; }
+.journey-bank .hud-card .hh { min-height: 34px; padding: 7px 10px; }
+.journey-bank .hud-card .hb { padding: 8px 10px; }
+.journey-bank .hud-card a.more { min-height: 25px; }
+.journey-bank .map { height: 82px !important; min-height: 82px !important; }
+.journey-bank-right .hud-card .hh { min-height: 31px; padding-block: 5px; }
+.journey .journey-bank-right { gap: 4px; }
+.journey-bank-right .hud-card .hb { padding-block: 4px; }
+.journey-bank .ring { width: clamp(48px, 5vw, 78px); height: auto; aspect-ratio: 1; }
+.journey-bank summary { cursor: pointer; }
+.journey-bank summary::before { content: "▸"; color: var(--cyan); }
+.journey-bank details[open] summary::before { content: "▾"; }
+.journey-bank summary:focus-visible { outline-offset: -3px; }
+.journey .journey-viewport .journey-playback { grid-column: 1 / -1; display: grid; gap: 3px; min-width: 0; padding-right: 110px; }
+.journey .journey-playback > .hud-card { padding: 4px 9px !important; gap: 5px 12px !important; }
+.journey .journey-playback > p { margin: 0; padding: 3px 8px !important; }
+.journey .journey-playback .scrub { min-width: 90px; }
+.journey .journey-playback .btn { min-height: 32px; }
+
+.replay-warning {
+  min-height: 100dvh;
+  display: grid;
+  align-items: center;
+  padding: 42px clamp(20px, 8vw, 120px);
+  background: linear-gradient(90deg, #070919fa, #140d22db 60%, #1a1125ac), url("../img/belva-rim-sol772.jpg") center / cover;
+  --warning-accent: #ff839c;
+}
+[data-warning="caution"] .replay-warning { --warning-accent: #ffc978; }
+.replay-warning-copy { max-width: 860px; padding: clamp(16px, 4vw, 45px); border-left: 2px solid var(--warning-accent); background: #080c20b3; }
+.replay-warning-copy .atlas-kicker { color: var(--warning-accent) !important; }
+.replay-warning h1 { margin: 14px 0 18px; font: 600 clamp(30px, 5vw, 65px)/1.05 var(--sans); letter-spacing: -.035em; }
+.replay-warning ul { padding-left: 20px; max-height: 27vh; overflow-y: auto; color: #d3deef; }
+.replay-warning-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+[data-warning="no-go"] :is(.replay-warning-details, .replay-continue) {
+  animation: reveal-no-go .2s ease-out 2.1s both;
+}
+@keyframes reveal-no-go {
+  from { opacity: 0; visibility: hidden; }
+  to { opacity: 1; visibility: visible; }
+}
+@media (prefers-reduced-motion: reduce) {
+  [data-warning="no-go"] :is(.replay-warning-details, .replay-continue) { animation: none; }
+}
+
+@media (max-width: 780px) {
+  .journey .layout.journey-viewport { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: auto auto minmax(0, 1fr) auto; padding: 7px; gap: 5px; }
+  .journey .journey-viewport > div:first-child { grid-area: 1 / 1 / 2 / -1 !important; }
+  .journey .journey-viewport > .top-mid, .journey .journey-viewport > .crosshair { display: none; }
+  .journey .journey-viewport > .hud-card { grid-area: 2 / 1 / 3 / -1 !important; padding: 5px 8px !important; }
+  .journey .journey-viewport > .journey-bank-left { grid-area: 3 / 1 / 4 / 2 !important; }
+  .journey .journey-viewport > .journey-bank-right { grid-area: 3 / 2 / 4 / 3 !important; }
+  .journey .journey-viewport > .journey-playback { grid-area: 4 / 1 / 5 / -1 !important; padding: 0 0 39px; }
+  .journey .journey-bank .ring { display: none; }
+  .journey .journey-playback .scrub { flex-basis: 100%; }
+}
+@media (max-width: 620px) { #view[data-screen="map"] .inforow { grid-template-columns: minmax(0, 1fr) !important; } }

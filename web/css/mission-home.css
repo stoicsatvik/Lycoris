@@ -1,0 +1,92 @@
+.app:has(.mission-home) {
+  --mission-blue: #8de0ff;
+  --mission-muted: #a4b4cf;
+  --mission-line: #233958;
+  --mission-mono: "IBM Plex Mono", monospace;
+  color: #eff8ff;
+  background: radial-gradient(ellipse at 75% 48%, #152c67 0, transparent 53%), linear-gradient(155deg, #070a20 14%, #101c54 80%, #101c45);
+}
+.app:has(.mission-home) .lnav {
+  min-height: 72px; padding: 0 max(4vw, 20px); margin: 0; gap: 8px 30px;
+  border-bottom: 1px solid #25314b; background: #03071c94;
+}
+.app:has(.mission-home) .lnav nav a { padding: 29px 0; font-weight: 600; }
+.app:has(.mission-home) .lnav [data-nav="map"] { border-color: var(--mission-blue); color: #ecfaff; }
+.app:has(.mission-home) .claire-btn {
+  border: 1px solid #345577; border-radius: 0; padding: 10px 17px;
+  background: #0d1937; color: #e6f5ff; font-weight: 600;
+}
+.app:has(.mission-home) .claire-btn::after { content: "02"; color: var(--mission-blue); margin-left: 12px; }
+.app:has(.mission-home) .lbrand::after { content: "/ MARS"; color: var(--mission-blue); font-size: 9px; letter-spacing: .16em; }
+.app:has(.mission-home) .mars-mark { width: 32px; height: 13px; transform: rotate(-25deg); background: none; box-shadow: none; border: 1px solid #94a9c6; border-radius: 50%; }
+.app:has(.mission-home) .mars-mark::after { content: ""; position: absolute; inset: -3px 9px; border: 1px solid #94a9c6; border-radius: 50%; transform: rotate(55deg); }
+.app:has(.mission-home) .version-note { transform: none; left: 12px; top: 115px; color: #94a6cc; font-size: 8px; }
+.mission-home { width: min(100%, 1560px); margin: 0 auto; padding: 0 clamp(24px, 4vw, 64px); font-family: "Chakra Petch", var(--sans); }
+.mission-home :is(button,a):focus-visible { outline: 2px solid var(--mission-blue); outline-offset: 4px; }
+.mission-hero {
+  min-height: clamp(580px, 48vw, 740px); display: grid; grid-template-columns: .82fr 1.18fr;
+  align-items: center; gap: 5.6%; padding: 36px 2% 36px;
+  background-image: radial-gradient(circle, #b2daf97d 1px, transparent 1.5px), radial-gradient(circle, #7fa8d858 1px, transparent 1.5px);
+  background-size: 267px 157px, 183px 241px; background-position: 2% 12%, 52% 34%;
+}
+.mission-kicker, .mission-actions, .mission-readouts dt, .scan-controls, .scan-readout, .scan-scale, .scan-marker, .mission-footer { font-family: var(--mission-mono); text-transform: uppercase; }
+.mission-kicker { display: flex; align-items: center; gap: 12px; font-size: 11px; font-weight: 600; letter-spacing: .16em; }
+.mission-kicker::before { content: ""; width: 28px; height: 1px; background: var(--mission-blue); box-shadow: 0 0 8px var(--mission-blue); }
+.mission-kicker span { padding: 3px 6px; border: 1px solid var(--mission-line); color: var(--mission-blue); font-size: 8px; }
+.mission-intro h1 { margin: 14px 0 22px; font: 700 clamp(38px, 4.35vw, 72px)/.95 "Chakra Petch", var(--sans); letter-spacing: -.04em; color: #f6fbff; text-wrap: balance; }
+.mission-intro h1 em { color: #9bdcfa; font-style: normal; }
+.mission-lede { color: var(--mission-muted); font-size: clamp(16px, 1.4vw, 22px); line-height: 1.45; }
+.mission-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 20px 28px; margin: 25px 0 32px; }
+.mission-primary { display: inline-flex; min-height: 62px; min-width: min(245px, 100%); align-items: center; justify-content: space-between; gap: 18px; padding: 0 25px; background: linear-gradient(100deg,#83d9fa,#dcf5ff); color: #0b1830; font-size: 11px; font-weight: 700; clip-path: polygon(12px 0,calc(100% - 12px) 0,100% 12px,100% calc(100% - 12px),calc(100% - 12px) 100%,12px 100%,0 calc(100% - 12px),0 12px); }
+.mission-home a.mission-primary { color: #0b1830; }
+.mission-primary:is(:hover,:focus-visible) { background: #fff; }
+.mission-secondary { padding: 8px 0; border-bottom: 1px solid #5a7295; font: 500 13px/1.2 "Chakra Petch", var(--sans); text-transform: none; }
+.mission-secondary span { color: var(--mission-blue); }
+.mission-readouts { margin: 0; display: flex; flex-wrap: wrap; gap: 8px 0; font-family: var(--mission-mono); }
+.mission-readouts div { min-width: 108px; padding: 0 17px; border-left: 1px solid var(--mission-line); }
+.mission-readouts div:first-child { padding-left: 0; border: 0; }
+.mission-readouts dt { font-size: 8px; letter-spacing: .1em; color: var(--mission-muted); }
+.mission-readouts dd { margin: 5px 0 0; font-size: 14px; }
+.mission-scan { position: relative; width: 100%; aspect-ratio: 1.13; min-width: 0; --scan-zoom: 1; }
+.scan-viewport { position: absolute; inset: 3% 4%; overflow: hidden; display: grid; place-items: center; perspective: 900px; }
+.scan-planet { position: relative; width: 82%; aspect-ratio: 1; transform: rotateY(0) scale(var(--scan-zoom)); transition: transform .35s ease; }
+.scan-tilted .scan-planet { transform: rotateY(-24deg) rotateZ(-9deg) scale(var(--scan-zoom)); }
+.scan-planet canvas { position: absolute; inset: 0; width: 100%; height: 100%; cursor: grab; touch-action: none; }
+.scan-planet canvas:active { cursor: grabbing; }
+.scan-planet canvas:focus-visible { outline: 1px dashed var(--mission-blue); outline-offset: 2px; }
+.scan-planet.has-globe .scan-marker { top: var(--marker-y); left: var(--marker-x); right: auto; transform: translate(-50%, -50%); pointer-events: none; }
+.scan-instructions { position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); color: var(--mission-muted); font: 10px var(--mission-mono); white-space: nowrap; }
+.scan-marker { position: absolute; top: 30%; right: 30%; width: 51px; height: 51px; border: 1px solid #ddfaff8f; border-radius: 50%; background: radial-gradient(circle,#fff 0 4px,#92d8f199 5px,transparent 10px); }
+.scan-marker::before { content: ""; position: absolute; inset: 6px; border: 1px solid #c5e7fc8a; border-radius: 50%; }
+.scan-marker span { position: absolute; top: 47%; left: 100%; min-width: 103px; padding: 5px 0 0 15px; border-top: 1px solid #d8faff99; color: #f6fbff; font-size: 9px; font-weight: 600; white-space: nowrap; }
+.scan-marker small { display: block; color: var(--mission-blue); font-size: 7px; }
+.scan-orbits { position: absolute; inset: 6%; }
+.scan-orbits i { position: absolute; inset: 3% 9%; border: 1px solid #89bded4c; border-radius: 50%; }
+.scan-orbits i:nth-child(2) { transform: rotate(42deg) scaleX(.66); }
+.scan-orbits i:nth-child(3) { transform: rotate(-56deg) scaleX(.55); }
+.scan-orbits i::after { content: ""; position: absolute; left: 62%; top: 0; width: 6px; height: 6px; background: #bcf2ff; border-radius: 50%; box-shadow: 0 0 10px 2px #56c9ff; }
+.scan-animated .scan-orbits i:first-child { animation: scan-orbit 30s linear infinite; }
+@keyframes scan-orbit { to { transform: rotate(360deg); } }
+.scan-controls { position: absolute; right: -4%; top: 34%; display: grid; gap: 9px; }
+.scan-controls button, .mission-footer button { border: 1px solid #436083; background: #0b1b3cb0; color: #dbf7ff; cursor: pointer; }
+.scan-controls button { width: 45px; height: 45px; font: 600 13px var(--mission-mono); }
+.scan-controls button:disabled { opacity: .55; cursor: default; }
+.scan-controls button[aria-pressed="true"], .scan-controls button:hover:not(:disabled) { background: #234d74; }
+.scan-readout, .scan-scale { position: absolute; bottom: 7%; font-size: 8px; letter-spacing: .13em; color: var(--mission-muted); }
+.scan-readout { left: 5%; }
+.scan-readout strong { display: block; margin-top: 4px; color: var(--mission-blue); font-size: 13px; }
+.scan-scale { right: 5%; font-size: 7px; }
+.mission-footer { display: flex; align-items: center; justify-content: space-between; gap: 14px; padding: 16px 0 24px; font-size: 9px; color: var(--mission-muted); }
+.mission-footer button { padding: 8px 12px; font: inherit; text-transform: uppercase; }
+@media (max-width: 1100px) {
+  .app:has(.mission-home) .lnav { padding-block: 10px; }
+  .app:has(.mission-home) .lnav nav { order: initial; width: auto; margin: 0 auto; }
+  .app:has(.mission-home) .lnav nav a { padding: 12px 0; }
+  .mission-hero { min-height: 500px; }
+}
+@media (max-width: 760px) {
+  .app:has(.mission-home) .lnav nav { order: 3; width: 100%; overflow-x: auto; flex-wrap: nowrap; white-space: nowrap; }
+  .mission-hero { grid-template-columns: 1fr; gap: 28px; padding-block: 30px; }
+  .mission-scan { width: min(95%, 520px); margin: auto; }
+}
+@media (prefers-reduced-motion: reduce) { .scan-planet { transition: none; } }
